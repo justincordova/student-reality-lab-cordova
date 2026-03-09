@@ -1522,7 +1522,7 @@ export default async function SchoolPage({
         <h2 className="text-xl font-bold mb-4">Niche Grades</h2>
         <div className="grid grid-cols-4 sm:grid-cols-5 md:grid-cols-7 gap-4">
           {(Object.entries(school.nicheGrades) as [keyof NicheGrades, string][]).map(([key, grade]) => (
-            <GradeBadge key={key} grade={grade as any} label={GRADE_LABELS[key]} size="md" />
+            <GradeBadge key={key} grade={grade as NicheGradeType} label={GRADE_LABELS[key]} size="md" />
           ))}
         </div>
       </section>
@@ -2111,7 +2111,7 @@ export default function ROIChart({ schools }: ROIChartProps) {
     .filter((s) => s.medianEarnings6yr)
     .slice(0, 15)
     .map((s) => ({
-      name: s.name.length > 20 ? s.name.slice(0, 18) + '...' : s.name,
+      name: s.name.length > 20 ? s.name.slice(0, 20) + '...' : s.name,
       tuition: s.tuitionInState,
       earnings: s.medianEarnings6yr,
     }));
@@ -2147,6 +2147,8 @@ const ROIChart = dynamic(() => import("@/components/ROIChart"), { ssr: false });
 ```
 
 Add a "Show Chart" toggle button above the SchoolList that reveals the chart.
+
+**Important:** Pass `result.schools` (the filtered/paginated array) to ROIChart, not the full `schools` array. This ensures the chart reflects the current filter/sort/page state.
 
 **Step 3: Commit**
 
@@ -2293,6 +2295,13 @@ This plan has been reviewed and updated to fix critical and major issues:
 16. **getInitials Logic** - Simplified to handle edge cases like "UC Berkeley" (previously filtered out 2-letter words)
 17. **ROIChart Input** - Added note to pass filtered/paginated schools, not full array
 18. **Filter Logic** - Fixed state filter to handle empty string clearing correctly
+
+### Additional Fixes (Third Pass)
+
+19. **Type Safety in School Detail** - Replaced `as any` with `as NicheGradeType` for grade prop (line 1525)
+20. **Chart Name Truncation** - Fixed to truncate at exactly 20 characters before adding ellipsis
+21. **ROIChart Documentation** - Added explicit note to pass `result.schools` from SchoolList, not full array
+22. **Interface Consistency** - Verified all interface definitions follow same pattern without explicit type annotation (TS default behavior)
 
 ### Remaining Considerations
 
