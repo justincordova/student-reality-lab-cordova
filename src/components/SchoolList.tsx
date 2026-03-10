@@ -20,21 +20,113 @@ interface SchoolListProps {
   schools: School[];
 }
 
-const SORT_OPTIONS: { key: SortField; label: string }[] = [
-  { key: "academics", label: "Academics" },
-  { key: "professors", label: "Professors" },
-  { key: "value", label: "Value" },
-  { key: "roi", label: "ROI" },
-  { key: "medianEarnings6yr", label: "Earnings" },
-  { key: "tuitionInState", label: "Tuition" },
-  { key: "acceptanceRate", label: "Acceptance" },
-  { key: "safety", label: "Safety" },
-  { key: "campusFood", label: "Food" },
-  { key: "dorms", label: "Dorms" },
-  { key: "studentLife", label: "Social" },
-  { key: "partyScene", label: "Party" },
-  { key: "athletics", label: "Athletics" },
-  { key: "diversity", label: "Diversity" },
+interface SortOption {
+  key: SortField;
+  label: string;
+  defaultDir: "asc" | "desc";
+  descTitle: string;
+  ascTitle: string;
+}
+
+const SORT_OPTIONS: SortOption[] = [
+  {
+    key: "academics",
+    label: "Academics",
+    defaultDir: "desc",
+    descTitle: "Best Academics",
+    ascTitle: "Worst Academics",
+  },
+  {
+    key: "professors",
+    label: "Professors",
+    defaultDir: "desc",
+    descTitle: "Best Professors",
+    ascTitle: "Worst Professors",
+  },
+  {
+    key: "value",
+    label: "Value",
+    defaultDir: "desc",
+    descTitle: "Best Value",
+    ascTitle: "Worst Value",
+  },
+  {
+    key: "roi",
+    label: "ROI",
+    defaultDir: "desc",
+    descTitle: "Best Payback",
+    ascTitle: "Worst Payback",
+  },
+  {
+    key: "medianEarnings6yr",
+    label: "Earnings",
+    defaultDir: "desc",
+    descTitle: "Highest Earnings",
+    ascTitle: "Lowest Earnings",
+  },
+  {
+    key: "tuitionInState",
+    label: "Tuition",
+    defaultDir: "asc",
+    descTitle: "Most Expensive",
+    ascTitle: "Most Affordable",
+  },
+  {
+    key: "acceptanceRate",
+    label: "Acceptance",
+    defaultDir: "desc",
+    descTitle: "Easiest to Get In",
+    ascTitle: "Hardest to Get In",
+  },
+  {
+    key: "safety",
+    label: "Safety",
+    defaultDir: "desc",
+    descTitle: "Safest Campuses",
+    ascTitle: "Least Safe Campuses",
+  },
+  {
+    key: "campusFood",
+    label: "Food",
+    defaultDir: "desc",
+    descTitle: "Best Campus Food",
+    ascTitle: "Worst Campus Food",
+  },
+  {
+    key: "dorms",
+    label: "Dorms",
+    defaultDir: "desc",
+    descTitle: "Best Dorms",
+    ascTitle: "Worst Dorms",
+  },
+  {
+    key: "studentLife",
+    label: "Social",
+    defaultDir: "desc",
+    descTitle: "Best Social Life",
+    ascTitle: "Worst Social Life",
+  },
+  {
+    key: "partyScene",
+    label: "Party",
+    defaultDir: "desc",
+    descTitle: "Best Party Scene",
+    ascTitle: "Worst Party Scene",
+  },
+  {
+    key: "athletics",
+    label: "Athletics",
+    defaultDir: "desc",
+    descTitle: "Best Athletics",
+    ascTitle: "Worst Athletics",
+  },
+  {
+    key: "diversity",
+    label: "Diversity",
+    defaultDir: "desc",
+    descTitle: "Most Diverse",
+    ascTitle: "Least Diverse",
+  },
 ];
 
 const PER_PAGE = 10;
@@ -49,9 +141,11 @@ export default function SchoolList({ schools }: SchoolListProps) {
   const [sortBy, setSortBy] = useState<SortField>(
     (searchParams.get("sort") as SortField) ?? "academics"
   );
-  const [sortDir, setSortDir] = useState<"asc" | "desc">(
-    (searchParams.get("dir") as "asc" | "desc") ?? "desc"
-  );
+  const [sortDir, setSortDir] = useState<"asc" | "desc">(() => {
+    if (searchParams.get("dir")) return searchParams.get("dir") as "asc" | "desc";
+    const defaultSort = (searchParams.get("sort") as SortField) ?? "academics";
+    return SORT_OPTIONS.find((o) => o.key === defaultSort)?.defaultDir ?? "desc";
+  });
   const [page, setPage] = useState(Number(searchParams.get("page")) || 1);
   const [isFiltering, setIsFiltering] = useState(false);
   const [showChart, setShowChart] = useState(false);
@@ -162,13 +256,20 @@ export default function SchoolList({ schools }: SchoolListProps) {
       if (sortBy === key) {
         setSortDir((d) => (d === "asc" ? "desc" : "asc"));
       } else {
+        const option = SORT_OPTIONS.find((o) => o.key === key);
         setSortBy(key);
-        setSortDir("desc");
+        setSortDir(option?.defaultDir ?? "desc");
       }
       setPage(1);
     },
     [sortBy]
   );
+
+  const sortTitle = useMemo(() => {
+    const option = SORT_OPTIONS.find((o) => o.key === sortBy);
+    if (!option) return null;
+    return sortDir === "desc" ? option.descTitle : option.ascTitle;
+  }, [sortBy, sortDir]);
 
   return (
     <div className="space-y-6">
@@ -240,10 +341,17 @@ export default function SchoolList({ schools }: SchoolListProps) {
         )}
       </div>
 
-      {/* Results count */}
-      <p className="text-sm text-subtext0" aria-live="polite" aria-atomic="true">
-        {isFiltering ? "Filtering..." : `${result.totalCount} schools found`}
-      </p>
+      {/* Sort title + results count */}
+      <div className="flex items-baseline justify-between gap-4">
+        {sortTitle && (
+          <h2 className="text-lg font-bold text-text" aria-live="polite">
+            {sortTitle}
+          </h2>
+        )}
+        <p className="text-sm text-subtext0 ml-auto" aria-live="polite" aria-atomic="true">
+          {isFiltering ? "Filtering..." : `${result.totalCount} schools`}
+        </p>
+      </div>
 
       {/* AI filter undo banner */}
       {previousFilters && (
@@ -294,7 +402,7 @@ export default function SchoolList({ schools }: SchoolListProps) {
       ) : (
         /* School cards */
         <div className="space-y-3">
-          {paginated.map((school) => (
+          {paginated.map((school, i) => (
             <Link
               key={school.slug}
               href={`/school/${school.slug}`}
@@ -304,7 +412,9 @@ export default function SchoolList({ schools }: SchoolListProps) {
                 <SchoolLogo website={school.website} name={school.name} size={48} />
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-2 mb-1">
-                    <span className="text-blue font-mono text-sm font-bold">#{school.ranking}</span>
+                    <span className="text-blue font-mono text-sm font-bold">
+                      #{(page - 1) * PER_PAGE + i + 1}
+                    </span>
                     <span className="font-semibold text-lg truncate">{school.name}</span>
                   </div>
                   <p className="text-subtext0 text-sm">
