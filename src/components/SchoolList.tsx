@@ -294,7 +294,7 @@ export default function SchoolList({ schools }: SchoolListProps) {
       ) : (
         /* School cards */
         <div className="space-y-3">
-          {paginated.map((school, i) => (
+          {paginated.map((school) => (
             <Link
               key={school.slug}
               href={`/school/${school.slug}`}
@@ -304,9 +304,7 @@ export default function SchoolList({ schools }: SchoolListProps) {
                 <SchoolLogo website={school.website} name={school.name} size={48} />
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-2 mb-1">
-                    <span className="text-blue font-mono text-sm font-bold">
-                      #{(page - 1) * PER_PAGE + i + 1}
-                    </span>
+                    <span className="text-blue font-mono text-sm font-bold">#{school.ranking}</span>
                     <span className="font-semibold text-lg truncate">{school.name}</span>
                   </div>
                   <p className="text-subtext0 text-sm">

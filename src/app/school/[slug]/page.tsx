@@ -54,9 +54,9 @@ export default async function SchoolPage({ params }: { params: Promise<{ slug: s
   if (!school) notFound();
 
   const totalCost = (school.tuitionInState + school.roomAndBoard) * 4;
-  const roi =
+  const paybackYears =
     school.medianEarnings6yr && totalCost > 0
-      ? (((school.medianEarnings6yr - totalCost) / totalCost) * 100).toFixed(0)
+      ? (totalCost / school.medianEarnings6yr).toFixed(1)
       : null;
 
   const stats = [
@@ -120,14 +120,13 @@ export default async function SchoolPage({ params }: { params: Promise<{ slug: s
         </div>
       </section>
 
-      {roi && (
+      {paybackYears && (
         <section className="p-6 bg-mantle rounded-lg border border-surface0">
           <div className="text-sm text-subtext0 mb-1">
-            ROI (Median First-Year Earnings vs 4-Year Cost of Attendance)
+            Payback Period (4-Year Cost of Attendance ÷ Median First-Year Earnings)
           </div>
-          <div className={`text-3xl font-bold ${Number(roi) > 0 ? "text-green" : "text-red"}`}>
-            {Number(roi) > 0 ? "+" : ""}
-            {roi}%
+          <div className="text-3xl font-bold text-text">
+            {paybackYears} <span className="text-lg font-normal text-subtext0">years</span>
           </div>
         </section>
       )}

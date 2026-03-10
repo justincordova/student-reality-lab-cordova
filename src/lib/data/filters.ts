@@ -58,11 +58,12 @@ const NICHE_GRADE_FIELDS = new Set([
   "safety",
 ]);
 
+// Returns payback period in years (lower = better). Negated so desc sort = best ROI first.
 function calculateROI(school: School): number {
   if (!school.medianEarnings6yr) return 0;
   const totalCost = (school.tuitionInState + school.roomAndBoard) * 4;
-  if (totalCost === 0) return 0;
-  return ((school.medianEarnings6yr - totalCost) / totalCost) * 100;
+  if (totalCost === 0 || school.medianEarnings6yr === 0) return 0;
+  return -(totalCost / school.medianEarnings6yr);
 }
 
 function getSortValue(school: School, field: SortField): number {
