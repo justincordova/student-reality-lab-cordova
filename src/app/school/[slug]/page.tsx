@@ -56,7 +56,7 @@ export default async function SchoolPage({ params }: { params: Promise<{ slug: s
   const totalCost = (school.tuitionInState + school.roomAndBoard) * 4;
   const roi =
     school.medianEarnings6yr && totalCost > 0
-      ? (((school.medianEarnings6yr * 6 - totalCost) / totalCost) * 100).toFixed(0)
+      ? (((school.medianEarnings6yr - totalCost) / totalCost) * 100).toFixed(0)
       : null;
 
   const stats = [
@@ -123,7 +123,7 @@ export default async function SchoolPage({ params }: { params: Promise<{ slug: s
       {roi && (
         <section className="p-6 bg-mantle rounded-lg border border-surface0">
           <div className="text-sm text-subtext0 mb-1">
-            6-Year ROI (Median Earnings over 6 Years vs Total Cost of Attendance)
+            ROI (Median First-Year Earnings vs 4-Year Cost of Attendance)
           </div>
           <div className={`text-3xl font-bold ${Number(roi) > 0 ? "text-green" : "text-red"}`}>
             {Number(roi) > 0 ? "+" : ""}

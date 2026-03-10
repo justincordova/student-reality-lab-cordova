@@ -62,7 +62,7 @@ function calculateROI(school: School): number {
   if (!school.medianEarnings6yr) return 0;
   const totalCost = (school.tuitionInState + school.roomAndBoard) * 4;
   if (totalCost === 0) return 0;
-  return ((school.medianEarnings6yr * 6 - totalCost) / totalCost) * 100;
+  return ((school.medianEarnings6yr - totalCost) / totalCost) * 100;
 }
 
 function getSortValue(school: School, field: SortField): number {
