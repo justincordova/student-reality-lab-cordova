@@ -26,7 +26,7 @@ function getClient(): OpenAI {
   return client;
 }
 
-const MODEL = "mistralai/Mistral-Small-24B-Instruct-2501";
+const MODEL = "mistralai/Mistral-7B-Instruct-v0.3";
 
 const MessageSchema = z.object({
   role: z.enum(["user", "assistant"]),
