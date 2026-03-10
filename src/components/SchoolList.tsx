@@ -141,14 +141,14 @@ export default function SchoolList({ schools }: SchoolListProps) {
     [schools, debouncedSearch, stateFilter, regionFilter, sortBy, sortDir, page]
   );
 
-  // Rank map: slug → stable rank (always desc, so #1 = best)
+  // Rank map: slug → stable rank (always asc, so #1 = lowest, #100 = highest/best)
   const rankMap = useMemo(() => {
     const all = filterSchools(schools, {
       search: debouncedSearch || undefined,
       state: stateFilter || undefined,
       region: regionFilter || undefined,
       sortBy,
-      sortDir: "desc",
+      sortDir: "asc",
     }) as School[];
     return new Map(all.map((s, i) => [s.slug, i + 1]));
   }, [schools, debouncedSearch, stateFilter, regionFilter, sortBy]);
