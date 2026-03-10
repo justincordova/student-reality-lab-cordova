@@ -149,7 +149,6 @@ export default function SchoolList({ schools }: SchoolListProps) {
       region: regionFilter || undefined,
       sortBy,
       sortDir: "desc",
-      paginate: false,
     }) as School[];
     return new Map(all.map((s, i) => [s.slug, i + 1]));
   }, [schools, debouncedSearch, stateFilter, regionFilter, sortBy]);
