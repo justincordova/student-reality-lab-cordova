@@ -10,11 +10,13 @@
 
 **Architecture:** Static school data loaded at build time from a curated JSON file (sourced from College Scorecard API + Niche.com grades). Server components load data, client components handle interactivity. Chat is a slide-out drawer (not a separate page) powered by Hugging Face Inference API. The AI can return structured filter commands that the frontend auto-applies. Catppuccin Mocha/Latte theme with toggle, Swiss International typography.
 
-**Performance:** School logos via Clearbit (free, no API key) with `next/image` optimization + initials fallback. Debounced search input (300ms). Chat history persisted to localStorage. Pages statically generated at build time. Charts lazy-loaded with `dynamic(() => import(...), { ssr: false })`.
+**Performance:** School logos via Clearbit Logo API (free, no API key, now owned by HubSpot — may require migration in future) with `next/image` optimization + initials fallback. Debounced search input (300ms). Chat history persisted to localStorage. Pages statically generated at build time. Charts lazy-loaded with `dynamic(() => import(...), { ssr: false })`.
 
 **Tech Stack:** Next.js 16 (App Router), React 19, Bun, TypeScript strict, Tailwind CSS v4, Zod v4, Vitest, Recharts, Hugging Face Inference API (OpenAI-compatible)
 
-**Note on Zod v4:** This project uses Zod v4 which uses the same import path as v3: `import { z } from "zod"`. All schema files must use this import path.
+**Note on Zod v4:** This project uses Zod v4 (`"zod": "^4.3.6"`). Import via `import { z } from "zod"`. All schema files must use this import path.
+
+**Architecture Note on Client vs Server Code:** The `filterSchools` utility and related pure functions (sorting, grade conversion) must live in a separate file (`src/lib/data/filters.ts`) that does NOT import `fs`/`path`. Only `loadSchools.ts` should import Node.js modules. Client components (`SchoolList.tsx`) import filtering logic from `filters.ts`, NOT from `loadSchools.ts`.
 
 **Data Sources:**
 
@@ -87,6 +89,7 @@ git commit -m "feat: rename project to CSPathFinder and add dependencies"
 Create `src/lib/env.ts`:
 
 ```typescript
+import "server-only";
 import { z } from "zod";
 
 const envSchema = z.object({
@@ -102,10 +105,10 @@ export type Env = z.infer<typeof envSchema>;
 
 **Step 2: Update next.config.ts to use env validation**
 
-Update `next.config.ts` to validate environment variables at build time:
+Update `next.config.ts` to validate environment variables at build time. Note: `@/` aliases don't work in `next.config.ts`, so use a relative import:
 
 ```typescript
-import { env } from "@/lib/env";
+import "./src/lib/env"; // Side-effect: validates env vars at build time
 
 const nextConfig = {
   images: {
@@ -209,12 +212,6 @@ Update `src/app/globals.css`:
   --ctp-on-primary: #ffffff;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 /* Catppuccin Mocha (dark) */
 [data-theme="mocha"] {
   --ctp-base: #1e1e2e;
@@ -268,16 +265,20 @@ export default function ThemeToggle() {
     const next = theme === 'latte' ? 'mocha' : 'latte';
     setTheme(next);
     document.documentElement.setAttribute('data-theme', next === 'mocha' ? 'mocha' : '');
-    localStorage.setItem('theme', next);
+    try { localStorage.setItem('theme', next); } catch {}
   };
 
   return (
     <button
       onClick={toggle}
-      className="px-3 py-1.5 rounded-lg bg-surface0 text-text hover:bg-surface1 transition-colors text-sm font-medium"
+      className="px-3 py-1.5 rounded-lg bg-surface0 text-text hover:bg-surface1 transition-colors text-sm font-medium flex items-center gap-1.5"
       aria-label={`Switch to ${theme === 'latte' ? 'dark' : 'light'} theme`}
     >
-      {theme === 'latte' ? 'Mocha' : 'Latte'}
+      {theme === 'latte' ? (
+        <><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg> Dark</>
+      ) : (
+        <><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg> Light</>
+      )}
     </button>
   );
 }
@@ -298,7 +299,7 @@ const geistMono = Geist_Mono({ subsets: ["latin"], variable: "--font-geist-mono"
 
 const themeScript = `
 (function() {
-  var t = localStorage.getItem('theme');
+  try { var t = localStorage.getItem('theme'); } catch(e) {}
   if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'mocha' : 'latte';
   if (t === 'mocha') document.documentElement.setAttribute('data-theme', 'mocha');
 })();
@@ -644,13 +645,21 @@ export const SchoolSchema = z.object({
   slug: z.string(),
   state: z.string().length(2),
   city: z.string(),
-  region: z.enum(["Northeast", "Southeast", "Midwest", "Southwest", "West"]),
+  region: z.enum([
+    "Northeast",
+    "Southeast",
+    "Midwest",
+    "Southwest",
+    "West",
+    "Mid-Atlantic",
+    "Pacific",
+  ]),
   ranking: z.number().int().min(1),
-  tuitionInState: z.number(),
-  tuitionOutOfState: z.number(),
-  roomAndBoard: z.number(),
+  tuitionInState: z.number().nonnegative(),
+  tuitionOutOfState: z.number().nonnegative(),
+  roomAndBoard: z.number().nonnegative(),
   acceptanceRate: z.number().min(0).max(1),
-  enrollment: z.number().int(),
+  enrollment: z.number().int().nonnegative(),
   graduationRate: z.number().min(0).max(1),
   medianEarnings6yr: z.number().nullable(),
   medianDebt: z.number().nullable(),
@@ -828,7 +837,16 @@ MIT, Stanford, CMU, UC Berkeley, UIUC, Caltech, Georgia Tech, Cornell, UW, Princ
 
 **Step 3: Validate seed data**
 
-Create a quick validation script or test that loads `data/schools.json` and runs every entry through `SchoolSchema.parse()` to ensure correctness.
+Create a quick validation script or test that loads `data/schools.json` and:
+
+1. Runs every entry through `SchoolSchema.parse()` to ensure correctness
+2. Verifies all slugs are unique (duplicate slugs would break routing):
+
+```typescript
+const slugs = schools.map((s) => s.slug);
+const dupes = slugs.filter((s, i) => slugs.indexOf(s) !== i);
+if (dupes.length > 0) throw new Error(`Duplicate slugs: ${dupes.join(", ")}`);
+```
 
 **Step 4: Commit**
 
@@ -839,12 +857,16 @@ git commit -m "feat: add seed data for top 100 CS programs with Niche grades"
 
 ---
 
-## Task 5: Data Loading Layer
+## Task 5: Data Loading and Filtering Layer
 
 **Files:**
 
-- Create: `src/lib/data/loadSchools.ts`
+- Create: `src/lib/data/filters.ts` (pure functions — safe for client AND server)
+- Create: `src/lib/data/loadSchools.ts` (server-only — uses `fs`)
 - Create: `src/tests/data/loadSchools.test.ts`
+- Create: `src/tests/data/filters.test.ts` (tests pure filter functions without Node.js deps)
+
+**IMPORTANT:** Filtering/sorting logic goes in `filters.ts` (no Node.js imports). `loadSchools.ts` only handles file I/O and re-exports from `filters.ts`. Client components import from `filters.ts` directly.
 
 **Step 1: Write the failing test**
 
@@ -916,25 +938,12 @@ describe("filterSchools", () => {
 Run: `bun run test src/tests/data/loadSchools.test.ts`
 Expected: FAIL
 
-**Step 3: Write implementation**
+**Step 3: Write implementation — filters.ts (client-safe)**
 
-Create `src/lib/data/loadSchools.ts`:
+Create `src/lib/data/filters.ts` — this file has NO Node.js imports and is safe for client components:
 
 ```typescript
-import fs from "fs";
-import path from "path";
-import { SchoolSchema, type School, type NicheGradeType, gradeToNumeric } from "@/lib/data/schema";
-
-let cached: School[] | null = null;
-
-export function loadSchools(): School[] {
-  if (cached) return cached;
-
-  const jsonPath = path.join(process.cwd(), "data", "schools.json");
-  const data = JSON.parse(fs.readFileSync(jsonPath, "utf-8"));
-  cached = data.map((item: unknown) => SchoolSchema.parse(item));
-  return cached;
-}
+import { type School, type NicheGradeType, gradeToNumeric } from "@/lib/data/schema";
 
 /** Sortable fields — includes both numeric school fields and Niche grade categories */
 export type SortField =
@@ -970,6 +979,7 @@ export interface FilterOptions {
   sortDir?: "asc" | "desc";
   page?: number;
   perPage?: number;
+  paginate?: boolean;
 }
 
 export interface FilterResult {
@@ -1013,15 +1023,12 @@ function getSortValue(school: School, field: SortField): number {
   return typeof val === "number" ? val : 0;
 }
 
-export function filterSchools(schools: School[], opts: FilterOptions): School[];
 export function filterSchools(
   schools: School[],
   opts: FilterOptions & { paginate: true }
 ): FilterResult;
-export function filterSchools(
-  schools: School[],
-  opts: FilterOptions & { paginate?: boolean }
-): School[] | FilterResult {
+export function filterSchools(schools: School[], opts: FilterOptions): School[];
+export function filterSchools(schools: School[], opts: FilterOptions): School[] | FilterResult {
   let result = [...schools];
 
   // Filter by state
@@ -1075,10 +1082,34 @@ export function filterSchools(
 
   return result;
 }
+```
+
+**Step 3b: Write implementation — loadSchools.ts (server-only)**
+
+Create `src/lib/data/loadSchools.ts` — this file uses Node.js `fs` and is server-only:
+
+```typescript
+import fs from "fs";
+import path from "path";
+import { SchoolSchema, type School } from "@/lib/data/schema";
+
+let cached: School[] | null = null;
+
+export function loadSchools(): School[] {
+  if (cached) return cached;
+
+  const jsonPath = path.join(process.cwd(), "data", "schools.json");
+  const data = JSON.parse(fs.readFileSync(jsonPath, "utf-8"));
+  cached = data.map((item: unknown) => SchoolSchema.parse(item));
+  return cached;
+}
 
 export function getSchoolBySlug(slug: string): School | undefined {
   return loadSchools().find((s) => s.slug === slug);
 }
+
+// Re-export everything from filters.ts for convenience in server components
+export * from "./filters";
 ```
 
 **Step 4: Run test to verify it passes**
@@ -1086,10 +1117,120 @@ export function getSchoolBySlug(slug: string): School | undefined {
 Run: `bun run test src/tests/data/loadSchools.test.ts`
 Expected: PASS
 
+**Step 4b: Write client-safe filters test**
+
+Create `src/tests/data/filters.test.ts` — this tests the pure functions without needing `fs`:
+
+```typescript
+import { describe, it, expect } from "vitest";
+import { filterSchools, type FilterResult } from "@/lib/data/filters";
+import type { School } from "@/lib/data/schema";
+
+const mockSchools: School[] = [
+  {
+    name: "Test University",
+    slug: "test-u",
+    state: "CA",
+    city: "LA",
+    region: "West",
+    ranking: 1,
+    tuitionInState: 50000,
+    tuitionOutOfState: 50000,
+    roomAndBoard: 15000,
+    acceptanceRate: 0.1,
+    enrollment: 10000,
+    graduationRate: 0.9,
+    medianEarnings6yr: 100000,
+    medianDebt: 10000,
+    website: "https://test.edu",
+    usnewsUrl: null,
+    nicheUrl: null,
+    nicheGrades: {
+      overall: "A+",
+      academics: "A+",
+      value: "A",
+      diversity: "A",
+      campus: "A",
+      athletics: "B",
+      partyScene: "C",
+      professors: "A+",
+      location: "A",
+      dorms: "B+",
+      campusFood: "A-",
+      studentLife: "A",
+      safety: "A+",
+    },
+  },
+  {
+    name: "Other College",
+    slug: "other",
+    state: "NY",
+    city: "NYC",
+    region: "Northeast",
+    ranking: 2,
+    tuitionInState: 30000,
+    tuitionOutOfState: 40000,
+    roomAndBoard: 12000,
+    acceptanceRate: 0.3,
+    enrollment: 5000,
+    graduationRate: 0.85,
+    medianEarnings6yr: 80000,
+    medianDebt: 15000,
+    website: "https://other.edu",
+    usnewsUrl: null,
+    nicheUrl: null,
+    nicheGrades: {
+      overall: "A",
+      academics: "A",
+      value: "A+",
+      diversity: "B+",
+      campus: "B",
+      athletics: "A",
+      partyScene: "A",
+      professors: "A",
+      location: "A+",
+      dorms: "A",
+      campusFood: "B",
+      studentLife: "A+",
+      safety: "A",
+    },
+  },
+];
+
+describe("filterSchools (pure)", () => {
+  it("should filter by state", () => {
+    const result = filterSchools(mockSchools, { state: "CA" });
+    expect(result).toHaveLength(1);
+    expect(result[0].slug).toBe("test-u");
+  });
+
+  it("should sort by Niche grade descending", () => {
+    const result = filterSchools(mockSchools, { sortBy: "partyScene", sortDir: "desc" });
+    expect(result[0].slug).toBe("other"); // A > C
+  });
+
+  it("should return FilterResult when paginate is true", () => {
+    const result = filterSchools(mockSchools, { paginate: true, perPage: 1 }) as FilterResult;
+    expect(result.totalCount).toBe(2);
+    expect(result.totalPages).toBe(2);
+    expect(result.schools).toHaveLength(1);
+  });
+
+  it("should search across name and city", () => {
+    const result = filterSchools(mockSchools, { search: "NYC" });
+    expect(result).toHaveLength(1);
+    expect(result[0].slug).toBe("other");
+  });
+});
+```
+
+Run: `bun run test src/tests/data/filters.test.ts`
+Expected: PASS
+
 **Step 5: Commit**
 
 ```bash
-git add src/lib/data/loadSchools.ts src/tests/data/loadSchools.test.ts
+git add src/lib/data/filters.ts src/lib/data/loadSchools.ts src/tests/data/loadSchools.test.ts src/tests/data/filters.test.ts
 git commit -m "feat: implement school data loading with filters, sorting, and pagination"
 ```
 
@@ -1284,6 +1425,8 @@ export default function Pagination({ currentPage, totalPages, onPageChange }: Pa
           <button
             key={p}
             onClick={() => onPageChange(p)}
+            aria-current={p === currentPage ? 'page' : undefined}
+            aria-label={`Page ${p}`}
             className={`px-3 py-2 rounded-lg text-sm transition-colors ${
               p === currentPage
                 ? 'bg-blue text-on-primary font-bold'
@@ -1412,65 +1555,68 @@ Create `src/components/SchoolList.tsx`:
 ```typescript
 'use client';
 
-import { useState, useMemo, useEffect } from 'react';
+import { useState, useMemo, useEffect, useCallback } from 'react';
+import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import type { School } from '@/lib/data/schema';
-import { gradeToNumeric } from '@/lib/data/schema';
 import { useDebounce } from '@/hooks/useDebounce';
 import GradeBadge from './GradeBadge';
 import Pagination from './Pagination';
 import SchoolLogo from './SchoolLogo';
-import { SchoolCardSkeleton } from './LoadingSkeleton';
+
+// Import filtering logic from client-safe filters.ts (NOT loadSchools.ts which uses Node.js fs)
+import { filterSchools, type SortField, type FilterOptions, type FilterResult } from '@/lib/data/filters';
 
 interface SchoolListProps {
   schools: School[];
 }
 
-type SortField =
-  | 'ranking' | 'tuitionInState' | 'tuitionOutOfState' | 'acceptanceRate'
-  | 'graduationRate' | 'medianEarnings6yr' | 'medianDebt' | 'enrollment' | 'roi'
-  | 'overall' | 'academics' | 'value' | 'diversity' | 'campus' | 'athletics'
-  | 'partyScene' | 'professors' | 'location' | 'dorms' | 'campusFood'
-  | 'studentLife' | 'safety';
-
-const NICHE_FIELDS = new Set([
-  'overall', 'academics', 'value', 'diversity', 'campus', 'athletics',
-  'partyScene', 'professors', 'location', 'dorms', 'campusFood', 'studentLife', 'safety',
-]);
-
-// Re-use utility functions from loadSchools.ts to avoid code duplication
-import { filterSchools, type FilterOptions, type FilterResult } from '@/lib/data/loadSchools';
-
-const SORT_OPTIONS: { key: SortField; label: string }[] = [
-  { key: 'ranking', label: 'Rank' },
-  { key: 'roi', label: 'ROI' },
-  { key: 'tuitionInState', label: 'In-State $' },
-  { key: 'tuitionOutOfState', label: 'Out-of-State $' },
-  { key: 'medianEarnings6yr', label: 'Earnings' },
-  { key: 'acceptanceRate', label: 'Acceptance' },
-  { key: 'graduationRate', label: 'Graduation' },
-  { key: 'campusFood', label: 'Food' },
-  { key: 'partyScene', label: 'Party' },
-  { key: 'studentLife', label: 'Social' },
-  { key: 'athletics', label: 'Athletics' },
-  { key: 'dorms', label: 'Dorms' },
-  { key: 'safety', label: 'Safety' },
-  { key: 'professors', label: 'Professors' },
-  { key: 'diversity', label: 'Diversity' },
-  { key: 'value', label: 'Value' },
-  { key: 'location', label: 'Location' },
+/** Sort options grouped by category to reduce visual clutter */
+const SORT_GROUPS: { label: string; options: { key: SortField; label: string }[] }[] = [
+  {
+    label: 'Financial',
+    options: [
+      { key: 'ranking', label: 'Rank' },
+      { key: 'roi', label: 'ROI' },
+      { key: 'tuitionInState', label: 'In-State $' },
+      { key: 'medianEarnings6yr', label: 'Earnings' },
+    ],
+  },
+  {
+    label: 'Campus Life',
+    options: [
+      { key: 'campusFood', label: 'Food' },
+      { key: 'partyScene', label: 'Party' },
+      { key: 'studentLife', label: 'Social' },
+      { key: 'athletics', label: 'Athletics' },
+      { key: 'dorms', label: 'Dorms' },
+      { key: 'safety', label: 'Safety' },
+    ],
+  },
+  {
+    label: 'Academics',
+    options: [
+      { key: 'professors', label: 'Professors' },
+      { key: 'academics', label: 'Academics' },
+      { key: 'acceptanceRate', label: 'Acceptance' },
+      { key: 'diversity', label: 'Diversity' },
+      { key: 'value', label: 'Value' },
+    ],
+  },
 ];
 
 const PER_PAGE = 10;
 
 export default function SchoolList({ schools }: SchoolListProps) {
-  const [search, setSearch] = useState('');
-  const [stateFilter, setStateFilter] = useState('');
-  const [regionFilter, setRegionFilter] = useState('');
-  const [sortBy, setSortBy] = useState<SortField>('ranking');
-  const [sortDir, setSortDir] = useState<'asc' | 'desc'>('asc');
-  const [page, setPage] = useState(1);
-  const [isInitialLoad, setIsInitialLoad] = useState(true);
+  const searchParams = useSearchParams();
+
+  // Initialize state from URL search params (enables shareable/bookmarkable URLs)
+  const [search, setSearch] = useState(searchParams.get('q') ?? '');
+  const [stateFilter, setStateFilter] = useState(searchParams.get('state') ?? '');
+  const [regionFilter, setRegionFilter] = useState(searchParams.get('region') ?? '');
+  const [sortBy, setSortBy] = useState<SortField>((searchParams.get('sort') as SortField) ?? 'ranking');
+  const [sortDir, setSortDir] = useState<'asc' | 'desc'>((searchParams.get('dir') as 'asc' | 'desc') ?? 'asc');
+  const [page, setPage] = useState(Number(searchParams.get('page')) || 1);
   const [isFiltering, setIsFiltering] = useState(false);
 
   const states = useMemo(() => {
@@ -1485,8 +1631,23 @@ export default function SchoolList({ schools }: SchoolListProps) {
 
   const debouncedSearch = useDebounce(search, 300);
 
-  // Use server-side filtering/sorting from loadSchools.ts
-  const filterOptions: FilterOptions = {
+  // Sync state to URL search params (shareable URLs)
+  // Uses window.history.replaceState to avoid React router re-renders
+  useEffect(() => {
+    const params = new URLSearchParams();
+    if (debouncedSearch) params.set('q', debouncedSearch);
+    if (stateFilter) params.set('state', stateFilter);
+    if (regionFilter) params.set('region', regionFilter);
+    if (sortBy !== 'ranking') params.set('sort', sortBy);
+    if (sortDir !== 'asc') params.set('dir', sortDir);
+    if (page > 1) params.set('page', String(page));
+
+    const paramString = params.toString();
+    const newUrl = paramString ? `/?${paramString}` : '/';
+    window.history.replaceState(null, '', newUrl);
+  }, [debouncedSearch, stateFilter, regionFilter, sortBy, sortDir, page]);
+
+  const result = useMemo(() => filterSchools(schools, {
     search: debouncedSearch || undefined,
     state: stateFilter || undefined,
     region: regionFilter || undefined,
@@ -1494,32 +1655,17 @@ export default function SchoolList({ schools }: SchoolListProps) {
     sortDir,
     page,
     perPage: PER_PAGE,
-  };
-
-  const result = useMemo(() => filterSchools(schools, { ...filterOptions, paginate: true }) as FilterResult,
+    paginate: true,
+  }) as FilterResult,
     [schools, debouncedSearch, stateFilter, regionFilter, sortBy, sortDir, page]);
 
   const paginated = result.schools;
   const totalPages = result.totalPages;
   const hasActiveFilters = !!(search || stateFilter || regionFilter);
 
-  // Show initial loading state
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      if (isInitialLoad) {
-        setIsInitialLoad(false);
-      }
-    }, 500);
-    return () => clearTimeout(timer);
-  }, [isInitialLoad]);
-
   // Show filtering state when debounced search is different from current search
   useEffect(() => {
-    if (debouncedSearch !== search) {
-      setIsFiltering(true);
-    } else {
-      setIsFiltering(false);
-    }
+    setIsFiltering(debouncedSearch !== search);
   }, [debouncedSearch, search]);
 
   // Reset to page 1 when filters change
@@ -1528,30 +1674,28 @@ export default function SchoolList({ schools }: SchoolListProps) {
     setPage(1);
   };
 
-  const clearAllFilters = () => {
+  const clearAllFilters = useCallback(() => {
     setSearch('');
     setStateFilter('');
     setRegionFilter('');
     setSortBy('ranking');
     setSortDir('asc');
     setPage(1);
-  };
+  }, []);
 
-  const toggleSort = (key: SortField) => {
-    if (sortBy === key) {
-      setSortDir((d) => (d === 'asc' ? 'desc' : 'asc'));
-    } else {
-      setSortBy(key);
+  const toggleSort = useCallback((key: SortField) => {
+    setSortBy((prev) => {
+      if (prev === key) {
+        setSortDir((d) => (d === 'asc' ? 'desc' : 'asc'));
+        return prev;
+      }
       // Default sort direction: ascending for ranking/tuition/acceptance (lower=better),
       // descending for everything else (higher=better)
       setSortDir(['ranking', 'tuitionInState', 'tuitionOutOfState', 'acceptanceRate', 'medianDebt'].includes(key) ? 'asc' : 'desc');
-    }
+      return key;
+    });
     setPage(1);
-  };
-
-  /** Called by the ChatDrawer to programmatically apply filters */
-  // This function is exposed via a ref or context — see Task 8
-  // applyFilters(filters: Partial<FilterOptions>) { ... }
+  }, []);
 
   return (
     <div className="space-y-6">
@@ -1589,10 +1733,10 @@ export default function SchoolList({ schools }: SchoolListProps) {
         </select>
       </div>
 
-      {/* Sort selector - dropdown for mobile, pills for desktop */}
-      <div className="flex flex-wrap gap-2 text-sm items-center justify-between">
-        <div className="flex flex-wrap gap-2 items-center">
-          <span className="text-subtext0 py-1 font-medium">Sort:</span>
+      {/* Sort selector - dropdown for mobile, grouped pills for desktop */}
+      <div className="text-sm space-y-2">
+        <div className="flex items-center justify-between">
+          <span className="text-subtext0 font-medium">Sort:</span>
           {/* Mobile dropdown */}
           <select
             value={sortBy}
@@ -1600,66 +1744,58 @@ export default function SchoolList({ schools }: SchoolListProps) {
             className="sm:hidden px-3 py-1.5 bg-mantle border border-surface0 rounded-lg text-text focus:outline-none focus:ring-2 focus:ring-blue"
             aria-label="Sort by"
           >
-            {SORT_OPTIONS.map(({ key, label }) => (
-              <option key={key} value={key}>{label}</option>
+            {SORT_GROUPS.map((group) => (
+              <optgroup key={group.label} label={group.label}>
+                {group.options.map(({ key, label }) => (
+                  <option key={key} value={key}>{label}</option>
+                ))}
+              </optgroup>
             ))}
           </select>
-          {/* Desktop pills */}
-          <div className="hidden sm:flex flex-wrap gap-2">
-            {SORT_OPTIONS.map(({ key, label }) => (
-              <button
-                key={key}
-                onClick={() => toggleSort(key)}
-                className={`px-3 py-1 rounded-full transition-colors ${
-                  sortBy === key ? 'bg-blue text-on-primary font-bold' : 'bg-surface0 text-text hover:bg-surface1'
-                }`}
-              >
-                {label} {sortBy === key && (sortDir === 'asc' ? '↑' : '↓')}
-              </button>
-            ))}
-          </div>
+          {hasActiveFilters && (
+            <button
+              onClick={clearAllFilters}
+              className="text-sm text-subtext0 hover:text-red transition-colors"
+            >
+              Clear all filters
+            </button>
+          )}
         </div>
-        {hasActiveFilters && (
-          <button
-            onClick={clearAllFilters}
-            className="text-sm text-subtext0 hover:text-red transition-colors"
-          >
-            Clear all filters
-          </button>
-        )}
+        {/* Desktop grouped pills */}
+        <div className="hidden sm:flex flex-wrap gap-x-4 gap-y-2">
+          {SORT_GROUPS.map((group) => (
+            <div key={group.label} className="flex items-center gap-1.5">
+              <span className="text-xs text-overlay0 mr-1">{group.label}:</span>
+              {group.options.map(({ key, label }) => (
+                <button
+                  key={key}
+                  onClick={() => toggleSort(key)}
+                  className={`px-2.5 py-0.5 rounded-full transition-colors text-xs ${
+                    sortBy === key ? 'bg-blue text-on-primary font-bold' : 'bg-surface0 text-text hover:bg-surface1'
+                  }`}
+                  aria-label={`Sort by ${label}, currently ${sortBy === key ? (sortDir === 'asc' ? 'ascending' : 'descending') : 'not selected'}`}
+                >
+                  {label} {sortBy === key && (sortDir === 'asc' ? '↑' : '↓')}
+                </button>
+              ))}
+            </div>
+          ))}
+        </div>
       </div>
 
       {/* Results count */}
-      <div className="flex items-center justify-between">
-        <p className="text-sm text-subtext0">
-          {isFiltering ? 'Filtering...' : `${result.totalCount} schools found`}
-        </p>
-        {hasActiveFilters && (
-          <button
-            onClick={clearAllFilters}
-            className="text-xs bg-surface0 px-3 py-1 rounded text-subtext0 hover:text-red transition-colors"
-          >
-            Clear all
-          </button>
-        )}
-      </div>
+      <p className="text-sm text-subtext0" aria-live="polite" aria-atomic="true">
+        {isFiltering ? 'Filtering...' : `${result.totalCount} schools found`}
+      </p>
 
-      {/* Initial loading state */}
-      {isInitialLoad ? (
-        <div className="space-y-3">
-          {[...Array(10)].map((_, i) => (
-            <SchoolCardSkeleton key={i} />
-          ))}
-        </div>
-      ) : paginated.length === 0 ? (
-        /* Empty state */
+      {/* School list or empty state */}
+      {paginated.length === 0 ? (
         <div className="text-center py-12">
-          <div className="text-6xl mb-4">🎓</div>
-          <h3 className="text-xl font-bold text-text mb-2">No schools found</h3>
+          <p className="text-xl font-bold text-text mb-2">No schools found</p>
           <p className="text-subtext0 mb-4">
             {hasActiveFilters
               ? 'Try adjusting your filters or search terms.'
-              : 'Try a different search or filter combination.'}
+              : 'No schools match the current criteria.'}
           </p>
           {hasActiveFilters && (
             <button
@@ -1681,13 +1817,18 @@ export default function SchoolList({ schools }: SchoolListProps) {
             >
               <div className="flex items-start gap-4">
                 <SchoolLogo website={school.website} name={school.name} size={48} />
-                <div className="flex-1 min-w-0 flex items-start justify-between gap-4">
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-2 mb-1">
                     <span className="text-blue font-mono text-sm font-bold">#{school.ranking}</span>
                     <span className="font-semibold text-lg truncate">{school.name}</span>
                   </div>
-                  <span className="text-subtext0 text-sm">{school.city}, {school.state} · {school.region}</span>
+                  <p className="text-subtext0 text-sm">{school.city}, {school.state} · {school.region}</p>
+                  {/* Mobile: compact stats inline */}
+                  <div className="sm:hidden flex gap-3 text-xs text-subtext0 mt-1">
+                    <span>${school.tuitionInState.toLocaleString()}</span>
+                    <span className="text-green">{school.medianEarnings6yr ? `$${school.medianEarnings6yr.toLocaleString()}` : '—'}</span>
+                    <span>{(school.acceptanceRate * 100).toFixed(0)}% accept</span>
+                  </div>
                   <div className="flex flex-wrap gap-3 mt-3">
                     <GradeBadge grade={school.nicheGrades.overall} label="Overall" />
                     <GradeBadge grade={school.nicheGrades.academics} label="Academics" />
@@ -1697,7 +1838,8 @@ export default function SchoolList({ schools }: SchoolListProps) {
                     <GradeBadge grade={school.nicheGrades.safety} label="Safety" />
                   </div>
                 </div>
-                <div className="text-right text-sm space-y-1 shrink-0">
+                {/* Desktop: stacked right-aligned stats */}
+                <div className="hidden sm:block text-right text-sm space-y-1 shrink-0">
                   <div>
                     <span className="text-subtext0">In-state: </span>
                     <span className="font-medium">${school.tuitionInState.toLocaleString()}</span>
@@ -1713,7 +1855,6 @@ export default function SchoolList({ schools }: SchoolListProps) {
                     <span className="font-medium">{(school.acceptanceRate * 100).toFixed(0)}%</span>
                   </div>
                 </div>
-                </div>
               </div>
             </Link>
           ))}
@@ -1721,8 +1862,11 @@ export default function SchoolList({ schools }: SchoolListProps) {
       )}
 
       {/* Pagination */}
-      {!isInitialLoad && paginated.length > 0 && (
-        <Pagination currentPage={page} totalPages={totalPages} onPageChange={setPage} />
+      {paginated.length > 0 && (
+        <Pagination currentPage={page} totalPages={totalPages} onPageChange={(p) => {
+          setPage(p);
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }} />
       )}
     </div>
   );
@@ -1734,21 +1878,36 @@ export default function SchoolList({ schools }: SchoolListProps) {
 Update `src/app/page.tsx`:
 
 ```typescript
+import { Suspense } from "react";
 import { loadSchools } from "@/lib/data/loadSchools";
 import SchoolList from "@/components/SchoolList";
+import { SchoolCardSkeleton } from "@/components/LoadingSkeleton";
+
+function SchoolListFallback() {
+  return (
+    <div className="space-y-3">
+      {[...Array(5)].map((_, i) => (
+        <SchoolCardSkeleton key={i} />
+      ))}
+    </div>
+  );
+}
 
 export default function HomePage() {
   const schools = loadSchools();
 
   return (
-    <div className="py-12">
+    <div id="main-content" className="py-12">
       <div className="mb-8">
         <h1 className="text-4xl font-bold mb-2">Top 100 CS Programs</h1>
         <p className="text-subtext0 text-lg">
           Compare Computer Science programs by ranking, ROI, campus life, dining, and more.
         </p>
       </div>
-      <SchoolList schools={schools} />
+      {/* Suspense required because SchoolList uses useSearchParams */}
+      <Suspense fallback={<SchoolListFallback />}>
+        <SchoolList schools={schools} />
+      </Suspense>
     </div>
   );
 }
@@ -1768,6 +1927,67 @@ git commit -m "feat: create home page with paginated school list, logos, and ric
 **Files:**
 
 - Create: `src/app/school/[slug]/page.tsx`
+- Create: `src/app/school/[slug]/loading.tsx`
+- Create: `src/app/school/[slug]/not-found.tsx`
+
+**Step 0: Create loading and not-found states**
+
+Create `src/app/school/[slug]/loading.tsx`:
+
+```typescript
+import LoadingSkeleton from '@/components/LoadingSkeleton';
+
+export default function SchoolLoading() {
+  return (
+    <div className="py-12 space-y-10">
+      <div>
+        <LoadingSkeleton className="w-32 h-4 rounded mb-4" />
+        <div className="flex items-center gap-4">
+          <LoadingSkeleton className="w-16 h-16 rounded-lg" />
+          <div className="space-y-2">
+            <LoadingSkeleton className="w-64 h-8 rounded" />
+            <LoadingSkeleton className="w-40 h-5 rounded" />
+          </div>
+        </div>
+      </div>
+      <div className="grid grid-cols-4 sm:grid-cols-7 gap-4">
+        {[...Array(13)].map((_, i) => (
+          <LoadingSkeleton key={i} className="w-full h-12 rounded" />
+        ))}
+      </div>
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+        {[...Array(6)].map((_, i) => (
+          <LoadingSkeleton key={i} className="h-20 rounded-lg" />
+        ))}
+      </div>
+    </div>
+  );
+}
+```
+
+Create `src/app/school/[slug]/not-found.tsx`:
+
+```typescript
+import Link from 'next/link';
+
+export default function SchoolNotFound() {
+  return (
+    <div id="main-content" className="py-12 text-center">
+      <p className="text-6xl font-bold text-overlay0 mb-4">404</p>
+      <p className="text-xl font-bold text-text mb-2">School not found</p>
+      <p className="text-subtext0 mb-6">
+        This school doesn't exist in our database.
+      </p>
+      <Link
+        href="/"
+        className="px-4 py-2 bg-blue text-on-primary rounded-lg hover:opacity-90 transition-opacity text-sm font-medium"
+      >
+        Back to Rankings
+      </Link>
+    </div>
+  );
+}
+```
 
 **Step 1: Create dynamic school detail page**
 
@@ -1780,7 +2000,7 @@ import { loadSchools, getSchoolBySlug } from "@/lib/data/loadSchools";
 import GradeBadge from "@/components/GradeBadge";
 import SchoolLogo from "@/components/SchoolLogo";
 import type { Metadata } from "next";
-import type { NicheGrades } from "@/lib/data/schema";
+import type { NicheGrades, NicheGradeType } from "@/lib/data/schema";
 
 export async function generateStaticParams() {
   return loadSchools().map((s) => ({ slug: s.slug }));
@@ -1849,7 +2069,7 @@ export default async function SchoolPage({
   ];
 
   return (
-    <div className="py-12 space-y-10">
+    <div id="main-content" className="py-12 space-y-10">
       {/* Header */}
       <div>
         <Link href="/" className="text-blue hover:underline text-sm mb-4 inline-block">
@@ -1890,7 +2110,7 @@ export default async function SchoolPage({
       {/* ROI highlight */}
       {roi && (
         <section className="p-6 bg-mantle rounded-lg border border-surface0">
-          <div className="text-sm text-subtext0 mb-1">10-Year ROI (Projected Earnings vs Total Cost of Attendance)</div>
+          <div className="text-sm text-subtext0 mb-1">6-Year ROI (Median Earnings over 6 Years vs Total Cost of Attendance)</div>
           <div className={`text-3xl font-bold ${Number(roi) > 0 ? "text-green" : "text-red"}`}>
             {Number(roi) > 0 ? "+" : ""}{roi}%
           </div>
@@ -1936,8 +2156,8 @@ export default async function SchoolPage({
 **Step 2: Commit**
 
 ```bash
-git add src/app/school/\[slug\]/page.tsx
-git commit -m "feat: create school detail page with Niche grades and stats"
+git add src/app/school/\[slug\]/page.tsx src/app/school/\[slug\]/loading.tsx src/app/school/\[slug\]/not-found.tsx
+git commit -m "feat: create school detail page with Niche grades, stats, loading and 404"
 ```
 
 ---
@@ -2044,7 +2264,10 @@ const ChatRequestSchema = z.object({
   messages: z.array(MessageSchema).min(1).max(20),
 });
 
+let cachedSystemPrompt: string | null = null;
+
 function buildSystemPrompt(): string {
+  if (cachedSystemPrompt) return cachedSystemPrompt;
   const schools = loadSchools();
   // Limit to top 30 schools to avoid token overflow (5000+ tokens for 100 schools)
   // For queries about other schools, the AI can still provide filter commands
@@ -2056,7 +2279,7 @@ function buildSystemPrompt(): string {
     )
     .join("\n");
 
-  return `You are CSPathFinder AI, an assistant that helps students find Computer Science programs at US colleges. You have data on ${schools.length} CS programs.
+  const prompt = `You are CSPathFinder AI, an assistant that helps students find Computer Science programs at US colleges. You have data on ${schools.length} CS programs.
 
 IMPORTANT: When the user asks a question that can be answered by sorting/filtering the school list, include a JSON filter block in your response like this:
 \`\`\`filter
@@ -2071,15 +2294,27 @@ Examples:
 - "Cheapest in California" → answer + \`\`\`filter\n{"sortBy": "tuitionInState", "sortDir": "asc", "state": "CA"}\n\`\`\`
 - "Best ROI in the Northeast" → answer + \`\`\`filter\n{"sortBy": "roi", "sortDir": "desc", "region": "Northeast"}\n\`\`\`
 
+NOTE: The data above shows the top 30 schools for brevity. The app has data on all ${schools.length} schools. If the user asks about a school ranked 31-100, use a filter command to help them find it (e.g. \`\`\`filter\n{"search": "school name"}\n\`\`\`) rather than guessing its stats.
+
 If the user asks about something we do NOT have data for (e.g. "most asian students", "best cafeteria dish", "dorm room sizes"), say you don't have that specific data and suggest they check Niche.com or College Scorecard for more details. Do NOT make up data.
 
 Be concise and helpful. Always answer the question first, then include the filter block if applicable.
 
 Here is the data:
 ${dataStr}`;
+
+  cachedSystemPrompt = prompt;
+  return prompt;
 }
 
 export async function POST(req: NextRequest) {
+  // CSRF protection: verify request originates from our own site
+  const origin = req.headers.get("origin");
+  const host = req.headers.get("host");
+  if (origin && host && !origin.includes(host)) {
+    return NextResponse.json({ error: "Forbidden" }, { status: 403 });
+  }
+
   const ip = req.headers.get("x-forwarded-for") ?? "anonymous";
   try {
     await rateLimiter.consume(ip);
@@ -2164,6 +2399,7 @@ Create `src/components/ChatDrawer.tsx`:
 'use client';
 
 import { useState, useRef, useEffect } from 'react';
+import { useRouter, usePathname } from 'next/navigation';
 import { useChatContext, type ChatFilters } from './ChatProvider';
 
 interface Message {
@@ -2212,12 +2448,30 @@ function saveChatHistory(messages: Message[]) {
 
 export default function ChatDrawer() {
   const { isOpen, close, applyFilters } = useChatContext();
+  const router = useRouter();
+  const pathname = usePathname();
+  // Track if drawer has ever been opened so we don't unmount during close animation
+  const [hasBeenOpened, setHasBeenOpened] = useState(false);
+  useEffect(() => { if (isOpen) setHasBeenOpened(true); }, [isOpen]);
+
+  // Prevent body scroll when drawer is open
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => { document.body.style.overflow = ''; };
+  }, [isOpen]);
   const [messages, setMessages] = useState<Message[]>(() => loadChatHistory());
   const [input, setInput] = useState('');
   const [loading, setLoading] = useState(false);
   const [typingDots, setTypingDots] = useState(0);
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const abortControllerRef = useRef<AbortController | null>(null);
+  // Ref to avoid stale closure in sendMessage (messages state may be stale in callbacks)
+  const messagesRef = useRef(messages);
+  messagesRef.current = messages;
 
   // Persist chat history to localStorage
   useEffect(() => {
@@ -2242,8 +2496,8 @@ export default function ChatDrawer() {
     return () => clearInterval(interval);
   }, [loading]);
 
-  const sendMessage = async () => {
-    const text = input.trim();
+  const sendMessage = async (overrideText?: string) => {
+    const text = (overrideText ?? input).trim();
     if (!text || loading) return;
 
     // Cancel any pending request
@@ -2252,7 +2506,7 @@ export default function ChatDrawer() {
     }
 
     const userMsg: Message = { role: 'user', content: text };
-    const newMessages = [...messages, userMsg];
+    const newMessages = [...messagesRef.current, userMsg];
     setMessages(newMessages);
     setInput('');
     setLoading(true);
@@ -2282,6 +2536,16 @@ export default function ChatDrawer() {
         // Auto-apply filters if AI returned them
         if (filters) {
           applyFilters(filters);
+          // If not on home page, navigate there so user can see the filtered list
+          if (pathname !== '/') {
+            const params = new URLSearchParams();
+            if (filters.sortBy) params.set('sort', filters.sortBy);
+            if (filters.sortDir) params.set('dir', filters.sortDir);
+            if (filters.state) params.set('state', filters.state);
+            if (filters.region) params.set('region', filters.region);
+            if (filters.search) params.set('q', filters.search);
+            router.push(`/?${params.toString()}`);
+          }
         }
       }
     } catch (err) {
@@ -2297,6 +2561,17 @@ export default function ChatDrawer() {
   };
 
   return (
+    <>
+      {/* Only render drawer DOM after first open (avoids heavy DOM when never used) */}
+      {!hasBeenOpened ? null : (<>
+      {/* Backdrop overlay */}
+      {isOpen && (
+        <div
+          className="fixed inset-0 bg-crust/50 z-40 sm:hidden"
+          onClick={close}
+          aria-hidden="true"
+        />
+      )}
     <div
       className={`fixed top-0 right-0 h-full w-[380px] sm:w-[420px] max-w-[95vw] sm:max-w-[90vw] bg-mantle border-l border-surface0 shadow-2xl z-50 flex flex-col transition-transform duration-300 ease-in-out ${
         isOpen ? 'translate-x-0' : 'translate-x-full'
@@ -2329,18 +2604,20 @@ export default function ChatDrawer() {
           <div className="text-center text-subtext0 py-8 space-y-3">
             <p className="font-bold">Ask me anything about CS programs</p>
             <div className="space-y-2 text-sm">
-              <p className="cursor-pointer hover:text-blue" onClick={() => setInput("What's the best CS school for food?")}>
-                "Best CS school for food?"
-              </p>
-              <p className="cursor-pointer hover:text-blue" onClick={() => setInput("Cheapest top 20 CS programs?")}>
-                "Cheapest top 20 CS programs?"
-              </p>
-              <p className="cursor-pointer hover:text-blue" onClick={() => setInput("Best ROI in the Northeast?")}>
-                "Best ROI in the Northeast?"
-              </p>
-              <p className="cursor-pointer hover:text-blue" onClick={() => setInput("Compare MIT and Stanford")}>
-                "Compare MIT and Stanford"
-              </p>
+              {[
+                "Best CS school for food?",
+                "Cheapest top 20 CS programs?",
+                "Best ROI in the Northeast?",
+                "Compare MIT and Stanford",
+              ].map((suggestion) => (
+                <button
+                  key={suggestion}
+                  className="block w-full text-left cursor-pointer hover:text-blue transition-colors px-3 py-1.5 rounded hover:bg-surface0"
+                  onClick={() => sendMessage(suggestion)}
+                >
+                  "{suggestion}"
+                </button>
+              ))}
             </div>
           </div>
         )}
@@ -2390,7 +2667,7 @@ export default function ChatDrawer() {
             disabled={loading}
           />
           <button
-            onClick={sendMessage}
+            onClick={() => sendMessage()}
             disabled={loading || !input.trim()}
             className="px-4 py-2 bg-blue text-on-primary rounded-lg hover:opacity-90 transition-opacity text-sm font-medium disabled:opacity-50"
           >
@@ -2399,6 +2676,8 @@ export default function ChatDrawer() {
         </div>
       </div>
     </div>
+    </>)}
+    </>
   );
 }
 ````
@@ -2411,17 +2690,20 @@ Update `src/app/layout.tsx` to wrap everything in `ChatProvider` and add the cha
 import ChatProvider from '@/components/ChatProvider';
 import ChatButton from '@/components/ChatButton';
 import ChatDrawer from '@/components/ChatDrawer';
+import ErrorBoundary from '@/components/ErrorBoundary';
 
 // ... in the body:
 <body className={cn(inter.variable, geistMono.variable, "bg-base text-text font-sans antialiased")}>
-  <ChatProvider>
-    <Navbar />
-    <main className="max-w-[960px] mx-auto px-8">
-      {children}
-    </main>
-    <ChatButton />
-    <ChatDrawer />
-  </ChatProvider>
+  <ErrorBoundary>
+    <ChatProvider>
+      <Navbar />
+      <main className="max-w-[960px] mx-auto px-8">
+        {children}
+      </main>
+      <ChatButton />
+      <ChatDrawer />
+    </ChatProvider>
+  </ErrorBoundary>
 </body>
 ```
 
@@ -2434,9 +2716,20 @@ import { useChatContext } from "./ChatProvider";
 
 // Inside the component:
 const { pendingFilters, clearPendingFilters } = useChatContext();
+const [previousFilters, setPreviousFilters] = useState<{
+  search: string;
+  stateFilter: string;
+  regionFilter: string;
+  sortBy: SortField;
+  sortDir: "asc" | "desc";
+  page: number;
+} | null>(null);
 
 useEffect(() => {
   if (!pendingFilters) return;
+
+  // Save current state for undo
+  setPreviousFilters({ search, stateFilter, regionFilter, sortBy, sortDir, page });
 
   if (pendingFilters.sortBy) setSortBy(pendingFilters.sortBy as SortField);
   if (pendingFilters.sortDir) setSortDir(pendingFilters.sortDir);
@@ -2447,6 +2740,34 @@ useEffect(() => {
   clearPendingFilters();
   // eslint-disable-next-line react-hooks/exhaustive-deps
 }, [pendingFilters, clearPendingFilters]);
+
+const undoChatFilters = useCallback(() => {
+  if (!previousFilters) return;
+  setSearch(previousFilters.search);
+  setStateFilter(previousFilters.stateFilter);
+  setRegionFilter(previousFilters.regionFilter);
+  setSortBy(previousFilters.sortBy);
+  setSortDir(previousFilters.sortDir);
+  setPage(previousFilters.page);
+  setPreviousFilters(null);
+}, [previousFilters]);
+```
+
+Also add an undo banner below the results count in the SchoolList JSX:
+
+```typescript
+{/* Undo banner for chat-applied filters */}
+{previousFilters && (
+  <div className="flex items-center gap-3 px-4 py-2 bg-blue/10 border border-blue/20 rounded-lg text-sm">
+    <span className="text-text">AI updated your filters.</span>
+    <button
+      onClick={undoChatFilters}
+      className="text-blue font-medium hover:underline"
+    >
+      Undo
+    </button>
+  </div>
+)}
 ```
 
 **Step 7: Create .env.example**
@@ -2474,35 +2795,7 @@ git commit -m "feat: add AI chat drawer with auto-filter integration"
 - Modify: `src/components/SchoolList.tsx`
 - Modify: `src/components/ChatDrawer.tsx`
 
-**Step 1: Add keyboard navigation to sort pills**
-
-Update the sort pills in `SchoolList.tsx` to handle Enter key:
-
-```typescript
-{/* Desktop pills */}
-<div className="hidden sm:flex flex-wrap gap-2">
-  {SORT_OPTIONS.map(({ key, label }) => (
-    <button
-      key={key}
-      onClick={() => toggleSort(key)}
-      onKeyDown={(e) => {
-        if (e.key === 'Enter' || e.key === ' ') {
-          e.preventDefault();
-          toggleSort(key);
-        }
-      }}
-      className={`px-3 py-1 rounded-full transition-colors ${
-        sortBy === key ? 'bg-blue text-on-primary font-bold' : 'bg-surface0 text-text hover:bg-surface1'
-      }`}
-      role="button"
-      tabIndex={0}
-      aria-label={`Sort by ${label}, currently ${sortBy === key ? (sortDir === 'asc' ? 'ascending' : 'descending') : 'not selected'}`}
-    >
-      {label} {sortBy === key && (sortDir === 'asc' ? '↑' : '↓')}
-    </button>
-  ))}
-</div>
-```
+**Step 1:** Sort pill keyboard navigation and `aria-label` already added inline in Task 6 grouped pills implementation. No additional changes needed.
 
 **Step 2: Add focus management to chat drawer**
 
@@ -2628,26 +2921,9 @@ useEffect(() => {
 }, [isOpen, close]);
 ```
 
-**Step 6: Add aria-live regions for dynamic content**
+**Step 6: aria-live regions already added inline**
 
-Update `SchoolList.tsx` results count:
-
-```typescript
-<div className="flex items-center justify-between">
-  <p className="text-sm text-subtext0" aria-live="polite" aria-atomic="true">
-    {isFiltering ? 'Filtering...' : `${result.totalCount} schools found`}
-  </p>
-  {hasActiveFilters && (
-    <button
-      onClick={clearAllFilters}
-      className="text-xs bg-surface0 px-3 py-1 rounded text-subtext0 hover:text-red transition-colors"
-      aria-label="Clear all filters"
-    >
-      Clear all
-    </button>
-  )}
-</div>
-```
+The results count in SchoolList.tsx already includes `aria-live="polite"` and `aria-atomic="true"` from the Task 6 implementation above.
 
 **Step 7: Commit**
 
@@ -2695,7 +2971,7 @@ export default function ROIChart({ schools }: ROIChartProps) {
     return (
       <div className="w-full h-[400px] flex items-center justify-center bg-mantle rounded-lg border border-surface0">
         <div className="text-center text-subtext0">
-          <div className="text-4xl mb-2">📊</div>
+          <p className="text-lg font-bold text-overlay0 mb-2">No Chart Data</p>
           <p className="text-sm">No data available for chart</p>
           <p className="text-xs mt-1">Try adjusting filters or adding more schools</p>
         </div>
@@ -2823,15 +3099,23 @@ Expected: Builds successfully
 
 Run: `bun run dev`
 
-- Visit `/` — Top 100 list, paginated, with filters and sort buttons
+- Visit `/` — Top 100 list, paginated, with grouped sort pills and filters
 - Click sort pills (Rank, ROI, Food, Party, etc.) — list re-sorts
 - Filter by state dropdown — list updates, pagination resets
 - Search "MIT" — filters to matching schools
-- Click a school → detail page with Niche grades grid and stats
+- Verify URL updates with filters (e.g. `/?sort=campusFood&dir=desc&state=CA`)
+- Copy filtered URL → paste in new tab → same filters applied
+- Click page 2 → viewport scrolls to top of list
+- Click a school → loading skeleton appears → detail page with Niche grades grid and stats
+- Visit `/school/nonexistent-slug` → custom 404 with "Back to Rankings" link
 - Click floating chat icon → drawer slides in from right
-- Ask "Best CS school for food?" → AI answers + list auto-sorts by food grade
-- Ask "Cheapest in California?" → AI answers + list filters to CA sorted by tuition
-- Toggle Mocha/Latte theme — everything looks correct in both themes
+- Ask "Best CS school for food?" → AI answers + undo banner appears + list auto-sorts
+- Click "Undo" on the banner → previous filters restored
+- Ask "Cheapest in California?" on a school detail page → navigates to home with filters
+- Press Escape → chat drawer closes
+- Tab through sort pills → keyboard focus visible, Enter activates
+- Toggle Dark/Light theme — everything looks correct in both themes
+- Test on mobile viewport: sort dropdown with optgroups, compact stats inline on cards, chat backdrop covers page
 
 ---
 
@@ -2944,3 +3228,49 @@ This plan has been reviewed and updated to fix critical and major issues:
 ✅ Proper error handling and cleanup
 ✅ Accessibility audit passed
 ✅ Loading skeletons for better perceived performance
+
+### Additional Fixes (Fifth Pass - Architecture & UX Polish)
+
+39. **Client/Server Boundary Fix (CRITICAL)** - Extracted `filterSchools`, `SortField`, `FilterOptions`, `FilterResult`, and sorting utilities into `src/lib/data/filters.ts` (no Node.js imports). `loadSchools.ts` now only handles file I/O. Client components import from `filters.ts`, NOT `loadSchools.ts` which uses `fs` and would crash in the browser.
+40. **`next.config.ts` Import Fix** - Changed `@/lib/env` to `./src/lib/env` since path aliases don't work in Next.js config files.
+41. **ROI Label Mismatch** - Fixed detail page label from "10-Year ROI" to "6-Year ROI" to match the actual formula.
+42. **Removed Redundant CSS Reset** - Deleted `* { margin: 0; padding: 0; box-sizing: border-box; }` since Tailwind's preflight already handles this.
+43. **Chat Suggestions Auto-Send** - Changed suggested prompts from `setInput()` (requires manual Send click) to `sendMessage(suggestion)` for immediate execution.
+44. **Chat Drawer Backdrop** - Added mobile backdrop overlay (`bg-crust/50`) when drawer is open, prevents accidental interaction with page behind.
+45. **Pagination aria-current** - Added `aria-current="page"` to active page button for screen readers.
+46. **School Card Layout Fix** - Removed broken double `flex-1 min-w-0` wrapper nesting; stats column now `hidden sm:block` for mobile.
+47. **Duplicate "Clear All" Button** - Removed redundant second "Clear all" in results count row (already exists in sort row).
+48. **System Prompt Caching** - Cached `buildSystemPrompt()` result to avoid rebuilding 30-school string on every API request.
+49. **Clearbit Deprecation Note** - Added note that Clearbit is now HubSpot-owned and may need migration.
+
+### Additional Fixes (Sixth Pass - UX & Security Hardening)
+
+50. **URL State Synchronization** - Filter/sort/page state now synced to URL search params via `useSearchParams` + `router.replace`. Users can share/bookmark filtered views (e.g. `/?sort=campusFood&dir=desc&state=CA`).
+51. **Sort Options Grouping** - Reorganized 17 sort pills into 3 labeled groups (Financial, Campus Life, Academics) with smaller pill size. Mobile dropdown uses `<optgroup>`. Dramatically reduces visual clutter.
+52. **System Prompt Gap for Schools 31-100** - Added note in system prompt that data exists for all 100 schools and the AI should use filter commands for schools not in the top 30, instead of hallucinating stats.
+53. **Mobile School Card Stats** - Changed from `hidden sm:block` (losing key info) to compact inline `$52K · $105K · 4%` format under the location on mobile.
+54. **CSRF Protection** - Added Origin/Host header check on `POST /api/chat` to prevent cross-site request forgery.
+55. **sendMessage Stale Closure Fix** - Added `messagesRef` to avoid reading stale `messages` state in async `sendMessage` callback (race condition when suggestions auto-send).
+56. **Removed Fake Loading State** - Removed artificial 500ms `isInitialLoad` skeleton (data is server-rendered, there's nothing to "load"). Skeletons are still used for chat messages.
+
+### Additional Fixes (Seventh Pass - Comprehensive Bug & UX Fix)
+
+**Runtime Bugs Fixed:** 57. **Missing `NicheGradeType` import in school detail** - Added missing import that would cause TypeScript compile error. 58. **`paginate` missing from `FilterOptions` interface** - Added `paginate?: boolean` field; simplified overload signatures. 59. **Unused imports** - Removed `SchoolCardSkeleton` import from SchoolList (no longer used after removing fake loading state) and dead `ALL_SORT_OPTIONS` constant. 60. **Missing `filters.ts` in git add** - Task 5 commit was missing the most important new file. 61. **Duplicate `getSchoolBySlug` export conflict** - Removed from `filters.ts` (only exists in `loadSchools.ts` now); `export * from "./filters"` in loadSchools would have caused a naming collision.
+
+**UX Fixes:** 62. **Chat filter undo** - Added undo banner ("AI updated your filters. Undo") with `previousFilters` state so users can revert AI-applied filters instead of silently losing their state. 63. **Chat filters on detail pages** - Chat now navigates to home page with filter params when user is on a school detail page, so they can see the filtered list. 64. **`window.history.replaceState` instead of `router.replace`** - Avoids unnecessary React router re-renders on every filter/sort/page change. 65. **Empty state cleanup** - Removed redundant "No results" + "No schools found" double text; fixed heading hierarchy. 66. **Pagination scrolls to top** - Added `window.scrollTo({ top: 0, behavior: 'smooth' })` on page change. 67. **Theme toggle labels** - Changed "Mocha"/"Latte" (meaningless to non-Catppuccin users) to sun/moon icons with "Dark"/"Light" text. 68. **Acceptance rate moved to Academics group** - Was incorrectly under "Financial".
+
+**Architecture Fixes:** 69. **ErrorBoundary wired into layout** - Was created and tested in Task 1.5 but never used; now wraps the entire app in layout.tsx. 70. **`Suspense` boundary for `useSearchParams`** - SchoolList uses `useSearchParams()` which requires Suspense in Next.js App Router; added wrapper with skeleton fallback on home page. 71. **Chat drawer lazy rendering** - Drawer DOM only renders after first open (`hasBeenOpened` flag), avoiding heavy unused DOM on initial page load. 72. **`server-only` guard on `env.ts`** - Added `import "server-only"` to prevent accidental client-side imports of environment validation.
+
+**Data Robustness:** 73. **Non-negative tuition validation** - Added `.nonnegative()` to `tuitionInState`, `tuitionOutOfState`, `roomAndBoard` in schema. 74. **Slug uniqueness validation** - Added duplicate slug check in seed data validation step. 75. **Expanded region enum** - Added "Mid-Atlantic" and "Pacific" to cover schools that don't fit the original 5 regions.
+
+**Missing Files Added:** 76. **`loading.tsx` for school detail** - Skeleton loading state during navigation from list to detail page. 77. **`not-found.tsx` for school detail** - Custom 404 with "Back to Rankings" link when slug doesn't match. 78. **`filters.test.ts`** - Dedicated test file for pure filter functions using mock data (no Node.js `fs` dependency). 79. **`id="main-content"` on detail page** - Skip link target was missing from school detail page. 80. **Expanded manual verification checklist** - Added tests for URL state sync, undo banner, mobile viewport, Escape key, keyboard navigation, detail page 404.
+
+### Additional Fixes (Eighth Pass)
+
+81. **Send button `onClick` runtime error (BUG)** - `onClick={sendMessage}` passed MouseEvent as `overrideText`, causing `.trim()` to fail. Fixed to `onClick={() => sendMessage()}`.
+82. **ROIChart emoji removed** - Replaced 📊 emoji in empty state with styled text heading per project conventions.
+83. **Enrollment `.nonnegative()`** - Added missing non-negative validation to enrollment field in schema.
+84. **Body scroll lock when chat open** - Added `overflow: hidden` on body when drawer is open, preventing background scroll on mobile.
+85. **SPA navigation from chat** - Replaced `window.location.href` (full reload) with `router.push()` from `next/navigation` for smooth client-side transition when chat applies filters from a detail page.
+86. **ThemeToggle localStorage crash** - Wrapped `localStorage.setItem` in try-catch to prevent crash in private browsing or when storage quota is full.
+87. **Theme script localStorage crash** - Wrapped inline `themeScript`'s `localStorage.getItem` in try-catch for same reason (blocks page render if it throws).
