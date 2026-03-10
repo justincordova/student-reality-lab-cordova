@@ -51,7 +51,7 @@ export default function SchoolList({ schools }: SchoolListProps) {
     (searchParams.get("sort") as SortField) ?? "ranking"
   );
   const [sortDir, setSortDir] = useState<"asc" | "desc">(
-    (searchParams.get("dir") as "asc" | "desc") ?? "asc"
+    (searchParams.get("dir") as "asc" | "desc") ?? "desc"
   );
   const [page, setPage] = useState(Number(searchParams.get("page")) || 1);
   const [isFiltering, setIsFiltering] = useState(false);
@@ -164,15 +164,7 @@ export default function SchoolList({ schools }: SchoolListProps) {
         setSortDir((d) => (d === "asc" ? "desc" : "asc"));
         return prev;
       }
-      // Default sort direction: ascending for ranking/tuition/acceptance (lower=better),
-      // descending for everything else (higher=better)
-      setSortDir(
-        ["ranking", "tuitionInState", "tuitionOutOfState", "acceptanceRate", "medianDebt"].includes(
-          key
-        )
-          ? "asc"
-          : "desc"
-      );
+      setSortDir("desc");
       return key;
     });
     setPage(1);
