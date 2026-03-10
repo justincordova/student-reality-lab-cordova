@@ -3,12 +3,15 @@
 import { useState, useMemo, useEffect, useCallback } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
+import dynamic from "next/dynamic";
 import type { School } from "@/lib/data/schema";
 import { useDebounce } from "@/hooks/useDebounce";
 import GradeBadge from "./GradeBadge";
 import Pagination from "./Pagination";
 import SchoolLogo from "./SchoolLogo";
 import { useChatContext } from "./ChatProvider";
+
+const ROIChart = dynamic(() => import("./ROIChart"), { ssr: false });
 
 // Import filtering logic from client-safe filters.ts (NOT loadSchools.ts which uses Node.js fs)
 import { filterSchools, type SortField, type FilterResult } from "@/lib/data/filters";
@@ -68,6 +71,7 @@ export default function SchoolList({ schools }: SchoolListProps) {
   );
   const [page, setPage] = useState(Number(searchParams.get("page")) || 1);
   const [isFiltering, setIsFiltering] = useState(false);
+  const [showChart, setShowChart] = useState(false);
 
   const { pendingFilters, clearPendingFilters } = useChatContext();
   const [previousFilters, setPreviousFilters] = useState<{
@@ -296,6 +300,24 @@ export default function SchoolList({ schools }: SchoolListProps) {
           <button onClick={undoChatFilters} className="text-blue font-medium hover:underline">
             Undo
           </button>
+        </div>
+      )}
+
+      {/* Chart toggle */}
+      <div className="flex items-center justify-between">
+        <button
+          onClick={() => setShowChart((v) => !v)}
+          className="text-sm px-3 py-1.5 rounded-lg bg-surface0 text-text hover:bg-surface1 transition-colors"
+        >
+          {showChart ? "Hide Chart" : "Show ROI Chart"}
+        </button>
+      </div>
+      {showChart && (
+        <div className="bg-mantle rounded-lg border border-surface0 p-4">
+          <h2 className="text-sm font-bold text-subtext0 mb-4">
+            Tuition vs Median Earnings (current page)
+          </h2>
+          <ROIChart schools={paginated} />
         </div>
       )}
 
