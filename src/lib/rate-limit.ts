@@ -54,7 +54,8 @@ export async function checkRateLimit(
     await limiter.consume(ip);
     return null;
   } catch (error) {
-    const res = error as RateLimiterRes;
+    if (!(error instanceof RateLimiterRes)) throw error;
+    const res = error;
     const retryAfter = Math.ceil(res.msBeforeNext / 1000);
     return NextResponse.json(
       { error: "Too many requests" },

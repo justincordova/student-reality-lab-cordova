@@ -10,7 +10,7 @@ export interface ChatFilters {
   search?: string;
 }
 
-interface ChatContextType {
+export interface ChatContextType {
   isOpen: boolean;
   open: () => void;
   close: () => void;

@@ -2,7 +2,18 @@
 
 import { useState, useRef, useEffect } from "react";
 import { useRouter, usePathname } from "next/navigation";
+import { z } from "zod/v4";
 import { useChatContext, type ChatFilters } from "./ChatProvider";
+
+const ChatFiltersSchema = z.object({
+  sortBy: z.string().optional(),
+  sortDir: z.enum(["asc", "desc"]).optional(),
+  state: z.string().optional(),
+  region: z.string().optional(),
+  search: z.string().optional(),
+});
+
+const FILTER_REGEX = /```filter\n([\s\S]*?)\n```/;
 
 interface Message {
   role: "user" | "assistant";
@@ -11,14 +22,14 @@ interface Message {
 }
 
 function parseFilterBlock(text: string): { cleanText: string; filters: ChatFilters | null } {
-  const filterRegex = /```filter\n([\s\S]*?)\n```/;
-  const match = text.match(filterRegex);
+  const match = text.match(FILTER_REGEX);
   if (!match) return { cleanText: text, filters: null };
 
   try {
-    const filters = JSON.parse(match[1]) as ChatFilters;
-    const cleanText = text.replace(filterRegex, "").trim();
-    return { cleanText, filters };
+    const parsed = ChatFiltersSchema.safeParse(JSON.parse(match[1]));
+    if (!parsed.success) return { cleanText: text, filters: null };
+    const cleanText = text.replace(FILTER_REGEX, "").trim();
+    return { cleanText, filters: parsed.data };
   } catch {
     return { cleanText: text, filters: null };
   }
@@ -280,7 +291,10 @@ export default function ChatDrawer() {
                   >
                     <p className="whitespace-pre-wrap">{msg.content}</p>
                     {msg.filters && (
-                      <div className="mt-2 text-xs bg-crust/50 rounded px-2 py-1 text-subtext0">
+                      <div
+                        className="mt-2 text-xs bg-crust/50 rounded px-2 py-1 text-subtext0"
+                        aria-live="polite"
+                      >
                         Filters applied to list ✓
                       </div>
                     )}

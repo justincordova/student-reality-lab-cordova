@@ -14,10 +14,17 @@ import { env } from "@/lib/env";
 
 const log = childLogger("chat");
 
-const client = new OpenAI({
-  baseURL: "https://router.huggingface.co/v1",
-  apiKey: env.HF_TOKEN ?? "",
-});
+let client: OpenAI | null = null;
+
+function getClient(): OpenAI {
+  if (!client) {
+    client = new OpenAI({
+      baseURL: "https://router.huggingface.co/v1",
+      apiKey: env.HF_TOKEN!,
+    });
+  }
+  return client;
+}
 
 const MODEL = "mistralai/Mistral-Small-24B-Instruct-2501";
 
@@ -35,6 +42,7 @@ let cachedSystemPrompt: string | null = null;
 function buildSystemPrompt(): string {
   if (cachedSystemPrompt) return cachedSystemPrompt;
   const schools = loadSchools();
+  const totalCount = schools.length;
   const schoolsForPrompt = schools.slice(0, 30);
   const dataStr = schoolsForPrompt
     .map(
@@ -43,7 +51,7 @@ function buildSystemPrompt(): string {
     )
     .join("\n");
 
-  const prompt = `You are CSPathFinder AI, an assistant that helps students find Computer Science programs at US colleges. You have data on ${schools.length} CS programs.
+  const prompt = `You are CSPathFinder AI, an assistant that helps students find Computer Science programs at US colleges. You have data on ${totalCount} CS programs.
 
 IMPORTANT: When the user asks a question that can be answered by sorting/filtering the school list, include a JSON filter block in your response like this:
 \`\`\`filter
@@ -58,7 +66,7 @@ Examples:
 - "Cheapest in California" → answer + \`\`\`filter\n{"sortBy": "tuitionInState", "sortDir": "asc", "state": "CA"}\n\`\`\`
 - "Best ROI in the Northeast" → answer + \`\`\`filter\n{"sortBy": "roi", "sortDir": "desc", "region": "Northeast"}\n\`\`\`
 
-NOTE: The data above shows the top 30 schools for brevity. The app has data on all ${schools.length} schools. If the user asks about a school ranked 31-100, use a filter command to help them find it (e.g. \`\`\`filter\n{"search": "school name"}\n\`\`\`) rather than guessing its stats.
+NOTE: The data above shows the top 30 schools for brevity. The app has data on all ${totalCount} schools. If the user asks about a school ranked 31-100, use a filter command to help them find it (e.g. \`\`\`filter\n{"search": "school name"}\n\`\`\`) rather than guessing its stats.
 
 If the user asks about something we do NOT have data for, say you don't have that specific data and suggest they check Niche.com or College Scorecard. Do NOT make up data.
 
@@ -73,10 +81,32 @@ ${dataStr}`;
 
 export async function POST(req: NextRequest) {
   return withHttpLogging(req, async () => {
+    if (!env.HF_TOKEN) {
+      throw new ApiError(503, "Chat service not configured");
+    }
+
     const origin = req.headers.get("origin");
     const host = req.headers.get("host");
-    if (origin && host && !origin.includes(host)) {
-      throw new ApiError(403, "Forbidden");
+    if (origin && host) {
+      try {
+        const originHost = new URL(origin).host;
+        if (originHost !== host) {
+          throw new ApiError(403, "Forbidden");
+        }
+      } catch (err) {
+        if (err instanceof ApiError) throw err;
+        throw new ApiError(403, "Forbidden");
+      }
+    }
+
+    const contentLength = Number(req.headers.get("content-length") ?? 0);
+    if (contentLength > 10000) {
+      throw new ApiError(413, "Request body too large");
+    }
+
+    const contentType = req.headers.get("content-type");
+    if (!contentType?.includes("application/json")) {
+      throw new ApiError(415, "Content-Type must be application/json");
     }
 
     const rateLimitResponse = await checkRateLimit(req, {
@@ -86,11 +116,13 @@ export async function POST(req: NextRequest) {
     });
     if (rateLimitResponse) return rateLimitResponse;
 
-    if (!env.HF_TOKEN) {
-      throw new ApiError(503, "Chat service not configured");
+    let body: unknown;
+    try {
+      body = await req.json();
+    } catch {
+      throw new ApiError(400, "Invalid JSON body");
     }
 
-    const body = await req.json();
     const parsed = ChatRequestSchema.safeParse(body);
     if (!parsed.success) {
       throw new ApiError(400, "Invalid request format");
@@ -101,7 +133,7 @@ export async function POST(req: NextRequest) {
     log.debug("Sending chat request", { messageCount: messages.length, model: MODEL });
 
     try {
-      const completion = await client.chat.completions.create({
+      const completion = await getClient().chat.completions.create({
         model: MODEL,
         messages: [{ role: "system", content: systemPrompt }, ...messages],
         max_tokens: 1024,

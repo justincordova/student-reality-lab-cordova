@@ -64,6 +64,15 @@ export const SchoolSchema = z.object({
 });
 export type School = z.infer<typeof SchoolSchema>;
 
+export const ChatFiltersSchema = z.object({
+  sortBy: z.string().optional(),
+  sortDir: z.enum(["asc", "desc"]).optional(),
+  state: z.string().optional(),
+  region: z.string().optional(),
+  search: z.string().optional(),
+});
+export type ChatFilters = z.infer<typeof ChatFiltersSchema>;
+
 /** Convert a Niche letter grade to a numeric value for sorting (A+=13, F=1) */
 export function gradeToNumeric(grade: NicheGradeType): number {
   const map: Record<string, number> = {

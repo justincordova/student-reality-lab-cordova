@@ -10,7 +10,7 @@ interface GradeBadgeProps {
 function gradeColor(grade: NicheGradeType): string {
   if (grade.startsWith("A")) return "bg-green/20 text-green";
   if (grade.startsWith("B")) return "bg-blue/20 text-blue";
-  if (grade.startsWith("C")) return "bg-yellow/20 text-yellow";
+  if (grade.startsWith("C")) return "bg-peach/20 text-peach";
   if (grade.startsWith("D")) return "bg-peach/20 text-peach";
   return "bg-red/20 text-red";
 }

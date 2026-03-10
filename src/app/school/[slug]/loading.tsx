@@ -2,7 +2,7 @@ import LoadingSkeleton from "@/components/LoadingSkeleton";
 
 export default function SchoolLoading() {
   return (
-    <div className="py-12 space-y-10">
+    <div role="status" aria-live="polite" className="py-12 space-y-10">
       <div>
         <LoadingSkeleton className="w-32 h-4 rounded mb-4" />
         <div className="flex items-center gap-4">
