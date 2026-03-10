@@ -316,7 +316,7 @@ export default function SchoolList({ schools }: SchoolListProps) {
       ) : (
         /* School cards */
         <div className="space-y-3">
-          {paginated.map((school, i) => (
+          {paginated.map((school) => (
             <Link
               key={school.slug}
               href={`/school/${school.slug}`}
