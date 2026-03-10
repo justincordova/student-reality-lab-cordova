@@ -21,7 +21,6 @@ interface SchoolListProps {
 }
 
 const SORT_OPTIONS: { key: SortField; label: string }[] = [
-  { key: "academics", label: "Academics" },
   { key: "acceptanceRate", label: "Acceptance" },
   { key: "athletics", label: "Athletics" },
   { key: "diversity", label: "Diversity" },
