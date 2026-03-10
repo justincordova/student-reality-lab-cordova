@@ -20,38 +20,22 @@ interface SchoolListProps {
   schools: School[];
 }
 
-/** Sort options grouped by category to reduce visual clutter */
-const SORT_GROUPS: { label: string; options: { key: SortField; label: string }[] }[] = [
-  {
-    label: "Financial",
-    options: [
-      { key: "ranking", label: "Rank" },
-      { key: "roi", label: "ROI" },
-      { key: "tuitionInState", label: "In-State $" },
-      { key: "medianEarnings6yr", label: "Earnings" },
-    ],
-  },
-  {
-    label: "Campus Life",
-    options: [
-      { key: "campusFood", label: "Food" },
-      { key: "partyScene", label: "Party" },
-      { key: "studentLife", label: "Social" },
-      { key: "athletics", label: "Athletics" },
-      { key: "dorms", label: "Dorms" },
-      { key: "safety", label: "Safety" },
-    ],
-  },
-  {
-    label: "Academics",
-    options: [
-      { key: "professors", label: "Professors" },
-      { key: "academics", label: "Academics" },
-      { key: "acceptanceRate", label: "Acceptance" },
-      { key: "diversity", label: "Diversity" },
-      { key: "value", label: "Value" },
-    ],
-  },
+const SORT_OPTIONS: { key: SortField; label: string }[] = [
+  { key: "academics", label: "Academics" },
+  { key: "acceptanceRate", label: "Acceptance" },
+  { key: "athletics", label: "Athletics" },
+  { key: "diversity", label: "Diversity" },
+  { key: "dorms", label: "Dorms" },
+  { key: "medianEarnings6yr", label: "Earnings" },
+  { key: "campusFood", label: "Food" },
+  { key: "partyScene", label: "Party" },
+  { key: "professors", label: "Professors" },
+  { key: "ranking", label: "Rank" },
+  { key: "roi", label: "ROI" },
+  { key: "safety", label: "Safety" },
+  { key: "studentLife", label: "Social" },
+  { key: "tuitionInState", label: "Tuition" },
+  { key: "value", label: "Value" },
 ];
 
 const PER_PAGE = 10;
@@ -234,58 +218,34 @@ export default function SchoolList({ schools }: SchoolListProps) {
         </select>
       </div>
 
-      {/* Sort selector - dropdown for mobile, grouped pills for desktop */}
-      <div className="text-sm space-y-2">
-        <div className="flex items-center justify-between">
-          <span className="text-subtext0 font-medium">Sort:</span>
-          {/* Mobile dropdown */}
-          <select
-            value={sortBy}
-            onChange={(e) => toggleSort(e.target.value as SortField)}
-            className="sm:hidden px-3 py-1.5 bg-mantle border border-surface0 rounded-lg text-text focus:outline-none focus:ring-2 focus:ring-blue"
-            aria-label="Sort by"
-          >
-            {SORT_GROUPS.map((group) => (
-              <optgroup key={group.label} label={group.label}>
-                {group.options.map(({ key, label }) => (
-                  <option key={key} value={key}>
-                    {label}
-                  </option>
-                ))}
-              </optgroup>
-            ))}
-          </select>
-          {hasActiveFilters && (
+      {/* Sort pills */}
+      <div className="flex items-start gap-2 flex-wrap text-sm">
+        <span className="text-subtext0 font-medium py-0.5 shrink-0">Sort:</span>
+        <div className="flex flex-wrap gap-1.5">
+          {SORT_OPTIONS.map(({ key, label }) => (
             <button
-              onClick={clearAllFilters}
-              className="text-sm text-subtext0 hover:text-red transition-colors"
+              key={key}
+              onClick={() => toggleSort(key)}
+              className={`px-2.5 py-0.5 rounded-full transition-colors text-xs ${
+                sortBy === key
+                  ? "bg-blue text-base font-bold"
+                  : "bg-surface0 text-text hover:bg-surface1"
+              }`}
+              aria-label={`Sort by ${label}${sortBy === key ? `, currently ${sortDir === "asc" ? "ascending" : "descending"}, click to reverse` : ""}`}
             >
-              Clear all filters
+              {label}
+              {sortBy === key && (sortDir === "asc" ? " ↑" : " ↓")}
             </button>
-          )}
-        </div>
-        {/* Desktop grouped pills */}
-        <div className="hidden sm:flex flex-wrap gap-x-4 gap-y-2">
-          {SORT_GROUPS.map((group) => (
-            <div key={group.label} className="flex items-center gap-1.5">
-              <span className="text-xs text-overlay0 mr-1">{group.label}:</span>
-              {group.options.map(({ key, label }) => (
-                <button
-                  key={key}
-                  onClick={() => toggleSort(key)}
-                  className={`px-2.5 py-0.5 rounded-full transition-colors text-xs ${
-                    sortBy === key
-                      ? "bg-blue text-on-primary font-bold"
-                      : "bg-surface0 text-text hover:bg-surface1"
-                  }`}
-                  aria-label={`Sort by ${label}, currently ${sortBy === key ? (sortDir === "asc" ? "ascending" : "descending") : "not selected"}`}
-                >
-                  {label} {sortBy === key && (sortDir === "asc" ? "↑" : "↓")}
-                </button>
-              ))}
-            </div>
           ))}
         </div>
+        {hasActiveFilters && (
+          <button
+            onClick={clearAllFilters}
+            className="ml-auto text-sm text-subtext0 hover:text-red transition-colors"
+          >
+            Clear filters
+          </button>
+        )}
       </div>
 
       {/* Results count */}
