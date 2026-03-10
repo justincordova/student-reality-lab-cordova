@@ -135,9 +135,7 @@ export default function ChatDrawer() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          messages: newMessages
-            .slice(-MAX_CHAT_HISTORY)
-            .map((m) => ({ role: m.role, content: m.content })),
+          messages: newMessages.slice(-20).map((m) => ({ role: m.role, content: m.content })),
         }),
         signal: abortController.signal,
       });
