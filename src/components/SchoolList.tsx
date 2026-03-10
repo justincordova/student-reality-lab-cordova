@@ -21,20 +21,20 @@ interface SchoolListProps {
 }
 
 const SORT_OPTIONS: { key: SortField; label: string }[] = [
+  { key: "academics", label: "Academics" },
+  { key: "professors", label: "Professors" },
+  { key: "value", label: "Value" },
+  { key: "roi", label: "ROI" },
+  { key: "medianEarnings6yr", label: "Earnings" },
+  { key: "tuitionInState", label: "Tuition" },
   { key: "acceptanceRate", label: "Acceptance" },
+  { key: "safety", label: "Safety" },
+  { key: "campusFood", label: "Food" },
+  { key: "dorms", label: "Dorms" },
+  { key: "studentLife", label: "Social" },
+  { key: "partyScene", label: "Party" },
   { key: "athletics", label: "Athletics" },
   { key: "diversity", label: "Diversity" },
-  { key: "dorms", label: "Dorms" },
-  { key: "medianEarnings6yr", label: "Earnings" },
-  { key: "campusFood", label: "Food" },
-  { key: "partyScene", label: "Party" },
-  { key: "professors", label: "Professors" },
-  { key: "ranking", label: "Rank" },
-  { key: "roi", label: "ROI" },
-  { key: "safety", label: "Safety" },
-  { key: "studentLife", label: "Social" },
-  { key: "tuitionInState", label: "Tuition" },
-  { key: "value", label: "Value" },
 ];
 
 const PER_PAGE = 10;
@@ -47,7 +47,7 @@ export default function SchoolList({ schools }: SchoolListProps) {
   const [stateFilter, setStateFilter] = useState(searchParams.get("state") ?? "");
   const [regionFilter, setRegionFilter] = useState(searchParams.get("region") ?? "");
   const [sortBy, setSortBy] = useState<SortField>(
-    (searchParams.get("sort") as SortField) ?? "ranking"
+    (searchParams.get("sort") as SortField) ?? "academics"
   );
   const [sortDir, setSortDir] = useState<"asc" | "desc">(
     (searchParams.get("dir") as "asc" | "desc") ?? "desc"
@@ -109,7 +109,7 @@ export default function SchoolList({ schools }: SchoolListProps) {
     if (debouncedSearch) params.set("q", debouncedSearch);
     if (stateFilter) params.set("state", stateFilter);
     if (regionFilter) params.set("region", regionFilter);
-    if (sortBy !== "ranking") params.set("sort", sortBy);
+    if (sortBy !== "academics") params.set("sort", sortBy);
     if (sortDir !== "asc") params.set("dir", sortDir);
     if (page > 1) params.set("page", String(page));
 
@@ -152,7 +152,7 @@ export default function SchoolList({ schools }: SchoolListProps) {
     setSearch("");
     setStateFilter("");
     setRegionFilter("");
-    setSortBy("ranking");
+    setSortBy("academics");
     setSortDir("asc");
     setPage(1);
   }, []);
