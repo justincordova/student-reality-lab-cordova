@@ -35,28 +35,6 @@ function parseFilterBlock(text: string): { cleanText: string; filters: ChatFilte
   }
 }
 
-const CHAT_STORAGE_KEY = "cspathfinder-chat-history";
-const MAX_CHAT_HISTORY = 20;
-
-function loadChatHistory(): Message[] {
-  if (typeof window === "undefined") return [];
-  try {
-    const stored = localStorage.getItem(CHAT_STORAGE_KEY);
-    return stored ? JSON.parse(stored) : [];
-  } catch {
-    return [];
-  }
-}
-
-function saveChatHistory(messages: Message[]) {
-  try {
-    const limitedMessages = messages.slice(-MAX_CHAT_HISTORY);
-    localStorage.setItem(CHAT_STORAGE_KEY, JSON.stringify(limitedMessages));
-  } catch (err) {
-    console.warn("Failed to save chat history:", err);
-  }
-}
-
 export default function ChatDrawer() {
   const { isOpen, close, applyFilters } = useChatContext();
   const router = useRouter();
@@ -115,7 +93,7 @@ export default function ChatDrawer() {
     return () => document.removeEventListener("keydown", handleTab);
   }, [isOpen]);
 
-  const [messages, setMessages] = useState<Message[]>(() => loadChatHistory());
+  const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
   const [typingDots, setTypingDots] = useState(0);
@@ -124,9 +102,6 @@ export default function ChatDrawer() {
   const messagesRef = useRef(messages);
   messagesRef.current = messages;
 
-  useEffect(() => {
-    saveChatHistory(messages);
-  }, [messages]);
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages]);
