@@ -2,6 +2,11 @@ import type { Metadata } from "next";
 import { Inter, Geist_Mono } from "next/font/google";
 import { cn } from "@/utils/cn";
 import Navbar from "@/components/Navbar";
+import ChatProvider from "@/components/ChatProvider";
+import ChatButton from "@/components/ChatButton";
+import ChatDrawer from "@/components/ChatDrawer";
+import ErrorBoundary from "@/components/ErrorBoundary";
+import SkipLink from "@/components/SkipLink";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
@@ -40,8 +45,15 @@ export default function RootLayout({
           "bg-base text-text font-sans antialiased"
         )}
       >
-        <Navbar />
-        <main className="max-w-[960px] mx-auto px-8">{children}</main>
+        <SkipLink />
+        <ErrorBoundary>
+          <ChatProvider>
+            <Navbar />
+            <main className="max-w-[960px] mx-auto px-8">{children}</main>
+            <ChatButton />
+            <ChatDrawer />
+          </ChatProvider>
+        </ErrorBoundary>
       </body>
     </html>
   );
