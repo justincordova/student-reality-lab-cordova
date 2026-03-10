@@ -5,6 +5,7 @@ const envSchema = z.object({
   LOG_LEVEL: z.enum(["error", "warn", "info", "http", "debug"]).optional(),
   LOG_DIR: z.string().optional(),
   NEXT_PUBLIC_APP_URL: z.url().optional(),
+  HF_TOKEN: z.string().min(1).optional(),
 });
 
 function parseEnv() {
