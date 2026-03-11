@@ -50,7 +50,7 @@ export default function Pagination({ currentPage, totalPages, onPageChange }: Pa
             aria-label={`Page ${p}`}
             className={`px-3 py-2 rounded-lg text-sm transition-colors ${
               p === safeCurrentPage
-                ? "bg-blue text-on-primary font-bold"
+                ? "bg-primary text-on-primary font-bold"
                 : "bg-surface0 text-text hover:bg-surface1"
             }`}
           >
