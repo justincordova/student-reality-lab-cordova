@@ -239,7 +239,7 @@ export default function SchoolList({ csrankingsSchools, nicheSchools }: SchoolLi
         <select
           value={stateFilter}
           onChange={(e) => updateFilter(setStateFilter, e.target.value)}
-          className="px-4 py-2 bg-mantle border border-surface0 rounded-lg text-text focus:outline-none focus:ring-2 focus:ring-blue"
+          className="px-4 py-2 pr-10 bg-mantle border border-surface0 rounded-lg text-text focus:outline-none focus:ring-2 focus:ring-blue"
           aria-label="Filter by state"
         >
           <option value="">All States</option>
@@ -252,7 +252,7 @@ export default function SchoolList({ csrankingsSchools, nicheSchools }: SchoolLi
         <select
           value={regionFilter}
           onChange={(e) => updateFilter(setRegionFilter, e.target.value)}
-          className="px-4 py-2 bg-mantle border border-surface0 rounded-lg text-text focus:outline-none focus:ring-2 focus:ring-blue"
+          className="px-4 py-2 pr-10 bg-mantle border border-surface0 rounded-lg text-text focus:outline-none focus:ring-2 focus:ring-blue"
           aria-label="Filter by region"
         >
           <option value="">All Regions</option>
