@@ -1,15 +1,6 @@
-export interface Resource {
-  name: string;
-  url: string;
-  description: string;
-}
+import { ResourceCategorySchema } from "@/lib/data/schema";
 
-export interface ResourceCategory {
-  title: string;
-  resources: Resource[];
-}
-
-export const resourceCategories: ResourceCategory[] = [
+export const resourceCategories = [
   {
     title: "Learn to Code",
     resources: [
@@ -106,3 +97,5 @@ export const resourceCategories: ResourceCategory[] = [
     ],
   },
 ];
+
+ResourceCategorySchema.array().parse(resourceCategories);

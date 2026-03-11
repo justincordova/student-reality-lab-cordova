@@ -66,6 +66,12 @@ export const ResourceSchema = z.object({
 });
 export type Resource = z.infer<typeof ResourceSchema>;
 
+export const ResourceCategorySchema = z.object({
+  title: z.string(),
+  resources: ResourceSchema.array(),
+});
+export type ResourceCategory = z.infer<typeof ResourceCategorySchema>;
+
 export const ChatFiltersSchema = z.object({
   sortBy: z.string().optional(),
   rankSource: z.enum(["csrankings", "niche"]).optional(),
