@@ -12,17 +12,17 @@
 
 ## Quick Start
 
-1. Read [`docs/plans/cspathfinder/00-overview.md`](./cspathfinder/00-overview.md) — architecture, tech stack, shared context
+1. Read [`docs/plans/cspathfinder-phases/00-overview.md`](./cspathfinder-phases/00-overview.md) — architecture, tech stack, shared context
 2. Implement phases in order:
 
-| Phase                         | Tasks                    | File                                                     |
-| ----------------------------- | ------------------------ | -------------------------------------------------------- |
-| Phase 1: Setup                | Tasks 0, 0.75, 1, 1.5, 2 | [cspathfinder/01-setup.md](./cspathfinder/01-setup.md)   |
-| Phase 2: Data Layer           | Tasks 3, 4, 5, 5.5       | [cspathfinder/02-data.md](./cspathfinder/02-data.md)     |
-| Phase 3: Home Page            | Task 6                   | [cspathfinder/03-home.md](./cspathfinder/03-home.md)     |
-| Phase 4: School Detail        | Task 7                   | [cspathfinder/04-detail.md](./cspathfinder/04-detail.md) |
-| Phase 5: Chat & Accessibility | Tasks 8, 8.5             | [cspathfinder/05-chat.md](./cspathfinder/05-chat.md)     |
-| Phase 6: Polish & Verify      | Tasks 9, 10, 11          | [cspathfinder/06-polish.md](./cspathfinder/06-polish.md) |
+| Phase                         | Tasks                    | File                                                                   |
+| ----------------------------- | ------------------------ | ---------------------------------------------------------------------- |
+| Phase 1: Setup                | Tasks 0, 0.75, 1, 1.5, 2 | [cspathfinder-phases/01-setup.md](./cspathfinder-phases/01-setup.md)   |
+| Phase 2: Data Layer           | Tasks 3, 4, 5, 5.5       | [cspathfinder-phases/02-data.md](./cspathfinder-phases/02-data.md)     |
+| Phase 3: Home Page            | Task 6                   | [cspathfinder-phases/03-home.md](./cspathfinder-phases/03-home.md)     |
+| Phase 4: School Detail        | Task 7                   | [cspathfinder-phases/04-detail.md](./cspathfinder-phases/04-detail.md) |
+| Phase 5: Chat & Accessibility | Tasks 8, 8.5             | [cspathfinder-phases/05-chat.md](./cspathfinder-phases/05-chat.md)     |
+| Phase 6: Polish & Verify      | Tasks 9, 10, 11          | [cspathfinder-phases/06-polish.md](./cspathfinder-phases/06-polish.md) |
 
 ---
 
