@@ -49,6 +49,7 @@ export const SchoolSchema = z.object({
     "Pacific",
   ]),
   csRanking: z.number().int().min(1).nullable(),
+  nicheRanking: z.number().int().min(1).nullable(),
   tuitionInState: z.number().nonnegative(),
   tuitionOutOfState: z.number().nonnegative(),
   roomAndBoard: z.number().nonnegative(),
@@ -66,6 +67,7 @@ export type School = z.infer<typeof SchoolSchema>;
 
 export const ChatFiltersSchema = z.object({
   sortBy: z.string().optional(),
+  rankSource: z.enum(["csrankings", "niche"]).optional(),
   sortDir: z.enum(["asc", "desc"]).optional(),
   state: z.string().optional(),
   region: z.string().optional(),

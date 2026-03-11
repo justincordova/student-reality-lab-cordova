@@ -2,6 +2,7 @@ import { type School } from "@/lib/data/schema";
 
 export type SortField =
   | "csRanking"
+  | "nicheRanking"
   | "tuitionInState"
   | "tuitionOutOfState"
   | "acceptanceRate"
@@ -21,6 +22,7 @@ export interface FilterOptions {
   page?: number;
   perPage?: number;
   paginate?: boolean;
+  rankField?: "csRanking" | "nicheRanking";
 }
 
 export interface FilterResult {
@@ -41,6 +43,7 @@ function calculateROI(school: School): number {
 function getSortValue(school: School, field: SortField): number {
   if (field === "roi") return calculateROI(school);
   if (field === "csRanking") return school.csRanking ?? 999;
+  if (field === "nicheRanking") return school.nicheRanking ?? 999;
   if (field === "earnings") return school.medianEarnings6yr ?? 0;
   const val = school[field as keyof School];
   return typeof val === "number" ? val : 0;
@@ -80,11 +83,14 @@ export function filterSchools(schools: School[], opts: FilterOptions): School[] 
       const av = getSortValue(a, opts.sortBy!);
       const bv = getSortValue(b, opts.sortBy!);
       if (av !== bv) return (av - bv) * dir;
-      // Tiebreaker: lower csRanking = better (nulls last), then alphabetical
-      if (a.csRanking !== b.csRanking) {
-        if (a.csRanking === null) return 1;
-        if (b.csRanking === null) return -1;
-        return a.csRanking - b.csRanking;
+      // Tiebreaker: lower rank = better (nulls last), then alphabetical
+      const rf = opts.rankField ?? "csRanking";
+      const ar = a[rf],
+        br = b[rf];
+      if (ar !== br) {
+        if (ar === null) return 1;
+        if (br === null) return -1;
+        return ar - br;
       }
       return a.name.localeCompare(b.name);
     });

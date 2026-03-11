@@ -10,6 +10,7 @@ function makeSchool(overrides: Partial<School> = {}): School {
     city: "San Francisco",
     region: "West",
     csRanking: 1,
+    nicheRanking: 5,
     tuitionInState: 10000,
     tuitionOutOfState: 30000,
     roomAndBoard: 12000,
@@ -45,6 +46,7 @@ const schoolA = makeSchool({
   slug: "alpha-u",
   state: "CA",
   csRanking: 1,
+  nicheRanking: 3,
   tuitionInState: 5000,
   region: "West",
 });
@@ -53,6 +55,7 @@ const schoolB = makeSchool({
   slug: "beta-u",
   state: "NY",
   csRanking: 2,
+  nicheRanking: 1,
   tuitionInState: 15000,
   region: "Northeast",
 });
@@ -61,6 +64,7 @@ const schoolC = makeSchool({
   slug: "gamma-u",
   state: "CA",
   csRanking: 3,
+  nicheRanking: 2,
   tuitionInState: 10000,
   region: "West",
 });
@@ -114,6 +118,12 @@ describe("filterSchools", () => {
     const result = filterSchools(schools, { sortBy: "csRanking", sortDir: "asc" }) as School[];
     expect(result[0].csRanking).toBe(1);
     expect(result[2].csRanking).toBe(3);
+  });
+
+  it("sorts by nicheRanking ascending", () => {
+    const result = filterSchools(schools, { sortBy: "nicheRanking", sortDir: "asc" }) as School[];
+    expect(result[0].nicheRanking).toBe(1);
+    expect(result[2].nicheRanking).toBe(3);
   });
 
   it("paginates when paginate: true", () => {
