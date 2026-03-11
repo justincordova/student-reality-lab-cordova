@@ -1,0 +1,32 @@
+{
+  "slug": "west-virginia-university",
+  "name": "West Virginia University",
+  "city": "MORGANTOWN",
+  "state": "WV",
+  "website": "https://www.wvu.edu/",
+  "acceptanceRate": 0.863,
+  "enrollment": 17126,
+  "graduationRate": 0.612,
+  "tuitionInState": 10752,
+  "tuitionOutOfState": 30432,
+  "roomAndBoard": 13876,
+  "netPrice": 13691,
+  "medianEarnings6yr": 62396,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A-",
+    "academics": "B+",
+    "value": "B",
+    "diversity": "B+",
+    "campus": "B+",
+    "athletics": "A-",
+    "partyScene": "A+",
+    "professors": "A",
+    "location": "B+",
+    "dorms": "B-",
+    "campusFood": "B-",
+    "studentLife": "A",
+    "safety": "C+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/west-virginia-university/"
+}

@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-central-missouri",
+  "name": "University of Central Missouri",
+  "city": "WARRENSBURG",
+  "state": "MO",
+  "website": "https://www.ucmo.edu/",
+  "acceptanceRate": 0.687,
+  "enrollment": 5203,
+  "graduationRate": 0.494,
+  "tuitionInState": 9735,
+  "tuitionOutOfState": 18060,
+  "roomAndBoard": 10792,
+  "netPrice": 15728,
+  "medianEarnings6yr": 52640,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B",
+    "academics": "B",
+    "value": "B",
+    "diversity": "B+",
+    "campus": "B",
+    "athletics": "A",
+    "partyScene": "A",
+    "professors": "B",
+    "location": "B-",
+    "dorms": "B-",
+    "campusFood": "B",
+    "studentLife": "A-",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-central-missouri/"
+}

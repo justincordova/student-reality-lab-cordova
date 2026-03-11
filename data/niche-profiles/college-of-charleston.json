@@ -1,0 +1,32 @@
+{
+  "slug": "college-of-charleston",
+  "name": "College of Charleston",
+  "city": "CHARLESTON",
+  "state": "SC",
+  "website": "https://www.charleston.edu",
+  "acceptanceRate": 0.72,
+  "enrollment": 10137,
+  "graduationRate": 0.65,
+  "tuitionInState": 12518,
+  "tuitionOutOfState": 38384,
+  "roomAndBoard": 14032,
+  "netPrice": 20806,
+  "medianEarnings6yr": 54011,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B",
+    "academics": "B",
+    "value": "C+",
+    "diversity": "B+",
+    "campus": "B+",
+    "athletics": "B+",
+    "partyScene": "A",
+    "professors": "B",
+    "location": "A",
+    "dorms": "C-",
+    "campusFood": "C+",
+    "studentLife": "A-",
+    "safety": "C+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/college-of-charleston/"
+}

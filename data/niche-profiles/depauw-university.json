@@ -1,0 +1,32 @@
+{
+  "slug": "depauw-university",
+  "name": "DePauw University",
+  "city": "GREENCASTLE",
+  "state": "IN",
+  "website": "https://www.depauw.edu/",
+  "acceptanceRate": 0.541,
+  "enrollment": 1727,
+  "graduationRate": 0.8,
+  "tuitionInState": 56990,
+  "tuitionOutOfState": 56990,
+  "roomAndBoard": 14850,
+  "netPrice": 30507,
+  "medianEarnings6yr": 65357,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "B+",
+    "value": "B+",
+    "diversity": "A",
+    "campus": "C+",
+    "athletics": "B",
+    "partyScene": "A",
+    "professors": "B",
+    "location": "C-",
+    "dorms": "C+",
+    "campusFood": "C+",
+    "studentLife": "B",
+    "safety": "C"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/depauw-university/"
+}

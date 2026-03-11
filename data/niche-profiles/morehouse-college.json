@@ -1,0 +1,31 @@
+{
+  "slug": "morehouse-college",
+  "name": "Morehouse College",
+  "city": "ATLANTA",
+  "state": "GA",
+  "website": "https://morehouse.edu/",
+  "acceptanceRate": 0.514,
+  "enrollment": 2374,
+  "graduationRate": 0.527,
+  "tuitionInState": 31725,
+  "tuitionOutOfState": 31725,
+  "roomAndBoard": 14964,
+  "netPrice": 34733,
+  "medianEarnings6yr": 62234,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B",
+    "academics": "B",
+    "value": "C+",
+    "diversity": "C+",
+    "campus": "B-",
+    "partyScene": "A+",
+    "professors": "B-",
+    "location": "A-",
+    "dorms": "C-",
+    "campusFood": "B+",
+    "studentLife": "A",
+    "safety": "C+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/morehouse-college/"
+}

@@ -1,0 +1,32 @@
+{
+  "slug": "university-at-buffalo",
+  "name": "University at Buffalo, SUNY",
+  "city": "BUFFALO",
+  "state": "NY",
+  "website": "https://www.buffalo.edu/",
+  "acceptanceRate": 0.693,
+  "enrollment": 18771,
+  "graduationRate": 0.734,
+  "tuitionInState": 11036,
+  "tuitionOutOfState": 32466,
+  "roomAndBoard": 16754,
+  "netPrice": 20511,
+  "medianEarnings6yr": 68437,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A-",
+    "academics": "A-",
+    "value": "B+",
+    "diversity": "A",
+    "campus": "B-",
+    "athletics": "A-",
+    "partyScene": "A",
+    "professors": "A+",
+    "location": "B+",
+    "dorms": "B-",
+    "campusFood": "B+",
+    "studentLife": "A-",
+    "safety": "B+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-at-buffalo/"
+}

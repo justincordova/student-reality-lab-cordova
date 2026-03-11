@@ -1,0 +1,32 @@
+{
+  "slug": "monroe-university-new-rochelle-bronx",
+  "name": "Monroe University - New Rochelle / Bronx",
+  "city": "NEW ROCHELLE",
+  "state": "NY",
+  "website": "https://www.monroeu.edu/",
+  "acceptanceRate": 0.66,
+  "enrollment": 3781,
+  "graduationRate": 0.575,
+  "tuitionInState": 17922,
+  "tuitionOutOfState": 17922,
+  "roomAndBoard": 11600,
+  "netPrice": 11476,
+  "medianEarnings6yr": 46160,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B",
+    "academics": "B",
+    "value": "B",
+    "diversity": "A",
+    "campus": "B",
+    "athletics": "C",
+    "partyScene": "B+",
+    "professors": "B-",
+    "location": "B+",
+    "dorms": "B+",
+    "campusFood": "A",
+    "studentLife": "A-",
+    "safety": "A"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/monroe-university-new-rochelle-bronx/"
+}

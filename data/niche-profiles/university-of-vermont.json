@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-vermont",
+  "name": "University of Vermont",
+  "city": "BURLINGTON",
+  "state": "VT",
+  "website": "https://www.uvm.edu/",
+  "acceptanceRate": 0.6,
+  "enrollment": 11410,
+  "graduationRate": 0.786,
+  "tuitionInState": 16606,
+  "tuitionOutOfState": 44646,
+  "roomAndBoard": 13354,
+  "netPrice": 22062,
+  "medianEarnings6yr": 60834,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "A-",
+    "value": "B-",
+    "diversity": "B",
+    "campus": "C+",
+    "athletics": "B+",
+    "partyScene": "A-",
+    "professors": "A",
+    "location": "A",
+    "dorms": "C-",
+    "campusFood": "C",
+    "studentLife": "B",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-vermont/"
+}

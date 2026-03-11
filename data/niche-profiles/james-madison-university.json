@@ -1,0 +1,32 @@
+{
+  "slug": "james-madison-university",
+  "name": "James Madison University",
+  "city": "HARRISONBURG",
+  "state": "VA",
+  "website": "https://www.jmu.edu/admissions/explore/index.shtml",
+  "acceptanceRate": 0.762,
+  "enrollment": 19808,
+  "graduationRate": 0.809,
+  "tuitionInState": 14300,
+  "tuitionOutOfState": 31906,
+  "roomAndBoard": 12504,
+  "netPrice": 26317,
+  "medianEarnings6yr": 69066,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A-",
+    "academics": "B",
+    "value": "B+",
+    "diversity": "B",
+    "campus": "A+",
+    "athletics": "A-",
+    "partyScene": "A+",
+    "professors": "B",
+    "location": "B+",
+    "dorms": "A",
+    "campusFood": "A+",
+    "studentLife": "A+",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/james-madison-university/"
+}

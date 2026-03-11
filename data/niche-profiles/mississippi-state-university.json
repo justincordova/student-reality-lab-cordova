@@ -1,0 +1,32 @@
+{
+  "slug": "mississippi-state-university",
+  "name": "Mississippi State University",
+  "city": "MISSISSIPPI STATE",
+  "state": "MS",
+  "website": "https://www.msstate.edu/",
+  "acceptanceRate": 0.764,
+  "enrollment": 16583,
+  "graduationRate": 0.629,
+  "tuitionInState": 9815,
+  "tuitionOutOfState": 26580,
+  "roomAndBoard": 11824,
+  "netPrice": 16480,
+  "medianEarnings6yr": 56331,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A-",
+    "academics": "A-",
+    "value": "B+",
+    "diversity": "A-",
+    "campus": "A",
+    "athletics": "A",
+    "partyScene": "A-",
+    "professors": "A",
+    "location": "C",
+    "dorms": "A",
+    "campusFood": "A",
+    "studentLife": "A",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/mississippi-state-university/"
+}

@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-virginia",
+  "name": "University of Virginia",
+  "city": "CHARLOTTESVILLE",
+  "state": "VA",
+  "website": "https://www.virginia.edu/",
+  "acceptanceRate": 0.169,
+  "enrollment": 16829,
+  "graduationRate": 0.953,
+  "tuitionInState": 20986,
+  "tuitionOutOfState": 58014,
+  "roomAndBoard": 14700,
+  "netPrice": 17831,
+  "medianEarnings6yr": 85639,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A+",
+    "value": "A",
+    "diversity": "A",
+    "campus": "A",
+    "athletics": "A+",
+    "partyScene": "A+",
+    "professors": "A+",
+    "location": "A-",
+    "dorms": "B+",
+    "campusFood": "C",
+    "studentLife": "A+",
+    "safety": "C+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-virginia/"
+}

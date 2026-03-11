@@ -1,0 +1,32 @@
+{
+  "slug": "virginia-commonwealth-university",
+  "name": "Virginia Commonwealth University",
+  "city": "RICHMOND",
+  "state": "VA",
+  "website": "https://www.vcu.edu/",
+  "acceptanceRate": 0.931,
+  "enrollment": 18747,
+  "graduationRate": 0.654,
+  "tuitionInState": 17240,
+  "tuitionOutOfState": 40404,
+  "roomAndBoard": 14635,
+  "netPrice": 22852,
+  "medianEarnings6yr": 61414,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A-",
+    "academics": "A-",
+    "value": "B",
+    "diversity": "A",
+    "campus": "B-",
+    "athletics": "B+",
+    "partyScene": "A",
+    "professors": "A",
+    "location": "A-",
+    "dorms": "C+",
+    "campusFood": "B-",
+    "studentLife": "A-",
+    "safety": "C-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/virginia-commonwealth-university/"
+}

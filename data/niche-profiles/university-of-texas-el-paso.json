@@ -1,0 +1,31 @@
+{
+  "slug": "university-of-texas-el-paso",
+  "name": "University of Texas - El Paso",
+  "city": "EL PASO",
+  "state": "TX",
+  "website": "https://www.utep.edu/",
+  "acceptanceRate": 0.999,
+  "enrollment": 14588,
+  "graduationRate": 0.459,
+  "tuitionInState": 9744,
+  "tuitionOutOfState": 25512,
+  "roomAndBoard": 9781,
+  "netPrice": 10333,
+  "medianEarnings6yr": 57030,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B",
+    "academics": "B-",
+    "value": "B+",
+    "diversity": "B",
+    "campus": "A-",
+    "athletics": "B+",
+    "partyScene": "B+",
+    "professors": "B+",
+    "location": "A-",
+    "campusFood": "A",
+    "studentLife": "B+",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-texas-el-paso/"
+}

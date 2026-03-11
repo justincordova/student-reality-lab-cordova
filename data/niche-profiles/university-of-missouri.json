@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-missouri",
+  "name": "University of Missouri",
+  "city": "COLUMBIA",
+  "state": "MO",
+  "website": "https://missouri.edu/",
+  "acceptanceRate": 0.77,
+  "enrollment": 22090,
+  "graduationRate": 0.762,
+  "tuitionInState": 16318,
+  "tuitionOutOfState": 39804,
+  "roomAndBoard": 11565,
+  "netPrice": 20006,
+  "medianEarnings6yr": 65749,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A-",
+    "academics": "A-",
+    "value": "B",
+    "diversity": "B+",
+    "campus": "A-",
+    "athletics": "A-",
+    "partyScene": "A+",
+    "professors": "A",
+    "location": "B+",
+    "dorms": "B+",
+    "campusFood": "A-",
+    "studentLife": "A",
+    "safety": "C+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-missouri/"
+}

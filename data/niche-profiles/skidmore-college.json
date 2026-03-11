@@ -1,0 +1,32 @@
+{
+  "slug": "skidmore-college",
+  "name": "Skidmore College",
+  "city": "SARATOGA SPRINGS",
+  "state": "NY",
+  "website": "https://www.skidmore.edu/",
+  "acceptanceRate": 0.229,
+  "enrollment": 2671,
+  "graduationRate": 0.817,
+  "tuitionInState": 70430,
+  "tuitionOutOfState": 70430,
+  "roomAndBoard": 17340,
+  "netPrice": 32368,
+  "medianEarnings6yr": 59651,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A-",
+    "academics": "A",
+    "value": "B-",
+    "diversity": "A-",
+    "campus": "B",
+    "athletics": "B-",
+    "partyScene": "B",
+    "professors": "A-",
+    "location": "A-",
+    "dorms": "B",
+    "campusFood": "A",
+    "studentLife": "B",
+    "safety": "B+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/skidmore-college/"
+}

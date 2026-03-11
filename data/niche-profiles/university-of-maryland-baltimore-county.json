@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-maryland-baltimore-county",
+  "name": "University of Maryland, Baltimore County",
+  "city": "BALTIMORE",
+  "state": "MD",
+  "website": "https://umbc.edu/",
+  "acceptanceRate": 0.742,
+  "enrollment": 9073,
+  "graduationRate": 0.706,
+  "tuitionInState": 12952,
+  "tuitionOutOfState": 30308,
+  "roomAndBoard": 14203,
+  "netPrice": 17704,
+  "medianEarnings6yr": 71711,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A-",
+    "academics": "A-",
+    "value": "A-",
+    "diversity": "A+",
+    "campus": "C",
+    "athletics": "B+",
+    "partyScene": "C",
+    "professors": "A",
+    "location": "C+",
+    "dorms": "B",
+    "campusFood": "B-",
+    "studentLife": "B-",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-maryland-baltimore-county/"
+}

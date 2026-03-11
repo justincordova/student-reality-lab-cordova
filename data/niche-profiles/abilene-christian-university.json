@@ -1,0 +1,32 @@
+{
+  "slug": "abilene-christian-university",
+  "name": "Abilene Christian University",
+  "city": "ABILENE",
+  "state": "TX",
+  "website": "https://acu.edu/",
+  "acceptanceRate": 0.639,
+  "enrollment": 3153,
+  "graduationRate": 0.602,
+  "tuitionInState": 44200,
+  "tuitionOutOfState": 44200,
+  "roomAndBoard": 11900,
+  "netPrice": 28311,
+  "medianEarnings6yr": 56363,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "A-",
+    "value": "B-",
+    "diversity": "A-",
+    "campus": "B+",
+    "athletics": "B+",
+    "partyScene": "B-",
+    "professors": "B+",
+    "location": "B-",
+    "dorms": "A",
+    "campusFood": "B-",
+    "studentLife": "B+",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/abilene-christian-university/"
+}

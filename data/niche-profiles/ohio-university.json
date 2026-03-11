@@ -1,0 +1,32 @@
+{
+  "slug": "ohio-university",
+  "name": "Ohio University",
+  "city": "ATHENS",
+  "state": "OH",
+  "website": "https://www.ohio.edu/",
+  "acceptanceRate": 0.848,
+  "enrollment": 15818,
+  "graduationRate": 0.664,
+  "tuitionInState": 14582,
+  "tuitionOutOfState": 25796,
+  "roomAndBoard": 15384,
+  "netPrice": 20550,
+  "medianEarnings6yr": 65965,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "B",
+    "value": "B+",
+    "diversity": "B",
+    "campus": "A",
+    "athletics": "B+",
+    "partyScene": "A+",
+    "professors": "B+",
+    "location": "A-",
+    "dorms": "B",
+    "campusFood": "B+",
+    "studentLife": "A+",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/ohio-university/"
+}

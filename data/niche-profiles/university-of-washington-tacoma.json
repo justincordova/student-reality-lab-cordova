@@ -1,0 +1,29 @@
+{
+  "slug": "university-of-washington-tacoma",
+  "name": "University of Washington - Tacoma",
+  "city": "TACOMA",
+  "state": "WA",
+  "website": "https://www.tacoma.uw.edu/",
+  "acceptanceRate": 0.829,
+  "enrollment": 3599,
+  "graduationRate": 0.623,
+  "tuitionInState": 13577,
+  "tuitionOutOfState": 44811,
+  "roomAndBoard": null,
+  "netPrice": 11290,
+  "medianEarnings6yr": 78604,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B",
+    "academics": "B-",
+    "value": "B+",
+    "diversity": "A",
+    "campus": "C+",
+    "partyScene": "C+",
+    "professors": "B",
+    "location": "B",
+    "studentLife": "B-",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-washington-tacoma/"
+}

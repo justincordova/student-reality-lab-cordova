@@ -1,0 +1,32 @@
+{
+  "slug": "occidental-college",
+  "name": "Occidental College",
+  "city": "LOS ANGELES",
+  "state": "CA",
+  "website": "https://www.oxy.edu/",
+  "acceptanceRate": 0.4,
+  "enrollment": 1858,
+  "graduationRate": 0.851,
+  "tuitionInState": 68108,
+  "tuitionOutOfState": 68108,
+  "roomAndBoard": 19132,
+  "netPrice": 47113,
+  "medianEarnings6yr": 64966,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A-",
+    "academics": "A",
+    "value": "C+",
+    "diversity": "A",
+    "campus": "B+",
+    "athletics": "B-",
+    "partyScene": "C+",
+    "professors": "A",
+    "location": "A-",
+    "dorms": "C+",
+    "campusFood": "A",
+    "studentLife": "B",
+    "safety": "C+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/occidental-college/"
+}

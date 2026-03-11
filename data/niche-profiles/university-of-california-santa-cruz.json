@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-california-santa-cruz",
+  "name": "University of California - Santa Cruz",
+  "city": "SANTA CRUZ",
+  "state": "CA",
+  "website": "https://www.ucsc.edu/",
+  "acceptanceRate": 0.625,
+  "enrollment": 17227,
+  "graduationRate": 0.745,
+  "tuitionInState": 14640,
+  "tuitionOutOfState": 31026,
+  "roomAndBoard": null,
+  "netPrice": 16526,
+  "medianEarnings6yr": 64162,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "B+",
+    "value": "B",
+    "diversity": "A",
+    "campus": "C+",
+    "athletics": "C-",
+    "partyScene": "B",
+    "professors": "A",
+    "location": "B+",
+    "dorms": "D-",
+    "campusFood": "C",
+    "studentLife": "B-",
+    "safety": "C+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-california-santa-cruz/"
+}

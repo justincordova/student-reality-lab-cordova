@@ -1,0 +1,31 @@
+{
+  "slug": "smith-college",
+  "name": "Smith College",
+  "city": "NORTHAMPTON",
+  "state": "MA",
+  "website": "https://www.smith.edu/",
+  "acceptanceRate": 0.197,
+  "enrollment": 2549,
+  "graduationRate": 0.897,
+  "tuitionInState": 67140,
+  "tuitionOutOfState": 67140,
+  "roomAndBoard": 21310,
+  "netPrice": 27823,
+  "medianEarnings6yr": 54422,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A",
+    "academics": "A+",
+    "value": "B-",
+    "diversity": "A",
+    "campus": "B",
+    "partyScene": "C",
+    "professors": "A",
+    "location": "B+",
+    "dorms": "A",
+    "campusFood": "C",
+    "studentLife": "B-",
+    "safety": "B+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/smith-college/"
+}

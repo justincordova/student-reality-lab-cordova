@@ -1,0 +1,32 @@
+{
+  "slug": "illinois-wesleyan-university",
+  "name": "Illinois Wesleyan University",
+  "city": "BLOOMINGTON",
+  "state": "IL",
+  "website": "https://www.iwu.edu/",
+  "acceptanceRate": 0.452,
+  "enrollment": 1518,
+  "graduationRate": 0.825,
+  "tuitionInState": 59226,
+  "tuitionOutOfState": 59226,
+  "roomAndBoard": 12930,
+  "netPrice": 31310,
+  "medianEarnings6yr": 66515,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A-",
+    "academics": "A-",
+    "value": "B+",
+    "diversity": "A-",
+    "campus": "C+",
+    "athletics": "B+",
+    "partyScene": "B",
+    "professors": "B+",
+    "location": "B",
+    "dorms": "C-",
+    "campusFood": "C+",
+    "studentLife": "B+",
+    "safety": "B+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/illinois-wesleyan-university/"
+}

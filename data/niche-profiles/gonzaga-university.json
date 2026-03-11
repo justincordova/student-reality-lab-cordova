@@ -1,0 +1,32 @@
+{
+  "slug": "gonzaga-university",
+  "name": "Gonzaga University",
+  "city": "SPOKANE",
+  "state": "WA",
+  "website": "https://www.gonzaga.edu/",
+  "acceptanceRate": 0.761,
+  "enrollment": 5293,
+  "graduationRate": 0.869,
+  "tuitionInState": 56140,
+  "tuitionOutOfState": 56140,
+  "roomAndBoard": 15080,
+  "netPrice": 40295,
+  "medianEarnings6yr": 78362,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B",
+    "academics": "B",
+    "value": "B",
+    "diversity": "A-",
+    "campus": "B+",
+    "athletics": "A",
+    "partyScene": "B+",
+    "professors": "B-",
+    "location": "B-",
+    "dorms": "B+",
+    "campusFood": "C+",
+    "studentLife": "A",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/gonzaga-university/"
+}

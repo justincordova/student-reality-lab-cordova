@@ -1,0 +1,32 @@
+{
+  "slug": "barry-university",
+  "name": "Barry University",
+  "city": "MIAMI",
+  "state": "FL",
+  "website": "https://www.barry.edu/en?utm_source=niche&utm_medium=web&utm_content=profile",
+  "acceptanceRate": 0.593,
+  "enrollment": 2040,
+  "graduationRate": 0.366,
+  "tuitionInState": 33600,
+  "tuitionOutOfState": 33600,
+  "roomAndBoard": 11420,
+  "netPrice": 23930,
+  "medianEarnings6yr": 62844,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B",
+    "academics": "B",
+    "value": "B",
+    "diversity": "A+",
+    "campus": "B",
+    "athletics": "B+",
+    "partyScene": "B-",
+    "professors": "A-",
+    "location": "B",
+    "dorms": "B+",
+    "campusFood": "B+",
+    "studentLife": "B",
+    "safety": "A-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/barry-university/"
+}

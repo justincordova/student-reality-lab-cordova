@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-nevada-reno",
+  "name": "University of Nevada, Reno",
+  "city": "RENO",
+  "state": "NV",
+  "website": "https://www.unr.edu/",
+  "acceptanceRate": 0.853,
+  "enrollment": 13757,
+  "graduationRate": 0.624,
+  "tuitionInState": 11301,
+  "tuitionOutOfState": 30902,
+  "roomAndBoard": 13741,
+  "netPrice": 16801,
+  "medianEarnings6yr": 63908,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "B+",
+    "value": "B+",
+    "diversity": "A-",
+    "campus": "B",
+    "athletics": "A-",
+    "partyScene": "A",
+    "professors": "A-",
+    "location": "B",
+    "dorms": "B-",
+    "campusFood": "B-",
+    "studentLife": "A-",
+    "safety": "C+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-nevada-reno/"
+}

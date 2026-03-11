@@ -1,0 +1,32 @@
+{
+  "slug": "middlebury-college",
+  "name": "Middlebury College",
+  "city": "MIDDLEBURY",
+  "state": "VT",
+  "website": "https://www.middlebury.edu/college/",
+  "acceptanceRate": 0.104,
+  "enrollment": 2778,
+  "graduationRate": 0.926,
+  "tuitionInState": 65280,
+  "tuitionOutOfState": 65280,
+  "roomAndBoard": 18600,
+  "netPrice": 22912,
+  "medianEarnings6yr": 77212,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A+",
+    "value": "A",
+    "diversity": "A",
+    "campus": "B+",
+    "athletics": "B+",
+    "partyScene": "B+",
+    "professors": "A",
+    "location": "B-",
+    "dorms": "B+",
+    "campusFood": "A-",
+    "studentLife": "A",
+    "safety": "B+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/middlebury-college/"
+}

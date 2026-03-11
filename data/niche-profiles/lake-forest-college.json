@@ -1,0 +1,32 @@
+{
+  "slug": "lake-forest-college",
+  "name": "Lake Forest College",
+  "city": "LAKE FOREST",
+  "state": "IL",
+  "website": "https://www.lakeforest.edu/",
+  "acceptanceRate": 0.594,
+  "enrollment": 1764,
+  "graduationRate": 0.704,
+  "tuitionInState": 53300,
+  "tuitionOutOfState": 53300,
+  "roomAndBoard": 12480,
+  "netPrice": 29894,
+  "medianEarnings6yr": 61366,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "A-",
+    "value": "B",
+    "diversity": "A",
+    "campus": "B",
+    "athletics": "B-",
+    "partyScene": "B",
+    "professors": "B",
+    "location": "B+",
+    "dorms": "B-",
+    "campusFood": "B-",
+    "studentLife": "A-",
+    "safety": "B+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/lake-forest-college/"
+}

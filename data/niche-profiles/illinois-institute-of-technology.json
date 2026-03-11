@@ -1,0 +1,32 @@
+{
+  "slug": "illinois-institute-of-technology",
+  "name": "Illinois Institute of Technology",
+  "city": "CHICAGO",
+  "state": "IL",
+  "website": "https://www.iit.edu/",
+  "acceptanceRate": 0.554,
+  "enrollment": 2662,
+  "graduationRate": 0.724,
+  "tuitionInState": 51648,
+  "tuitionOutOfState": 51648,
+  "roomAndBoard": 16528,
+  "netPrice": 25001,
+  "medianEarnings6yr": 86006,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "A-",
+    "value": "A-",
+    "diversity": "A-",
+    "campus": "D-",
+    "athletics": "C+",
+    "partyScene": "C",
+    "professors": "A+",
+    "location": "B-",
+    "dorms": "C-",
+    "campusFood": "C-",
+    "studentLife": "C-",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/illinois-institute-of-technology/"
+}

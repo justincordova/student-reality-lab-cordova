@@ -1,0 +1,32 @@
+{
+  "slug": "vanderbilt-university",
+  "name": "Vanderbilt University",
+  "city": "NASHVILLE",
+  "state": "TN",
+  "website": "https://www.vanderbilt.edu/",
+  "acceptanceRate": 0.063,
+  "enrollment": 7146,
+  "graduationRate": 0.927,
+  "tuitionInState": 67934,
+  "tuitionOutOfState": 67934,
+  "roomAndBoard": 21054,
+  "netPrice": 26689,
+  "medianEarnings6yr": 90815,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A+",
+    "value": "A",
+    "diversity": "A+",
+    "campus": "A",
+    "athletics": "A-",
+    "partyScene": "A+",
+    "professors": "A+",
+    "location": "A+",
+    "dorms": "B+",
+    "campusFood": "A-",
+    "studentLife": "A+",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/vanderbilt-university/"
+}

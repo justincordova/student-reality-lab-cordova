@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-hawaii-at-manoa",
+  "name": "University of Hawaii at Manoa",
+  "city": "HONOLULU",
+  "state": "HI",
+  "website": "https://manoa.hawaii.edu/",
+  "acceptanceRate": 0.697,
+  "enrollment": 12068,
+  "graduationRate": 0.626,
+  "tuitionInState": 12186,
+  "tuitionOutOfState": 34218,
+  "roomAndBoard": 12620,
+  "netPrice": 14557,
+  "medianEarnings6yr": 58896,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "B+",
+    "value": "B",
+    "diversity": "A+",
+    "campus": "C+",
+    "athletics": "B+",
+    "partyScene": "B",
+    "professors": "A",
+    "location": "A",
+    "dorms": "D+",
+    "campusFood": "B+",
+    "studentLife": "B",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-hawaii-at-manoa/"
+}

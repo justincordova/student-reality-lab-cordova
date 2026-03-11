@@ -1,0 +1,127 @@
+[
+  {
+    "slug": "tulane-university",
+    "name": "Tulane University",
+    "rank": 126
+  },
+  {
+    "slug": "texas-tech-university",
+    "name": "Texas Tech University",
+    "rank": 127
+  },
+  {
+    "slug": "smith-college",
+    "name": "Smith College",
+    "rank": 128
+  },
+  {
+    "slug": "george-mason-university",
+    "name": "George Mason University",
+    "rank": 129
+  },
+  {
+    "slug": "georgia-state-university",
+    "name": "Georgia State University",
+    "rank": 130
+  },
+  {
+    "slug": "university-of-iowa",
+    "name": "University of Iowa",
+    "rank": 131
+  },
+  {
+    "slug": "washington-state-university",
+    "name": "Washington State University",
+    "rank": 132
+  },
+  {
+    "slug": "university-of-california-riverside",
+    "name": "University of California - Riverside",
+    "rank": 133
+  },
+  {
+    "slug": "brandeis-university",
+    "name": "Brandeis University",
+    "rank": 134
+  },
+  {
+    "slug": "university-of-rochester",
+    "name": "University of Rochester",
+    "rank": 135
+  },
+  {
+    "slug": "villanova-university",
+    "name": "Villanova University",
+    "rank": 136
+  },
+  {
+    "slug": "trinity-university",
+    "name": "Trinity University",
+    "rank": 137
+  },
+  {
+    "slug": "colby-college",
+    "name": "Colby College",
+    "rank": 138
+  },
+  {
+    "slug": "the-ohio-state-university",
+    "name": "The Ohio State University",
+    "rank": 139
+  },
+  {
+    "slug": "kennesaw-state-university",
+    "name": "Kennesaw State University",
+    "rank": 140
+  },
+  {
+    "slug": "university-of-richmond",
+    "name": "University of Richmond",
+    "rank": 141
+  },
+  {
+    "slug": "tennessee-technological-university",
+    "name": "Tennessee Technological University",
+    "rank": 142
+  },
+  {
+    "slug": "brigham-young-university-idaho",
+    "name": "Brigham Young University-Idaho",
+    "rank": 143
+  },
+  {
+    "slug": "university-of-utah",
+    "name": "University of Utah",
+    "rank": 144
+  },
+  {
+    "slug": "university-of-delaware",
+    "name": "University of Delaware",
+    "rank": 145
+  },
+  {
+    "slug": "louisiana-tech-university",
+    "name": "Louisiana Tech University",
+    "rank": 146
+  },
+  {
+    "slug": "the-university-of-kansas",
+    "name": "The University of Kansas",
+    "rank": 147
+  },
+  {
+    "slug": "university-of-dayton",
+    "name": "University of Dayton",
+    "rank": 148
+  },
+  {
+    "slug": "missouri-university-of-science-and-technology",
+    "name": "Missouri University of Science and Technology",
+    "rank": 149
+  },
+  {
+    "slug": "indiana-university-indianapolis",
+    "name": "Indiana University Indianapolis",
+    "rank": 150
+  }
+]

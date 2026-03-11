@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-georgia",
+  "name": "University of Georgia",
+  "city": "ATHENS",
+  "state": "GA",
+  "website": "https://www.uga.edu/",
+  "acceptanceRate": 0.372,
+  "enrollment": 29799,
+  "graduationRate": 0.872,
+  "tuitionInState": 11492,
+  "tuitionOutOfState": 32336,
+  "roomAndBoard": 11246,
+  "netPrice": 16303,
+  "medianEarnings6yr": 66487,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A+",
+    "value": "A-",
+    "diversity": "B+",
+    "campus": "A+",
+    "athletics": "A+",
+    "partyScene": "A+",
+    "professors": "A+",
+    "location": "A",
+    "dorms": "B",
+    "campusFood": "A+",
+    "studentLife": "A+",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-georgia/"
+}

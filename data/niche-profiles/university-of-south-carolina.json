@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-south-carolina",
+  "name": "University of South Carolina",
+  "city": "COLUMBIA",
+  "state": "SC",
+  "website": "https://sc.edu/",
+  "acceptanceRate": 0.615,
+  "enrollment": 28980,
+  "graduationRate": 0.777,
+  "tuitionInState": 30544,
+  "tuitionOutOfState": 55232,
+  "roomAndBoard": 12558,
+  "netPrice": 26068,
+  "medianEarnings6yr": 62564,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A",
+    "academics": "A",
+    "value": "B",
+    "diversity": "A-",
+    "campus": "A",
+    "athletics": "A+",
+    "partyScene": "A+",
+    "professors": "A",
+    "location": "B+",
+    "dorms": "A-",
+    "campusFood": "A",
+    "studentLife": "A+",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-south-carolina/"
+}

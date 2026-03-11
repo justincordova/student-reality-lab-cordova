@@ -1,0 +1,32 @@
+{
+  "slug": "wesleyan-university",
+  "name": "Wesleyan University",
+  "city": "MIDDLETOWN",
+  "state": "CT",
+  "website": "https://www.wesleyan.edu/",
+  "acceptanceRate": 0.171,
+  "enrollment": 2969,
+  "graduationRate": 0.916,
+  "tuitionInState": 67316,
+  "tuitionOutOfState": 67316,
+  "roomAndBoard": null,
+  "netPrice": 20463,
+  "medianEarnings6yr": 73142,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A+",
+    "value": "B+",
+    "diversity": "A+",
+    "campus": "B+",
+    "athletics": "B",
+    "partyScene": "B+",
+    "professors": "A",
+    "location": "B-",
+    "dorms": "B+",
+    "campusFood": "A+",
+    "studentLife": "A",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/wesleyan-university/"
+}

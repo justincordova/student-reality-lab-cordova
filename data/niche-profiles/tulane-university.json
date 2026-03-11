@@ -1,0 +1,32 @@
+{
+  "slug": "tulane-university",
+  "name": "Tulane University",
+  "city": "NEW ORLEANS",
+  "state": "LA",
+  "website": "https://tulane.edu/",
+  "acceptanceRate": 0.146,
+  "enrollment": 8160,
+  "graduationRate": 0.889,
+  "tuitionInState": 71998,
+  "tuitionOutOfState": 71998,
+  "roomAndBoard": 18088,
+  "netPrice": 50631,
+  "medianEarnings6yr": 67803,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A+",
+    "value": "B-",
+    "diversity": "A-",
+    "campus": "A-",
+    "athletics": "B+",
+    "partyScene": "A+",
+    "professors": "A+",
+    "location": "A+",
+    "dorms": "C+",
+    "campusFood": "B-",
+    "studentLife": "A+",
+    "safety": "C"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/tulane-university/"
+}

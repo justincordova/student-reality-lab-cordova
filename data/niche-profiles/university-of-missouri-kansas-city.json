@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-missouri-kansas-city",
+  "name": "University of Missouri - Kansas City",
+  "city": "KANSAS CITY",
+  "state": "MO",
+  "website": "https://www.umkc.edu/",
+  "acceptanceRate": 0.75,
+  "enrollment": 5800,
+  "graduationRate": 0.559,
+  "tuitionInState": 11988,
+  "tuitionOutOfState": 28788,
+  "roomAndBoard": 12118,
+  "netPrice": 14201,
+  "medianEarnings6yr": 61974,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A-",
+    "academics": "A-",
+    "value": "B+",
+    "diversity": "A",
+    "campus": "B-",
+    "athletics": "B+",
+    "partyScene": "B-",
+    "professors": "A-",
+    "location": "A+",
+    "dorms": "C",
+    "campusFood": "B",
+    "studentLife": "B",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-missouri-kansas-city/"
+}

@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-new-mexico",
+  "name": "University of New Mexico",
+  "city": "ALBUQUERQUE",
+  "state": "NM",
+  "website": "https://www.unm.edu/",
+  "acceptanceRate": 0.955,
+  "enrollment": 14171,
+  "graduationRate": 0.525,
+  "tuitionInState": 11445,
+  "tuitionOutOfState": 34594,
+  "roomAndBoard": 9390,
+  "netPrice": 7528,
+  "medianEarnings6yr": 53654,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B",
+    "academics": "B+",
+    "value": "B-",
+    "diversity": "A",
+    "campus": "C",
+    "athletics": "B+",
+    "partyScene": "B",
+    "professors": "A+",
+    "location": "C+",
+    "dorms": "C",
+    "campusFood": "B+",
+    "studentLife": "C+",
+    "safety": "D+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-new-mexico/"
+}

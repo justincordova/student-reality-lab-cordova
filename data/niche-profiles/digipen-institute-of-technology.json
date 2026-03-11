@@ -1,0 +1,30 @@
+{
+  "slug": "digipen-institute-of-technology",
+  "name": "DigiPen Institute of Technology",
+  "city": "REDMOND",
+  "state": "WA",
+  "website": "https://www.digipen.edu/",
+  "acceptanceRate": 0.68,
+  "enrollment": 1063,
+  "graduationRate": 0.516,
+  "tuitionInState": 38600,
+  "tuitionOutOfState": 38600,
+  "roomAndBoard": null,
+  "netPrice": 40015,
+  "medianEarnings6yr": 94318,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B",
+    "academics": "B-",
+    "value": "B-",
+    "diversity": "A",
+    "campus": "C+",
+    "partyScene": "C",
+    "professors": "C+",
+    "location": "A-",
+    "dorms": "D+",
+    "studentLife": "B",
+    "safety": "A+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/digipen-institute-of-technology/"
+}

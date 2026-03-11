@@ -1,0 +1,32 @@
+{
+  "slug": "cal-poly",
+  "name": "Cal Poly",
+  "city": "SAN LUIS OBISPO",
+  "state": "CA",
+  "website": "https://calpoly.edu/",
+  "acceptanceRate": 0.298,
+  "enrollment": 20629,
+  "graduationRate": 0.852,
+  "tuitionInState": 11800,
+  "tuitionOutOfState": 31984,
+  "roomAndBoard": 18494,
+  "netPrice": 16888,
+  "medianEarnings6yr": 89413,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A",
+    "academics": "A",
+    "value": "A",
+    "diversity": "B+",
+    "campus": "B-",
+    "athletics": "B",
+    "partyScene": "A",
+    "professors": "B",
+    "location": "B+",
+    "dorms": "B-",
+    "campusFood": "C-",
+    "studentLife": "A",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/cal-poly/"
+}

@@ -1,0 +1,32 @@
+{
+  "slug": "bucknell-university",
+  "name": "Bucknell University",
+  "city": "LEWISBURG",
+  "state": "PA",
+  "website": "https://www.bucknell.edu/",
+  "acceptanceRate": 0.32,
+  "enrollment": 3815,
+  "graduationRate": 0.862,
+  "tuitionInState": 67976,
+  "tuitionOutOfState": 67976,
+  "roomAndBoard": 16118,
+  "netPrice": 38486,
+  "medianEarnings6yr": 90297,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A",
+    "academics": "A+",
+    "value": "B+",
+    "diversity": "B",
+    "campus": "B-",
+    "athletics": "B+",
+    "partyScene": "A",
+    "professors": "A",
+    "location": "B-",
+    "dorms": "C+",
+    "campusFood": "C",
+    "studentLife": "B+",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/bucknell-university/"
+}

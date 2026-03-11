@@ -1,0 +1,32 @@
+{
+  "slug": "east-texas-a-and-m-university",
+  "name": "East Texas A&M University",
+  "city": "COMMERCE",
+  "state": "TX",
+  "website": "https://www.tamuc.edu/",
+  "acceptanceRate": 0.926,
+  "enrollment": 5794,
+  "graduationRate": 0.459,
+  "tuitionInState": 10026,
+  "tuitionOutOfState": 22626,
+  "roomAndBoard": 10636,
+  "netPrice": 11902,
+  "medianEarnings6yr": 53998,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B",
+    "academics": "B-",
+    "value": "B+",
+    "diversity": "A-",
+    "campus": "B",
+    "athletics": "A",
+    "partyScene": "B+",
+    "professors": "A-",
+    "location": "C",
+    "dorms": "B+",
+    "campusFood": "A-",
+    "studentLife": "B+",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/east-texas-a-and-m-university/"
+}

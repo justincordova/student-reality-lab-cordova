@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-dayton",
+  "name": "University of Dayton",
+  "city": "DAYTON",
+  "state": "OH",
+  "website": "https://udayton.edu/",
+  "acceptanceRate": 0.618,
+  "enrollment": 7470,
+  "graduationRate": 0.815,
+  "tuitionInState": 50610,
+  "tuitionOutOfState": 50610,
+  "roomAndBoard": 15640,
+  "netPrice": 31551,
+  "medianEarnings6yr": 73473,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A",
+    "academics": "A",
+    "value": "B+",
+    "diversity": "B+",
+    "campus": "A",
+    "athletics": "A-",
+    "partyScene": "A+",
+    "professors": "A",
+    "location": "B",
+    "dorms": "A",
+    "campusFood": "A+",
+    "studentLife": "A+",
+    "safety": "C"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-dayton/"
+}

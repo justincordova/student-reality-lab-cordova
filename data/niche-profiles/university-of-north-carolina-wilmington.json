@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-north-carolina-wilmington",
+  "name": "University of North Carolina - Wilmington",
+  "city": "WILMINGTON",
+  "state": "NC",
+  "website": "https://www.uncw.edu/",
+  "acceptanceRate": 0.74,
+  "enrollment": 12465,
+  "graduationRate": 0.707,
+  "tuitionInState": 7317,
+  "tuitionOutOfState": 22890,
+  "roomAndBoard": 12605,
+  "netPrice": 18606,
+  "medianEarnings6yr": 54234,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "B+",
+    "value": "B",
+    "diversity": "B",
+    "campus": "A-",
+    "athletics": "B+",
+    "partyScene": "A-",
+    "professors": "B+",
+    "location": "A",
+    "dorms": "B",
+    "campusFood": "B+",
+    "studentLife": "A",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-north-carolina-wilmington/"
+}

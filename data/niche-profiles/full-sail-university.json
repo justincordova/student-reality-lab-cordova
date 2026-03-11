@@ -1,0 +1,29 @@
+{
+  "slug": "full-sail-university",
+  "name": "Full Sail University",
+  "city": "WINTER PARK",
+  "state": "FL",
+  "website": "https://www.fullsail.edu/",
+  "acceptanceRate": 1,
+  "enrollment": 25195,
+  "graduationRate": 0.496,
+  "tuitionInState": 26417,
+  "tuitionOutOfState": 26417,
+  "roomAndBoard": null,
+  "netPrice": 30879,
+  "medianEarnings6yr": 39233,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B-",
+    "academics": "C+",
+    "value": "C-",
+    "diversity": "A-",
+    "campus": "A+",
+    "partyScene": "B+",
+    "professors": "C+",
+    "location": "A-",
+    "studentLife": "A+",
+    "safety": "A+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/full-sail-university/"
+}

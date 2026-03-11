@@ -1,0 +1,32 @@
+{
+  "slug": "boston-university",
+  "name": "Boston University",
+  "city": "BOSTON",
+  "state": "MA",
+  "website": "https://www.bu.edu/",
+  "acceptanceRate": 0.108,
+  "enrollment": 17899,
+  "graduationRate": 0.9,
+  "tuitionInState": 69870,
+  "tuitionOutOfState": 69870,
+  "roomAndBoard": 18110,
+  "netPrice": 27551,
+  "medianEarnings6yr": 77307,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A+",
+    "value": "A-",
+    "diversity": "A+",
+    "campus": "B+",
+    "athletics": "A-",
+    "partyScene": "A",
+    "professors": "A+",
+    "location": "A+",
+    "dorms": "B-",
+    "campusFood": "B+",
+    "studentLife": "A+",
+    "safety": "B+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/boston-university/"
+}

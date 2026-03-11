@@ -1,0 +1,32 @@
+{
+  "slug": "virginia-tech",
+  "name": "Virginia Tech",
+  "city": "BLACKSBURG",
+  "state": "VA",
+  "website": "https://www.vt.edu/",
+  "acceptanceRate": 0.57,
+  "enrollment": 29626,
+  "graduationRate": 0.863,
+  "tuitionInState": 15478,
+  "tuitionOutOfState": 36694,
+  "roomAndBoard": 12518,
+  "netPrice": 22205,
+  "medianEarnings6yr": 80730,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A",
+    "value": "A-",
+    "diversity": "A",
+    "campus": "A+",
+    "athletics": "A",
+    "partyScene": "A+",
+    "professors": "A+",
+    "location": "A-",
+    "dorms": "A-",
+    "campusFood": "A+",
+    "studentLife": "A+",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/virginia-tech/"
+}

@@ -1,0 +1,32 @@
+{
+  "slug": "wake-forest-university",
+  "name": "Wake Forest University",
+  "city": "WINSTON-SALEM",
+  "state": "NC",
+  "website": "https://www.wfu.edu/",
+  "acceptanceRate": 0.216,
+  "enrollment": 5413,
+  "graduationRate": 0.909,
+  "tuitionInState": 70332,
+  "tuitionOutOfState": 70332,
+  "roomAndBoard": 20440,
+  "netPrice": 27790,
+  "medianEarnings6yr": 86157,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A+",
+    "value": "A-",
+    "diversity": "A",
+    "campus": "B+",
+    "athletics": "A",
+    "partyScene": "A",
+    "professors": "A+",
+    "location": "B-",
+    "dorms": "B+",
+    "campusFood": "A-",
+    "studentLife": "A-",
+    "safety": "C+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/wake-forest-university/"
+}

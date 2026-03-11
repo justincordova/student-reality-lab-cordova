@@ -1,0 +1,32 @@
+{
+  "slug": "rice-university",
+  "name": "Rice University",
+  "city": "HOUSTON",
+  "state": "TX",
+  "website": "https://www.rice.edu/",
+  "acceptanceRate": 0.079,
+  "enrollment": 4483,
+  "graduationRate": 0.957,
+  "tuitionInState": 57210,
+  "tuitionOutOfState": 57210,
+  "roomAndBoard": 15900,
+  "netPrice": 20587,
+  "medianEarnings6yr": 81896,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A+",
+    "value": "A+",
+    "diversity": "A+",
+    "campus": "A",
+    "athletics": "B+",
+    "partyScene": "A",
+    "professors": "A+",
+    "location": "A+",
+    "dorms": "A",
+    "campusFood": "A",
+    "studentLife": "A+",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/rice-university/"
+}

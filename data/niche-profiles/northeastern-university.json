@@ -1,0 +1,32 @@
+{
+  "slug": "northeastern-university",
+  "name": "Northeastern University",
+  "city": "BOSTON",
+  "state": "MA",
+  "website": "https://www.northeastern.edu/",
+  "acceptanceRate": 0.056,
+  "enrollment": 15857,
+  "graduationRate": 0.904,
+  "tuitionInState": 94137,
+  "tuitionOutOfState": 94137,
+  "roomAndBoard": 18790,
+  "netPrice": 34770,
+  "medianEarnings6yr": 94528,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A+",
+    "value": "A-",
+    "diversity": "A+",
+    "campus": "B+",
+    "athletics": "B+",
+    "partyScene": "B+",
+    "professors": "A",
+    "location": "A+",
+    "dorms": "B-",
+    "campusFood": "B-",
+    "studentLife": "A",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/northeastern-university/"
+}

@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-san-francisco",
+  "name": "University of San Francisco",
+  "city": "SAN FRANCISCO",
+  "state": "CA",
+  "website": "https://www.usfca.edu/",
+  "acceptanceRate": 0.506,
+  "enrollment": 5527,
+  "graduationRate": 0.711,
+  "tuitionInState": 58222,
+  "tuitionOutOfState": 58222,
+  "roomAndBoard": 17300,
+  "netPrice": 44104,
+  "medianEarnings6yr": 87516,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "A-",
+    "value": "B",
+    "diversity": "A+",
+    "campus": "B-",
+    "athletics": "B+",
+    "partyScene": "B",
+    "professors": "B",
+    "location": "A+",
+    "dorms": "C-",
+    "campusFood": "C-",
+    "studentLife": "B+",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-san-francisco/"
+}

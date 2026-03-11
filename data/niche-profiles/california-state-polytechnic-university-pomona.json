@@ -1,0 +1,32 @@
+{
+  "slug": "california-state-polytechnic-university-pomona",
+  "name": "California State Polytechnic University - Pomona",
+  "city": "POMONA",
+  "state": "CA",
+  "website": "https://www.cpp.edu/",
+  "acceptanceRate": 0.737,
+  "enrollment": 21007,
+  "graduationRate": 0.667,
+  "tuitionInState": 7439,
+  "tuitionOutOfState": 19319,
+  "roomAndBoard": 16682,
+  "netPrice": 11898,
+  "medianEarnings6yr": 70795,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B",
+    "academics": "B-",
+    "value": "A",
+    "diversity": "A-",
+    "campus": "C+",
+    "athletics": "A-",
+    "partyScene": "B-",
+    "professors": "B-",
+    "location": "C+",
+    "dorms": "C+",
+    "campusFood": "B+",
+    "studentLife": "B",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/california-state-polytechnic-university-pomona/"
+}

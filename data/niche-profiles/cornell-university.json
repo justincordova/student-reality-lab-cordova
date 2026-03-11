@@ -1,0 +1,32 @@
+{
+  "slug": "cornell-university",
+  "name": "Cornell University",
+  "city": "ITHACA",
+  "state": "NY",
+  "website": "https://www.cornell.edu/",
+  "acceptanceRate": 0.082,
+  "enrollment": 15899,
+  "graduationRate": 0.951,
+  "tuitionInState": 66834,
+  "tuitionOutOfState": 88150,
+  "roomAndBoard": 18504,
+  "netPrice": 26455,
+  "medianEarnings6yr": 104057,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A+",
+    "value": "A",
+    "diversity": "A+",
+    "campus": "A",
+    "athletics": "B+",
+    "partyScene": "A",
+    "professors": "A+",
+    "location": "B",
+    "dorms": "B",
+    "campusFood": "A+",
+    "studentLife": "A+",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/cornell-university/"
+}

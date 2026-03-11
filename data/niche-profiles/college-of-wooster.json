@@ -1,0 +1,32 @@
+{
+  "slug": "college-of-wooster",
+  "name": "College of Wooster",
+  "city": "WOOSTER",
+  "state": "OH",
+  "website": "https://wooster.edu/",
+  "acceptanceRate": 0.543,
+  "enrollment": 1723,
+  "graduationRate": 0.736,
+  "tuitionInState": 65510,
+  "tuitionOutOfState": 65510,
+  "roomAndBoard": 14000,
+  "netPrice": 29529,
+  "medianEarnings6yr": 50255,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "A",
+    "value": "B-",
+    "diversity": "A",
+    "campus": "C-",
+    "athletics": "B-",
+    "partyScene": "B-",
+    "professors": "B+",
+    "location": "C-",
+    "dorms": "C",
+    "campusFood": "C-",
+    "studentLife": "C+",
+    "safety": "C+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/college-of-wooster/"
+}

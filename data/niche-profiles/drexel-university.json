@@ -1,0 +1,32 @@
+{
+  "slug": "drexel-university",
+  "name": "Drexel University",
+  "city": "PHILADELPHIA",
+  "state": "PA",
+  "website": "https://drexel.edu/",
+  "acceptanceRate": 0.776,
+  "enrollment": 12505,
+  "graduationRate": 0.771,
+  "tuitionInState": 60042,
+  "tuitionOutOfState": 60042,
+  "roomAndBoard": 17550,
+  "netPrice": 42342,
+  "medianEarnings6yr": 89242,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A-",
+    "academics": "A-",
+    "value": "B+",
+    "diversity": "A+",
+    "campus": "C-",
+    "athletics": "B",
+    "partyScene": "B+",
+    "professors": "A+",
+    "location": "A",
+    "dorms": "C-",
+    "campusFood": "C",
+    "studentLife": "B",
+    "safety": "C+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/drexel-university/"
+}

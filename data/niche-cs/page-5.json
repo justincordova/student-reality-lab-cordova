@@ -1,0 +1,127 @@
+[
+  {
+    "slug": "stony-brook-university",
+    "name": "Stony Brook University",
+    "rank": 101
+  },
+  {
+    "slug": "binghamton-university-suny",
+    "name": "Binghamton University, SUNY",
+    "rank": 102
+  },
+  {
+    "slug": "hamilton-college",
+    "name": "Hamilton College",
+    "rank": 103
+  },
+  {
+    "slug": "university-at-buffalo-suny",
+    "name": "University at Buffalo, SUNY",
+    "rank": 104
+  },
+  {
+    "slug": "michigan-state-university",
+    "name": "Michigan State University",
+    "rank": 105
+  },
+  {
+    "slug": "carleton-college",
+    "name": "Carleton College",
+    "rank": 106
+  },
+  {
+    "slug": "florida-institute-of-technology",
+    "name": "Florida Institute of Technology",
+    "rank": 107
+  },
+  {
+    "slug": "colgate-university",
+    "name": "Colgate University",
+    "rank": 108
+  },
+  {
+    "slug": "haverford-college",
+    "name": "Haverford College",
+    "rank": 109
+  },
+  {
+    "slug": "university-of-houston",
+    "name": "University of Houston",
+    "rank": 110
+  },
+  {
+    "slug": "university-of-maryland-global-campus",
+    "name": "University of Maryland - Global Campus",
+    "rank": 111
+  },
+  {
+    "slug": "university-of-south-carolina",
+    "name": "University of South Carolina",
+    "rank": 112
+  },
+  {
+    "slug": "virginia-commonwealth-university",
+    "name": "Virginia Commonwealth University",
+    "rank": 113
+  },
+  {
+    "slug": "university-of-illinois-chicago",
+    "name": "University of Illinois Chicago",
+    "rank": 114
+  },
+  {
+    "slug": "grinnell-college",
+    "name": "Grinnell College",
+    "rank": 115
+  },
+  {
+    "slug": "oregon-state-university",
+    "name": "Oregon State University",
+    "rank": 116
+  },
+  {
+    "slug": "southern-methodist-university",
+    "name": "Southern Methodist University",
+    "rank": 117
+  },
+  {
+    "slug": "syracuse-university",
+    "name": "Syracuse University",
+    "rank": 118
+  },
+  {
+    "slug": "george-washington-university",
+    "name": "George Washington University",
+    "rank": 119
+  },
+  {
+    "slug": "united-states-naval-academy",
+    "name": "United States Naval Academy",
+    "rank": 120
+  },
+  {
+    "slug": "university-of-arizona",
+    "name": "University of Arizona",
+    "rank": 121
+  },
+  {
+    "slug": "drexel-university",
+    "name": "Drexel University",
+    "rank": 122
+  },
+  {
+    "slug": "university-of-texas-arlington",
+    "name": "University of Texas - Arlington",
+    "rank": 123
+  },
+  {
+    "slug": "university-of-the-people",
+    "name": "University of the People",
+    "rank": 124
+  },
+  {
+    "slug": "united-states-air-force-academy",
+    "name": "United States Air Force Academy",
+    "rank": 125
+  }
+]

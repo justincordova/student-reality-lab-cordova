@@ -1,0 +1,30 @@
+{
+  "slug": "lehman-college-city-university-of-new-york-cuny",
+  "name": "Lehman College - City University of New York (CUNY)",
+  "city": "BRONX",
+  "state": "NY",
+  "website": "https://www.lehman.edu/",
+  "acceptanceRate": 0.554,
+  "enrollment": 7396,
+  "graduationRate": 0.493,
+  "tuitionInState": 7410,
+  "tuitionOutOfState": 15360,
+  "roomAndBoard": null,
+  "netPrice": 4076,
+  "medianEarnings6yr": 63847,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "B",
+    "value": "A+",
+    "diversity": "B+",
+    "campus": "B+",
+    "athletics": "B-",
+    "partyScene": "B-",
+    "professors": "B-",
+    "location": "B-",
+    "studentLife": "B",
+    "safety": "A"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/lehman-college-city-university-of-new-york-cuny/"
+}

@@ -1,0 +1,29 @@
+{
+  "slug": "university-of-maryland-global-campus",
+  "name": "University of Maryland - Global Campus",
+  "city": "ADELPHI",
+  "state": "MD",
+  "website": "https://www.umgc.edu/",
+  "acceptanceRate": 1,
+  "enrollment": 11395,
+  "graduationRate": 0.296,
+  "tuitionInState": 7992,
+  "tuitionOutOfState": 12336,
+  "roomAndBoard": null,
+  "netPrice": 14545,
+  "medianEarnings6yr": 81769,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B-",
+    "academics": "C",
+    "value": "B",
+    "diversity": "A",
+    "campus": "A-",
+    "partyScene": "C",
+    "professors": "C+",
+    "location": "B+",
+    "studentLife": "B+",
+    "safety": "A+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-maryland-global-campus/"
+}

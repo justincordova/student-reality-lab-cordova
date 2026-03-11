@@ -1,0 +1,30 @@
+{
+  "slug": "purdue-university-northwest",
+  "name": "Purdue University Northwest",
+  "city": "HAMMOND",
+  "state": "IN",
+  "website": "https://www.pnw.edu/",
+  "acceptanceRate": 0.71,
+  "enrollment": 4668,
+  "graduationRate": 0.44,
+  "tuitionInState": 8672,
+  "tuitionOutOfState": 12968,
+  "roomAndBoard": null,
+  "netPrice": 9637,
+  "medianEarnings6yr": 64593,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "B",
+    "value": "A-",
+    "diversity": "A",
+    "campus": "B-",
+    "athletics": "B",
+    "partyScene": "C+",
+    "professors": "B",
+    "location": "B-",
+    "dorms": "B",
+    "studentLife": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/purdue-university-northwest/"
+}

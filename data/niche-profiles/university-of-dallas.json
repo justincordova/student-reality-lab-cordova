@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-dallas",
+  "name": "University of Dallas",
+  "city": "IRVING",
+  "state": "TX",
+  "website": "https://udallas.edu/",
+  "acceptanceRate": 0.542,
+  "enrollment": 1376,
+  "graduationRate": 0.68,
+  "tuitionInState": 50880,
+  "tuitionOutOfState": 50880,
+  "roomAndBoard": 14360,
+  "netPrice": 31221,
+  "medianEarnings6yr": 60044,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "A-",
+    "value": "B-",
+    "diversity": "A-",
+    "campus": "C",
+    "athletics": "B-",
+    "partyScene": "B",
+    "professors": "B",
+    "location": "B",
+    "dorms": "C+",
+    "campusFood": "C",
+    "studentLife": "B+",
+    "safety": "B+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-dallas/"
+}

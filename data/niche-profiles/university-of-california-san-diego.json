@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-california-san-diego",
+  "name": "University of California - San Diego",
+  "city": "LA JOLLA",
+  "state": "CA",
+  "website": "https://www.ucsd.edu/",
+  "acceptanceRate": 0.245,
+  "enrollment": 32852,
+  "graduationRate": 0.876,
+  "tuitionInState": 15265,
+  "tuitionOutOfState": 46042,
+  "roomAndBoard": null,
+  "netPrice": 13293,
+  "medianEarnings6yr": 84593,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A+",
+    "value": "A",
+    "diversity": "A",
+    "campus": "B",
+    "athletics": "B+",
+    "partyScene": "C+",
+    "professors": "A+",
+    "location": "A",
+    "dorms": "B-",
+    "campusFood": "B+",
+    "studentLife": "B+",
+    "safety": "C+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-california-san-diego/"
+}

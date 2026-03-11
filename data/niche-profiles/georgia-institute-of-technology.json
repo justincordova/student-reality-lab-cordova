@@ -1,0 +1,32 @@
+{
+  "slug": "georgia-institute-of-technology",
+  "name": "Georgia Institute of Technology",
+  "city": "ATLANTA",
+  "state": "GA",
+  "website": "https://www.gatech.edu/",
+  "acceptanceRate": 0.165,
+  "enrollment": 17171,
+  "graduationRate": 0.923,
+  "tuitionInState": 28584,
+  "tuitionOutOfState": 49696,
+  "roomAndBoard": 12760,
+  "netPrice": 15901,
+  "medianEarnings6yr": 104923,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A+",
+    "value": "A+",
+    "diversity": "A",
+    "campus": "B",
+    "athletics": "B+",
+    "partyScene": "A-",
+    "professors": "A+",
+    "location": "A",
+    "dorms": "C",
+    "campusFood": "C",
+    "studentLife": "A",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/georgia-institute-of-technology/"
+}

@@ -1,0 +1,31 @@
+{
+  "slug": "kennesaw-state-university",
+  "name": "Kennesaw State University",
+  "city": "KENNESAW",
+  "state": "GA",
+  "website": "https://www.kennesaw.edu/",
+  "acceptanceRate": 0.692,
+  "enrollment": 30256,
+  "graduationRate": 0.481,
+  "tuitionInState": 5700,
+  "tuitionOutOfState": 20610,
+  "roomAndBoard": 13027,
+  "netPrice": 17566,
+  "medianEarnings6yr": 62098,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "B",
+    "value": "B",
+    "diversity": "A",
+    "campus": "A",
+    "athletics": "A",
+    "partyScene": "A-",
+    "professors": "C+",
+    "location": "A-",
+    "dorms": "B-",
+    "campusFood": "A+",
+    "studentLife": "A"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/kennesaw-state-university/"
+}

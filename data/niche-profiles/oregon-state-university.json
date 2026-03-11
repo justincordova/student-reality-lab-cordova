@@ -1,0 +1,32 @@
+{
+  "slug": "oregon-state-university",
+  "name": "Oregon State University",
+  "city": "CORVALLIS",
+  "state": "OR",
+  "website": "https://oregonstate.edu/",
+  "acceptanceRate": 0.788,
+  "enrollment": 20819,
+  "graduationRate": 0.706,
+  "tuitionInState": 13494,
+  "tuitionOutOfState": 35664,
+  "roomAndBoard": 16080,
+  "netPrice": 21868,
+  "medianEarnings6yr": 65204,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A-",
+    "academics": "A-",
+    "value": "B+",
+    "diversity": "A",
+    "campus": "B+",
+    "athletics": "A",
+    "partyScene": "A",
+    "professors": "A",
+    "location": "B+",
+    "dorms": "C+",
+    "campusFood": "B+",
+    "studentLife": "A",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/oregon-state-university/"
+}

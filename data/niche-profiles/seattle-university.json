@@ -1,0 +1,32 @@
+{
+  "slug": "seattle-university",
+  "name": "Seattle University",
+  "city": "SEATTLE",
+  "state": "WA",
+  "website": "https://www.seattleu.edu/",
+  "acceptanceRate": 0.76,
+  "enrollment": 3997,
+  "graduationRate": 0.733,
+  "tuitionInState": 57825,
+  "tuitionOutOfState": 57825,
+  "roomAndBoard": 15888,
+  "netPrice": 37103,
+  "medianEarnings6yr": 79122,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A-",
+    "academics": "B+",
+    "value": "B",
+    "diversity": "A",
+    "campus": "A-",
+    "athletics": "A-",
+    "partyScene": "B",
+    "professors": "B+",
+    "location": "A+",
+    "dorms": "B-",
+    "campusFood": "B+",
+    "studentLife": "A-",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/seattle-university/"
+}

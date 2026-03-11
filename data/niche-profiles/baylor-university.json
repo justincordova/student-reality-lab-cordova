@@ -1,0 +1,32 @@
+{
+  "slug": "baylor-university",
+  "name": "Baylor University",
+  "city": "WACO",
+  "state": "TX",
+  "website": "https://www.baylor.edu/",
+  "acceptanceRate": 0.51,
+  "enrollment": 14566,
+  "graduationRate": 0.802,
+  "tuitionInState": 63620,
+  "tuitionOutOfState": 63620,
+  "roomAndBoard": 14235,
+  "netPrice": 49727,
+  "medianEarnings6yr": 66167,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A-",
+    "academics": "A",
+    "value": "C+",
+    "diversity": "A-",
+    "campus": "A-",
+    "athletics": "A+",
+    "partyScene": "B",
+    "professors": "A-",
+    "location": "C",
+    "dorms": "B+",
+    "campusFood": "B+",
+    "studentLife": "A",
+    "safety": "C+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/baylor-university/"
+}

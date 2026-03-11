@@ -1,0 +1,32 @@
+{
+  "slug": "california-baptist-university",
+  "name": "California Baptist University",
+  "city": "RIVERSIDE",
+  "state": "CA",
+  "website": "https://www.calbaptist.edu/",
+  "acceptanceRate": 0.736,
+  "enrollment": 7459,
+  "graduationRate": 0.595,
+  "tuitionInState": 40638,
+  "tuitionOutOfState": 40638,
+  "roomAndBoard": 14450,
+  "netPrice": 28596,
+  "medianEarnings6yr": 63882,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A-",
+    "academics": "B+",
+    "value": "B",
+    "diversity": "A",
+    "campus": "A+",
+    "athletics": "A-",
+    "partyScene": "C-",
+    "professors": "B+",
+    "location": "B-",
+    "dorms": "A+",
+    "campusFood": "A+",
+    "studentLife": "A",
+    "safety": "B+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/california-baptist-university/"
+}

@@ -1,0 +1,32 @@
+{
+  "slug": "rider-university",
+  "name": "Rider University",
+  "city": "LAWRENCEVILLE",
+  "state": "NJ",
+  "website": "https://www.rider.edu/",
+  "acceptanceRate": 0.794,
+  "enrollment": 2984,
+  "graduationRate": 0.633,
+  "tuitionInState": 41700,
+  "tuitionOutOfState": 41700,
+  "roomAndBoard": 16730,
+  "netPrice": 26618,
+  "medianEarnings6yr": 60862,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B",
+    "academics": "B",
+    "value": "B",
+    "diversity": "A",
+    "campus": "C+",
+    "athletics": "B+",
+    "partyScene": "B",
+    "professors": "B",
+    "location": "B",
+    "dorms": "C-",
+    "campusFood": "B-",
+    "studentLife": "B",
+    "safety": "B+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/rider-university/"
+}

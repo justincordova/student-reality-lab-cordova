@@ -1,0 +1,32 @@
+{
+  "slug": "california-state-university-monterey-bay",
+  "name": "California State University - Monterey Bay",
+  "city": "SEASIDE",
+  "state": "CA",
+  "website": "https://csumb.edu/",
+  "acceptanceRate": 0.948,
+  "enrollment": 5204,
+  "graduationRate": 0.632,
+  "tuitionInState": 6450,
+  "tuitionOutOfState": 19770,
+  "roomAndBoard": 14102,
+  "netPrice": 15222,
+  "medianEarnings6yr": 58786,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B",
+    "academics": "B-",
+    "value": "B+",
+    "diversity": "A",
+    "campus": "C+",
+    "athletics": "B-",
+    "partyScene": "C+",
+    "professors": "B+",
+    "location": "A",
+    "dorms": "B-",
+    "campusFood": "C+",
+    "studentLife": "B",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/california-state-university-monterey-bay/"
+}

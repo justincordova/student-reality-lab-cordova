@@ -1,0 +1,31 @@
+{
+  "slug": "suny-farmingdale-state-college",
+  "name": "SUNY Farmingdale State College",
+  "city": "FARMINGDALE",
+  "state": "NY",
+  "website": "https://www.farmingdale.edu/",
+  "acceptanceRate": 0.691,
+  "enrollment": 7622,
+  "graduationRate": 0.571,
+  "tuitionInState": 8576,
+  "tuitionOutOfState": 18486,
+  "roomAndBoard": 14546,
+  "netPrice": 8224,
+  "medianEarnings6yr": 66973,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B",
+    "academics": "B",
+    "value": "A",
+    "diversity": "A-",
+    "campus": "C+",
+    "athletics": "B-",
+    "partyScene": "C+",
+    "professors": "C+",
+    "location": "B-",
+    "campusFood": "B-",
+    "studentLife": "B-",
+    "safety": "A"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/suny-farmingdale-state-college/"
+}

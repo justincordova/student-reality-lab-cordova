@@ -1,0 +1,32 @@
+{
+  "slug": "saint-louis-university",
+  "name": "Saint Louis University",
+  "city": "ST. LOUIS",
+  "state": "MO",
+  "website": "https://www.slu.edu/",
+  "acceptanceRate": 0.815,
+  "enrollment": 7781,
+  "graduationRate": 0.798,
+  "tuitionInState": 56900,
+  "tuitionOutOfState": 56900,
+  "roomAndBoard": 14460,
+  "netPrice": 30911,
+  "medianEarnings6yr": 71900,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A-",
+    "academics": "A-",
+    "value": "B+",
+    "diversity": "A",
+    "campus": "B",
+    "athletics": "B+",
+    "partyScene": "B+",
+    "professors": "A",
+    "location": "A-",
+    "dorms": "B-",
+    "campusFood": "B-",
+    "studentLife": "B+",
+    "safety": "C"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/saint-louis-university/"
+}

@@ -1,0 +1,32 @@
+{
+  "slug": "middle-tennessee-state-university",
+  "name": "Middle Tennessee State University",
+  "city": "MURFREESBORO",
+  "state": "TN",
+  "website": "https://www.mtsu.edu/",
+  "acceptanceRate": 0.68,
+  "enrollment": 13950,
+  "graduationRate": 0.54,
+  "tuitionInState": 9506,
+  "tuitionOutOfState": 29042,
+  "roomAndBoard": 9772,
+  "netPrice": 12700,
+  "medianEarnings6yr": 50530,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "B+",
+    "value": "B+",
+    "diversity": "B+",
+    "campus": "B+",
+    "athletics": "B+",
+    "partyScene": "B+",
+    "professors": "B+",
+    "location": "B",
+    "dorms": "C+",
+    "campusFood": "A",
+    "studentLife": "B+",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/middle-tennessee-state-university/"
+}

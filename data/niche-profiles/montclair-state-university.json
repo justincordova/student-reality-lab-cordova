@@ -1,0 +1,32 @@
+{
+  "slug": "montclair-state-university",
+  "name": "Montclair State University",
+  "city": "MONTCLAIR",
+  "state": "NJ",
+  "website": "https://www.montclair.edu/",
+  "acceptanceRate": 0.874,
+  "enrollment": 16268,
+  "graduationRate": 0.643,
+  "tuitionInState": 15912,
+  "tuitionOutOfState": 26002,
+  "roomAndBoard": 16822,
+  "netPrice": 13880,
+  "medianEarnings6yr": 58895,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "B",
+    "value": "B",
+    "diversity": "A",
+    "campus": "B+",
+    "athletics": "B",
+    "partyScene": "B",
+    "professors": "B+",
+    "location": "A",
+    "dorms": "B-",
+    "campusFood": "B",
+    "studentLife": "A-",
+    "safety": "B+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/montclair-state-university/"
+}

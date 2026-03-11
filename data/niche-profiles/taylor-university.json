@@ -1,0 +1,32 @@
+{
+  "slug": "taylor-university",
+  "name": "Taylor University",
+  "city": "UPLAND",
+  "state": "IN",
+  "website": "https://www.taylor.edu/",
+  "acceptanceRate": 0.761,
+  "enrollment": 1863,
+  "graduationRate": 0.766,
+  "tuitionInState": 39104,
+  "tuitionOutOfState": 39104,
+  "roomAndBoard": 10888,
+  "netPrice": 25698,
+  "medianEarnings6yr": 51838,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "B+",
+    "value": "B",
+    "diversity": "B+",
+    "campus": "B+",
+    "athletics": "B-",
+    "partyScene": "C-",
+    "professors": "B",
+    "location": "C",
+    "dorms": "A",
+    "campusFood": "B",
+    "studentLife": "A-",
+    "safety": "A"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/taylor-university/"
+}

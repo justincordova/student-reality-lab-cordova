@@ -1,0 +1,32 @@
+{
+  "slug": "the-university-of-kansas",
+  "name": "The University of Kansas",
+  "city": "LAWRENCE",
+  "state": "KS",
+  "website": "https://www.ku.edu/",
+  "acceptanceRate": 0.882,
+  "enrollment": 18262,
+  "graduationRate": 0.688,
+  "tuitionInState": 11167,
+  "tuitionOutOfState": 28035,
+  "roomAndBoard": 10818,
+  "netPrice": 18322,
+  "medianEarnings6yr": 65141,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A",
+    "academics": "A-",
+    "value": "B+",
+    "diversity": "A-",
+    "campus": "A-",
+    "athletics": "A+",
+    "partyScene": "A+",
+    "professors": "A",
+    "location": "A",
+    "dorms": "B-",
+    "campusFood": "B+",
+    "studentLife": "A+",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/the-university-of-kansas/"
+}

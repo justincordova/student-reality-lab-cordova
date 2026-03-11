@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-iowa",
+  "name": "University of Iowa",
+  "city": "IOWA CITY",
+  "state": "IA",
+  "website": "https://uiowa.edu/",
+  "acceptanceRate": 0.847,
+  "enrollment": 20622,
+  "graduationRate": 0.731,
+  "tuitionInState": 11622,
+  "tuitionOutOfState": 33710,
+  "roomAndBoard": 11400,
+  "netPrice": 20121,
+  "medianEarnings6yr": 66310,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A",
+    "academics": "A",
+    "value": "B+",
+    "diversity": "B+",
+    "campus": "A",
+    "athletics": "A",
+    "partyScene": "A+",
+    "professors": "A+",
+    "location": "A",
+    "dorms": "A-",
+    "campusFood": "A+",
+    "studentLife": "A+",
+    "safety": "C+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-iowa/"
+}

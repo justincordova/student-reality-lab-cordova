@@ -1,0 +1,31 @@
+{
+  "slug": "southern-new-hampshire-university",
+  "name": "Southern New Hampshire University",
+  "city": "MANCHESTER",
+  "state": "NH",
+  "website": "https://campus.snhu.edu/",
+  "acceptanceRate": 0.961,
+  "enrollment": 2285,
+  "graduationRate": 0.449,
+  "tuitionInState": 17790,
+  "tuitionOutOfState": 17790,
+  "roomAndBoard": 12800,
+  "netPrice": 33163,
+  "medianEarnings6yr": 63467,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B-",
+    "academics": "C+",
+    "value": "C+",
+    "diversity": "A",
+    "campus": "A",
+    "athletics": "B",
+    "partyScene": "B-",
+    "professors": "C",
+    "location": "B+",
+    "campusFood": "A",
+    "studentLife": "A",
+    "safety": "A"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/southern-new-hampshire-university/"
+}

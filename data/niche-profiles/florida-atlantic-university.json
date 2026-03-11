@@ -1,0 +1,32 @@
+{
+  "slug": "florida-atlantic-university",
+  "name": "Florida Atlantic University",
+  "city": "BOCA RATON",
+  "state": "FL",
+  "website": "https://www.fau.edu/",
+  "acceptanceRate": 0.734,
+  "enrollment": 17651,
+  "graduationRate": 0.643,
+  "tuitionInState": 5816,
+  "tuitionOutOfState": 20192,
+  "roomAndBoard": 10304,
+  "netPrice": 9839,
+  "medianEarnings6yr": 56588,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A-",
+    "academics": "B+",
+    "value": "B+",
+    "diversity": "A",
+    "campus": "B+",
+    "athletics": "B+",
+    "partyScene": "A-",
+    "professors": "A-",
+    "location": "A",
+    "dorms": "B",
+    "campusFood": "A-",
+    "studentLife": "A",
+    "safety": "B+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/florida-atlantic-university/"
+}

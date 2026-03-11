@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-rhode-island",
+  "name": "University of Rhode Island",
+  "city": "KINGSTON",
+  "state": "RI",
+  "website": "https://web.uri.edu/",
+  "acceptanceRate": 0.771,
+  "enrollment": 13092,
+  "graduationRate": 0.71,
+  "tuitionInState": 16408,
+  "tuitionOutOfState": 35804,
+  "roomAndBoard": 14880,
+  "netPrice": 20964,
+  "medianEarnings6yr": 67282,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B",
+    "academics": "B",
+    "value": "B",
+    "diversity": "B+",
+    "campus": "C+",
+    "athletics": "B+",
+    "partyScene": "A-",
+    "professors": "B+",
+    "location": "B",
+    "dorms": "C",
+    "campusFood": "B-",
+    "studentLife": "B",
+    "safety": "B+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-rhode-island/"
+}

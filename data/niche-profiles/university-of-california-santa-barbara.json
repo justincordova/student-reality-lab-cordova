@@ -1,0 +1,31 @@
+{
+  "slug": "university-of-california-santa-barbara",
+  "name": "University of California - Santa Barbara",
+  "city": "SANTA BARBARA",
+  "state": "CA",
+  "website": "https://www.ucsb.edu/",
+  "acceptanceRate": 0.278,
+  "enrollment": 22659,
+  "graduationRate": 0.853,
+  "tuitionInState": 15666,
+  "tuitionOutOfState": 48240,
+  "roomAndBoard": null,
+  "netPrice": 15283,
+  "medianEarnings6yr": 71288,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A",
+    "academics": "A",
+    "value": "A-",
+    "diversity": "A",
+    "campus": "A-",
+    "athletics": "A-",
+    "partyScene": "A+",
+    "professors": "A",
+    "dorms": "C+",
+    "campusFood": "B",
+    "studentLife": "A+",
+    "safety": "C+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-california-santa-barbara/"
+}

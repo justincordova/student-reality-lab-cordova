@@ -1,0 +1,32 @@
+{
+  "slug": "university-at-albany-suny",
+  "name": "University at Albany, SUNY",
+  "city": "ALBANY",
+  "state": "NY",
+  "website": "https://www.albany.edu/",
+  "acceptanceRate": 0.699,
+  "enrollment": 12017,
+  "graduationRate": 0.639,
+  "tuitionInState": 10716,
+  "tuitionOutOfState": 31926,
+  "roomAndBoard": 16182,
+  "netPrice": 19165,
+  "medianEarnings6yr": 64597,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B",
+    "academics": "B",
+    "value": "B",
+    "diversity": "A",
+    "campus": "C+",
+    "athletics": "B+",
+    "partyScene": "A+",
+    "professors": "A-",
+    "location": "B",
+    "dorms": "C-",
+    "campusFood": "C+",
+    "studentLife": "A-",
+    "safety": "C+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-at-albany-suny/"
+}

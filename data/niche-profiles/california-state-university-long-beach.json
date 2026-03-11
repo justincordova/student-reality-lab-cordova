@@ -1,0 +1,32 @@
+{
+  "slug": "california-state-university-long-beach",
+  "name": "California State University - Long Beach",
+  "city": "LONG BEACH",
+  "state": "CA",
+  "website": "https://www.csulb.edu/",
+  "acceptanceRate": 0.471,
+  "enrollment": 28962,
+  "graduationRate": 0.699,
+  "tuitionInState": 7008,
+  "tuitionOutOfState": 18888,
+  "roomAndBoard": 14094,
+  "netPrice": 9731,
+  "medianEarnings6yr": 62005,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A-",
+    "academics": "B+",
+    "value": "A",
+    "diversity": "A-",
+    "campus": "A-",
+    "athletics": "B+",
+    "partyScene": "A-",
+    "professors": "B",
+    "location": "A",
+    "dorms": "B-",
+    "campusFood": "A",
+    "studentLife": "A",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/california-state-university-long-beach/"
+}

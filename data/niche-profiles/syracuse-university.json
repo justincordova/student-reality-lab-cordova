@@ -1,0 +1,32 @@
+{
+  "slug": "syracuse-university",
+  "name": "Syracuse University",
+  "city": "SYRACUSE",
+  "state": "NY",
+  "website": "https://www.syracuse.edu/",
+  "acceptanceRate": 0.417,
+  "enrollment": 15081,
+  "graduationRate": 0.814,
+  "tuitionInState": 63061,
+  "tuitionOutOfState": 63061,
+  "roomAndBoard": 18444,
+  "netPrice": 51520,
+  "medianEarnings6yr": 74809,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A-",
+    "academics": "A",
+    "value": "B-",
+    "diversity": "A",
+    "campus": "B",
+    "athletics": "A+",
+    "partyScene": "A+",
+    "professors": "A",
+    "location": "C",
+    "dorms": "B",
+    "campusFood": "C",
+    "studentLife": "A+",
+    "safety": "C"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/syracuse-university/"
+}

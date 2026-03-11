@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-missourist-louis",
+  "name": "University of Missouri—St. Louis",
+  "city": "SAINT LOUIS",
+  "state": "MO",
+  "website": "https://www.umsl.edu/",
+  "acceptanceRate": 0.571,
+  "enrollment": 4198,
+  "graduationRate": 0.569,
+  "tuitionInState": 13440,
+  "tuitionOutOfState": 33432,
+  "roomAndBoard": 12756,
+  "netPrice": 11577,
+  "medianEarnings6yr": 57438,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "B+",
+    "value": "B+",
+    "diversity": "A",
+    "campus": "C",
+    "athletics": "B-",
+    "partyScene": "C+",
+    "professors": "A-",
+    "location": "C-",
+    "dorms": "C",
+    "campusFood": "B+",
+    "studentLife": "B-",
+    "safety": "A-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-missourist-louis/"
+}

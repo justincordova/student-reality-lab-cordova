@@ -1,0 +1,32 @@
+{
+  "slug": "stevens-institute-of-technology",
+  "name": "Stevens Institute of Technology",
+  "city": "HOBOKEN",
+  "state": "NJ",
+  "website": "https://www.stevens.edu/",
+  "acceptanceRate": 0.434,
+  "enrollment": 4190,
+  "graduationRate": 0.899,
+  "tuitionInState": 65606,
+  "tuitionOutOfState": 65606,
+  "roomAndBoard": 18430,
+  "netPrice": 43665,
+  "medianEarnings6yr": 107922,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A",
+    "academics": "A",
+    "value": "A-",
+    "diversity": "A-",
+    "campus": "B-",
+    "athletics": "B-",
+    "partyScene": "B+",
+    "professors": "B+",
+    "location": "A+",
+    "dorms": "C+",
+    "campusFood": "C",
+    "studentLife": "A-",
+    "safety": "A-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/stevens-institute-of-technology/"
+}

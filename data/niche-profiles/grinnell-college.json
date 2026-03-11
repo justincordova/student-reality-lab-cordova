@@ -1,0 +1,32 @@
+{
+  "slug": "grinnell-college",
+  "name": "Grinnell College",
+  "city": "GRINNELL",
+  "state": "IA",
+  "website": "https://www.grinnell.edu/",
+  "acceptanceRate": 0.125,
+  "enrollment": 1729,
+  "graduationRate": 0.875,
+  "tuitionInState": 71788,
+  "tuitionOutOfState": 71788,
+  "roomAndBoard": 15878,
+  "netPrice": 33446,
+  "medianEarnings6yr": 58675,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A",
+    "academics": "A+",
+    "value": "B",
+    "diversity": "A+",
+    "campus": "D+",
+    "athletics": "B-",
+    "partyScene": "B",
+    "professors": "A",
+    "location": "C",
+    "dorms": "C",
+    "campusFood": "C-",
+    "studentLife": "C+",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/grinnell-college/"
+}

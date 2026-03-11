@@ -1,0 +1,127 @@
+[
+  {
+    "slug": "university-of-nevada-las-vegas",
+    "name": "University of Nevada, Las Vegas",
+    "rank": 301
+  },
+  {
+    "slug": "university-of-portland",
+    "name": "University of Portland",
+    "rank": 302
+  },
+  {
+    "slug": "university-of-dallas",
+    "name": "University of Dallas",
+    "rank": 303
+  },
+  {
+    "slug": "florida-a-and-m-university",
+    "name": "Florida A&M University",
+    "rank": 304
+  },
+  {
+    "slug": "montana-state-university",
+    "name": "Montana State University",
+    "rank": 305
+  },
+  {
+    "slug": "appalachian-state-university",
+    "name": "Appalachian State University",
+    "rank": 306
+  },
+  {
+    "slug": "american-university",
+    "name": "American University",
+    "rank": 307
+  },
+  {
+    "slug": "connecticut-college",
+    "name": "Connecticut College",
+    "rank": 308
+  },
+  {
+    "slug": "taylor-university",
+    "name": "Taylor University",
+    "rank": 309
+  },
+  {
+    "slug": "rollins-college",
+    "name": "Rollins College",
+    "rank": 310
+  },
+  {
+    "slug": "middle-tennessee-state-university",
+    "name": "Middle Tennessee State University",
+    "rank": 311
+  },
+  {
+    "slug": "california-state-university-fullerton",
+    "name": "California State University, Fullerton",
+    "rank": 312
+  },
+  {
+    "slug": "university-of-new-hampshire-at-manchester",
+    "name": "University of New Hampshire at Manchester",
+    "rank": 313
+  },
+  {
+    "slug": "bentley-university",
+    "name": "Bentley University",
+    "rank": 314
+  },
+  {
+    "slug": "lawrence-technological-university",
+    "name": "Lawrence Technological University",
+    "rank": 315
+  },
+  {
+    "slug": "fordham-university",
+    "name": "Fordham University",
+    "rank": 316
+  },
+  {
+    "slug": "loyola-university-chicago",
+    "name": "Loyola University Chicago",
+    "rank": 317
+  },
+  {
+    "slug": "wentworth-institute-of-technology",
+    "name": "Wentworth Institute of Technology",
+    "rank": 318
+  },
+  {
+    "slug": "east-carolina-university",
+    "name": "East Carolina University",
+    "rank": 319
+  },
+  {
+    "slug": "california-state-university-dominguez-hills",
+    "name": "California State University - Dominguez Hills",
+    "rank": 320
+  },
+  {
+    "slug": "columbus-state-university",
+    "name": "Columbus State University",
+    "rank": 321
+  },
+  {
+    "slug": "embry-riddle-aeronautical-university-daytona-beach",
+    "name": "Embry-Riddle Aeronautical University - Daytona Beach",
+    "rank": 322
+  },
+  {
+    "slug": "california-state-university-northridge",
+    "name": "California State University - Northridge",
+    "rank": 323
+  },
+  {
+    "slug": "montclair-state-university",
+    "name": "Montclair State University",
+    "rank": 324
+  },
+  {
+    "slug": "east-tennessee-state-university",
+    "name": "East Tennessee State University",
+    "rank": 325
+  }
+]

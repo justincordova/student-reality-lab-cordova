@@ -1,0 +1,32 @@
+{
+  "slug": "georgia-state-university",
+  "name": "Georgia State University",
+  "city": "ATLANTA",
+  "state": "GA",
+  "website": "https://www.gsu.edu/",
+  "acceptanceRate": 0.623,
+  "enrollment": 20926,
+  "graduationRate": 0.537,
+  "tuitionInState": 8478,
+  "tuitionOutOfState": 23709,
+  "roomAndBoard": 16528,
+  "netPrice": 16390,
+  "medianEarnings6yr": 56218,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "B+",
+    "value": "B",
+    "diversity": "A+",
+    "campus": "C+",
+    "athletics": "B+",
+    "partyScene": "A",
+    "professors": "B+",
+    "location": "A-",
+    "dorms": "C+",
+    "campusFood": "A-",
+    "studentLife": "B+",
+    "safety": "C"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/georgia-state-university/"
+}

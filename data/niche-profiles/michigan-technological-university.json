@@ -1,0 +1,32 @@
+{
+  "slug": "michigan-technological-university",
+  "name": "Michigan Technological University",
+  "city": "HOUGHTON",
+  "state": "MI",
+  "website": "https://www.mtu.edu/go/",
+  "acceptanceRate": 0.88,
+  "enrollment": 5765,
+  "graduationRate": 0.687,
+  "tuitionInState": 19982,
+  "tuitionOutOfState": 44878,
+  "roomAndBoard": 12554,
+  "netPrice": 17928,
+  "medianEarnings6yr": 85800,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A",
+    "academics": "B+",
+    "value": "A",
+    "diversity": "B",
+    "campus": "B",
+    "athletics": "B",
+    "partyScene": "B+",
+    "professors": "A",
+    "location": "A",
+    "dorms": "B-",
+    "campusFood": "C",
+    "studentLife": "A",
+    "safety": "A-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/michigan-technological-university/"
+}

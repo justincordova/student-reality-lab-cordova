@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-the-pacific",
+  "name": "University of the Pacific",
+  "city": "STOCKTON",
+  "state": "CA",
+  "website": "https://www.pacific.edu/",
+  "acceptanceRate": 0.949,
+  "enrollment": 3181,
+  "graduationRate": 0.678,
+  "tuitionInState": 55340,
+  "tuitionOutOfState": 55340,
+  "roomAndBoard": 16688,
+  "netPrice": 30975,
+  "medianEarnings6yr": 76827,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B",
+    "academics": "B+",
+    "value": "B+",
+    "diversity": "A",
+    "campus": "C+",
+    "athletics": "B+",
+    "partyScene": "B",
+    "professors": "A-",
+    "location": "C-",
+    "dorms": "C+",
+    "campusFood": "B-",
+    "studentLife": "B-",
+    "safety": "C"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-the-pacific/"
+}

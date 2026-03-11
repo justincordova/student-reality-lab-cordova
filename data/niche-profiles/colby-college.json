@@ -1,0 +1,32 @@
+{
+  "slug": "colby-college",
+  "name": "Colby College",
+  "city": "WATERVILLE",
+  "state": "ME",
+  "website": "https://www.colby.edu/",
+  "acceptanceRate": 0.068,
+  "enrollment": 2282,
+  "graduationRate": 0.902,
+  "tuitionInState": 69600,
+  "tuitionOutOfState": 69600,
+  "roomAndBoard": 17120,
+  "netPrice": 15163,
+  "medianEarnings6yr": 70828,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A",
+    "academics": "A+",
+    "value": "A-",
+    "diversity": "A",
+    "campus": "C-",
+    "athletics": "B",
+    "partyScene": "B",
+    "professors": "A",
+    "location": "C-",
+    "dorms": "C-",
+    "campusFood": "C",
+    "studentLife": "C+",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/colby-college/"
+}

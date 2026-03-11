@@ -1,0 +1,32 @@
+{
+  "slug": "old-dominion-university",
+  "name": "Old Dominion University",
+  "city": "NORFOLK",
+  "state": "VA",
+  "website": "https://www.odu.edu/admission/undergraduate",
+  "acceptanceRate": 0.905,
+  "enrollment": 15582,
+  "graduationRate": 0.444,
+  "tuitionInState": 12262,
+  "tuitionOutOfState": 32662,
+  "roomAndBoard": 14652,
+  "netPrice": 16150,
+  "medianEarnings6yr": 57859,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B",
+    "academics": "B-",
+    "value": "B",
+    "diversity": "A",
+    "campus": "B",
+    "athletics": "A-",
+    "partyScene": "A",
+    "professors": "B+",
+    "location": "B+",
+    "dorms": "B",
+    "campusFood": "A-",
+    "studentLife": "A-",
+    "safety": "C"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/old-dominion-university/"
+}

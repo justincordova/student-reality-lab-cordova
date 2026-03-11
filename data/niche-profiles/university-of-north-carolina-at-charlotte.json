@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-north-carolina-at-charlotte",
+  "name": "University of North Carolina at Charlotte",
+  "city": "CHARLOTTE",
+  "state": "NC",
+  "website": "https://www.charlotte.edu/",
+  "acceptanceRate": 0.802,
+  "enrollment": 19952,
+  "graduationRate": 0.677,
+  "tuitionInState": 7097,
+  "tuitionOutOfState": 23303,
+  "roomAndBoard": 11868,
+  "netPrice": 13768,
+  "medianEarnings6yr": 60262,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "B",
+    "value": "B+",
+    "diversity": "A",
+    "campus": "A",
+    "athletics": "B+",
+    "partyScene": "B+",
+    "professors": "B+",
+    "location": "A-",
+    "dorms": "A-",
+    "campusFood": "A-",
+    "studentLife": "A",
+    "safety": "C+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-north-carolina-at-charlotte/"
+}

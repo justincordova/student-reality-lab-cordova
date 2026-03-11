@@ -1,0 +1,31 @@
+{
+  "slug": "barnard-college",
+  "name": "Barnard College",
+  "city": "NEW YORK",
+  "state": "NY",
+  "website": "https://barnard.edu/",
+  "acceptanceRate": 0.08,
+  "enrollment": 3183,
+  "graduationRate": 0.929,
+  "tuitionInState": 95700,
+  "tuitionOutOfState": 95700,
+  "roomAndBoard": 20582,
+  "netPrice": 27738,
+  "medianEarnings6yr": 79860,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A+",
+    "value": "A-",
+    "diversity": "A",
+    "campus": "B",
+    "partyScene": "B+",
+    "professors": "A",
+    "location": "A+",
+    "dorms": "C+",
+    "campusFood": "B-",
+    "studentLife": "A",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/barnard-college/"
+}

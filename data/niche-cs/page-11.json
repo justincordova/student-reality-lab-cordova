@@ -1,0 +1,127 @@
+[
+  {
+    "slug": "st-olaf-college",
+    "name": "St. Olaf College",
+    "rank": 251
+  },
+  {
+    "slug": "berea-college",
+    "name": "Berea College",
+    "rank": 252
+  },
+  {
+    "slug": "university-of-memphis",
+    "name": "University of Memphis",
+    "rank": 253
+  },
+  {
+    "slug": "kettering-university",
+    "name": "Kettering University",
+    "rank": 254
+  },
+  {
+    "slug": "rutgers-universitycamden",
+    "name": "Rutgers University–Camden",
+    "rank": 255
+  },
+  {
+    "slug": "university-of-colorado-denver",
+    "name": "University of Colorado Denver",
+    "rank": 256
+  },
+  {
+    "slug": "saint-marys-university-of-minnesota",
+    "name": "Saint Mary's University of Minnesota",
+    "rank": 257
+  },
+  {
+    "slug": "biola-university",
+    "name": "Biola University",
+    "rank": 258
+  },
+  {
+    "slug": "university-of-washington-bothell",
+    "name": "University of Washington - Bothell",
+    "rank": 259
+  },
+  {
+    "slug": "oklahoma-city-university",
+    "name": "Oklahoma City University",
+    "rank": 260
+  },
+  {
+    "slug": "morehouse-college",
+    "name": "Morehouse College",
+    "rank": 261
+  },
+  {
+    "slug": "university-of-wisconsin-stout",
+    "name": "University of Wisconsin - Stout",
+    "rank": 262
+  },
+  {
+    "slug": "university-of-north-carolina-wilmington",
+    "name": "University of North Carolina - Wilmington",
+    "rank": 263
+  },
+  {
+    "slug": "university-of-the-cumberlands",
+    "name": "University of the Cumberlands",
+    "rank": 264
+  },
+  {
+    "slug": "suny-farmingdale-state-college",
+    "name": "SUNY Farmingdale State College",
+    "rank": 265
+  },
+  {
+    "slug": "academy-of-art-university",
+    "name": "Academy of Art University",
+    "rank": 266
+  },
+  {
+    "slug": "clark-university",
+    "name": "Clark University",
+    "rank": 267
+  },
+  {
+    "slug": "college-of-the-holy-cross",
+    "name": "College of the Holy Cross",
+    "rank": 268
+  },
+  {
+    "slug": "california-state-university-san-bernardino",
+    "name": "California State University, San Bernardino",
+    "rank": 269
+  },
+  {
+    "slug": "university-of-central-missouri",
+    "name": "University of Central Missouri",
+    "rank": 270
+  },
+  {
+    "slug": "monroe-university-new-rochelle-bronx",
+    "name": "Monroe University - New Rochelle / Bronx",
+    "rank": 271
+  },
+  {
+    "slug": "champlain-college",
+    "name": "Champlain College",
+    "rank": 272
+  },
+  {
+    "slug": "stetson-university",
+    "name": "Stetson University",
+    "rank": 273
+  },
+  {
+    "slug": "california-state-university-san-marcos",
+    "name": "California State University - San Marcos",
+    "rank": 274
+  },
+  {
+    "slug": "creighton-university",
+    "name": "Creighton University",
+    "rank": 275
+  }
+]

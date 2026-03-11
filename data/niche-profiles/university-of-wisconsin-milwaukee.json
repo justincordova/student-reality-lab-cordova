@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-wisconsin-milwaukee",
+  "name": "University of Wisconsin - Milwaukee",
+  "city": "MILWAUKEE",
+  "state": "WI",
+  "website": "https://uwm.edu/",
+  "acceptanceRate": 0.884,
+  "enrollment": 14804,
+  "graduationRate": 0.512,
+  "tuitionInState": 10020,
+  "tuitionOutOfState": 22020,
+  "roomAndBoard": 10730,
+  "netPrice": 16499,
+  "medianEarnings6yr": 58910,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B",
+    "academics": "B",
+    "value": "B",
+    "diversity": "A-",
+    "campus": "B-",
+    "athletics": "B+",
+    "partyScene": "A-",
+    "professors": "B+",
+    "location": "A-",
+    "dorms": "B-",
+    "campusFood": "B",
+    "studentLife": "B+",
+    "safety": "C+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-wisconsin-milwaukee/"
+}

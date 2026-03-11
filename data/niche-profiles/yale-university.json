@@ -1,0 +1,32 @@
+{
+  "slug": "yale-university",
+  "name": "Yale University",
+  "city": "NEW HAVEN",
+  "state": "CT",
+  "website": "https://www.yale.edu/",
+  "acceptanceRate": 0.045,
+  "enrollment": 6805,
+  "graduationRate": 0.963,
+  "tuitionInState": 64700,
+  "tuitionOutOfState": 64700,
+  "roomAndBoard": 19180,
+  "netPrice": 26044,
+  "medianEarnings6yr": 93562,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A+",
+    "value": "A+",
+    "diversity": "A+",
+    "campus": "A+",
+    "athletics": "A-",
+    "partyScene": "A+",
+    "professors": "A+",
+    "location": "A",
+    "dorms": "A+",
+    "campusFood": "A",
+    "studentLife": "A+",
+    "safety": "C+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/yale-university/"
+}

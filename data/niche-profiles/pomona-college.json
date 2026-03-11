@@ -1,0 +1,32 @@
+{
+  "slug": "pomona-college",
+  "name": "Pomona College",
+  "city": "CLAREMONT",
+  "state": "CA",
+  "website": "https://www.pomona.edu/",
+  "acceptanceRate": 0.067,
+  "enrollment": 1739,
+  "graduationRate": 0.932,
+  "tuitionInState": 65000,
+  "tuitionOutOfState": 65000,
+  "roomAndBoard": 20374,
+  "netPrice": 17423,
+  "medianEarnings6yr": 73623,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A+",
+    "value": "A+",
+    "diversity": "A+",
+    "campus": "A-",
+    "athletics": "B-",
+    "partyScene": "B-",
+    "professors": "A",
+    "location": "A-",
+    "dorms": "B+",
+    "campusFood": "A",
+    "studentLife": "A",
+    "safety": "B+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/pomona-college/"
+}

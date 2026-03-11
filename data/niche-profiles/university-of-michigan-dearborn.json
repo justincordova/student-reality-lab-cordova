@@ -1,0 +1,30 @@
+{
+  "slug": "university-of-michigan-dearborn",
+  "name": "University of Michigan - Dearborn",
+  "city": "DEARBORN",
+  "state": "MI",
+  "website": "https://umdearborn.edu/",
+  "acceptanceRate": 0.586,
+  "enrollment": 4815,
+  "graduationRate": 0.566,
+  "tuitionInState": 14944,
+  "tuitionOutOfState": 31360,
+  "roomAndBoard": null,
+  "netPrice": 12798,
+  "medianEarnings6yr": 68752,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "B+",
+    "value": "B+",
+    "diversity": "A-",
+    "campus": "C+",
+    "athletics": "C+",
+    "partyScene": "C+",
+    "professors": "A",
+    "location": "B+",
+    "studentLife": "B-",
+    "safety": "A-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-michigan-dearborn/"
+}

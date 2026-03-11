@@ -1,0 +1,31 @@
+{
+  "slug": "rhode-island-school-of-design",
+  "name": "Rhode Island School of Design",
+  "city": "PROVIDENCE",
+  "state": "RI",
+  "website": "https://www.risd.edu/",
+  "acceptanceRate": 0.138,
+  "enrollment": 2084,
+  "graduationRate": 0.885,
+  "tuitionInState": 63966,
+  "tuitionOutOfState": 63966,
+  "roomAndBoard": 15234,
+  "netPrice": 42106,
+  "medianEarnings6yr": 58302,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A-",
+    "academics": "A+",
+    "value": "C-",
+    "diversity": "A+",
+    "campus": "B",
+    "partyScene": "B-",
+    "professors": "B+",
+    "location": "A",
+    "dorms": "B+",
+    "campusFood": "A+",
+    "studentLife": "A-",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/rhode-island-school-of-design/"
+}

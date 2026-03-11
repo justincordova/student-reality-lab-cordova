@@ -1,0 +1,32 @@
+{
+  "slug": "the-university-of-tulsa",
+  "name": "The University of Tulsa",
+  "city": "TULSA",
+  "state": "OK",
+  "website": "https://utulsa.edu/",
+  "acceptanceRate": 0.582,
+  "enrollment": 2288,
+  "graduationRate": 0.733,
+  "tuitionInState": 48340,
+  "tuitionOutOfState": 48340,
+  "roomAndBoard": 11192,
+  "netPrice": 23681,
+  "medianEarnings6yr": 75031,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A",
+    "academics": "A",
+    "value": "A-",
+    "diversity": "A",
+    "campus": "B",
+    "athletics": "B+",
+    "partyScene": "B",
+    "professors": "A",
+    "location": "B",
+    "dorms": "B",
+    "campusFood": "B+",
+    "studentLife": "B+",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/the-university-of-tulsa/"
+}

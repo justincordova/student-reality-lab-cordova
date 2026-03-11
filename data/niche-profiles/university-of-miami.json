@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-miami",
+  "name": "University of Miami",
+  "city": "CORAL GABLES",
+  "state": "FL",
+  "website": "https://welcome.miami.edu/",
+  "acceptanceRate": 0.185,
+  "enrollment": 13250,
+  "graduationRate": 0.842,
+  "tuitionInState": 65430,
+  "tuitionOutOfState": 65430,
+  "roomAndBoard": 18000,
+  "netPrice": 41028,
+  "medianEarnings6yr": 73338,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A+",
+    "value": "B-",
+    "diversity": "A",
+    "campus": "A",
+    "athletics": "A+",
+    "partyScene": "A+",
+    "professors": "A+",
+    "location": "A+",
+    "dorms": "C-",
+    "campusFood": "B",
+    "studentLife": "A+",
+    "safety": "A-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-miami/"
+}

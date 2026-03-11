@@ -1,0 +1,32 @@
+{
+  "slug": "rutgers-university-newark",
+  "name": "Rutgers University - Newark",
+  "city": "NEWARK",
+  "state": "NJ",
+  "website": "https://www.newark.rutgers.edu/",
+  "acceptanceRate": 0.787,
+  "enrollment": 6451,
+  "graduationRate": 0.676,
+  "tuitionInState": 16586,
+  "tuitionOutOfState": 35348,
+  "roomAndBoard": 15060,
+  "netPrice": 17425,
+  "medianEarnings6yr": 75436,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "B+",
+    "value": "B",
+    "diversity": "A",
+    "campus": "C+",
+    "athletics": "B-",
+    "partyScene": "A",
+    "professors": "A",
+    "location": "B",
+    "dorms": "B-",
+    "campusFood": "B",
+    "studentLife": "B+",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/rutgers-university-newark/"
+}

@@ -1,0 +1,32 @@
+{
+  "slug": "clemson-university",
+  "name": "Clemson University",
+  "city": "CLEMSON",
+  "state": "SC",
+  "website": "https://www.clemson.edu/",
+  "acceptanceRate": 0.38,
+  "enrollment": 22144,
+  "graduationRate": 0.879,
+  "tuitionInState": 15554,
+  "tuitionOutOfState": 39498,
+  "roomAndBoard": 12872,
+  "netPrice": 24408,
+  "medianEarnings6yr": 72263,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A",
+    "academics": "A+",
+    "value": "B+",
+    "diversity": "B+",
+    "campus": "A-",
+    "athletics": "A+",
+    "partyScene": "A",
+    "professors": "A+",
+    "location": "B-",
+    "dorms": "B",
+    "campusFood": "B+",
+    "studentLife": "A+",
+    "safety": "B+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/clemson-university/"
+}

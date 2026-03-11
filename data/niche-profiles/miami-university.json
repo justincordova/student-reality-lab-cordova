@@ -1,0 +1,32 @@
+{
+  "slug": "miami-university",
+  "name": "Miami University",
+  "city": "OXFORD",
+  "state": "OH",
+  "website": "https://miamioh.edu/",
+  "acceptanceRate": 0.821,
+  "enrollment": 16306,
+  "graduationRate": 0.818,
+  "tuitionInState": 18162,
+  "tuitionOutOfState": 40822,
+  "roomAndBoard": 15973,
+  "netPrice": 27928,
+  "medianEarnings6yr": 65273,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "B+",
+    "value": "B",
+    "diversity": "B",
+    "campus": "A",
+    "athletics": "B+",
+    "partyScene": "A+",
+    "professors": "B+",
+    "location": "B+",
+    "dorms": "B+",
+    "campusFood": "B",
+    "studentLife": "A",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/miami-university/"
+}

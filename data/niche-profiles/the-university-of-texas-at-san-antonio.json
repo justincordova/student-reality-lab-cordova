@@ -1,0 +1,32 @@
+{
+  "slug": "the-university-of-texas-at-san-antonio",
+  "name": "The University of Texas at San Antonio",
+  "city": "SAN ANTONIO",
+  "state": "TX",
+  "website": "https://future.utsa.edu/contact/",
+  "acceptanceRate": 0.885,
+  "enrollment": 22625,
+  "graduationRate": 0.512,
+  "tuitionInState": 8991,
+  "tuitionOutOfState": 21965,
+  "roomAndBoard": 11886,
+  "netPrice": 10831,
+  "medianEarnings6yr": 58103,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "B",
+    "value": "B+",
+    "diversity": "A-",
+    "campus": "A-",
+    "athletics": "A-",
+    "partyScene": "B+",
+    "professors": "B+",
+    "location": "A-",
+    "dorms": "B",
+    "campusFood": "A",
+    "studentLife": "A-",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/the-university-of-texas-at-san-antonio/"
+}

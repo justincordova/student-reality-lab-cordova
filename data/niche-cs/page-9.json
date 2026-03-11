@@ -1,0 +1,127 @@
+[
+  {
+    "slug": "rhodes-college",
+    "name": "Rhodes College",
+    "rank": 201
+  },
+  {
+    "slug": "university-at-albany-suny",
+    "name": "University at Albany, SUNY",
+    "rank": 202
+  },
+  {
+    "slug": "occidental-college",
+    "name": "Occidental College",
+    "rank": 203
+  },
+  {
+    "slug": "colorado-state-university",
+    "name": "Colorado State University",
+    "rank": 204
+  },
+  {
+    "slug": "university-of-north-florida",
+    "name": "University of North Florida",
+    "rank": 205
+  },
+  {
+    "slug": "mount-holyoke-college",
+    "name": "Mount Holyoke College",
+    "rank": 206
+  },
+  {
+    "slug": "portland-state-university",
+    "name": "Portland State University",
+    "rank": 207
+  },
+  {
+    "slug": "university-of-arkansas",
+    "name": "University of Arkansas",
+    "rank": 208
+  },
+  {
+    "slug": "rowan-university",
+    "name": "Rowan University",
+    "rank": 209
+  },
+  {
+    "slug": "university-of-illinois-springfield",
+    "name": "University of Illinois Springfield",
+    "rank": 210
+  },
+  {
+    "slug": "university-of-cincinnati",
+    "name": "University of Cincinnati",
+    "rank": 211
+  },
+  {
+    "slug": "skidmore-college",
+    "name": "Skidmore College",
+    "rank": 212
+  },
+  {
+    "slug": "lehman-college-city-university-of-new-york-cuny",
+    "name": "Lehman College - City University of New York (CUNY)",
+    "rank": 213
+  },
+  {
+    "slug": "louisiana-state-university",
+    "name": "Louisiana State University",
+    "rank": 214
+  },
+  {
+    "slug": "university-of-texas-rio-grande-valley",
+    "name": "University of Texas Rio Grande Valley",
+    "rank": 215
+  },
+  {
+    "slug": "howard-university",
+    "name": "Howard University",
+    "rank": 216
+  },
+  {
+    "slug": "university-of-north-carolina-greensboro",
+    "name": "University of North Carolina - Greensboro",
+    "rank": 217
+  },
+  {
+    "slug": "rutgers-university-newark",
+    "name": "Rutgers University - Newark",
+    "rank": 218
+  },
+  {
+    "slug": "seattle-university",
+    "name": "Seattle University",
+    "rank": 219
+  },
+  {
+    "slug": "wayne-state-university",
+    "name": "Wayne State University",
+    "rank": 220
+  },
+  {
+    "slug": "university-of-oregon",
+    "name": "University of Oregon",
+    "rank": 221
+  },
+  {
+    "slug": "university-of-missouri-kansas-city",
+    "name": "University of Missouri - Kansas City",
+    "rank": 222
+  },
+  {
+    "slug": "university-of-the-pacific",
+    "name": "University of the Pacific",
+    "rank": 223
+  },
+  {
+    "slug": "utah-state-university",
+    "name": "Utah State University",
+    "rank": 224
+  },
+  {
+    "slug": "miami-university",
+    "name": "Miami University",
+    "rank": 225
+  }
+]

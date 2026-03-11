@@ -1,0 +1,32 @@
+{
+  "slug": "wheaton-college-illinois",
+  "name": "Wheaton College - Illinois",
+  "city": "WHEATON",
+  "state": "IL",
+  "website": "https://www.wheaton.edu/",
+  "acceptanceRate": 0.9,
+  "enrollment": 2119,
+  "graduationRate": 0.866,
+  "tuitionInState": 47240,
+  "tuitionOutOfState": 47240,
+  "roomAndBoard": 12390,
+  "netPrice": 31346,
+  "medianEarnings6yr": 58828,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A-",
+    "academics": "A",
+    "value": "B",
+    "diversity": "A-",
+    "campus": "B+",
+    "athletics": "B",
+    "partyScene": "C-",
+    "professors": "A-",
+    "location": "B",
+    "dorms": "A",
+    "campusFood": "A",
+    "studentLife": "B+",
+    "safety": "A-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/wheaton-college-illinois/"
+}

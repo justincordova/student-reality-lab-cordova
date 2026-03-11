@@ -1,0 +1,32 @@
+{
+  "slug": "california-state-university-east-bay",
+  "name": "California State University - East Bay",
+  "city": "HAYWARD",
+  "state": "CA",
+  "website": "https://www.csueastbay.edu/",
+  "acceptanceRate": 0.968,
+  "enrollment": 7974,
+  "graduationRate": 0.455,
+  "tuitionInState": 7055,
+  "tuitionOutOfState": 18935,
+  "roomAndBoard": 17445,
+  "netPrice": 10874,
+  "medianEarnings6yr": 73481,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B",
+    "academics": "C+",
+    "value": "A-",
+    "diversity": "A",
+    "campus": "B-",
+    "athletics": "B",
+    "partyScene": "C+",
+    "professors": "B",
+    "location": "B-",
+    "dorms": "C+",
+    "campusFood": "B",
+    "studentLife": "B-",
+    "safety": "B+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/california-state-university-east-bay/"
+}

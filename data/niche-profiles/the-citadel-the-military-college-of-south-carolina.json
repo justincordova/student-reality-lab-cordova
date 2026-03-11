@@ -1,0 +1,32 @@
+{
+  "slug": "the-citadel-the-military-college-of-south-carolina",
+  "name": "The Citadel, the Military College of South Carolina",
+  "city": "CHARLESTON",
+  "state": "SC",
+  "website": "https://www.citadel.edu/",
+  "acceptanceRate": 0.981,
+  "enrollment": 2476,
+  "graduationRate": 0.728,
+  "tuitionInState": 12570,
+  "tuitionOutOfState": 37370,
+  "roomAndBoard": null,
+  "netPrice": 21041,
+  "medianEarnings6yr": 77277,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "B",
+    "value": "A-",
+    "diversity": "B",
+    "campus": "B",
+    "athletics": "B+",
+    "partyScene": "C+",
+    "professors": "B",
+    "location": "A",
+    "dorms": "C",
+    "campusFood": "C",
+    "studentLife": "A-",
+    "safety": "B+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/the-citadel-the-military-college-of-south-carolina/"
+}

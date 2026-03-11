@@ -1,0 +1,32 @@
+{
+  "slug": "boise-state-university",
+  "name": "Boise State University",
+  "city": "BOISE",
+  "state": "ID",
+  "website": "https://www.boisestate.edu/",
+  "acceptanceRate": 0.84,
+  "enrollment": 13644,
+  "graduationRate": 0.619,
+  "tuitionInState": 9048,
+  "tuitionOutOfState": 27788,
+  "roomAndBoard": 12914,
+  "netPrice": 19037,
+  "medianEarnings6yr": 59573,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "B",
+    "value": "B",
+    "diversity": "B+",
+    "campus": "A",
+    "athletics": "A-",
+    "partyScene": "A-",
+    "professors": "B+",
+    "location": "A",
+    "dorms": "B+",
+    "campusFood": "A-",
+    "studentLife": "A",
+    "safety": "B+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/boise-state-university/"
+}

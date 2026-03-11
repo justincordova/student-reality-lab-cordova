@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-notre-dame",
+  "name": "University of Notre Dame",
+  "city": "NOTRE DAME",
+  "state": "IN",
+  "website": "https://www.nd.edu/",
+  "acceptanceRate": 0.124,
+  "enrollment": 8866,
+  "graduationRate": 0.968,
+  "tuitionInState": 67607,
+  "tuitionOutOfState": 67607,
+  "roomAndBoard": null,
+  "netPrice": 29083,
+  "medianEarnings6yr": 94900,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A+",
+    "value": "A",
+    "diversity": "A",
+    "campus": "A",
+    "athletics": "A+",
+    "partyScene": "A",
+    "professors": "A+",
+    "location": "C",
+    "dorms": "A-",
+    "campusFood": "A-",
+    "studentLife": "A+",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-notre-dame/"
+}

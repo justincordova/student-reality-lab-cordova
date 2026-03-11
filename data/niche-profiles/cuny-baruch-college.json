@@ -1,0 +1,30 @@
+{
+  "slug": "cuny-baruch-college",
+  "name": "CUNY Baruch College",
+  "city": "NEW YORK",
+  "state": "NY",
+  "website": "https://www.baruch.cuny.edu/",
+  "acceptanceRate": 0.504,
+  "enrollment": 12947,
+  "graduationRate": 0.721,
+  "tuitionInState": 7464,
+  "tuitionOutOfState": 15414,
+  "roomAndBoard": null,
+  "netPrice": 3989,
+  "medianEarnings6yr": 81296,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A-",
+    "academics": "B",
+    "value": "A+",
+    "diversity": "A-",
+    "campus": "C",
+    "athletics": "C+",
+    "partyScene": "B-",
+    "professors": "B-",
+    "location": "A+",
+    "studentLife": "B",
+    "safety": "A"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/cuny-baruch-college/"
+}

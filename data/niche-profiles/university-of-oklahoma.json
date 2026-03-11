@@ -1,0 +1,31 @@
+{
+  "slug": "university-of-oklahoma",
+  "name": "University of Oklahoma",
+  "city": "NORMAN",
+  "state": "OK",
+  "website": "https://www.ou.edu/",
+  "acceptanceRate": 0.765,
+  "enrollment": 19262,
+  "graduationRate": 0.753,
+  "tuitionInState": 9595,
+  "tuitionOutOfState": 26665,
+  "roomAndBoard": 13310,
+  "netPrice": 19900,
+  "medianEarnings6yr": 65659,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A",
+    "academics": "A",
+    "value": "B+",
+    "diversity": "A",
+    "campus": "A",
+    "athletics": "A+",
+    "partyScene": "A+",
+    "professors": "A",
+    "dorms": "B-",
+    "campusFood": "A",
+    "studentLife": "A+",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-oklahoma/"
+}

@@ -1,0 +1,32 @@
+{
+  "slug": "missouri-university-of-science-and-technology",
+  "name": "Missouri University of Science and Technology",
+  "city": "ROLLA",
+  "state": "MO",
+  "website": "https://www.mst.edu/",
+  "acceptanceRate": 0.731,
+  "enrollment": 4954,
+  "graduationRate": 0.636,
+  "tuitionInState": 14278,
+  "tuitionOutOfState": 31678,
+  "roomAndBoard": 11820,
+  "netPrice": 14414,
+  "medianEarnings6yr": 89551,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A-",
+    "academics": "B+",
+    "value": "A",
+    "diversity": "B+",
+    "campus": "C",
+    "athletics": "B-",
+    "partyScene": "B+",
+    "professors": "A-",
+    "location": "C-",
+    "dorms": "B",
+    "campusFood": "B-",
+    "studentLife": "B-",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/missouri-university-of-science-and-technology/"
+}

@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-utah",
+  "name": "University of Utah",
+  "city": "SALT LAKE CITY",
+  "state": "UT",
+  "website": "https://www.utah.edu/",
+  "acceptanceRate": 0.872,
+  "enrollment": 22374,
+  "graduationRate": 0.639,
+  "tuitionInState": 9315,
+  "tuitionOutOfState": 29837,
+  "roomAndBoard": 12398,
+  "netPrice": 13341,
+  "medianEarnings6yr": 68960,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A",
+    "academics": "A",
+    "value": "B+",
+    "diversity": "A",
+    "campus": "B+",
+    "athletics": "A",
+    "partyScene": "A-",
+    "professors": "A+",
+    "location": "A-",
+    "dorms": "C+",
+    "campusFood": "B",
+    "studentLife": "A",
+    "safety": "C"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-utah/"
+}

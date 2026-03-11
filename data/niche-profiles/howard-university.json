@@ -1,0 +1,32 @@
+{
+  "slug": "howard-university",
+  "name": "Howard University",
+  "city": "WASHINGTON",
+  "state": "DC",
+  "website": "https://www.howard.edu/",
+  "acceptanceRate": 0.349,
+  "enrollment": 9361,
+  "graduationRate": 0.689,
+  "tuitionInState": 33344,
+  "tuitionOutOfState": 33344,
+  "roomAndBoard": 16474,
+  "netPrice": 30028,
+  "medianEarnings6yr": 64373,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "A-",
+    "value": "C+",
+    "diversity": "A",
+    "campus": "B-",
+    "athletics": "B+",
+    "partyScene": "A+",
+    "professors": "A-",
+    "location": "A",
+    "dorms": "C-",
+    "campusFood": "B-",
+    "studentLife": "A",
+    "safety": "C+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/howard-university/"
+}

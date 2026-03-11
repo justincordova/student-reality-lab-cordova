@@ -1,0 +1,30 @@
+{
+  "slug": "university-of-new-hampshire-at-manchester",
+  "name": "University of New Hampshire at Manchester",
+  "city": "MANCHESTER",
+  "state": "NH",
+  "website": "https://manchester.unh.edu/",
+  "acceptanceRate": 0.873,
+  "enrollment": 410,
+  "graduationRate": 0.651,
+  "tuitionInState": 15150,
+  "tuitionOutOfState": 34860,
+  "roomAndBoard": 16452,
+  "netPrice": 13097,
+  "medianEarnings6yr": 66239,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B",
+    "academics": "B",
+    "value": "B+",
+    "diversity": "B+",
+    "campus": "B-",
+    "partyScene": "C",
+    "professors": "B",
+    "location": "B",
+    "campusFood": "B",
+    "studentLife": "B",
+    "safety": "B+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-new-hampshire-at-manchester/"
+}

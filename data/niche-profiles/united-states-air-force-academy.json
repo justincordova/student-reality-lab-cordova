@@ -1,0 +1,29 @@
+{
+  "slug": "united-states-air-force-academy",
+  "name": "United States Air Force Academy",
+  "city": "USAF ACADEMY",
+  "state": "CO",
+  "website": "https://www.usafa.edu/",
+  "acceptanceRate": 0.139,
+  "enrollment": 4124,
+  "graduationRate": 0.881,
+  "tuitionInState": 14486,
+  "tuitionOutOfState": 21574,
+  "roomAndBoard": null,
+  "netPrice": 17821,
+  "medianEarnings6yr": 45519,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A",
+    "academics": "A+",
+    "diversity": "B+",
+    "campus": "C+",
+    "partyScene": "D+",
+    "professors": "B+",
+    "location": "C+",
+    "dorms": "B-",
+    "campusFood": "B-",
+    "studentLife": "C"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/united-states-air-force-academy/"
+}

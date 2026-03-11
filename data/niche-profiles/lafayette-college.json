@@ -1,0 +1,32 @@
+{
+  "slug": "lafayette-college",
+  "name": "Lafayette College",
+  "city": "EASTON",
+  "state": "PA",
+  "website": "https://www.lafayette.edu/",
+  "acceptanceRate": 0.315,
+  "enrollment": 2742,
+  "graduationRate": 0.881,
+  "tuitionInState": 66496,
+  "tuitionOutOfState": 66496,
+  "roomAndBoard": 19084,
+  "netPrice": 34728,
+  "medianEarnings6yr": 86844,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A",
+    "academics": "A",
+    "value": "B+",
+    "diversity": "A",
+    "campus": "B",
+    "athletics": "B+",
+    "partyScene": "B+",
+    "professors": "A-",
+    "location": "B",
+    "dorms": "C+",
+    "campusFood": "C",
+    "studentLife": "B+",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/lafayette-college/"
+}

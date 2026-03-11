@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-kentucky",
+  "name": "University of Kentucky",
+  "city": "LEXINGTON",
+  "state": "KY",
+  "website": "https://www.uky.edu/",
+  "acceptanceRate": 0.924,
+  "enrollment": 23390,
+  "graduationRate": 0.699,
+  "tuitionInState": 13907,
+  "tuitionOutOfState": 35164,
+  "roomAndBoard": 15242,
+  "netPrice": 19838,
+  "medianEarnings6yr": 60703,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A-",
+    "academics": "B+",
+    "value": "B+",
+    "diversity": "B+",
+    "campus": "A",
+    "athletics": "A+",
+    "partyScene": "A+",
+    "professors": "A",
+    "location": "A-",
+    "dorms": "A",
+    "campusFood": "B+",
+    "studentLife": "A+",
+    "safety": "C+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-kentucky/"
+}

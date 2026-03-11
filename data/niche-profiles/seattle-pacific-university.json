@@ -1,0 +1,32 @@
+{
+  "slug": "seattle-pacific-university",
+  "name": "Seattle Pacific University",
+  "city": "SEATTLE",
+  "state": "WA",
+  "website": "https://spu.edu/",
+  "acceptanceRate": 0.911,
+  "enrollment": 1720,
+  "graduationRate": 0.622,
+  "tuitionInState": 43452,
+  "tuitionOutOfState": 43452,
+  "roomAndBoard": 15498,
+  "netPrice": 26155,
+  "medianEarnings6yr": 67175,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "B",
+    "value": "B+",
+    "diversity": "A",
+    "campus": "B-",
+    "athletics": "B",
+    "partyScene": "C",
+    "professors": "B+",
+    "location": "A+",
+    "dorms": "B",
+    "campusFood": "C+",
+    "studentLife": "B",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/seattle-pacific-university/"
+}

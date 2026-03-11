@@ -1,0 +1,31 @@
+{
+  "slug": "wellesley-college",
+  "name": "Wellesley College",
+  "city": "WELLESLEY",
+  "state": "MA",
+  "website": "https://www.wellesley.edu/",
+  "acceptanceRate": 0.139,
+  "enrollment": 2299,
+  "graduationRate": 0.912,
+  "tuitionInState": 69800,
+  "tuitionOutOfState": 69800,
+  "roomAndBoard": 19920,
+  "netPrice": 21501,
+  "medianEarnings6yr": 66433,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A+",
+    "value": "A",
+    "diversity": "A",
+    "campus": "B-",
+    "partyScene": "C-",
+    "professors": "A",
+    "location": "C",
+    "dorms": "B-",
+    "campusFood": "C+",
+    "studentLife": "C+",
+    "safety": "A"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/wellesley-college/"
+}

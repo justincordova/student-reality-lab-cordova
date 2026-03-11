@@ -1,0 +1,32 @@
+{
+  "slug": "stetson-university",
+  "name": "Stetson University",
+  "city": "DELAND",
+  "state": "FL",
+  "website": "https://www.stetson.edu",
+  "acceptanceRate": 0.864,
+  "enrollment": 2260,
+  "graduationRate": 0.628,
+  "tuitionInState": 54820,
+  "tuitionOutOfState": 54820,
+  "roomAndBoard": 17302,
+  "netPrice": 22914,
+  "medianEarnings6yr": 54413,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "B+",
+    "value": "B-",
+    "diversity": "A",
+    "campus": "B",
+    "athletics": "B+",
+    "partyScene": "B",
+    "professors": "A",
+    "location": "B+",
+    "dorms": "C+",
+    "campusFood": "C",
+    "studentLife": "A-",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/stetson-university/"
+}

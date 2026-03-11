@@ -1,0 +1,32 @@
+{
+  "slug": "villanova-university",
+  "name": "Villanova University",
+  "city": "VILLANOVA",
+  "state": "PA",
+  "website": "https://www.villanova.edu/",
+  "acceptanceRate": 0.251,
+  "enrollment": 7087,
+  "graduationRate": 0.924,
+  "tuitionInState": 66838,
+  "tuitionOutOfState": 66838,
+  "roomAndBoard": 16896,
+  "netPrice": 37946,
+  "medianEarnings6yr": 98831,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A+",
+    "value": "A-",
+    "diversity": "B+",
+    "campus": "B+",
+    "athletics": "A+",
+    "partyScene": "B",
+    "professors": "A",
+    "location": "B+",
+    "dorms": "C+",
+    "campusFood": "C",
+    "studentLife": "A",
+    "safety": "C+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/villanova-university/"
+}

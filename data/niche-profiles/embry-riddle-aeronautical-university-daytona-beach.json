@@ -1,0 +1,32 @@
+{
+  "slug": "embry-riddle-aeronautical-university-daytona-beach",
+  "name": "Embry-Riddle Aeronautical University - Daytona Beach",
+  "city": "DAYTONA BEACH",
+  "state": "FL",
+  "website": "https://daytonabeach.erau.edu/",
+  "acceptanceRate": 0.664,
+  "enrollment": 7187,
+  "graduationRate": 0.674,
+  "tuitionInState": 41952,
+  "tuitionOutOfState": 44160,
+  "roomAndBoard": 13670,
+  "netPrice": 41550,
+  "medianEarnings6yr": 89839,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "A-",
+    "value": "B",
+    "diversity": "A",
+    "campus": "B",
+    "athletics": "B-",
+    "partyScene": "C+",
+    "professors": "A-",
+    "location": "B",
+    "dorms": "B",
+    "campusFood": "B",
+    "studentLife": "B",
+    "safety": "B+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/embry-riddle-aeronautical-university-daytona-beach/"
+}

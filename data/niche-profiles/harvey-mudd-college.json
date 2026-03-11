@@ -1,0 +1,31 @@
+{
+  "slug": "harvey-mudd-college",
+  "name": "Harvey Mudd College",
+  "city": "CLAREMONT",
+  "state": "CA",
+  "website": "https://www.hmc.edu/",
+  "acceptanceRate": 0.131,
+  "enrollment": 911,
+  "graduationRate": 0.938,
+  "tuitionInState": 66255,
+  "tuitionOutOfState": 66255,
+  "roomAndBoard": 21710,
+  "netPrice": 42720,
+  "medianEarnings6yr": 154095,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A+",
+    "value": "A+",
+    "diversity": "A+",
+    "campus": "B+",
+    "partyScene": "A",
+    "professors": "A+",
+    "location": "A-",
+    "dorms": "A-",
+    "campusFood": "A-",
+    "studentLife": "A+",
+    "safety": "B+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/harvey-mudd-college/"
+}

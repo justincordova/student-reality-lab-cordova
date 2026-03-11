@@ -1,0 +1,32 @@
+{
+  "slug": "lehigh-university",
+  "name": "Lehigh University",
+  "city": "BETHLEHEM",
+  "state": "PA",
+  "website": "https://www.lehigh.edu/",
+  "acceptanceRate": 0.293,
+  "enrollment": 5925,
+  "graduationRate": 0.892,
+  "tuitionInState": 66810,
+  "tuitionOutOfState": 66810,
+  "roomAndBoard": 16470,
+  "netPrice": 33289,
+  "medianEarnings6yr": 101331,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A+",
+    "value": "A",
+    "diversity": "A",
+    "campus": "B",
+    "athletics": "B+",
+    "partyScene": "A+",
+    "professors": "A",
+    "location": "C+",
+    "dorms": "B-",
+    "campusFood": "C+",
+    "studentLife": "A",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/lehigh-university/"
+}

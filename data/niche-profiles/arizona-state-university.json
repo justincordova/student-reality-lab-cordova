@@ -1,0 +1,32 @@
+{
+  "slug": "arizona-state-university",
+  "name": "Arizona State University",
+  "city": "TEMPE",
+  "state": "AZ",
+  "website": "https://www.asu.edu/",
+  "acceptanceRate": 0.902,
+  "enrollment": 59707,
+  "graduationRate": 0.678,
+  "tuitionInState": 14215,
+  "tuitionOutOfState": 37297,
+  "roomAndBoard": 16091,
+  "netPrice": 16401,
+  "medianEarnings6yr": 64510,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A",
+    "academics": "A-",
+    "value": "B+",
+    "diversity": "A+",
+    "campus": "A-",
+    "athletics": "A",
+    "partyScene": "A+",
+    "professors": "A+",
+    "location": "A",
+    "dorms": "B",
+    "campusFood": "A-",
+    "studentLife": "A+",
+    "safety": "C+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/arizona-state-university/"
+}

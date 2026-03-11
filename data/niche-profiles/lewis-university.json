@@ -1,0 +1,32 @@
+{
+  "slug": "lewis-university",
+  "name": "Lewis University",
+  "city": "ROMEOVILLE",
+  "state": "IL",
+  "website": "https://www.lewisu.edu/index.htm",
+  "acceptanceRate": 0.727,
+  "enrollment": 3154,
+  "graduationRate": 0.626,
+  "tuitionInState": 41900,
+  "tuitionOutOfState": 41900,
+  "roomAndBoard": 12140,
+  "netPrice": 19472,
+  "medianEarnings6yr": 65878,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B",
+    "academics": "B-",
+    "value": "A-",
+    "diversity": "A",
+    "campus": "B-",
+    "athletics": "B",
+    "partyScene": "C",
+    "professors": "C+",
+    "location": "C+",
+    "dorms": "B-",
+    "campusFood": "B",
+    "studentLife": "B-",
+    "safety": "A-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/lewis-university/"
+}

@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-texas-arlington",
+  "name": "University of Texas - Arlington",
+  "city": "ARLINGTON",
+  "state": "TX",
+  "website": "https://www.uta.edu/",
+  "acceptanceRate": 0.813,
+  "enrollment": 20324,
+  "graduationRate": 0.565,
+  "tuitionInState": 12208,
+  "tuitionOutOfState": 27494,
+  "roomAndBoard": 10582,
+  "netPrice": 14956,
+  "medianEarnings6yr": 73224,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "B+",
+    "value": "A-",
+    "diversity": "A",
+    "campus": "C+",
+    "athletics": "B",
+    "partyScene": "B-",
+    "professors": "A",
+    "location": "B-",
+    "dorms": "B",
+    "campusFood": "B+",
+    "studentLife": "B-",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-texas-arlington/"
+}

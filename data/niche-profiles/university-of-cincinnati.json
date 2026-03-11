@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-cincinnati",
+  "name": "University of Cincinnati",
+  "city": "CINCINNATI",
+  "state": "OH",
+  "website": "https://www.uc.edu/",
+  "acceptanceRate": 0.877,
+  "enrollment": 31941,
+  "graduationRate": 0.715,
+  "tuitionInState": 13976,
+  "tuitionOutOfState": 29310,
+  "roomAndBoard": 13048,
+  "netPrice": 21511,
+  "medianEarnings6yr": 63845,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A-",
+    "academics": "A-",
+    "value": "B",
+    "diversity": "A",
+    "campus": "A-",
+    "athletics": "A-",
+    "partyScene": "A+",
+    "professors": "A",
+    "location": "A+",
+    "dorms": "C",
+    "campusFood": "B",
+    "studentLife": "A+",
+    "safety": "C"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-cincinnati/"
+}

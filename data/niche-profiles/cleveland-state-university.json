@@ -1,0 +1,32 @@
+{
+  "slug": "cleveland-state-university",
+  "name": "Cleveland State University",
+  "city": "CLEVELAND",
+  "state": "OH",
+  "website": "https://www.csuohio.edu/",
+  "acceptanceRate": 0.955,
+  "enrollment": 7537,
+  "graduationRate": 0.489,
+  "tuitionInState": 12613,
+  "tuitionOutOfState": 17973,
+  "roomAndBoard": 14785,
+  "netPrice": 16307,
+  "medianEarnings6yr": 56881,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B",
+    "academics": "B-",
+    "value": "B",
+    "diversity": "A",
+    "campus": "B-",
+    "athletics": "B+",
+    "partyScene": "B",
+    "professors": "A-",
+    "location": "A-",
+    "dorms": "B",
+    "campusFood": "A-",
+    "studentLife": "B",
+    "safety": "C"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/cleveland-state-university/"
+}

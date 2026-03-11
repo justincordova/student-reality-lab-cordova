@@ -1,0 +1,32 @@
+{
+  "slug": "depaul-university",
+  "name": "DePaul University",
+  "city": "CHICAGO",
+  "state": "IL",
+  "website": "https://www.depaul.edu/",
+  "acceptanceRate": 0.735,
+  "enrollment": 13355,
+  "graduationRate": 0.7,
+  "tuitionInState": 43665,
+  "tuitionOutOfState": 43665,
+  "roomAndBoard": 18468,
+  "netPrice": 32129,
+  "medianEarnings6yr": 70714,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A-",
+    "academics": "B+",
+    "value": "B",
+    "diversity": "A",
+    "campus": "B+",
+    "athletics": "A-",
+    "partyScene": "A-",
+    "professors": "B+",
+    "location": "A+",
+    "dorms": "B-",
+    "campusFood": "C+",
+    "studentLife": "A",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/depaul-university/"
+}

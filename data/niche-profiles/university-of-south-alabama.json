@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-south-alabama",
+  "name": "University of South Alabama",
+  "city": "MOBILE",
+  "state": "AL",
+  "website": "https://www.southalabama.edu/",
+  "acceptanceRate": 0.655,
+  "enrollment": 7499,
+  "graduationRate": 0.526,
+  "tuitionInState": 11220,
+  "tuitionOutOfState": 22440,
+  "roomAndBoard": 8830,
+  "netPrice": 13613,
+  "medianEarnings6yr": 55913,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A-",
+    "academics": "B+",
+    "value": "B",
+    "diversity": "A-",
+    "campus": "A-",
+    "athletics": "A-",
+    "partyScene": "B+",
+    "professors": "B+",
+    "location": "B",
+    "dorms": "A",
+    "campusFood": "A-",
+    "studentLife": "A",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-south-alabama/"
+}

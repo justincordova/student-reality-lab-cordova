@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-mary-washington",
+  "name": "University of Mary Washington",
+  "city": "FREDERICKSBURG",
+  "state": "VA",
+  "website": "https://www.umw.edu/",
+  "acceptanceRate": 0.863,
+  "enrollment": 3037,
+  "graduationRate": 0.674,
+  "tuitionInState": 28916,
+  "tuitionOutOfState": 42094,
+  "roomAndBoard": 13453,
+  "netPrice": 21615,
+  "medianEarnings6yr": 58080,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B",
+    "academics": "B",
+    "value": "B",
+    "diversity": "A-",
+    "campus": "B",
+    "athletics": "B-",
+    "partyScene": "B-",
+    "professors": "B+",
+    "location": "A",
+    "dorms": "B",
+    "campusFood": "C+",
+    "studentLife": "B",
+    "safety": "B+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-mary-washington/"
+}

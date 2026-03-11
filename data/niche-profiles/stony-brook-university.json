@@ -1,0 +1,32 @@
+{
+  "slug": "stony-brook-university",
+  "name": "Stony Brook University",
+  "city": "STONY BROOK",
+  "state": "NY",
+  "website": "https://www.stonybrook.edu/",
+  "acceptanceRate": 0.49,
+  "enrollment": 16493,
+  "graduationRate": 0.778,
+  "tuitionInState": 10560,
+  "tuitionOutOfState": 30350,
+  "roomAndBoard": 17662,
+  "netPrice": 18601,
+  "medianEarnings6yr": 78458,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A-",
+    "academics": "A",
+    "value": "A-",
+    "diversity": "A+",
+    "campus": "C-",
+    "athletics": "B+",
+    "partyScene": "B-",
+    "professors": "A",
+    "location": "C+",
+    "dorms": "C-",
+    "campusFood": "C",
+    "studentLife": "B-",
+    "safety": "B+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/stony-brook-university/"
+}

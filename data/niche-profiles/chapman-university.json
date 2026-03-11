@@ -1,0 +1,32 @@
+{
+  "slug": "chapman-university",
+  "name": "Chapman University",
+  "city": "ORANGE",
+  "state": "CA",
+  "website": "https://www.chapman.edu/",
+  "acceptanceRate": 0.556,
+  "enrollment": 7330,
+  "graduationRate": 0.804,
+  "tuitionInState": 62784,
+  "tuitionOutOfState": 62784,
+  "roomAndBoard": 17378,
+  "netPrice": 48037,
+  "medianEarnings6yr": 70171,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A-",
+    "academics": "A",
+    "value": "C",
+    "diversity": "A",
+    "campus": "B+",
+    "athletics": "B-",
+    "partyScene": "B+",
+    "professors": "A",
+    "location": "A",
+    "dorms": "B",
+    "campusFood": "B",
+    "studentLife": "A",
+    "safety": "B+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/chapman-university/"
+}

@@ -1,0 +1,32 @@
+{
+  "slug": "tennessee-technological-university",
+  "name": "Tennessee Technological University",
+  "city": "COOKEVILLE",
+  "state": "TN",
+  "website": "https://www.tntech.edu/",
+  "acceptanceRate": 0.832,
+  "enrollment": 7850,
+  "graduationRate": 0.542,
+  "tuitionInState": 10084,
+  "tuitionOutOfState": 20116,
+  "roomAndBoard": 12276,
+  "netPrice": 15138,
+  "medianEarnings6yr": 51599,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A-",
+    "academics": "B+",
+    "value": "B+",
+    "diversity": "B",
+    "campus": "A-",
+    "athletics": "B+",
+    "partyScene": "B",
+    "professors": "A-",
+    "location": "B+",
+    "dorms": "B",
+    "campusFood": "A",
+    "studentLife": "A-",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/tennessee-technological-university/"
+}

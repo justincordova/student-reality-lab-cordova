@@ -1,0 +1,32 @@
+{
+  "slug": "milwaukee-school-of-engineering",
+  "name": "Milwaukee School of Engineering",
+  "city": "MILWAUKEE",
+  "state": "WI",
+  "website": "https://www.msoe.edu/",
+  "acceptanceRate": 0.606,
+  "enrollment": 2544,
+  "graduationRate": 0.715,
+  "tuitionInState": 46385,
+  "tuitionOutOfState": 46385,
+  "roomAndBoard": 12562,
+  "netPrice": 26122,
+  "medianEarnings6yr": 88136,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B",
+    "academics": "B+",
+    "value": "A",
+    "diversity": "B+",
+    "campus": "C-",
+    "athletics": "B-",
+    "partyScene": "B",
+    "professors": "B-",
+    "location": "A+",
+    "dorms": "C+",
+    "campusFood": "C-",
+    "studentLife": "C+",
+    "safety": "C"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/milwaukee-school-of-engineering/"
+}

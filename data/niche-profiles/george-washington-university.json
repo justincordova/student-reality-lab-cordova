@@ -1,0 +1,32 @@
+{
+  "slug": "george-washington-university",
+  "name": "George Washington University",
+  "city": "WASHINGTON",
+  "state": "DC",
+  "website": "https://www.gwu.edu/",
+  "acceptanceRate": 0.435,
+  "enrollment": 10386,
+  "graduationRate": 0.852,
+  "tuitionInState": 69780,
+  "tuitionOutOfState": 69780,
+  "roomAndBoard": 20000,
+  "netPrice": 45466,
+  "medianEarnings6yr": 91442,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A",
+    "academics": "A",
+    "value": "B",
+    "diversity": "A",
+    "campus": "B+",
+    "athletics": "B",
+    "partyScene": "A-",
+    "professors": "A",
+    "location": "A+",
+    "dorms": "B",
+    "campusFood": "B",
+    "studentLife": "A",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/george-washington-university/"
+}

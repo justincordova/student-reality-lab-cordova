@@ -1,0 +1,32 @@
+{
+  "slug": "troy-university",
+  "name": "Troy University",
+  "city": "TROY",
+  "state": "AL",
+  "website": "https://www.troy.edu/",
+  "acceptanceRate": 0.926,
+  "enrollment": 7053,
+  "graduationRate": 0.468,
+  "tuitionInState": 9792,
+  "tuitionOutOfState": 19584,
+  "roomAndBoard": 7996,
+  "netPrice": 12504,
+  "medianEarnings6yr": 50885,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "B",
+    "value": "B",
+    "diversity": "A",
+    "campus": "A-",
+    "athletics": "A-",
+    "partyScene": "A-",
+    "professors": "B+",
+    "location": "C+",
+    "dorms": "A",
+    "campusFood": "A",
+    "studentLife": "A-",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/troy-university/"
+}

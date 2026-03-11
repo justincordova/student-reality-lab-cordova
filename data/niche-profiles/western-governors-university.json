@@ -1,0 +1,23 @@
+{
+  "slug": "western-governors-university",
+  "name": "Western Governors University",
+  "city": null,
+  "state": null,
+  "website": "https://www.wgu.edu/",
+  "acceptanceRate": 1,
+  "enrollment": 135822,
+  "graduationRate": 0.509,
+  "tuitionInState": 8300,
+  "tuitionOutOfState": 8300,
+  "roomAndBoard": null,
+  "netPrice": 9555,
+  "medianEarnings6yr": 83319,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B-",
+    "academics": "C",
+    "value": "A",
+    "professors": "C"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/western-governors-university/"
+}

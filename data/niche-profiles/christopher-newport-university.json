@@ -1,0 +1,32 @@
+{
+  "slug": "christopher-newport-university",
+  "name": "Christopher Newport University",
+  "city": "NEWPORT NEWS",
+  "state": "VA",
+  "website": "https://cnu.edu/",
+  "acceptanceRate": 0.88,
+  "enrollment": 4321,
+  "graduationRate": 0.751,
+  "tuitionInState": 16828,
+  "tuitionOutOfState": 31178,
+  "roomAndBoard": 12360,
+  "netPrice": 22864,
+  "medianEarnings6yr": 58935,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B",
+    "academics": "B",
+    "value": "B",
+    "diversity": "B-",
+    "campus": "A",
+    "athletics": "A-",
+    "partyScene": "B",
+    "professors": "A-",
+    "location": "B-",
+    "dorms": "A",
+    "campusFood": "A-",
+    "studentLife": "B+",
+    "safety": "C"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/christopher-newport-university/"
+}

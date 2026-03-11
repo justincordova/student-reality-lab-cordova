@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-mississippi",
+  "name": "University of Mississippi",
+  "city": "UNIVERSITY ",
+  "state": "MS",
+  "website": "https://olemiss.edu/",
+  "acceptanceRate": 0.978,
+  "enrollment": 18032,
+  "graduationRate": 0.685,
+  "tuitionInState": 9412,
+  "tuitionOutOfState": 26980,
+  "roomAndBoard": 12040,
+  "netPrice": 14946,
+  "medianEarnings6yr": 56853,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A",
+    "academics": "A-",
+    "value": "B+",
+    "diversity": "B+",
+    "campus": "A+",
+    "athletics": "A",
+    "partyScene": "A+",
+    "professors": "A",
+    "location": "A",
+    "dorms": "B",
+    "campusFood": "A",
+    "studentLife": "A+",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-mississippi/"
+}

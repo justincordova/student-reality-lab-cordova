@@ -1,0 +1,32 @@
+{
+  "slug": "hendrix-college",
+  "name": "Hendrix College",
+  "city": "CONWAY",
+  "state": "AR",
+  "website": "https://www.hendrix.edu/",
+  "acceptanceRate": 0.53,
+  "enrollment": 1089,
+  "graduationRate": 0.692,
+  "tuitionInState": 36650,
+  "tuitionOutOfState": 36650,
+  "roomAndBoard": 14300,
+  "netPrice": 24236,
+  "medianEarnings6yr": 49579,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "A",
+    "value": "C+",
+    "diversity": "B+",
+    "campus": "B-",
+    "athletics": "B-",
+    "partyScene": "B+",
+    "professors": "A-",
+    "location": "B-",
+    "dorms": "C+",
+    "campusFood": "A+",
+    "studentLife": "B",
+    "safety": "C+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/hendrix-college/"
+}

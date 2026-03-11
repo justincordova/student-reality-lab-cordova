@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-wisconsin-parkside",
+  "name": "University of Wisconsin-Parkside",
+  "city": "KENOSHA",
+  "state": "WI",
+  "website": "https://www.uwp.edu/",
+  "acceptanceRate": 0.726,
+  "enrollment": 2448,
+  "graduationRate": 0.398,
+  "tuitionInState": 8271,
+  "tuitionOutOfState": 17430,
+  "roomAndBoard": 8091,
+  "netPrice": 8778,
+  "medianEarnings6yr": 53743,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B",
+    "academics": "B-",
+    "value": "B+",
+    "diversity": "A",
+    "campus": "B",
+    "athletics": "B",
+    "partyScene": "B-",
+    "professors": "B-",
+    "location": "B+",
+    "dorms": "B",
+    "campusFood": "A-",
+    "studentLife": "B",
+    "safety": "A"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-wisconsin-parkside/"
+}

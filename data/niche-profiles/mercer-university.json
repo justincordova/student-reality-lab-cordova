@@ -1,0 +1,32 @@
+{
+  "slug": "mercer-university",
+  "name": "Mercer University",
+  "city": "MACON",
+  "state": "GA",
+  "website": "https://www.mercer.edu/",
+  "acceptanceRate": 0.665,
+  "enrollment": 4177,
+  "graduationRate": 0.734,
+  "tuitionInState": 40890,
+  "tuitionOutOfState": 40890,
+  "roomAndBoard": 14528,
+  "netPrice": 24197,
+  "medianEarnings6yr": 63074,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "A-",
+    "value": "B",
+    "diversity": "A-",
+    "campus": "C",
+    "athletics": "B+",
+    "partyScene": "B",
+    "professors": "A",
+    "location": "C-",
+    "dorms": "C",
+    "campusFood": "C",
+    "studentLife": "B",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/mercer-university/"
+}

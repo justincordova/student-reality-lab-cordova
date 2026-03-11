@@ -1,0 +1,32 @@
+{
+  "slug": "liberty-university",
+  "name": "Liberty University",
+  "city": "LYNCHBURG",
+  "state": "VA",
+  "website": "https://www.liberty.edu/",
+  "acceptanceRate": 0.993,
+  "enrollment": 32378,
+  "graduationRate": 0.635,
+  "tuitionInState": 21222,
+  "tuitionOutOfState": 21222,
+  "roomAndBoard": 12920,
+  "netPrice": 29692,
+  "medianEarnings6yr": 52144,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "B",
+    "value": "C+",
+    "diversity": "A-",
+    "campus": "A+",
+    "athletics": "A-",
+    "partyScene": "C",
+    "professors": "B",
+    "location": "B+",
+    "dorms": "A+",
+    "campusFood": "A+",
+    "studentLife": "A+",
+    "safety": "A-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/liberty-university/"
+}

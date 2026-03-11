@@ -1,0 +1,32 @@
+{
+  "slug": "southern-methodist-university",
+  "name": "Southern Methodist University",
+  "city": "DALLAS",
+  "state": "TX",
+  "website": "https://www.smu.edu/",
+  "acceptanceRate": 0.612,
+  "enrollment": 6948,
+  "graduationRate": 0.833,
+  "tuitionInState": 79730,
+  "tuitionOutOfState": 64460,
+  "roomAndBoard": 18230,
+  "netPrice": 45792,
+  "medianEarnings6yr": 86158,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A",
+    "academics": "A",
+    "value": "B-",
+    "diversity": "A-",
+    "campus": "A+",
+    "athletics": "A-",
+    "partyScene": "A+",
+    "professors": "A+",
+    "location": "A+",
+    "dorms": "A-",
+    "campusFood": "B+",
+    "studentLife": "A+",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/southern-methodist-university/"
+}

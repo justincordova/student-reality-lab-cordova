@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-idaho",
+  "name": "University of Idaho",
+  "city": "MOSCOW",
+  "state": "ID",
+  "website": "https://www.uidaho.edu/",
+  "acceptanceRate": 0.791,
+  "enrollment": 7317,
+  "graduationRate": 0.609,
+  "tuitionInState": 9400,
+  "tuitionOutOfState": 28636,
+  "roomAndBoard": null,
+  "netPrice": 14377,
+  "medianEarnings6yr": 56204,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A-",
+    "academics": "A-",
+    "value": "B",
+    "diversity": "A-",
+    "campus": "A-",
+    "athletics": "B+",
+    "partyScene": "A",
+    "professors": "A",
+    "location": "A-",
+    "dorms": "B-",
+    "campusFood": "B",
+    "studentLife": "A",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-idaho/"
+}

@@ -1,0 +1,31 @@
+{
+  "slug": "university-of-nevada-las-vegas",
+  "name": "University of Nevada, Las Vegas",
+  "city": "LAS VEGAS",
+  "state": "NV",
+  "website": "https://www.unlv.edu/admissions",
+  "acceptanceRate": 0.963,
+  "enrollment": 20062,
+  "graduationRate": 0.501,
+  "tuitionInState": 10954,
+  "tuitionOutOfState": 30555,
+  "roomAndBoard": 12216,
+  "netPrice": 11388,
+  "medianEarnings6yr": 58987,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B",
+    "academics": "B",
+    "value": "B+",
+    "diversity": "A",
+    "campus": "B",
+    "athletics": "B+",
+    "partyScene": "A-",
+    "professors": "A-",
+    "location": "B+",
+    "campusFood": "A-",
+    "studentLife": "B+",
+    "safety": "C+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-nevada-las-vegas/"
+}

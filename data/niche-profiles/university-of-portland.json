@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-portland",
+  "name": "University of Portland",
+  "city": "PORTLAND",
+  "state": "OR",
+  "website": "https://www.up.edu/",
+  "acceptanceRate": 0.954,
+  "enrollment": 3051,
+  "graduationRate": 0.804,
+  "tuitionInState": 56400,
+  "tuitionOutOfState": 56400,
+  "roomAndBoard": 16600,
+  "netPrice": 34951,
+  "medianEarnings6yr": 79327,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "B",
+    "value": "B+",
+    "diversity": "A",
+    "campus": "B",
+    "athletics": "A-",
+    "partyScene": "B",
+    "professors": "B+",
+    "location": "A-",
+    "dorms": "B+",
+    "campusFood": "B-",
+    "studentLife": "B+",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-portland/"
+}

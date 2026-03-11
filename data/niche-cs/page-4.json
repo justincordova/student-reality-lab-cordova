@@ -1,0 +1,127 @@
+[
+  {
+    "slug": "williams-college",
+    "name": "Williams College",
+    "rank": 76
+  },
+  {
+    "slug": "william-and-mary",
+    "name": "William & Mary",
+    "rank": 77
+  },
+  {
+    "slug": "case-western-reserve-university",
+    "name": "Case Western Reserve University",
+    "rank": 78
+  },
+  {
+    "slug": "north-carolina-state-university",
+    "name": "North Carolina State University",
+    "rank": 79
+  },
+  {
+    "slug": "davidson-college",
+    "name": "Davidson College",
+    "rank": 80
+  },
+  {
+    "slug": "claremont-mckenna-college",
+    "name": "Claremont McKenna College",
+    "rank": 81
+  },
+  {
+    "slug": "wesleyan-university",
+    "name": "Wesleyan University",
+    "rank": 82
+  },
+  {
+    "slug": "rutgers-universitynew-brunswick",
+    "name": "Rutgers University–New Brunswick",
+    "rank": 83
+  },
+  {
+    "slug": "wake-forest-university",
+    "name": "Wake Forest University",
+    "rank": 84
+  },
+  {
+    "slug": "middlebury-college",
+    "name": "Middlebury College",
+    "rank": 85
+  },
+  {
+    "slug": "arizona-state-university",
+    "name": "Arizona State University",
+    "rank": 86
+  },
+  {
+    "slug": "digipen-institute-of-technology",
+    "name": "DigiPen Institute of Technology",
+    "rank": 87
+  },
+  {
+    "slug": "new-jersey-institute-of-technology",
+    "name": "New Jersey Institute of Technology",
+    "rank": 88
+  },
+  {
+    "slug": "wellesley-college",
+    "name": "Wellesley College",
+    "rank": 89
+  },
+  {
+    "slug": "university-of-texas-dallas",
+    "name": "University of Texas - Dallas",
+    "rank": 90
+  },
+  {
+    "slug": "the-university-of-tulsa",
+    "name": "The University of Tulsa",
+    "rank": 91
+  },
+  {
+    "slug": "university-of-colorado-boulder",
+    "name": "University of Colorado Boulder",
+    "rank": 92
+  },
+  {
+    "slug": "university-of-north-carolina-at-charlotte",
+    "name": "University of North Carolina at Charlotte",
+    "rank": 93
+  },
+  {
+    "slug": "university-of-california-santa-barbara",
+    "name": "University of California - Santa Barbara",
+    "rank": 94
+  },
+  {
+    "slug": "university-of-pittsburgh",
+    "name": "University of Pittsburgh",
+    "rank": 95
+  },
+  {
+    "slug": "illinois-institute-of-technology",
+    "name": "Illinois Institute of Technology",
+    "rank": 96
+  },
+  {
+    "slug": "clemson-university",
+    "name": "Clemson University",
+    "rank": 97
+  },
+  {
+    "slug": "university-of-massachusetts-amherst",
+    "name": "University of Massachusetts Amherst",
+    "rank": 98
+  },
+  {
+    "slug": "texas-a-and-m-university",
+    "name": "Texas A&M University",
+    "rank": 99
+  },
+  {
+    "slug": "dakota-state-university",
+    "name": "Dakota State University",
+    "rank": 100
+  }
+]

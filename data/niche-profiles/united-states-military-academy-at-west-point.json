@@ -1,0 +1,30 @@
+{
+  "slug": "united-states-military-academy-at-west-point",
+  "name": "United States Military Academy at West Point",
+  "city": "WEST  POINT",
+  "state": "NY",
+  "website": "https://www.westpoint.edu/",
+  "acceptanceRate": 0.14,
+  "enrollment": 4508,
+  "graduationRate": 0.854,
+  "tuitionInState": 0,
+  "tuitionOutOfState": 0,
+  "roomAndBoard": null,
+  "netPrice": 0,
+  "medianEarnings6yr": 45519,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A-",
+    "academics": "A+",
+    "diversity": "B+",
+    "campus": "D+",
+    "athletics": "C-",
+    "partyScene": "C-",
+    "professors": "A-",
+    "location": "C",
+    "dorms": "C",
+    "campusFood": "C-",
+    "studentLife": "D"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/united-states-military-academy-at-west-point/"
+}

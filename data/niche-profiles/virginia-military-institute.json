@@ -1,0 +1,32 @@
+{
+  "slug": "virginia-military-institute",
+  "name": "Virginia Military Institute",
+  "city": "LEXINGTON",
+  "state": "VA",
+  "website": "https://www.vmi.edu/",
+  "acceptanceRate": 0.818,
+  "enrollment": 1560,
+  "graduationRate": 0.818,
+  "tuitionInState": 20484,
+  "tuitionOutOfState": 51186,
+  "roomAndBoard": 10990,
+  "netPrice": 17229,
+  "medianEarnings6yr": 79378,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "B+",
+    "value": "A",
+    "diversity": "B",
+    "campus": "C-",
+    "athletics": "B+",
+    "partyScene": "C-",
+    "professors": "B",
+    "location": "B+",
+    "dorms": "D",
+    "campusFood": "C-",
+    "studentLife": "C+",
+    "safety": "B+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/virginia-military-institute/"
+}

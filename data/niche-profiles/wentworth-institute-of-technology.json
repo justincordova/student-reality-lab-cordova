@@ -1,0 +1,32 @@
+{
+  "slug": "wentworth-institute-of-technology",
+  "name": "Wentworth Institute of Technology",
+  "city": "BOSTON",
+  "state": "MA",
+  "website": "https://wit.edu/",
+  "acceptanceRate": 0.854,
+  "enrollment": 3464,
+  "graduationRate": 0.686,
+  "tuitionInState": 40410,
+  "tuitionOutOfState": 40410,
+  "roomAndBoard": 18670,
+  "netPrice": 35585,
+  "medianEarnings6yr": 94129,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "C+",
+    "academics": "C+",
+    "value": "B+",
+    "diversity": "A-",
+    "campus": "C-",
+    "athletics": "B-",
+    "partyScene": "B-",
+    "professors": "C",
+    "location": "A+",
+    "dorms": "C+",
+    "campusFood": "C-",
+    "studentLife": "B",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/wentworth-institute-of-technology/"
+}

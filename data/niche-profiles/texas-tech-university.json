@@ -1,0 +1,32 @@
+{
+  "slug": "texas-tech-university",
+  "name": "Texas Tech University",
+  "city": "LUBBOCK",
+  "state": "TX",
+  "website": "https://www.ttu.edu/",
+  "acceptanceRate": 0.709,
+  "enrollment": 29578,
+  "graduationRate": 0.675,
+  "tuitionInState": 11852,
+  "tuitionOutOfState": 24451,
+  "roomAndBoard": 10460,
+  "netPrice": 16773,
+  "medianEarnings6yr": 63247,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A",
+    "academics": "A",
+    "value": "B+",
+    "diversity": "A-",
+    "campus": "A",
+    "athletics": "A",
+    "partyScene": "A+",
+    "professors": "A+",
+    "location": "B",
+    "dorms": "B",
+    "campusFood": "A",
+    "studentLife": "A+",
+    "safety": "C"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/texas-tech-university/"
+}

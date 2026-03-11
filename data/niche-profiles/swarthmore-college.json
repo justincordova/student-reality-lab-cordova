@@ -1,0 +1,32 @@
+{
+  "slug": "swarthmore-college",
+  "name": "Swarthmore College",
+  "city": "SWARTHMORE",
+  "state": "PA",
+  "website": "https://www.swarthmore.edu/",
+  "acceptanceRate": 0.069,
+  "enrollment": 1641,
+  "graduationRate": 0.941,
+  "tuitionInState": 68766,
+  "tuitionOutOfState": 68766,
+  "roomAndBoard": 18964,
+  "netPrice": 17930,
+  "medianEarnings6yr": 73588,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A+",
+    "value": "A+",
+    "diversity": "A+",
+    "campus": "B",
+    "athletics": "B-",
+    "partyScene": "B-",
+    "professors": "A",
+    "location": "B+",
+    "dorms": "B",
+    "campusFood": "B-",
+    "studentLife": "B+",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/swarthmore-college/"
+}

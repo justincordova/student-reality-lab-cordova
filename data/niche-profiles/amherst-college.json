@@ -1,0 +1,32 @@
+{
+  "slug": "amherst-college",
+  "name": "Amherst College",
+  "city": "AMHERST",
+  "state": "MA",
+  "website": "https://www.amherst.edu/",
+  "acceptanceRate": 0.102,
+  "enrollment": 1910,
+  "graduationRate": 0.934,
+  "tuitionInState": 67280,
+  "tuitionOutOfState": 67280,
+  "roomAndBoard": 17560,
+  "netPrice": 17965,
+  "medianEarnings6yr": 88665,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A+",
+    "value": "A+",
+    "diversity": "A+",
+    "campus": "C",
+    "athletics": "A-",
+    "partyScene": "B",
+    "professors": "A",
+    "location": "B-",
+    "dorms": "B",
+    "campusFood": "C+",
+    "studentLife": "B+",
+    "safety": "B+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/amherst-college/"
+}

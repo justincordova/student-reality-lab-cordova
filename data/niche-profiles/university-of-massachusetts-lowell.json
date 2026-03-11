@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-massachusetts-lowell",
+  "name": "University of Massachusetts Lowell",
+  "city": "LOWELL",
+  "state": "MA",
+  "website": "https://www.uml.edu/",
+  "acceptanceRate": 0.852,
+  "enrollment": 9450,
+  "graduationRate": 0.701,
+  "tuitionInState": 16570,
+  "tuitionOutOfState": 35396,
+  "roomAndBoard": 14620,
+  "netPrice": 17624,
+  "medianEarnings6yr": 75948,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "B+",
+    "value": "A-",
+    "diversity": "A",
+    "campus": "C",
+    "athletics": "A-",
+    "partyScene": "B+",
+    "professors": "A",
+    "location": "B-",
+    "dorms": "B",
+    "campusFood": "C",
+    "studentLife": "B",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-massachusetts-lowell/"
+}

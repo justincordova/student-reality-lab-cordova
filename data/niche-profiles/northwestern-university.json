@@ -1,0 +1,32 @@
+{
+  "slug": "northwestern-university",
+  "name": "Northwestern University",
+  "city": "EVANSTON",
+  "state": "IL",
+  "website": "https://www.northwestern.edu/",
+  "acceptanceRate": 0.072,
+  "enrollment": 9020,
+  "graduationRate": 0.959,
+  "tuitionInState": 69375,
+  "tuitionOutOfState": 69375,
+  "roomAndBoard": 20334,
+  "netPrice": 23341,
+  "medianEarnings6yr": 95985,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A+",
+    "value": "A",
+    "diversity": "A+",
+    "campus": "B+",
+    "athletics": "A-",
+    "partyScene": "B+",
+    "professors": "A+",
+    "location": "A",
+    "dorms": "B-",
+    "campusFood": "B-",
+    "studentLife": "A",
+    "safety": "B+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/northwestern-university/"
+}

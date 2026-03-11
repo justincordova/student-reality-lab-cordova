@@ -1,0 +1,32 @@
+{
+  "slug": "angelo-state-university",
+  "name": "Angelo State University",
+  "city": "SAN ANGELO",
+  "state": "TX",
+  "website": "https://www.angelo.edu/",
+  "acceptanceRate": 0.792,
+  "enrollment": 4934,
+  "graduationRate": 0.407,
+  "tuitionInState": 9310,
+  "tuitionOutOfState": 21910,
+  "roomAndBoard": 10050,
+  "netPrice": 12518,
+  "medianEarnings6yr": 54594,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "B",
+    "value": "B+",
+    "diversity": "B+",
+    "campus": "A-",
+    "athletics": "A-",
+    "partyScene": "B+",
+    "professors": "B",
+    "location": "B",
+    "dorms": "A",
+    "campusFood": "A-",
+    "studentLife": "A-",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/angelo-state-university/"
+}

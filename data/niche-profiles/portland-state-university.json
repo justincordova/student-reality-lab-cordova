@@ -1,0 +1,32 @@
+{
+  "slug": "portland-state-university",
+  "name": "Portland State University",
+  "city": "PORTLAND",
+  "state": "OR",
+  "website": "https://www.pdx.edu/",
+  "acceptanceRate": 0.91,
+  "enrollment": 9985,
+  "graduationRate": 0.531,
+  "tuitionInState": 12999,
+  "tuitionOutOfState": 34599,
+  "roomAndBoard": 13140,
+  "netPrice": 12509,
+  "medianEarnings6yr": 58686,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "B",
+    "value": "B+",
+    "diversity": "A",
+    "campus": "B",
+    "athletics": "B",
+    "partyScene": "B",
+    "professors": "A",
+    "location": "A+",
+    "dorms": "B-",
+    "campusFood": "A",
+    "studentLife": "B+",
+    "safety": "C+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/portland-state-university/"
+}

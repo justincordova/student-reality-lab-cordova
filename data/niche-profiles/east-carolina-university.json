@@ -1,0 +1,32 @@
+{
+  "slug": "east-carolina-university",
+  "name": "East Carolina University",
+  "city": "GREENVILLE",
+  "state": "NC",
+  "website": "https://www.ecu.edu/",
+  "acceptanceRate": 0.901,
+  "enrollment": 17255,
+  "graduationRate": 0.621,
+  "tuitionInState": 7516,
+  "tuitionOutOfState": 23793,
+  "roomAndBoard": 10356,
+  "netPrice": 14470,
+  "medianEarnings6yr": 56743,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "B",
+    "value": "B+",
+    "diversity": "A-",
+    "campus": "B",
+    "athletics": "A-",
+    "partyScene": "A+",
+    "professors": "A-",
+    "location": "B-",
+    "dorms": "B",
+    "campusFood": "A-",
+    "studentLife": "A",
+    "safety": "C+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/east-carolina-university/"
+}

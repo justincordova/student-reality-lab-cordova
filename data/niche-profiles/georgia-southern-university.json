@@ -1,0 +1,32 @@
+{
+  "slug": "georgia-southern-university",
+  "name": "Georgia Southern University",
+  "city": "STATESBORO",
+  "state": "GA",
+  "website": "https://www.georgiasouthern.edu/",
+  "acceptanceRate": 0.897,
+  "enrollment": 18163,
+  "graduationRate": 0.521,
+  "tuitionInState": 2805,
+  "tuitionOutOfState": 10335,
+  "roomAndBoard": 10993,
+  "netPrice": 16957,
+  "medianEarnings6yr": 57677,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B",
+    "academics": "B",
+    "value": "B",
+    "diversity": "A-",
+    "campus": "A-",
+    "athletics": "A",
+    "partyScene": "A",
+    "professors": "B",
+    "location": "B-",
+    "dorms": "A-",
+    "campusFood": "A",
+    "studentLife": "A",
+    "safety": "C+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/georgia-southern-university/"
+}

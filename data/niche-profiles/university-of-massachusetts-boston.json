@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-massachusetts-boston",
+  "name": "University of Massachusetts Boston",
+  "city": "BOSTON",
+  "state": "MA",
+  "website": "https://www.umb.edu/",
+  "acceptanceRate": 0.83,
+  "enrollment": 9957,
+  "graduationRate": 0.511,
+  "tuitionInState": 15908,
+  "tuitionOutOfState": 38125,
+  "roomAndBoard": 17512,
+  "netPrice": 17554,
+  "medianEarnings6yr": 69745,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B",
+    "academics": "B",
+    "value": "B+",
+    "diversity": "A+",
+    "campus": "C-",
+    "athletics": "B-",
+    "partyScene": "C+",
+    "professors": "B+",
+    "location": "B",
+    "dorms": "C",
+    "campusFood": "B-",
+    "studentLife": "C",
+    "safety": "B+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-massachusetts-boston/"
+}

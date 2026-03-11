@@ -1,0 +1,31 @@
+{
+  "slug": "bryn-mawr-college",
+  "name": "Bryn Mawr College",
+  "city": "BRYN MAWR",
+  "state": "PA",
+  "website": "https://www.brynmawr.edu/",
+  "acceptanceRate": 0.311,
+  "enrollment": 1354,
+  "graduationRate": 0.856,
+  "tuitionInState": 64500,
+  "tuitionOutOfState": 64500,
+  "roomAndBoard": 18690,
+  "netPrice": 39383,
+  "medianEarnings6yr": 57709,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "A",
+    "value": "C",
+    "diversity": "A-",
+    "campus": "B",
+    "partyScene": "C",
+    "professors": "B",
+    "location": "B",
+    "dorms": "B+",
+    "campusFood": "B+",
+    "studentLife": "B",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/bryn-mawr-college/"
+}

@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-california-irvine",
+  "name": "University of California - Irvine",
+  "city": "IRVINE",
+  "state": "CA",
+  "website": "https://admissions.uci.edu/",
+  "acceptanceRate": 0.256,
+  "enrollment": 28884,
+  "graduationRate": 0.86,
+  "tuitionInState": 17357,
+  "tuitionOutOfState": 47271,
+  "roomAndBoard": null,
+  "netPrice": 14647,
+  "medianEarnings6yr": 72659,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A+",
+    "value": "A",
+    "diversity": "A",
+    "campus": "A-",
+    "athletics": "B+",
+    "partyScene": "B-",
+    "professors": "A",
+    "location": "A+",
+    "dorms": "B",
+    "campusFood": "A",
+    "studentLife": "A",
+    "safety": "B+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-california-irvine/"
+}

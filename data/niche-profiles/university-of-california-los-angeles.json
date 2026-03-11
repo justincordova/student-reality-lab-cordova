@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-california-los-angeles",
+  "name": "University of California - Los Angeles",
+  "city": "LOS ANGELES",
+  "state": "CA",
+  "website": "https://www.ucla.edu/",
+  "acceptanceRate": 0.087,
+  "enrollment": 32472,
+  "graduationRate": 0.927,
+  "tuitionInState": 13747,
+  "tuitionOutOfState": 44524,
+  "roomAndBoard": null,
+  "netPrice": 15166,
+  "medianEarnings6yr": 77498,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A+",
+    "value": "A",
+    "diversity": "A+",
+    "campus": "A+",
+    "athletics": "A",
+    "partyScene": "A+",
+    "professors": "A+",
+    "location": "A+",
+    "dorms": "A+",
+    "campusFood": "A+",
+    "studentLife": "A+",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-california-los-angeles/"
+}

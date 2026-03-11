@@ -1,0 +1,32 @@
+{
+  "slug": "haverford-college",
+  "name": "Haverford College",
+  "city": "HAVERFORD",
+  "state": "PA",
+  "website": "https://www.haverford.edu/",
+  "acceptanceRate": 0.129,
+  "enrollment": 1419,
+  "graduationRate": 0.894,
+  "tuitionInState": 69884,
+  "tuitionOutOfState": 69884,
+  "roomAndBoard": 18520,
+  "netPrice": 22828,
+  "medianEarnings6yr": 69576,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A+",
+    "value": "B+",
+    "diversity": "A+",
+    "campus": "B-",
+    "athletics": "B-",
+    "partyScene": "B+",
+    "professors": "B+",
+    "location": "A-",
+    "dorms": "C",
+    "campusFood": "C+",
+    "studentLife": "A-",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/haverford-college/"
+}

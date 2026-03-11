@@ -1,0 +1,31 @@
+{
+  "slug": "berklee-college-of-music",
+  "name": "Berklee College of Music",
+  "city": "BOSTON",
+  "state": "MA",
+  "website": "https://college.berklee.edu/",
+  "acceptanceRate": 0.499,
+  "enrollment": 6035,
+  "graduationRate": 0.664,
+  "tuitionInState": 50270,
+  "tuitionOutOfState": 50270,
+  "roomAndBoard": null,
+  "netPrice": 48608,
+  "medianEarnings6yr": 32591,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B-",
+    "academics": "B+",
+    "value": "D-",
+    "diversity": "A+",
+    "campus": "B+",
+    "partyScene": "A-",
+    "professors": "B-",
+    "location": "A+",
+    "dorms": "C+",
+    "campusFood": "A-",
+    "studentLife": "A+",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/berklee-college-of-music/"
+}

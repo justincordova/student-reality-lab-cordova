@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-nebraska-lincoln",
+  "name": "University of Nebraska - Lincoln",
+  "city": "LINCOLN",
+  "state": "NE",
+  "website": "https://www.unl.edu/",
+  "acceptanceRate": 0.771,
+  "enrollment": 18449,
+  "graduationRate": 0.658,
+  "tuitionInState": 10108,
+  "tuitionOutOfState": 27748,
+  "roomAndBoard": 13856,
+  "netPrice": 18029,
+  "medianEarnings6yr": 59589,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A-",
+    "academics": "A-",
+    "value": "B",
+    "diversity": "B+",
+    "campus": "A-",
+    "athletics": "A",
+    "partyScene": "A",
+    "professors": "A",
+    "location": "A-",
+    "dorms": "B+",
+    "campusFood": "A-",
+    "studentLife": "A",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-nebraska-lincoln/"
+}

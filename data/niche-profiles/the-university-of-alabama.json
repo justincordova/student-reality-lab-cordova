@@ -1,0 +1,32 @@
+{
+  "slug": "the-university-of-alabama",
+  "name": "The University of Alabama",
+  "city": "TUSCALOOSA",
+  "state": "AL",
+  "website": "https://admissions.ua.edu",
+  "acceptanceRate": 0.758,
+  "enrollment": 30984,
+  "graduationRate": 0.737,
+  "tuitionInState": 11684,
+  "tuitionOutOfState": 34542,
+  "roomAndBoard": 10866,
+  "netPrice": 21761,
+  "medianEarnings6yr": 62983,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A",
+    "academics": "A-",
+    "value": "B",
+    "diversity": "A-",
+    "campus": "A+",
+    "athletics": "A+",
+    "partyScene": "A+",
+    "professors": "A",
+    "location": "B+",
+    "dorms": "A",
+    "campusFood": "A",
+    "studentLife": "A+",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/the-university-of-alabama/"
+}

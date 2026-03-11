@@ -1,0 +1,32 @@
+{
+  "slug": "utah-state-university",
+  "name": "Utah State University",
+  "city": "LOGAN",
+  "state": "UT",
+  "website": "https://www.usu.edu/",
+  "acceptanceRate": 0.936,
+  "enrollment": 16721,
+  "graduationRate": 0.573,
+  "tuitionInState": 8779,
+  "tuitionOutOfState": 25658,
+  "roomAndBoard": 6760,
+  "netPrice": 15825,
+  "medianEarnings6yr": 58651,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "B+",
+    "value": "B-",
+    "diversity": "B",
+    "campus": "A",
+    "athletics": "A-",
+    "partyScene": "B",
+    "professors": "A",
+    "location": "B+",
+    "dorms": "A-",
+    "campusFood": "A",
+    "studentLife": "A",
+    "safety": "A-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/utah-state-university/"
+}

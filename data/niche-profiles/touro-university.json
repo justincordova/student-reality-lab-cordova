@@ -1,0 +1,32 @@
+{
+  "slug": "touro-university",
+  "name": "Touro University",
+  "city": "NEW YORK",
+  "state": "NY",
+  "website": "https://www.touro.edu/",
+  "acceptanceRate": 0.631,
+  "enrollment": 2938,
+  "graduationRate": 0.65,
+  "tuitionInState": 21810,
+  "tuitionOutOfState": 21810,
+  "roomAndBoard": 12500,
+  "netPrice": 25934,
+  "medianEarnings6yr": 58185,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A-",
+    "academics": "A",
+    "value": "B-",
+    "diversity": "A",
+    "campus": "B",
+    "athletics": "D-",
+    "partyScene": "C+",
+    "professors": "A-",
+    "location": "A+",
+    "dorms": "C+",
+    "campusFood": "B-",
+    "studentLife": "B+",
+    "safety": "A"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/touro-university/"
+}

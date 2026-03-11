@@ -1,0 +1,32 @@
+{
+  "slug": "dartmouth-college",
+  "name": "Dartmouth College",
+  "city": "HANOVER",
+  "state": "NH",
+  "website": "https://home.dartmouth.edu/",
+  "acceptanceRate": 0.063,
+  "enrollment": 4419,
+  "graduationRate": 0.96,
+  "tuitionInState": 65739,
+  "tuitionOutOfState": 65739,
+  "roomAndBoard": 18759,
+  "netPrice": 17322,
+  "medianEarnings6yr": 108126,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A+",
+    "value": "A+",
+    "diversity": "A+",
+    "campus": "A-",
+    "athletics": "B+",
+    "partyScene": "A",
+    "professors": "A+",
+    "location": "B",
+    "dorms": "B+",
+    "campusFood": "B",
+    "studentLife": "A+",
+    "safety": "B+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/dartmouth-college/"
+}

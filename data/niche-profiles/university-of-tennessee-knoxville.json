@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-tennessee-knoxville",
+  "name": "University of Tennessee, Knoxville",
+  "city": "KNOXVILLE",
+  "state": "TN",
+  "website": "https://www.utk.edu/",
+  "acceptanceRate": 0.46,
+  "enrollment": 29565,
+  "graduationRate": 0.735,
+  "tuitionInState": 13812,
+  "tuitionOutOfState": 33256,
+  "roomAndBoard": 14738,
+  "netPrice": 20885,
+  "medianEarnings6yr": 61635,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A",
+    "academics": "A",
+    "value": "B",
+    "diversity": "B+",
+    "campus": "B+",
+    "athletics": "A",
+    "partyScene": "A+",
+    "professors": "A",
+    "location": "A-",
+    "dorms": "C-",
+    "campusFood": "B+",
+    "studentLife": "A+",
+    "safety": "C+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-tennessee-knoxville/"
+}

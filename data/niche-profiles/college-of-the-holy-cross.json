@@ -1,0 +1,32 @@
+{
+  "slug": "college-of-the-holy-cross",
+  "name": "College of the Holy Cross",
+  "city": "WORCESTER",
+  "state": "MA",
+  "website": "https://www.holycross.edu/",
+  "acceptanceRate": 0.211,
+  "enrollment": 3210,
+  "graduationRate": 0.896,
+  "tuitionInState": 68090,
+  "tuitionOutOfState": 68090,
+  "roomAndBoard": 17750,
+  "netPrice": 35455,
+  "medianEarnings6yr": 82319,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A",
+    "academics": "A+",
+    "value": "A-",
+    "diversity": "A-",
+    "campus": "B-",
+    "athletics": "B+",
+    "partyScene": "B+",
+    "professors": "A-",
+    "location": "C",
+    "dorms": "B-",
+    "campusFood": "B",
+    "studentLife": "B",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/college-of-the-holy-cross/"
+}

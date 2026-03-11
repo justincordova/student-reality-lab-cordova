@@ -1,0 +1,32 @@
+{
+  "slug": "san-francisco-state-university",
+  "name": "San Francisco State University",
+  "city": "SAN FRANCISCO",
+  "state": "CA",
+  "website": "https://www.sfsu.edu/",
+  "acceptanceRate": 0.961,
+  "enrollment": 16695,
+  "graduationRate": 0.501,
+  "tuitionInState": 8256,
+  "tuitionOutOfState": 21576,
+  "roomAndBoard": 16425,
+  "netPrice": 13353,
+  "medianEarnings6yr": 68268,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B",
+    "academics": "B-",
+    "value": "B+",
+    "diversity": "A",
+    "campus": "C+",
+    "athletics": "B-",
+    "partyScene": "B",
+    "professors": "B",
+    "location": "A",
+    "dorms": "C-",
+    "campusFood": "B",
+    "studentLife": "B",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/san-francisco-state-university/"
+}

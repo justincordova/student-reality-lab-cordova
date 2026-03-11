@@ -1,0 +1,32 @@
+{
+  "slug": "new-york-university",
+  "name": "New York University",
+  "city": "NEW YORK",
+  "state": "NY",
+  "website": "https://www.nyu.edu/",
+  "acceptanceRate": 0.094,
+  "enrollment": 28692,
+  "graduationRate": 0.885,
+  "tuitionInState": 60438,
+  "tuitionOutOfState": 60438,
+  "roomAndBoard": 22786,
+  "netPrice": 30730,
+  "medianEarnings6yr": 83544,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A+",
+    "value": "B+",
+    "diversity": "A+",
+    "campus": "B-",
+    "athletics": "C+",
+    "partyScene": "A",
+    "professors": "A+",
+    "location": "A+",
+    "dorms": "C+",
+    "campusFood": "B",
+    "studentLife": "A",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/new-york-university/"
+}

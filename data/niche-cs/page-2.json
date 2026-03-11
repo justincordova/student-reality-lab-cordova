@@ -1,0 +1,127 @@
+[
+  {
+    "slug": "northeastern-university",
+    "name": "Northeastern University",
+    "rank": 26
+  },
+  {
+    "slug": "university-of-north-carolina-at-chapel-hill",
+    "name": "University of North Carolina at Chapel Hill",
+    "rank": 27
+  },
+  {
+    "slug": "university-of-california-berkeley",
+    "name": "University of California - Berkeley",
+    "rank": 28
+  },
+  {
+    "slug": "new-york-university",
+    "name": "New York University",
+    "rank": 29
+  },
+  {
+    "slug": "johns-hopkins-university",
+    "name": "Johns Hopkins University",
+    "rank": 30
+  },
+  {
+    "slug": "university-of-florida",
+    "name": "University of Florida",
+    "rank": 31
+  },
+  {
+    "slug": "university-of-virginia",
+    "name": "University of Virginia",
+    "rank": 32
+  },
+  {
+    "slug": "university-of-wisconsin-madison",
+    "name": "University of Wisconsin-Madison",
+    "rank": 33
+  },
+  {
+    "slug": "purdue-university",
+    "name": "Purdue University",
+    "rank": 34
+  },
+  {
+    "slug": "university-of-illinois-urbana-champaign",
+    "name": "University of Illinois Urbana-Champaign",
+    "rank": 35
+  },
+  {
+    "slug": "university-of-maryland-college-park",
+    "name": "University of Maryland - College Park",
+    "rank": 36
+  },
+  {
+    "slug": "university-of-washington",
+    "name": "University of Washington",
+    "rank": 37
+  },
+  {
+    "slug": "boston-university",
+    "name": "Boston University",
+    "rank": 38
+  },
+  {
+    "slug": "university-of-california-irvine",
+    "name": "University of California - Irvine",
+    "rank": 39
+  },
+  {
+    "slug": "university-of-notre-dame",
+    "name": "University of Notre Dame",
+    "rank": 40
+  },
+  {
+    "slug": "university-of-california-san-diego",
+    "name": "University of California - San Diego",
+    "rank": 41
+  },
+  {
+    "slug": "tufts-university",
+    "name": "Tufts University",
+    "rank": 42
+  },
+  {
+    "slug": "virginia-tech",
+    "name": "Virginia Tech",
+    "rank": 43
+  },
+  {
+    "slug": "new-mexico-tech",
+    "name": "New Mexico Tech",
+    "rank": 44
+  },
+  {
+    "slug": "penn-state",
+    "name": "Penn State",
+    "rank": 45
+  },
+  {
+    "slug": "pomona-college",
+    "name": "Pomona College",
+    "rank": 46
+  },
+  {
+    "slug": "brigham-young-university",
+    "name": "Brigham Young University",
+    "rank": 47
+  },
+  {
+    "slug": "university-of-california-davis",
+    "name": "University of California - Davis",
+    "rank": 48
+  },
+  {
+    "slug": "bowdoin-college",
+    "name": "Bowdoin College",
+    "rank": 49
+  },
+  {
+    "slug": "emory-university",
+    "name": "Emory University",
+    "rank": 50
+  }
+]

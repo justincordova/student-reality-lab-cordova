@@ -1,0 +1,32 @@
+{
+  "slug": "emory-university",
+  "name": "Emory University",
+  "city": "ATLANTA",
+  "state": "GA",
+  "website": "https://www.emory.edu/",
+  "acceptanceRate": 0.111,
+  "enrollment": 7263,
+  "graduationRate": 0.918,
+  "tuitionInState": 67080,
+  "tuitionOutOfState": 67080,
+  "roomAndBoard": 18972,
+  "netPrice": 27986,
+  "medianEarnings6yr": 83826,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A+",
+    "value": "B+",
+    "diversity": "A+",
+    "campus": "B",
+    "athletics": "B-",
+    "partyScene": "B-",
+    "professors": "A+",
+    "location": "A-",
+    "dorms": "B+",
+    "campusFood": "C+",
+    "studentLife": "A-",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/emory-university/"
+}

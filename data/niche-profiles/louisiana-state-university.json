@@ -1,0 +1,32 @@
+{
+  "slug": "louisiana-state-university",
+  "name": "Louisiana State University",
+  "city": "BATON ROUGE",
+  "state": "LA",
+  "website": "https://www.lsu.edu/",
+  "acceptanceRate": 0.74,
+  "enrollment": 29297,
+  "graduationRate": 0.71,
+  "tuitionInState": 12472,
+  "tuitionOutOfState": 29148,
+  "roomAndBoard": 14296,
+  "netPrice": 21808,
+  "medianEarnings6yr": 63498,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "B+",
+    "value": "B+",
+    "diversity": "A",
+    "campus": "B",
+    "athletics": "A+",
+    "partyScene": "A+",
+    "professors": "A-",
+    "location": "C-",
+    "dorms": "B-",
+    "campusFood": "A-",
+    "studentLife": "A",
+    "safety": "C"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/louisiana-state-university/"
+}

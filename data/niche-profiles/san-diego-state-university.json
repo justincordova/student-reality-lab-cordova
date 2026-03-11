@@ -1,0 +1,32 @@
+{
+  "slug": "san-diego-state-university",
+  "name": "San Diego State University",
+  "city": "SAN DIEGO",
+  "state": "CA",
+  "website": "https://www.sdsu.edu/",
+  "acceptanceRate": 0.344,
+  "enrollment": 30228,
+  "graduationRate": 0.783,
+  "tuitionInState": 8290,
+  "tuitionOutOfState": 20170,
+  "roomAndBoard": 21424,
+  "netPrice": 19500,
+  "medianEarnings6yr": 65488,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A-",
+    "academics": "A-",
+    "value": "B",
+    "diversity": "A",
+    "campus": "A-",
+    "athletics": "A-",
+    "partyScene": "A+",
+    "professors": "B+",
+    "location": "A",
+    "dorms": "C+",
+    "campusFood": "A",
+    "studentLife": "A+",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/san-diego-state-university/"
+}

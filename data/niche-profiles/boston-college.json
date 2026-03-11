@@ -1,0 +1,32 @@
+{
+  "slug": "boston-college",
+  "name": "Boston College",
+  "city": "CHESTNUT HILL",
+  "state": "MA",
+  "website": "https://www.bc.edu/",
+  "acceptanceRate": 0.157,
+  "enrollment": 9654,
+  "graduationRate": 0.91,
+  "tuitionInState": 72180,
+  "tuitionOutOfState": 72180,
+  "roomAndBoard": 18475,
+  "netPrice": 32590,
+  "medianEarnings6yr": 90978,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A+",
+    "value": "A",
+    "diversity": "A-",
+    "campus": "A-",
+    "athletics": "A",
+    "partyScene": "A-",
+    "professors": "A",
+    "location": "A",
+    "dorms": "C",
+    "campusFood": "C+",
+    "studentLife": "A",
+    "safety": "A-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/boston-college/"
+}

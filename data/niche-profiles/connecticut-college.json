@@ -1,0 +1,32 @@
+{
+  "slug": "connecticut-college",
+  "name": "Connecticut College",
+  "city": "NEW LONDON",
+  "state": "CT",
+  "website": "https://www.conncoll.edu/",
+  "acceptanceRate": 0.383,
+  "enrollment": 1959,
+  "graduationRate": 0.837,
+  "tuitionInState": 64812,
+  "tuitionOutOfState": 64812,
+  "roomAndBoard": 17885,
+  "netPrice": 42941,
+  "medianEarnings6yr": 66752,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "A",
+    "value": "B-",
+    "diversity": "A-",
+    "campus": "C",
+    "athletics": "B+",
+    "partyScene": "B",
+    "professors": "A",
+    "location": "B-",
+    "dorms": "C",
+    "campusFood": "C",
+    "studentLife": "B-",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/connecticut-college/"
+}

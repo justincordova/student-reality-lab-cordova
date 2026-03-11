@@ -1,0 +1,32 @@
+{
+  "slug": "oakland-university",
+  "name": "Oakland University",
+  "city": "ROCHESTER HILLS",
+  "state": "MI",
+  "website": "https://www.oakland.edu/",
+  "acceptanceRate": 0.7,
+  "enrollment": 10141,
+  "graduationRate": 0.569,
+  "tuitionInState": 14694,
+  "tuitionOutOfState": 23188,
+  "roomAndBoard": null,
+  "netPrice": 15734,
+  "medianEarnings6yr": 61905,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "B",
+    "value": "B+",
+    "diversity": "B+",
+    "campus": "B+",
+    "athletics": "B+",
+    "partyScene": "C+",
+    "professors": "B",
+    "location": "A-",
+    "dorms": "A-",
+    "campusFood": "A-",
+    "studentLife": "B+",
+    "safety": "A-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/oakland-university/"
+}

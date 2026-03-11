@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-louisiana-at-lafayette",
+  "name": "University of Louisiana at Lafayette",
+  "city": "LAFAYETTE",
+  "state": "LA",
+  "website": "https://louisiana.edu/",
+  "acceptanceRate": 0.888,
+  "enrollment": 11029,
+  "graduationRate": 0.52,
+  "tuitionInState": 10418,
+  "tuitionOutOfState": 24146,
+  "roomAndBoard": 11988,
+  "netPrice": 13443,
+  "medianEarnings6yr": 54844,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B",
+    "academics": "B",
+    "value": "B+",
+    "diversity": "B+",
+    "campus": "A-",
+    "athletics": "A-",
+    "partyScene": "A",
+    "professors": "B",
+    "location": "A-",
+    "dorms": "B+",
+    "campusFood": "A-",
+    "studentLife": "A-",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-louisiana-at-lafayette/"
+}

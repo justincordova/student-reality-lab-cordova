@@ -1,0 +1,32 @@
+{
+  "slug": "florida-a-and-m-university",
+  "name": "Florida A&M University",
+  "city": "TALLAHASSEE",
+  "state": "FL",
+  "website": "https://www.famu.edu/",
+  "acceptanceRate": 0.211,
+  "enrollment": 6784,
+  "graduationRate": 0.519,
+  "tuitionInState": 5785,
+  "tuitionOutOfState": 17725,
+  "roomAndBoard": 11644,
+  "netPrice": 15491,
+  "medianEarnings6yr": 49457,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A-",
+    "academics": "A-",
+    "value": "B",
+    "diversity": "B",
+    "campus": "B+",
+    "athletics": "B+",
+    "partyScene": "A+",
+    "professors": "A-",
+    "location": "B-",
+    "dorms": "B-",
+    "campusFood": "A",
+    "studentLife": "A",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/florida-a-and-m-university/"
+}

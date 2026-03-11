@@ -1,0 +1,32 @@
+{
+  "slug": "columbus-state-university",
+  "name": "Columbus State University",
+  "city": "COLUMBUS",
+  "state": "GA",
+  "website": "https://www.columbusstate.edu/",
+  "acceptanceRate": 0.992,
+  "enrollment": 4140,
+  "graduationRate": 0.417,
+  "tuitionInState": 3510,
+  "tuitionOutOfState": 10830,
+  "roomAndBoard": 11782,
+  "netPrice": 11384,
+  "medianEarnings6yr": 53931,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B-",
+    "academics": "B-",
+    "value": "B",
+    "diversity": "A",
+    "campus": "B",
+    "athletics": "B",
+    "partyScene": "B",
+    "professors": "B+",
+    "location": "B-",
+    "dorms": "B+",
+    "campusFood": "B+",
+    "studentLife": "B",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/columbus-state-university/"
+}

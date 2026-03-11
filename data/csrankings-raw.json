@@ -1,0 +1,770 @@
+[
+  {
+    "rank": 1,
+    "name": "Carnegie Mellon University"
+  },
+  {
+    "rank": 2,
+    "name": "Univ. of Illinois at Urbana-Champaign"
+  },
+  {
+    "rank": 3,
+    "name": "Univ. of California - San Diego"
+  },
+  {
+    "rank": 4,
+    "name": "Georgia Institute of Technology"
+  },
+  {
+    "rank": 5,
+    "name": "Massachusetts Inst. of Technology"
+  },
+  {
+    "rank": 6,
+    "name": "University of Michigan"
+  },
+  {
+    "rank": 7,
+    "name": "University of Washington"
+  },
+  {
+    "rank": 8,
+    "name": "Univ. of California - Berkeley"
+  },
+  {
+    "rank": 9,
+    "name": "Cornell University"
+  },
+  {
+    "rank": 9,
+    "name": "Univ. of Maryland - College Park"
+  },
+  {
+    "rank": 11,
+    "name": "Stanford University"
+  },
+  {
+    "rank": 12,
+    "name": "Northeastern University"
+  },
+  {
+    "rank": 13,
+    "name": "Purdue University"
+  },
+  {
+    "rank": 14,
+    "name": "New York University"
+  },
+  {
+    "rank": 14,
+    "name": "University of Texas at Austin"
+  },
+  {
+    "rank": 16,
+    "name": "University of Wisconsin - Madison"
+  },
+  {
+    "rank": 17,
+    "name": "Princeton University"
+  },
+  {
+    "rank": 18,
+    "name": "University of Pennsylvania"
+  },
+  {
+    "rank": 19,
+    "name": "Columbia University"
+  },
+  {
+    "rank": 20,
+    "name": "Univ. of California - Los Angeles"
+  },
+  {
+    "rank": 21,
+    "name": "University of Southern California"
+  },
+  {
+    "rank": 22,
+    "name": "Univ. of Massachusetts Amherst"
+  },
+  {
+    "rank": 22,
+    "name": "University of Chicago"
+  },
+  {
+    "rank": 24,
+    "name": "Univ. of California - Irvine"
+  },
+  {
+    "rank": 25,
+    "name": "Northwestern University"
+  },
+  {
+    "rank": 25,
+    "name": "Stony Brook University"
+  },
+  {
+    "rank": 27,
+    "name": "University of Virginia"
+  },
+  {
+    "rank": 28,
+    "name": "Univ. of California - Riverside"
+  },
+  {
+    "rank": 29,
+    "name": "Duke University"
+  },
+  {
+    "rank": 29,
+    "name": "Rutgers University"
+  },
+  {
+    "rank": 31,
+    "name": "University of Utah"
+  },
+  {
+    "rank": 32,
+    "name": "Pennsylvania State University"
+  },
+  {
+    "rank": 33,
+    "name": "Boston University"
+  },
+  {
+    "rank": 33,
+    "name": "George Mason University"
+  },
+  {
+    "rank": 33,
+    "name": "Texas A&M University"
+  },
+  {
+    "rank": 33,
+    "name": "Univ. of California - Santa Barbara"
+  },
+  {
+    "rank": 37,
+    "name": "North Carolina State University"
+  },
+  {
+    "rank": 37,
+    "name": "Univ. of California - Santa Cruz"
+  },
+  {
+    "rank": 39,
+    "name": "Harvard University"
+  },
+  {
+    "rank": 39,
+    "name": "Virginia Tech"
+  },
+  {
+    "rank": 39,
+    "name": "Yale University"
+  },
+  {
+    "rank": 42,
+    "name": "Arizona State University"
+  },
+  {
+    "rank": 42,
+    "name": "Johns Hopkins University"
+  },
+  {
+    "rank": 42,
+    "name": "University of Illinois at Chicago"
+  },
+  {
+    "rank": 42,
+    "name": "University of North Carolina"
+  },
+  {
+    "rank": 46,
+    "name": "Rice University"
+  },
+  {
+    "rank": 47,
+    "name": "Ohio State University"
+  },
+  {
+    "rank": 47,
+    "name": "Univ. of California - Davis"
+  },
+  {
+    "rank": 47,
+    "name": "University at Buffalo"
+  },
+  {
+    "rank": 47,
+    "name": "University of Colorado Boulder"
+  },
+  {
+    "rank": 47,
+    "name": "University of Minnesota"
+  },
+  {
+    "rank": 52,
+    "name": "Brown University"
+  },
+  {
+    "rank": 53,
+    "name": "Oregon State University"
+  },
+  {
+    "rank": 53,
+    "name": "University of Central Florida"
+  },
+  {
+    "rank": 55,
+    "name": "Indiana University"
+  },
+  {
+    "rank": 55,
+    "name": "University of Texas at Dallas"
+  },
+  {
+    "rank": 57,
+    "name": "Rochester Inst. of Technology"
+  },
+  {
+    "rank": 58,
+    "name": "Washington University in St. Louis"
+  },
+  {
+    "rank": 59,
+    "name": "University of Notre Dame"
+  },
+  {
+    "rank": 59,
+    "name": "University of Rochester"
+  },
+  {
+    "rank": 59,
+    "name": "University of Texas at Arlington"
+  },
+  {
+    "rank": 62,
+    "name": "University of Florida"
+  },
+  {
+    "rank": 63,
+    "name": "Dartmouth College"
+  },
+  {
+    "rank": 63,
+    "name": "NJIT"
+  },
+  {
+    "rank": 63,
+    "name": "University of Connecticut"
+  },
+  {
+    "rank": 63,
+    "name": "University of Pittsburgh"
+  },
+  {
+    "rank": 67,
+    "name": "College of William and Mary"
+  },
+  {
+    "rank": 67,
+    "name": "Florida State University"
+  },
+  {
+    "rank": 67,
+    "name": "Michigan State University"
+  },
+  {
+    "rank": 70,
+    "name": "Binghamton University"
+  },
+  {
+    "rank": 70,
+    "name": "Stevens Institute of Technology"
+  },
+  {
+    "rank": 70,
+    "name": "Tufts University"
+  },
+  {
+    "rank": 70,
+    "name": "University of Delaware"
+  },
+  {
+    "rank": 70,
+    "name": "Vanderbilt University"
+  },
+  {
+    "rank": 75,
+    "name": "Clemson University"
+  },
+  {
+    "rank": 75,
+    "name": "UNC - Charlotte"
+  },
+  {
+    "rank": 75,
+    "name": "Univ. of California - Merced"
+  },
+  {
+    "rank": 75,
+    "name": "University of Georgia"
+  },
+  {
+    "rank": 75,
+    "name": "Worcester Polytechnic Institute"
+  },
+  {
+    "rank": 80,
+    "name": "California Inst. of Technology"
+  },
+  {
+    "rank": 80,
+    "name": "Iowa State University"
+  },
+  {
+    "rank": 80,
+    "name": "University of South Florida"
+  },
+  {
+    "rank": 83,
+    "name": "Emory University"
+  },
+  {
+    "rank": 83,
+    "name": "Tulane University"
+  },
+  {
+    "rank": 83,
+    "name": "University of Arizona"
+  },
+  {
+    "rank": 86,
+    "name": "Georgetown University"
+  },
+  {
+    "rank": 86,
+    "name": "Washington State University"
+  },
+  {
+    "rank": 86,
+    "name": "Wayne State University"
+  },
+  {
+    "rank": 89,
+    "name": "CUNY"
+  },
+  {
+    "rank": 89,
+    "name": "Drexel University"
+  },
+  {
+    "rank": 89,
+    "name": "Florida International University"
+  },
+  {
+    "rank": 89,
+    "name": "Rensselaer Polytechnic Institute"
+  },
+  {
+    "rank": 89,
+    "name": "TTI Chicago"
+  },
+  {
+    "rank": 89,
+    "name": "Temple University"
+  },
+  {
+    "rank": 89,
+    "name": "Univ. of Maryland - Baltimore County"
+  },
+  {
+    "rank": 89,
+    "name": "University of Tennessee"
+  },
+  {
+    "rank": 97,
+    "name": "Augusta University"
+  },
+  {
+    "rank": 97,
+    "name": "Colorado State University"
+  },
+  {
+    "rank": 97,
+    "name": "George Washington University"
+  },
+  {
+    "rank": 97,
+    "name": "Illinois Institute of Technology"
+  },
+  {
+    "rank": 97,
+    "name": "Lehigh University"
+  },
+  {
+    "rank": 97,
+    "name": "University of Houston"
+  },
+  {
+    "rank": 97,
+    "name": "University of Iowa"
+  },
+  {
+    "rank": 97,
+    "name": "University of Massachusetts Lowell"
+  },
+  {
+    "rank": 97,
+    "name": "University of North Texas"
+  },
+  {
+    "rank": 97,
+    "name": "University of Oregon"
+  },
+  {
+    "rank": 107,
+    "name": "Brigham Young University"
+  },
+  {
+    "rank": 107,
+    "name": "Case Western Reserve University"
+  },
+  {
+    "rank": 107,
+    "name": "Colorado School of Mines"
+  },
+  {
+    "rank": 107,
+    "name": "Louisiana State University"
+  },
+  {
+    "rank": 107,
+    "name": "Syracuse University"
+  },
+  {
+    "rank": 107,
+    "name": "Texas State University"
+  },
+  {
+    "rank": 107,
+    "name": "University of Memphis"
+  },
+  {
+    "rank": 107,
+    "name": "University of Nebraska"
+  },
+  {
+    "rank": 107,
+    "name": "University of South Carolina"
+  },
+  {
+    "rank": 107,
+    "name": "University of Texas at San Antonio"
+  },
+  {
+    "rank": 117,
+    "name": "Auburn University"
+  },
+  {
+    "rank": 117,
+    "name": "Boston College"
+  },
+  {
+    "rank": 117,
+    "name": "Portland State University"
+  },
+  {
+    "rank": 117,
+    "name": "University of Cincinnati"
+  },
+  {
+    "rank": 117,
+    "name": "University of Kansas"
+  },
+  {
+    "rank": 117,
+    "name": "University of Kentucky"
+  },
+  {
+    "rank": 117,
+    "name": "University of New Hampshire"
+  },
+  {
+    "rank": 117,
+    "name": "University of Oklahoma"
+  },
+  {
+    "rank": 125,
+    "name": "Brandeis University"
+  },
+  {
+    "rank": 125,
+    "name": "DePaul University"
+  },
+  {
+    "rank": 125,
+    "name": "Georgia State University"
+  },
+  {
+    "rank": 125,
+    "name": "Kent State University"
+  },
+  {
+    "rank": 125,
+    "name": "Oakland University"
+  },
+  {
+    "rank": 125,
+    "name": "Texas Tech University"
+  },
+  {
+    "rank": 125,
+    "name": "Univ. of Louisiana - Lafayette"
+  },
+  {
+    "rank": 125,
+    "name": "University at Albany - SUNY"
+  },
+  {
+    "rank": 125,
+    "name": "University of Arkansas"
+  },
+  {
+    "rank": 125,
+    "name": "University of Nevada"
+  },
+  {
+    "rank": 125,
+    "name": "University of New Mexico"
+  },
+  {
+    "rank": 125,
+    "name": "Utah State University"
+  },
+  {
+    "rank": 125,
+    "name": "Virginia Commonwealth University"
+  },
+  {
+    "rank": 138,
+    "name": "Cleveland State University"
+  },
+  {
+    "rank": 138,
+    "name": "Florida Atlantic University"
+  },
+  {
+    "rank": 138,
+    "name": "Michigan Technological University"
+  },
+  {
+    "rank": 138,
+    "name": "Missouri S&T"
+  },
+  {
+    "rank": 138,
+    "name": "New Mexico State University"
+  },
+  {
+    "rank": 138,
+    "name": "Northern Arizona University"
+  },
+  {
+    "rank": 138,
+    "name": "Old Dominion University"
+  },
+  {
+    "rank": 138,
+    "name": "The University of Alabama"
+  },
+  {
+    "rank": 138,
+    "name": "UCCS"
+  },
+  {
+    "rank": 138,
+    "name": "University of Hawaii at Manoa"
+  },
+  {
+    "rank": 138,
+    "name": "University of Massachusetts Boston"
+  },
+  {
+    "rank": 138,
+    "name": "University of Michigan-Dearborn"
+  },
+  {
+    "rank": 138,
+    "name": "University of Missouri"
+  },
+  {
+    "rank": 138,
+    "name": "University of Nebraska - Omaha"
+  },
+  {
+    "rank": 138,
+    "name": "University of Texas - El Paso"
+  },
+  {
+    "rank": 138,
+    "name": "University of Vermont"
+  },
+  {
+    "rank": 138,
+    "name": "West Virginia University"
+  },
+  {
+    "rank": 138,
+    "name": "Wichita State University"
+  },
+  {
+    "rank": 156,
+    "name": "Baylor University"
+  },
+  {
+    "rank": 156,
+    "name": "Boise State University"
+  },
+  {
+    "rank": 156,
+    "name": "IUPUI"
+  },
+  {
+    "rank": 156,
+    "name": "Kansas State University"
+  },
+  {
+    "rank": 156,
+    "name": "Mississippi State University"
+  },
+  {
+    "rank": 156,
+    "name": "Montana State University"
+  },
+  {
+    "rank": 156,
+    "name": "Naval Postgraduate School"
+  },
+  {
+    "rank": 156,
+    "name": "New York Tech"
+  },
+  {
+    "rank": 156,
+    "name": "Ohio University"
+  },
+  {
+    "rank": 156,
+    "name": "Southern Methodist University"
+  },
+  {
+    "rank": 156,
+    "name": "Towson University"
+  },
+  {
+    "rank": 156,
+    "name": "Univ. of Missouri - Kansas City"
+  },
+  {
+    "rank": 156,
+    "name": "Univ. of Wisconsin - Milwaukee"
+  },
+  {
+    "rank": 156,
+    "name": "University of Colorado - Denver"
+  },
+  {
+    "rank": 156,
+    "name": "University of Denver"
+  },
+  {
+    "rank": 156,
+    "name": "University of Louisville"
+  },
+  {
+    "rank": 156,
+    "name": "University of Mississippi"
+  },
+  {
+    "rank": 156,
+    "name": "University of Nevada Las Vegas"
+  },
+  {
+    "rank": 156,
+    "name": "University of Southern Mississippi"
+  },
+  {
+    "rank": 156,
+    "name": "University of Tulsa"
+  },
+  {
+    "rank": 176,
+    "name": "Air Force Inst. of Technology"
+  },
+  {
+    "rank": 176,
+    "name": "Florida Institute of Technology"
+  },
+  {
+    "rank": 176,
+    "name": "New Mexico Tech"
+  },
+  {
+    "rank": 176,
+    "name": "North Dakota State University"
+  },
+  {
+    "rank": 176,
+    "name": "Nova Southeastern University"
+  },
+  {
+    "rank": 176,
+    "name": "OHSU"
+  },
+  {
+    "rank": 176,
+    "name": "Oklahoma State University"
+  },
+  {
+    "rank": 176,
+    "name": "UNC - Greensboro"
+  },
+  {
+    "rank": 176,
+    "name": "Univ. of Arkansas - Little Rock"
+  },
+  {
+    "rank": 176,
+    "name": "University of Alabama - Birmingham"
+  },
+  {
+    "rank": 176,
+    "name": "University of Alabama - Huntsville"
+  },
+  {
+    "rank": 176,
+    "name": "University of Idaho"
+  },
+  {
+    "rank": 176,
+    "name": "University of Miami"
+  },
+  {
+    "rank": 176,
+    "name": "University of New Orleans"
+  },
+  {
+    "rank": 176,
+    "name": "University of Rhode Island"
+  },
+  {
+    "rank": 176,
+    "name": "University of Wyoming"
+  },
+  {
+    "rank": 176,
+    "name": "Western Michigan University"
+  }
+]

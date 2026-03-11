@@ -1,0 +1,32 @@
+{
+  "slug": "carnegie-mellon-university",
+  "name": "Carnegie Mellon University",
+  "city": "PITTSBURGH",
+  "state": "PA",
+  "website": "https://www.cmu.edu/",
+  "acceptanceRate": 0.113,
+  "enrollment": 7133,
+  "graduationRate": 0.925,
+  "tuitionInState": 67020,
+  "tuitionOutOfState": 67020,
+  "roomAndBoard": 17468,
+  "netPrice": 32964,
+  "medianEarnings6yr": 121367,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A+",
+    "value": "A+",
+    "diversity": "A+",
+    "campus": "B-",
+    "athletics": "C+",
+    "partyScene": "B",
+    "professors": "A+",
+    "location": "A",
+    "dorms": "B+",
+    "campusFood": "B",
+    "studentLife": "A-",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/carnegie-mellon-university/"
+}

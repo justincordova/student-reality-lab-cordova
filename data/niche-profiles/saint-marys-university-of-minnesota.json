@@ -1,0 +1,32 @@
+{
+  "slug": "saint-marys-university-of-minnesota",
+  "name": "Saint Mary's University of Minnesota",
+  "city": "WINONA",
+  "state": "MN",
+  "website": "https://www.smumn.edu/admission/undergraduate/",
+  "acceptanceRate": 0.891,
+  "enrollment": 867,
+  "graduationRate": 0.677,
+  "tuitionInState": 45960,
+  "tuitionOutOfState": 45960,
+  "roomAndBoard": 11350,
+  "netPrice": 22518,
+  "medianEarnings6yr": 67821,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "B+",
+    "value": "B+",
+    "diversity": "A-",
+    "campus": "B+",
+    "athletics": "B",
+    "partyScene": "B-",
+    "professors": "B",
+    "location": "B+",
+    "dorms": "A+",
+    "campusFood": "C+",
+    "studentLife": "B+",
+    "safety": "A-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/saint-marys-university-of-minnesota/"
+}

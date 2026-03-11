@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-california-merced",
+  "name": "University of California - Merced",
+  "city": "MERCED",
+  "state": "CA",
+  "website": "https://www.ucmerced.edu/",
+  "acceptanceRate": 0.392,
+  "enrollment": 8266,
+  "graduationRate": 0.691,
+  "tuitionInState": 16054,
+  "tuitionOutOfState": 53656,
+  "roomAndBoard": null,
+  "netPrice": 13232,
+  "medianEarnings6yr": 62884,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "A-",
+    "value": "B+",
+    "diversity": "B+",
+    "campus": "C-",
+    "athletics": "C+",
+    "partyScene": "B-",
+    "professors": "B+",
+    "location": "D",
+    "dorms": "B",
+    "campusFood": "D+",
+    "studentLife": "C+",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-california-merced/"
+}

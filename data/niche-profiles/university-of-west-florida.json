@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-west-florida",
+  "name": "University of West Florida",
+  "city": "PENSACOLA",
+  "state": "FL",
+  "website": "https://uwf.edu/",
+  "acceptanceRate": 0.569,
+  "enrollment": 6570,
+  "graduationRate": 0.618,
+  "tuitionInState": 6360,
+  "tuitionOutOfState": 19241,
+  "roomAndBoard": 11529,
+  "netPrice": 8908,
+  "medianEarnings6yr": 52238,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A-",
+    "academics": "A-",
+    "value": "B+",
+    "diversity": "B+",
+    "campus": "A-",
+    "athletics": "A",
+    "partyScene": "B",
+    "professors": "B+",
+    "location": "B+",
+    "dorms": "B-",
+    "campusFood": "B",
+    "studentLife": "A",
+    "safety": "A-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-west-florida/"
+}

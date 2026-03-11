@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-illinois-chicago",
+  "name": "University of Illinois Chicago",
+  "city": "CHICAGO",
+  "state": "IL",
+  "website": "https://discover.uic.edu/",
+  "acceptanceRate": 0.785,
+  "enrollment": 19961,
+  "graduationRate": 0.603,
+  "tuitionInState": 16390,
+  "tuitionOutOfState": 32492,
+  "roomAndBoard": 14207,
+  "netPrice": 11499,
+  "medianEarnings6yr": 71439,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A-",
+    "academics": "A-",
+    "value": "A-",
+    "diversity": "A+",
+    "campus": "C",
+    "athletics": "B+",
+    "partyScene": "B",
+    "professors": "A",
+    "location": "A",
+    "dorms": "C-",
+    "campusFood": "B+",
+    "studentLife": "B",
+    "safety": "C+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-illinois-chicago/"
+}

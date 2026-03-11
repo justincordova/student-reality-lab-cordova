@@ -1,0 +1,32 @@
+{
+  "slug": "purdue-university",
+  "name": "Purdue University",
+  "city": "WEST LAFAYETTE",
+  "state": "IN",
+  "website": "https://www.purdue.edu/",
+  "acceptanceRate": 0.503,
+  "enrollment": 37678,
+  "graduationRate": 0.831,
+  "tuitionInState": 9992,
+  "tuitionOutOfState": 28794,
+  "roomAndBoard": 11878,
+  "netPrice": 12421,
+  "medianEarnings6yr": 75853,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A",
+    "value": "A",
+    "diversity": "A",
+    "campus": "B+",
+    "athletics": "A-",
+    "partyScene": "B+",
+    "professors": "A+",
+    "location": "C+",
+    "dorms": "B-",
+    "campusFood": "A",
+    "studentLife": "A",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/purdue-university/"
+}

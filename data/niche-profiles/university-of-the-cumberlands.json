@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-the-cumberlands",
+  "name": "University of the Cumberlands",
+  "city": "WILLIAMSBURG",
+  "state": "KY",
+  "website": "https://www.ucumberlands.edu/",
+  "acceptanceRate": 0.714,
+  "enrollment": 2796,
+  "graduationRate": 0.462,
+  "tuitionInState": 9875,
+  "tuitionOutOfState": 9875,
+  "roomAndBoard": null,
+  "netPrice": 11555,
+  "medianEarnings6yr": 48890,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "B",
+    "value": "A-",
+    "diversity": "A-",
+    "campus": "A-",
+    "athletics": "B",
+    "partyScene": "C",
+    "professors": "B+",
+    "location": "C+",
+    "dorms": "A-",
+    "campusFood": "A",
+    "studentLife": "A-",
+    "safety": "A+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-the-cumberlands/"
+}

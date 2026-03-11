@@ -1,0 +1,32 @@
+{
+  "slug": "elmhurst-university",
+  "name": "Elmhurst University",
+  "city": "ELMHURST",
+  "state": "IL",
+  "website": "https://www.elmhurst.edu/",
+  "acceptanceRate": 0.759,
+  "enrollment": 2938,
+  "graduationRate": 0.652,
+  "tuitionInState": 41628,
+  "tuitionOutOfState": 41628,
+  "roomAndBoard": 11858,
+  "netPrice": 22760,
+  "medianEarnings6yr": 64263,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "B",
+    "value": "B+",
+    "diversity": "A",
+    "campus": "B+",
+    "athletics": "B-",
+    "partyScene": "C+",
+    "professors": "B-",
+    "location": "A",
+    "dorms": "B-",
+    "campusFood": "B+",
+    "studentLife": "A-",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/elmhurst-university/"
+}

@@ -1,0 +1,32 @@
+{
+  "slug": "duke-university",
+  "name": "Duke University",
+  "city": "DURHAM",
+  "state": "NC",
+  "website": "https://duke.edu",
+  "acceptanceRate": 0.068,
+  "enrollment": 6474,
+  "graduationRate": 0.958,
+  "tuitionInState": 73172,
+  "tuitionOutOfState": 73172,
+  "roomAndBoard": 17359,
+  "netPrice": 23422,
+  "medianEarnings6yr": 104271,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A+",
+    "value": "A+",
+    "diversity": "A+",
+    "campus": "A",
+    "athletics": "A+",
+    "partyScene": "A",
+    "professors": "A+",
+    "location": "B-",
+    "dorms": "A",
+    "campusFood": "A+",
+    "studentLife": "A+",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/duke-university/"
+}

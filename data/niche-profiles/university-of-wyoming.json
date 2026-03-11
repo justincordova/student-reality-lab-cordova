@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-wyoming",
+  "name": "University of Wyoming",
+  "city": "LARAMIE",
+  "state": "WY",
+  "website": "https://www.uwyo.edu/",
+  "acceptanceRate": 0.975,
+  "enrollment": 6851,
+  "graduationRate": 0.598,
+  "tuitionInState": 6938,
+  "tuitionOutOfState": 22718,
+  "roomAndBoard": 13340,
+  "netPrice": 13299,
+  "medianEarnings6yr": 58733,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "B+",
+    "value": "B+",
+    "diversity": "B+",
+    "campus": "B",
+    "athletics": "A-",
+    "partyScene": "A-",
+    "professors": "A",
+    "location": "B+",
+    "dorms": "C",
+    "campusFood": "C+",
+    "studentLife": "B+",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-wyoming/"
+}

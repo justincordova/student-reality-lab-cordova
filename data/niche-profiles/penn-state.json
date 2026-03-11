@@ -1,0 +1,32 @@
+{
+  "slug": "penn-state",
+  "name": "Penn State",
+  "city": "UNIVERSITY PARK",
+  "state": "PA",
+  "website": "https://www.psu.edu/",
+  "acceptanceRate": 0.542,
+  "enrollment": 41011,
+  "graduationRate": 0.857,
+  "tuitionInState": 20234,
+  "tuitionOutOfState": 40188,
+  "roomAndBoard": 13030,
+  "netPrice": 27450,
+  "medianEarnings6yr": 72964,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A",
+    "value": "B+",
+    "diversity": "A",
+    "campus": "A",
+    "athletics": "A",
+    "partyScene": "A+",
+    "professors": "A+",
+    "location": "B+",
+    "dorms": "B",
+    "campusFood": "A-",
+    "studentLife": "A+",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/penn-state/"
+}

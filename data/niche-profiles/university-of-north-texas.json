@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-north-texas",
+  "name": "University of North Texas",
+  "city": "DENTON",
+  "state": "TX",
+  "website": "https://www.unt.edu/",
+  "acceptanceRate": 0.725,
+  "enrollment": 27922,
+  "graduationRate": 0.596,
+  "tuitionInState": 11164,
+  "tuitionOutOfState": 21244,
+  "roomAndBoard": null,
+  "netPrice": 14675,
+  "medianEarnings6yr": 57374,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "B+",
+    "value": "B",
+    "diversity": "A",
+    "campus": "A-",
+    "athletics": "B+",
+    "partyScene": "A",
+    "professors": "B",
+    "location": "B+",
+    "dorms": "C+",
+    "campusFood": "A+",
+    "studentLife": "A",
+    "safety": "C+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-north-texas/"
+}

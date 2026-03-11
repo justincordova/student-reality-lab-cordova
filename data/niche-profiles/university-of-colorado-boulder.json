@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-colorado-boulder",
+  "name": "University of Colorado Boulder",
+  "city": "BOULDER",
+  "state": "CO",
+  "website": "https://www.colorado.edu/",
+  "acceptanceRate": 0.833,
+  "enrollment": 30497,
+  "graduationRate": 0.75,
+  "tuitionInState": 14606,
+  "tuitionOutOfState": 44748,
+  "roomAndBoard": null,
+  "netPrice": 22640,
+  "medianEarnings6yr": 72742,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A-",
+    "academics": "A-",
+    "value": "B",
+    "diversity": "A-",
+    "campus": "A",
+    "athletics": "A-",
+    "partyScene": "A+",
+    "professors": "A",
+    "location": "A",
+    "dorms": "C+",
+    "campusFood": "A-",
+    "studentLife": "A+",
+    "safety": "C"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-colorado-boulder/"
+}

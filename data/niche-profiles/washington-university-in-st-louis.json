@@ -1,0 +1,32 @@
+{
+  "slug": "washington-university-in-st-louis",
+  "name": "Washington University in St. Louis",
+  "city": "SAINT LOUIS",
+  "state": "MO",
+  "website": "https://washu.edu/",
+  "acceptanceRate": 0.12,
+  "enrollment": 7534,
+  "graduationRate": 0.944,
+  "tuitionInState": 68240,
+  "tuitionOutOfState": 68240,
+  "roomAndBoard": 20778,
+  "netPrice": 22440,
+  "medianEarnings6yr": 94543,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A+",
+    "value": "A+",
+    "diversity": "A+",
+    "campus": "A+",
+    "athletics": "A-",
+    "partyScene": "A-",
+    "professors": "A+",
+    "location": "A",
+    "dorms": "A+",
+    "campusFood": "A",
+    "studentLife": "A+",
+    "safety": "B+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/washington-university-in-st-louis/"
+}

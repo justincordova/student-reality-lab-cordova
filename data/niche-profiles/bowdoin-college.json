@@ -1,0 +1,32 @@
+{
+  "slug": "bowdoin-college",
+  "name": "Bowdoin College",
+  "city": "BRUNSWICK",
+  "state": "ME",
+  "website": "https://www.bowdoin.edu/",
+  "acceptanceRate": 0.08,
+  "enrollment": 1873,
+  "graduationRate": 0.956,
+  "tuitionInState": 71070,
+  "tuitionOutOfState": 71070,
+  "roomAndBoard": 17690,
+  "netPrice": 23110,
+  "medianEarnings6yr": 79736,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A+",
+    "value": "A",
+    "diversity": "A+",
+    "campus": "A-",
+    "athletics": "B",
+    "partyScene": "B",
+    "professors": "A",
+    "location": "B+",
+    "dorms": "A+",
+    "campusFood": "A+",
+    "studentLife": "A",
+    "safety": "B+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/bowdoin-college/"
+}

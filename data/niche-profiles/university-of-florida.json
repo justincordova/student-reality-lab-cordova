@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-florida",
+  "name": "University of Florida",
+  "city": "GAINESVILLE",
+  "state": "FL",
+  "website": "https://www.ufl.edu/",
+  "acceptanceRate": 0.24,
+  "enrollment": 31571,
+  "graduationRate": 0.915,
+  "tuitionInState": 6381,
+  "tuitionOutOfState": 28659,
+  "roomAndBoard": 11500,
+  "netPrice": 11521,
+  "medianEarnings6yr": 72379,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A+",
+    "value": "A",
+    "diversity": "A",
+    "campus": "A-",
+    "athletics": "A+",
+    "partyScene": "A+",
+    "professors": "A+",
+    "location": "B+",
+    "dorms": "B-",
+    "campusFood": "B+",
+    "studentLife": "A+",
+    "safety": "C+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-florida/"
+}

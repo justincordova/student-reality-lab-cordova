@@ -1,0 +1,32 @@
+{
+  "slug": "washington-state-university",
+  "name": "Washington State University",
+  "city": "PULLMAN",
+  "state": "WA",
+  "website": "https://wsu.edu/",
+  "acceptanceRate": 0.854,
+  "enrollment": 19321,
+  "graduationRate": 0.616,
+  "tuitionInState": 11554,
+  "tuitionOutOfState": 27630,
+  "roomAndBoard": 13161,
+  "netPrice": 18155,
+  "medianEarnings6yr": 70192,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A-",
+    "academics": "B+",
+    "value": "B+",
+    "diversity": "A",
+    "campus": "B+",
+    "athletics": "A-",
+    "partyScene": "A+",
+    "professors": "A+",
+    "location": "B",
+    "dorms": "B-",
+    "campusFood": "B",
+    "studentLife": "A",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/washington-state-university/"
+}

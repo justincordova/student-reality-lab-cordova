@@ -1,0 +1,32 @@
+{
+  "slug": "case-western-reserve-university",
+  "name": "Case Western Reserve University",
+  "city": "CLEVELAND",
+  "state": "OH",
+  "website": "https://case.edu/",
+  "acceptanceRate": 0.287,
+  "enrollment": 6093,
+  "graduationRate": 0.87,
+  "tuitionInState": 64671,
+  "tuitionOutOfState": 64671,
+  "roomAndBoard": 18202,
+  "netPrice": 41351,
+  "medianEarnings6yr": 83598,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A",
+    "academics": "A+",
+    "value": "B+",
+    "diversity": "A+",
+    "campus": "C-",
+    "athletics": "B-",
+    "partyScene": "C+",
+    "professors": "A+",
+    "location": "B-",
+    "dorms": "C-",
+    "campusFood": "C",
+    "studentLife": "B-",
+    "safety": "C"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/case-western-reserve-university/"
+}

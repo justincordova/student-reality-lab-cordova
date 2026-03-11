@@ -1,0 +1,32 @@
+{
+  "slug": "colorado-college",
+  "name": "Colorado College",
+  "city": "COLORADO SPRINGS",
+  "state": "CO",
+  "website": "https://www.coloradocollege.edu/",
+  "acceptanceRate": 0.202,
+  "enrollment": 2150,
+  "graduationRate": 0.86,
+  "tuitionInState": 73038,
+  "tuitionOutOfState": 73038,
+  "roomAndBoard": 15228,
+  "netPrice": 35281,
+  "medianEarnings6yr": 55071,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A-",
+    "academics": "A+",
+    "value": "B-",
+    "diversity": "A-",
+    "campus": "C+",
+    "athletics": "B-",
+    "partyScene": "B",
+    "professors": "A-",
+    "location": "C+",
+    "dorms": "C",
+    "campusFood": "B-",
+    "studentLife": "B",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/colorado-college/"
+}

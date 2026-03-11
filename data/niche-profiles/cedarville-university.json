@@ -1,0 +1,32 @@
+{
+  "slug": "cedarville-university",
+  "name": "Cedarville University",
+  "city": "CEDARVILLE",
+  "state": "OH",
+  "website": "https://www.cedarville.edu/",
+  "acceptanceRate": 0.628,
+  "enrollment": 3789,
+  "graduationRate": 0.743,
+  "tuitionInState": 36078,
+  "tuitionOutOfState": 36078,
+  "roomAndBoard": 9094,
+  "netPrice": 27047,
+  "medianEarnings6yr": 57137,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A-",
+    "academics": "B+",
+    "value": "B",
+    "diversity": "B",
+    "campus": "A",
+    "athletics": "B",
+    "partyScene": "D+",
+    "professors": "B",
+    "location": "C+",
+    "dorms": "A+",
+    "campusFood": "A",
+    "studentLife": "A",
+    "safety": "A"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/cedarville-university/"
+}

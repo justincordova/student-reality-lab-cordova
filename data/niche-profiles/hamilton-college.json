@@ -1,0 +1,32 @@
+{
+  "slug": "hamilton-college",
+  "name": "Hamilton College",
+  "city": "CLINTON",
+  "state": "NY",
+  "website": "https://www.hamilton.edu/",
+  "acceptanceRate": 0.12,
+  "enrollment": 2030,
+  "graduationRate": 0.913,
+  "tuitionInState": 71970,
+  "tuitionOutOfState": 71970,
+  "roomAndBoard": 16690,
+  "netPrice": 26021,
+  "medianEarnings6yr": 77354,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A+",
+    "value": "A",
+    "diversity": "A",
+    "campus": "B-",
+    "athletics": "B-",
+    "partyScene": "B",
+    "professors": "A",
+    "location": "C+",
+    "dorms": "A-",
+    "campusFood": "B-",
+    "studentLife": "A-",
+    "safety": "A-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/hamilton-college/"
+}

@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-texas-austin",
+  "name": "University of Texas - Austin",
+  "city": "AUSTIN",
+  "state": "TX",
+  "website": "https://www.utexas.edu/",
+  "acceptanceRate": 0.291,
+  "enrollment": 39787,
+  "graduationRate": 0.876,
+  "tuitionInState": 11678,
+  "tuitionOutOfState": 42778,
+  "roomAndBoard": null,
+  "netPrice": 18036,
+  "medianEarnings6yr": 74802,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A+",
+    "value": "A",
+    "diversity": "A",
+    "campus": "A",
+    "athletics": "A+",
+    "partyScene": "A+",
+    "professors": "A",
+    "location": "A+",
+    "dorms": "B-",
+    "campusFood": "A",
+    "studentLife": "A+",
+    "safety": "C+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-texas-austin/"
+}

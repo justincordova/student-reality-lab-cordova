@@ -1,0 +1,32 @@
+{
+  "slug": "temple-university",
+  "name": "Temple University",
+  "city": "PHILADELPHIA",
+  "state": "PA",
+  "website": "https://www.temple.edu/",
+  "acceptanceRate": 0.829,
+  "enrollment": 19944,
+  "graduationRate": 0.747,
+  "tuitionInState": 17976,
+  "tuitionOutOfState": 32376,
+  "roomAndBoard": 14186,
+  "netPrice": 29641,
+  "medianEarnings6yr": 63202,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A-",
+    "academics": "A-",
+    "value": "B-",
+    "diversity": "A+",
+    "campus": "B",
+    "athletics": "A-",
+    "partyScene": "A+",
+    "professors": "A",
+    "location": "B",
+    "dorms": "B",
+    "campusFood": "A",
+    "studentLife": "A",
+    "safety": "C"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/temple-university/"
+}

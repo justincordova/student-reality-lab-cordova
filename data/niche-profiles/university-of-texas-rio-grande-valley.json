@@ -1,0 +1,31 @@
+{
+  "slug": "university-of-texas-rio-grande-valley",
+  "name": "University of Texas Rio Grande Valley",
+  "city": "EDINBURG",
+  "state": "TX",
+  "website": "https://www.utrgv.edu/",
+  "acceptanceRate": 0.848,
+  "enrollment": 20098,
+  "graduationRate": 0.493,
+  "tuitionInState": 9859,
+  "tuitionOutOfState": 19939,
+  "roomAndBoard": 7689,
+  "netPrice": 6978,
+  "medianEarnings6yr": 53360,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A-",
+    "academics": "B+",
+    "value": "A-",
+    "diversity": "C+",
+    "campus": "A",
+    "athletics": "B+",
+    "partyScene": "B",
+    "professors": "A",
+    "location": "B+",
+    "campusFood": "A+",
+    "studentLife": "A-",
+    "safety": "B+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-texas-rio-grande-valley/"
+}

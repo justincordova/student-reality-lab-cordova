@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-pittsburgh",
+  "name": "University of Pittsburgh",
+  "city": "PITTSBURGH",
+  "state": "PA",
+  "website": "https://admissions.pitt.edu/?utm_medium=web&utm_source=niche&utm_campaign=apply",
+  "acceptanceRate": 0.497,
+  "enrollment": 19618,
+  "graduationRate": 0.843,
+  "tuitionInState": 19790,
+  "tuitionOutOfState": 36000,
+  "roomAndBoard": 13420,
+  "netPrice": 24338,
+  "medianEarnings6yr": 69754,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A",
+    "academics": "A",
+    "value": "B+",
+    "diversity": "A",
+    "campus": "B+",
+    "athletics": "A-",
+    "partyScene": "A",
+    "professors": "A+",
+    "location": "A+",
+    "dorms": "B-",
+    "campusFood": "C",
+    "studentLife": "A+",
+    "safety": "C+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-pittsburgh/"
+}

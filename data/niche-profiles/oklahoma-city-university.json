@@ -1,0 +1,32 @@
+{
+  "slug": "oklahoma-city-university",
+  "name": "Oklahoma City University",
+  "city": "OKLAHOMA CITY",
+  "state": "OK",
+  "website": "https://www.okcu.edu/",
+  "acceptanceRate": 0.704,
+  "enrollment": 1389,
+  "graduationRate": 0.642,
+  "tuitionInState": 33586,
+  "tuitionOutOfState": 33586,
+  "roomAndBoard": 9602,
+  "netPrice": 23143,
+  "medianEarnings6yr": 59230,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A-",
+    "academics": "A-",
+    "value": "B+",
+    "diversity": "A",
+    "campus": "A-",
+    "athletics": "B",
+    "partyScene": "B",
+    "professors": "A-",
+    "location": "B+",
+    "dorms": "B+",
+    "campusFood": "B+",
+    "studentLife": "A",
+    "safety": "C+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/oklahoma-city-university/"
+}

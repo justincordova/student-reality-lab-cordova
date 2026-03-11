@@ -1,0 +1,32 @@
+{
+  "slug": "bentley-university",
+  "name": "Bentley University",
+  "city": "WALTHAM",
+  "state": "MA",
+  "website": "https://www.bentley.edu/",
+  "acceptanceRate": 0.484,
+  "enrollment": 4303,
+  "graduationRate": 0.882,
+  "tuitionInState": 58150,
+  "tuitionOutOfState": 58150,
+  "roomAndBoard": 19200,
+  "netPrice": 43858,
+  "medianEarnings6yr": 105451,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A-",
+    "academics": "A-",
+    "value": "A-",
+    "diversity": "A",
+    "campus": "B-",
+    "athletics": "B",
+    "partyScene": "A-",
+    "professors": "B",
+    "location": "B+",
+    "dorms": "B+",
+    "campusFood": "C-",
+    "studentLife": "A-",
+    "safety": "A-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/bentley-university/"
+}

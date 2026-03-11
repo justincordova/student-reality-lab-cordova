@@ -1,0 +1,32 @@
+{
+  "slug": "fordham-university",
+  "name": "Fordham University",
+  "city": "BRONX",
+  "state": "NY",
+  "website": "https://www.fordham.edu/",
+  "acceptanceRate": 0.563,
+  "enrollment": 9684,
+  "graduationRate": 0.803,
+  "tuitionInState": 61992,
+  "tuitionOutOfState": 61992,
+  "roomAndBoard": null,
+  "netPrice": 45368,
+  "medianEarnings6yr": 81207,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B",
+    "academics": "B+",
+    "value": "B-",
+    "diversity": "A",
+    "campus": "C+",
+    "athletics": "B",
+    "partyScene": "B+",
+    "professors": "B+",
+    "location": "B",
+    "dorms": "B",
+    "campusFood": "D",
+    "studentLife": "B+",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/fordham-university/"
+}

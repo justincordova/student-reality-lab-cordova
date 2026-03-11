@@ -1,0 +1,32 @@
+{
+  "slug": "towson-university",
+  "name": "Towson University",
+  "city": "TOWSON",
+  "state": "MD",
+  "website": "https://www.towson.edu/",
+  "acceptanceRate": 0.828,
+  "enrollment": 14548,
+  "graduationRate": 0.676,
+  "tuitionInState": 12186,
+  "tuitionOutOfState": 31332,
+  "roomAndBoard": 15214,
+  "netPrice": 15064,
+  "medianEarnings6yr": 64266,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B",
+    "academics": "B",
+    "value": "A-",
+    "diversity": "A",
+    "campus": "B",
+    "athletics": "B+",
+    "partyScene": "A-",
+    "professors": "B-",
+    "location": "B+",
+    "dorms": "B+",
+    "campusFood": "B",
+    "studentLife": "A-",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/towson-university/"
+}

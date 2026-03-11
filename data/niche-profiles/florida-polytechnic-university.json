@@ -1,0 +1,31 @@
+{
+  "slug": "florida-polytechnic-university",
+  "name": "Florida Polytechnic University",
+  "city": "LAKELAND",
+  "state": "FL",
+  "website": "https://floridapoly.edu/",
+  "acceptanceRate": 0.569,
+  "enrollment": 1463,
+  "graduationRate": 0.53,
+  "tuitionInState": 4940,
+  "tuitionOutOfState": 21005,
+  "roomAndBoard": 13282,
+  "netPrice": 11923,
+  "medianEarnings6yr": 45519,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B",
+    "academics": "B",
+    "value": "A",
+    "diversity": "B",
+    "campus": "C",
+    "partyScene": "C-",
+    "professors": "C+",
+    "location": "C",
+    "dorms": "A-",
+    "campusFood": "C",
+    "studentLife": "C-",
+    "safety": "B+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/florida-polytechnic-university/"
+}

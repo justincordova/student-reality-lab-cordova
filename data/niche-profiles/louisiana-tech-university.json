@@ -1,0 +1,32 @@
+{
+  "slug": "louisiana-tech-university",
+  "name": "Louisiana Tech University",
+  "city": "RUSTON",
+  "state": "LA",
+  "website": "https://www.LATech.edu/",
+  "acceptanceRate": 0.726,
+  "enrollment": 7857,
+  "graduationRate": 0.576,
+  "tuitionInState": 11850,
+  "tuitionOutOfState": 20763,
+  "roomAndBoard": 7800,
+  "netPrice": 12593,
+  "medianEarnings6yr": 57389,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A-",
+    "academics": "A-",
+    "value": "B+",
+    "diversity": "B+",
+    "campus": "B",
+    "athletics": "B+",
+    "partyScene": "B+",
+    "professors": "B+",
+    "location": "B",
+    "dorms": "B",
+    "campusFood": "B+",
+    "studentLife": "A-",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/louisiana-tech-university/"
+}

@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-michigan-ann-arbor",
+  "name": "University of Michigan - Ann Arbor",
+  "city": "ANN ARBOR",
+  "state": "MI",
+  "website": "https://umich.edu/",
+  "acceptanceRate": 0.179,
+  "enrollment": 32345,
+  "graduationRate": 0.932,
+  "tuitionInState": 17228,
+  "tuitionOutOfState": 58072,
+  "roomAndBoard": null,
+  "netPrice": 19005,
+  "medianEarnings6yr": 84656,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A+",
+    "value": "A",
+    "diversity": "A",
+    "campus": "A",
+    "athletics": "A+",
+    "partyScene": "A+",
+    "professors": "A+",
+    "location": "A",
+    "dorms": "B",
+    "campusFood": "A",
+    "studentLife": "A+",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-michigan-ann-arbor/"
+}

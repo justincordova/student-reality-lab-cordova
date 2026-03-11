@@ -1,0 +1,32 @@
+{
+  "slug": "kent-state-university",
+  "name": "Kent State University",
+  "city": "KENT",
+  "state": "OH",
+  "website": "https://www.kent.edu/",
+  "acceptanceRate": 0.866,
+  "enrollment": 16706,
+  "graduationRate": 0.655,
+  "tuitionInState": 13053,
+  "tuitionOutOfState": 22903,
+  "roomAndBoard": 13736,
+  "netPrice": 20333,
+  "medianEarnings6yr": 53321,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B",
+    "academics": "B",
+    "value": "B",
+    "diversity": "A-",
+    "campus": "B+",
+    "athletics": "B+",
+    "partyScene": "A",
+    "professors": "B+",
+    "location": "A-",
+    "dorms": "B",
+    "campusFood": "B",
+    "studentLife": "A",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/kent-state-university/"
+}

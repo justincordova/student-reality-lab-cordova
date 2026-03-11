@@ -1,0 +1,32 @@
+{
+  "slug": "the-ohio-state-university",
+  "name": "The Ohio State University",
+  "city": "COLUMBUS",
+  "state": "OH",
+  "website": "https://www.osu.edu/",
+  "acceptanceRate": 0.508,
+  "enrollment": 41983,
+  "graduationRate": 0.877,
+  "tuitionInState": 13244,
+  "tuitionOutOfState": 40022,
+  "roomAndBoard": null,
+  "netPrice": 19575,
+  "medianEarnings6yr": 66114,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A+",
+    "value": "A-",
+    "diversity": "A",
+    "campus": "A",
+    "athletics": "A+",
+    "partyScene": "A+",
+    "professors": "A+",
+    "location": "A-",
+    "dorms": "B",
+    "campusFood": "A+",
+    "studentLife": "A+",
+    "safety": "C-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/the-ohio-state-university/"
+}

@@ -1,0 +1,32 @@
+{
+  "slug": "rutgers-universitynew-brunswick",
+  "name": "Rutgers University–New Brunswick",
+  "city": "PISCATAWAY",
+  "state": "NJ",
+  "website": "https://admissions.rutgers.edu/",
+  "acceptanceRate": 0.653,
+  "enrollment": 35082,
+  "graduationRate": 0.85,
+  "tuitionInState": 14222,
+  "tuitionOutOfState": 33734,
+  "roomAndBoard": 14715,
+  "netPrice": 19052,
+  "medianEarnings6yr": 75436,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A",
+    "academics": "A",
+    "value": "A-",
+    "diversity": "A+",
+    "campus": "B-",
+    "athletics": "A",
+    "partyScene": "A+",
+    "professors": "A",
+    "location": "B-",
+    "dorms": "C",
+    "campusFood": "B+",
+    "studentLife": "A",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/rutgers-universitynew-brunswick/"
+}

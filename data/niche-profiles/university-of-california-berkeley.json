@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-california-berkeley",
+  "name": "University of California - Berkeley",
+  "city": "BERKELEY",
+  "state": "CA",
+  "website": "https://www.berkeley.edu/",
+  "acceptanceRate": 0.117,
+  "enrollment": 31548,
+  "graduationRate": 0.929,
+  "tuitionInState": 14850,
+  "tuitionOutOfState": 45627,
+  "roomAndBoard": null,
+  "netPrice": 16997,
+  "medianEarnings6yr": 95520,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A+",
+    "value": "A",
+    "diversity": "A",
+    "campus": "B",
+    "athletics": "A",
+    "partyScene": "A",
+    "professors": "A",
+    "location": "A",
+    "dorms": "D",
+    "campusFood": "C+",
+    "studentLife": "A",
+    "safety": "D+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-california-berkeley/"
+}

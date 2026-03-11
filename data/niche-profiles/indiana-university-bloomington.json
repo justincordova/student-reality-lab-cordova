@@ -1,0 +1,32 @@
+{
+  "slug": "indiana-university-bloomington",
+  "name": "Indiana University - Bloomington",
+  "city": "BLOOMINGTON",
+  "state": "IN",
+  "website": "https://www.indiana.edu/",
+  "acceptanceRate": 0.804,
+  "enrollment": 35871,
+  "graduationRate": 0.812,
+  "tuitionInState": 11790,
+  "tuitionOutOfState": 40482,
+  "roomAndBoard": 12228,
+  "netPrice": 16282,
+  "medianEarnings6yr": 66705,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A",
+    "academics": "A",
+    "value": "B+",
+    "diversity": "A",
+    "campus": "A",
+    "athletics": "A",
+    "partyScene": "A+",
+    "professors": "A+",
+    "location": "A-",
+    "dorms": "B-",
+    "campusFood": "B+",
+    "studentLife": "A+",
+    "safety": "C"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/indiana-university-bloomington/"
+}

@@ -1,0 +1,32 @@
+{
+  "slug": "american-university",
+  "name": "American University",
+  "city": "WASHINGTON",
+  "state": "DC",
+  "website": "https://www.american.edu/",
+  "acceptanceRate": 0.474,
+  "enrollment": 7533,
+  "graduationRate": 0.785,
+  "tuitionInState": 57952,
+  "tuitionOutOfState": 57952,
+  "roomAndBoard": 17040,
+  "netPrice": 40189,
+  "medianEarnings6yr": 72598,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "A",
+    "value": "B-",
+    "diversity": "A",
+    "campus": "C",
+    "athletics": "B",
+    "partyScene": "B-",
+    "professors": "A-",
+    "location": "A",
+    "dorms": "C-",
+    "campusFood": "D+",
+    "studentLife": "B-",
+    "safety": "B+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/american-university/"
+}

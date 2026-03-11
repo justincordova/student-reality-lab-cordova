@@ -1,0 +1,32 @@
+{
+  "slug": "vassar-college",
+  "name": "Vassar College",
+  "city": "POUGHKEEPSIE",
+  "state": "NY",
+  "website": "https://www.vassar.edu/",
+  "acceptanceRate": 0.177,
+  "enrollment": 2406,
+  "graduationRate": 0.891,
+  "tuitionInState": 73275,
+  "tuitionOutOfState": 73275,
+  "roomAndBoard": null,
+  "netPrice": 29733,
+  "medianEarnings6yr": 58396,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A+",
+    "value": "B+",
+    "diversity": "A",
+    "campus": "B+",
+    "athletics": "B-",
+    "partyScene": "B-",
+    "professors": "A+",
+    "location": "C+",
+    "dorms": "B",
+    "campusFood": "B+",
+    "studentLife": "B+",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/vassar-college/"
+}

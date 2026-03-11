@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-massachusetts-amherst",
+  "name": "University of Massachusetts Amherst",
+  "city": "AMHERST",
+  "state": "MA",
+  "website": "https://www.umass.edu/",
+  "acceptanceRate": 0.578,
+  "enrollment": 22537,
+  "graduationRate": 0.832,
+  "tuitionInState": 17357,
+  "tuitionOutOfState": 39293,
+  "roomAndBoard": 14894,
+  "netPrice": 22954,
+  "medianEarnings6yr": 74615,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A",
+    "academics": "A",
+    "value": "B+",
+    "diversity": "A",
+    "campus": "B+",
+    "athletics": "A-",
+    "partyScene": "A+",
+    "professors": "A+",
+    "location": "C",
+    "dorms": "B",
+    "campusFood": "A+",
+    "studentLife": "A",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-massachusetts-amherst/"
+}

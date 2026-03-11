@@ -1,0 +1,32 @@
+{
+  "slug": "northern-illinois-university",
+  "name": "Northern Illinois University",
+  "city": "DEKALB",
+  "state": "IL",
+  "website": "https://www.niu.edu/",
+  "acceptanceRate": 0.705,
+  "enrollment": 10697,
+  "graduationRate": 0.496,
+  "tuitionInState": 13792,
+  "tuitionOutOfState": 13792,
+  "roomAndBoard": null,
+  "netPrice": 13533,
+  "medianEarnings6yr": 61432,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B",
+    "academics": "B",
+    "value": "B+",
+    "diversity": "A",
+    "campus": "C",
+    "athletics": "B+",
+    "partyScene": "A",
+    "professors": "A-",
+    "location": "C",
+    "dorms": "C+",
+    "campusFood": "B",
+    "studentLife": "B-",
+    "safety": "C"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/northern-illinois-university/"
+}

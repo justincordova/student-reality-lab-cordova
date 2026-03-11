@@ -1,0 +1,32 @@
+{
+  "slug": "georgetown-university",
+  "name": "Georgetown University",
+  "city": "WASHINGTON",
+  "state": "DC",
+  "website": "https://www.georgetown.edu/",
+  "acceptanceRate": 0.131,
+  "enrollment": 7220,
+  "graduationRate": 0.943,
+  "tuitionInState": 65081,
+  "tuitionOutOfState": 65081,
+  "roomAndBoard": 20350,
+  "netPrice": 37967,
+  "medianEarnings6yr": 101620,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A+",
+    "value": "A",
+    "diversity": "A",
+    "campus": "B+",
+    "athletics": "A-",
+    "partyScene": "A",
+    "professors": "A+",
+    "location": "A+",
+    "dorms": "C+",
+    "campusFood": "B-",
+    "studentLife": "A+",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/georgetown-university/"
+}

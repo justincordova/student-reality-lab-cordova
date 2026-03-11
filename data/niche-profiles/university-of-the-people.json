@@ -1,0 +1,22 @@
+{
+  "slug": "university-of-the-people",
+  "name": "University of the People",
+  "city": null,
+  "state": null,
+  "website": "https://www.uopeople.edu/",
+  "acceptanceRate": 1,
+  "enrollment": 17599,
+  "graduationRate": 0.367,
+  "tuitionInState": 1200,
+  "tuitionOutOfState": 1200,
+  "roomAndBoard": null,
+  "netPrice": 1639,
+  "medianEarnings6yr": 45519,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "C-",
+    "academics": "C",
+    "professors": "C+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-the-people/"
+}

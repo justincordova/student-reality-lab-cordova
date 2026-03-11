@@ -1,0 +1,127 @@
+[
+  {
+    "slug": "colorado-college",
+    "name": "Colorado College",
+    "rank": 226
+  },
+  {
+    "slug": "north-american-university",
+    "name": "North American University",
+    "rank": 227
+  },
+  {
+    "slug": "university-of-south-alabama",
+    "name": "University of South Alabama",
+    "rank": 228
+  },
+  {
+    "slug": "university-of-nebraska-lincoln",
+    "name": "University of Nebraska - Lincoln",
+    "rank": 229
+  },
+  {
+    "slug": "cedarville-university",
+    "name": "Cedarville University",
+    "rank": 230
+  },
+  {
+    "slug": "bryn-mawr-college",
+    "name": "Bryn Mawr College",
+    "rank": 231
+  },
+  {
+    "slug": "university-of-connecticut",
+    "name": "University of Connecticut",
+    "rank": 232
+  },
+  {
+    "slug": "hendrix-college",
+    "name": "Hendrix College",
+    "rank": 233
+  },
+  {
+    "slug": "angelo-state-university",
+    "name": "Angelo State University",
+    "rank": 234
+  },
+  {
+    "slug": "north-carolina-a-and-t-state-university",
+    "name": "North Carolina A&T State University",
+    "rank": 235
+  },
+  {
+    "slug": "university-of-texas-el-paso",
+    "name": "University of Texas - El Paso",
+    "rank": 236
+  },
+  {
+    "slug": "yeshiva-university",
+    "name": "Yeshiva University",
+    "rank": 237
+  },
+  {
+    "slug": "northern-illinois-university",
+    "name": "Northern Illinois University",
+    "rank": 238
+  },
+  {
+    "slug": "loyola-marymount-university",
+    "name": "Loyola Marymount University",
+    "rank": 239
+  },
+  {
+    "slug": "kean-university",
+    "name": "Kean University",
+    "rank": 240
+  },
+  {
+    "slug": "milwaukee-school-of-engineering",
+    "name": "Milwaukee School of Engineering",
+    "rank": 241
+  },
+  {
+    "slug": "bucknell-university",
+    "name": "Bucknell University",
+    "rank": 242
+  },
+  {
+    "slug": "college-of-wooster",
+    "name": "College of Wooster",
+    "rank": 243
+  },
+  {
+    "slug": "california-state-university-monterey-bay",
+    "name": "California State University - Monterey Bay",
+    "rank": 244
+  },
+  {
+    "slug": "lewis-university",
+    "name": "Lewis University",
+    "rank": 245
+  },
+  {
+    "slug": "university-of-mississippi",
+    "name": "University of Mississippi",
+    "rank": 246
+  },
+  {
+    "slug": "boise-state-university",
+    "name": "Boise State University",
+    "rank": 247
+  },
+  {
+    "slug": "harding-university",
+    "name": "Harding University",
+    "rank": 248
+  },
+  {
+    "slug": "oakland-university",
+    "name": "Oakland University",
+    "rank": 249
+  },
+  {
+    "slug": "san-francisco-state-university",
+    "name": "San Francisco State University",
+    "rank": 250
+  }
+]

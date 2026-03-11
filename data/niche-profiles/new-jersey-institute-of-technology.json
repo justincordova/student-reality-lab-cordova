@@ -1,0 +1,32 @@
+{
+  "slug": "new-jersey-institute-of-technology",
+  "name": "New Jersey Institute of Technology",
+  "city": "NEWARK",
+  "state": "NJ",
+  "website": "https://www.njit.edu/",
+  "acceptanceRate": 0.669,
+  "enrollment": 7913,
+  "graduationRate": 0.731,
+  "tuitionInState": 19022,
+  "tuitionOutOfState": 35934,
+  "roomAndBoard": 14600,
+  "netPrice": 16736,
+  "medianEarnings6yr": 89013,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A-",
+    "academics": "B+",
+    "value": "A",
+    "diversity": "A",
+    "campus": "C+",
+    "athletics": "B+",
+    "partyScene": "B+",
+    "professors": "A-",
+    "location": "C+",
+    "dorms": "B",
+    "campusFood": "B",
+    "studentLife": "B",
+    "safety": "B+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/new-jersey-institute-of-technology/"
+}

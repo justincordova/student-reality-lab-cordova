@@ -1,0 +1,32 @@
+{
+  "slug": "north-carolina-state-university",
+  "name": "North Carolina State University",
+  "city": "RALEIGH",
+  "state": "NC",
+  "website": "https://www.ncsu.edu/",
+  "acceptanceRate": 0.398,
+  "enrollment": 26878,
+  "graduationRate": 0.846,
+  "tuitionInState": 9028,
+  "tuitionOutOfState": 33993,
+  "roomAndBoard": 13719,
+  "netPrice": 14860,
+  "medianEarnings6yr": 71503,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A",
+    "academics": "A",
+    "value": "A-",
+    "diversity": "A-",
+    "campus": "B+",
+    "athletics": "A",
+    "partyScene": "A-",
+    "professors": "A",
+    "location": "B+",
+    "dorms": "B",
+    "campusFood": "B",
+    "studentLife": "A",
+    "safety": "C+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/north-carolina-state-university/"
+}

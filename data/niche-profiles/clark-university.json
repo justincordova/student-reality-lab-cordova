@@ -1,0 +1,32 @@
+{
+  "slug": "clark-university",
+  "name": "Clark University",
+  "city": "WORCESTER",
+  "state": "MA",
+  "website": "https://www.clarku.edu/",
+  "acceptanceRate": 0.417,
+  "enrollment": 2322,
+  "graduationRate": 0.771,
+  "tuitionInState": 59680,
+  "tuitionOutOfState": 59680,
+  "roomAndBoard": 11690,
+  "netPrice": 32767,
+  "medianEarnings6yr": 63150,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "A",
+    "value": "B-",
+    "diversity": "A-",
+    "campus": "C-",
+    "athletics": "C+",
+    "partyScene": "B-",
+    "professors": "A",
+    "location": "B-",
+    "dorms": "C+",
+    "campusFood": "C",
+    "studentLife": "C+",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/clark-university/"
+}

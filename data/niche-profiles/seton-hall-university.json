@@ -1,0 +1,32 @@
+{
+  "slug": "seton-hall-university",
+  "name": "Seton Hall University",
+  "city": "SOUTH ORANGE",
+  "state": "NJ",
+  "website": "https://www.shu.edu/",
+  "acceptanceRate": 0.789,
+  "enrollment": 5916,
+  "graduationRate": 0.715,
+  "tuitionInState": 55405,
+  "tuitionOutOfState": 55405,
+  "roomAndBoard": 18348,
+  "netPrice": 31642,
+  "medianEarnings6yr": 76204,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "B+",
+    "value": "B+",
+    "diversity": "A",
+    "campus": "B-",
+    "athletics": "A-",
+    "partyScene": "B+",
+    "professors": "A",
+    "location": "B",
+    "dorms": "B-",
+    "campusFood": "C",
+    "studentLife": "A-",
+    "safety": "B+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/seton-hall-university/"
+}

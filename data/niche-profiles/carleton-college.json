@@ -1,0 +1,32 @@
+{
+  "slug": "carleton-college",
+  "name": "Carleton College",
+  "city": "NORTHFIELD",
+  "state": "MN",
+  "website": "https://www.carleton.edu/",
+  "acceptanceRate": 0.223,
+  "enrollment": 2049,
+  "graduationRate": 0.912,
+  "tuitionInState": 65457,
+  "tuitionOutOfState": 65457,
+  "roomAndBoard": 16710,
+  "netPrice": 29434,
+  "medianEarnings6yr": 70192,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A",
+    "academics": "A+",
+    "value": "B+",
+    "diversity": "A",
+    "campus": "C-",
+    "athletics": "B-",
+    "partyScene": "B-",
+    "professors": "A",
+    "location": "C+",
+    "dorms": "C+",
+    "campusFood": "C",
+    "studentLife": "B",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/carleton-college/"
+}

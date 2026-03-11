@@ -1,0 +1,32 @@
+{
+  "slug": "brigham-young-university",
+  "name": "Brigham Young University",
+  "city": "PROVO",
+  "state": "UT",
+  "website": "https://www.byu.edu/",
+  "acceptanceRate": 0.692,
+  "enrollment": 29261,
+  "graduationRate": 0.822,
+  "tuitionInState": 6496,
+  "tuitionOutOfState": 6496,
+  "roomAndBoard": null,
+  "netPrice": 14643,
+  "medianEarnings6yr": 74621,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A",
+    "academics": "A",
+    "value": "A-",
+    "diversity": "B",
+    "campus": "A",
+    "athletics": "A-",
+    "partyScene": "C+",
+    "professors": "A-",
+    "location": "B",
+    "dorms": "A-",
+    "campusFood": "A+",
+    "studentLife": "A",
+    "safety": "A-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/brigham-young-university/"
+}

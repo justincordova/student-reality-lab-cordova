@@ -1,0 +1,32 @@
+{
+  "slug": "george-mason-university",
+  "name": "George Mason University",
+  "city": "FAIRFAX",
+  "state": "VA",
+  "website": "https://www.gmu.edu/",
+  "acceptanceRate": 0.888,
+  "enrollment": 22586,
+  "graduationRate": 0.693,
+  "tuitionInState": 14316,
+  "tuitionOutOfState": 39313,
+  "roomAndBoard": 13520,
+  "netPrice": 18900,
+  "medianEarnings6yr": 75373,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "B+",
+    "value": "B+",
+    "diversity": "A+",
+    "campus": "B-",
+    "athletics": "B+",
+    "partyScene": "B-",
+    "professors": "B+",
+    "location": "A",
+    "dorms": "B-",
+    "campusFood": "B",
+    "studentLife": "B+",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/george-mason-university/"
+}

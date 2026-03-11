@@ -1,0 +1,31 @@
+{
+  "slug": "mount-holyoke-college",
+  "name": "Mount Holyoke College",
+  "city": "SOUTH HADLEY",
+  "state": "MA",
+  "website": "https://www.mtholyoke.edu/",
+  "acceptanceRate": 0.383,
+  "enrollment": 2164,
+  "graduationRate": 0.85,
+  "tuitionInState": 67782,
+  "tuitionOutOfState": 67782,
+  "roomAndBoard": 18838,
+  "netPrice": 35782,
+  "medianEarnings6yr": 54985,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A",
+    "academics": "A",
+    "value": "B-",
+    "diversity": "A",
+    "campus": "A-",
+    "partyScene": "B-",
+    "professors": "A-",
+    "location": "C+",
+    "dorms": "A",
+    "campusFood": "B",
+    "studentLife": "B+",
+    "safety": "A-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/mount-holyoke-college/"
+}

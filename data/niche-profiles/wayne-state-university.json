@@ -1,0 +1,32 @@
+{
+  "slug": "wayne-state-university",
+  "name": "Wayne State University",
+  "city": "DETROIT",
+  "state": "MI",
+  "website": "https://wayne.edu/",
+  "acceptanceRate": 0.824,
+  "enrollment": 12486,
+  "graduationRate": 0.565,
+  "tuitionInState": 14297,
+  "tuitionOutOfState": 30419,
+  "roomAndBoard": 11608,
+  "netPrice": 16021,
+  "medianEarnings6yr": 62306,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A-",
+    "academics": "A-",
+    "value": "B+",
+    "diversity": "A-",
+    "campus": "B",
+    "athletics": "B",
+    "partyScene": "B+",
+    "professors": "A+",
+    "location": "A",
+    "dorms": "B",
+    "campusFood": "B+",
+    "studentLife": "A-",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/wayne-state-university/"
+}

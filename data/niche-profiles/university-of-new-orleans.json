@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-new-orleans",
+  "name": "University of New Orleans",
+  "city": "NEW ORLEANS",
+  "state": "LA",
+  "website": "https://www.uno.edu/",
+  "acceptanceRate": 0.668,
+  "enrollment": 3829,
+  "graduationRate": 0.425,
+  "tuitionInState": 9172,
+  "tuitionOutOfState": 14008,
+  "roomAndBoard": 11762,
+  "netPrice": 11190,
+  "medianEarnings6yr": 51173,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B-",
+    "academics": "B",
+    "value": "B",
+    "diversity": "A",
+    "campus": "C",
+    "athletics": "B",
+    "partyScene": "B-",
+    "professors": "B",
+    "location": "B-",
+    "dorms": "C",
+    "campusFood": "B",
+    "studentLife": "C+",
+    "safety": "C+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-new-orleans/"
+}

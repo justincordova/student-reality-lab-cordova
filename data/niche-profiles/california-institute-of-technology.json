@@ -1,0 +1,28 @@
+{
+  "slug": "california-institute-of-technology",
+  "name": "California Institute of Technology",
+  "city": "PASADENA",
+  "state": "CA",
+  "website": "https://www.caltech.edu/",
+  "acceptanceRate": 0.031,
+  "enrollment": 982,
+  "graduationRate": 0.932,
+  "tuitionInState": 65898,
+  "tuitionOutOfState": 65898,
+  "roomAndBoard": 19503,
+  "netPrice": 23397,
+  "medianEarnings6yr": 136775,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A+",
+    "value": "A+",
+    "diversity": "A+",
+    "athletics": "B-",
+    "professors": "A+",
+    "location": "B",
+    "studentLife": "A",
+    "safety": "C+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/california-institute-of-technology/"
+}

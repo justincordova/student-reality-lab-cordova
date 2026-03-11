@@ -1,0 +1,32 @@
+{
+  "slug": "lawrence-technological-university",
+  "name": "Lawrence Technological University",
+  "city": "SOUTHFIELD",
+  "state": "MI",
+  "website": "https://ltu.edu/",
+  "acceptanceRate": 0.802,
+  "enrollment": 1592,
+  "graduationRate": 0.626,
+  "tuitionInState": 43410,
+  "tuitionOutOfState": 43410,
+  "roomAndBoard": 11670,
+  "netPrice": 33807,
+  "medianEarnings6yr": 86111,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B",
+    "academics": "B",
+    "value": "B",
+    "diversity": "A",
+    "campus": "C+",
+    "athletics": "B",
+    "partyScene": "C+",
+    "professors": "C+",
+    "location": "C+",
+    "dorms": "B",
+    "campusFood": "C",
+    "studentLife": "B-",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/lawrence-technological-university/"
+}

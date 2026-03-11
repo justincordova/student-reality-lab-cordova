@@ -1,0 +1,32 @@
+{
+  "slug": "north-dakota-state-university",
+  "name": "North Dakota State University",
+  "city": "FARGO",
+  "state": "ND",
+  "website": "https://www.ndsu.edu/",
+  "acceptanceRate": 0.958,
+  "enrollment": 8797,
+  "graduationRate": 0.637,
+  "tuitionInState": 10857,
+  "tuitionOutOfState": 15511,
+  "roomAndBoard": 9565,
+  "netPrice": 16461,
+  "medianEarnings6yr": 65321,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "B",
+    "value": "B+",
+    "diversity": "B",
+    "campus": "A-",
+    "athletics": "A+",
+    "partyScene": "A",
+    "professors": "B+",
+    "location": "A-",
+    "dorms": "A-",
+    "campusFood": "A",
+    "studentLife": "A",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/north-dakota-state-university/"
+}

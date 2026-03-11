@@ -1,0 +1,32 @@
+{
+  "slug": "colorado-state-university",
+  "name": "Colorado State University",
+  "city": "FORT COLLINS",
+  "state": "CO",
+  "website": "https://www.colostate.edu",
+  "acceptanceRate": 0.906,
+  "enrollment": 29655,
+  "graduationRate": 0.669,
+  "tuitionInState": 13774,
+  "tuitionOutOfState": 36113,
+  "roomAndBoard": 15140,
+  "netPrice": 19828,
+  "medianEarnings6yr": 62288,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "B+",
+    "value": "B",
+    "diversity": "B",
+    "campus": "A-",
+    "athletics": "B+",
+    "partyScene": "A-",
+    "professors": "A",
+    "location": "A",
+    "dorms": "B",
+    "campusFood": "B+",
+    "studentLife": "A",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/colorado-state-university/"
+}

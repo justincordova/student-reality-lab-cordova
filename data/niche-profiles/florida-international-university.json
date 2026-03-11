@@ -1,0 +1,32 @@
+{
+  "slug": "florida-international-university",
+  "name": "Florida International University",
+  "city": "MIAMI",
+  "state": "FL",
+  "website": "https://www.fiu.edu/",
+  "acceptanceRate": 0.588,
+  "enrollment": 26027,
+  "graduationRate": 0.739,
+  "tuitionInState": 6565,
+  "tuitionOutOfState": 18963,
+  "roomAndBoard": 12156,
+  "netPrice": 10742,
+  "medianEarnings6yr": 59979,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A",
+    "value": "A-",
+    "diversity": "B+",
+    "campus": "A+",
+    "athletics": "B+",
+    "partyScene": "A-",
+    "professors": "A+",
+    "location": "A",
+    "dorms": "A-",
+    "campusFood": "A+",
+    "studentLife": "A+",
+    "safety": "A-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/florida-international-university/"
+}

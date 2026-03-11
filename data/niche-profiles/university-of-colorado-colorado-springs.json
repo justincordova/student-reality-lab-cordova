@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-colorado-colorado-springs",
+  "name": "University of Colorado - Colorado Springs",
+  "city": "COLORADO SPRINGS",
+  "state": "CO",
+  "website": "https://www.uccs.edu/",
+  "acceptanceRate": 0.966,
+  "enrollment": 7157,
+  "graduationRate": 0.453,
+  "tuitionInState": 9712,
+  "tuitionOutOfState": 20492,
+  "roomAndBoard": null,
+  "netPrice": 16816,
+  "medianEarnings6yr": 58557,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "C+",
+    "academics": "B-",
+    "value": "B-",
+    "diversity": "B+",
+    "campus": "C+",
+    "athletics": "B-",
+    "partyScene": "C+",
+    "professors": "B+",
+    "location": "B",
+    "dorms": "C",
+    "campusFood": "C+",
+    "studentLife": "C",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-colorado-colorado-springs/"
+}

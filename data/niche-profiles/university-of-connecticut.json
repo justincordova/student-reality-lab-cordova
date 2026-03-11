@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-connecticut",
+  "name": "University of Connecticut",
+  "city": "STORRS",
+  "state": "CT",
+  "website": "https://uconn.edu/",
+  "acceptanceRate": 0.539,
+  "enrollment": 18838,
+  "graduationRate": 0.838,
+  "tuitionInState": 20366,
+  "tuitionOutOfState": 43034,
+  "roomAndBoard": 14298,
+  "netPrice": 22324,
+  "medianEarnings6yr": 76632,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A",
+    "academics": "A",
+    "value": "A-",
+    "diversity": "A",
+    "campus": "B-",
+    "athletics": "A+",
+    "partyScene": "A",
+    "professors": "A",
+    "location": "C+",
+    "dorms": "C+",
+    "campusFood": "B",
+    "studentLife": "A",
+    "safety": "A-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-connecticut/"
+}

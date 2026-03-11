@@ -1,0 +1,32 @@
+{
+  "slug": "the-university-of-alabama-in-huntsville",
+  "name": "The University of Alabama in Huntsville",
+  "city": "HUNTSVILLE",
+  "state": "AL",
+  "website": "https://www.uah.edu/",
+  "acceptanceRate": 0.743,
+  "enrollment": 5644,
+  "graduationRate": 0.619,
+  "tuitionInState": 11770,
+  "tuitionOutOfState": 24662,
+  "roomAndBoard": null,
+  "netPrice": 19847,
+  "medianEarnings6yr": 78740,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A-",
+    "academics": "A-",
+    "value": "B",
+    "diversity": "A-",
+    "campus": "B-",
+    "athletics": "B-",
+    "partyScene": "C+",
+    "professors": "A",
+    "location": "B+",
+    "dorms": "B",
+    "campusFood": "A",
+    "studentLife": "B",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/the-university-of-alabama-in-huntsville/"
+}

@@ -1,0 +1,32 @@
+{
+  "slug": "furman-university",
+  "name": "Furman University",
+  "city": "GREENVILLE",
+  "state": "SC",
+  "website": "https://www.furman.edu/",
+  "acceptanceRate": 0.526,
+  "enrollment": 2296,
+  "graduationRate": 0.815,
+  "tuitionInState": 61034,
+  "tuitionOutOfState": 61034,
+  "roomAndBoard": 15868,
+  "netPrice": 32901,
+  "medianEarnings6yr": 62799,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A",
+    "academics": "A",
+    "value": "B-",
+    "diversity": "B+",
+    "campus": "A",
+    "athletics": "B+",
+    "partyScene": "B-",
+    "professors": "A",
+    "location": "B+",
+    "dorms": "B+",
+    "campusFood": "B+",
+    "studentLife": "A-",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/furman-university/"
+}

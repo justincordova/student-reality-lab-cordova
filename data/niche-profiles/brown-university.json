@@ -1,0 +1,32 @@
+{
+  "slug": "brown-university",
+  "name": "Brown University",
+  "city": "PROVIDENCE",
+  "state": "RI",
+  "website": "https://www.brown.edu/",
+  "acceptanceRate": 0.052,
+  "enrollment": 7220,
+  "graduationRate": 0.959,
+  "tuitionInState": 68230,
+  "tuitionOutOfState": 68230,
+  "roomAndBoard": 16598,
+  "netPrice": 26608,
+  "medianEarnings6yr": 84446,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A+",
+    "value": "A",
+    "diversity": "A+",
+    "campus": "A-",
+    "athletics": "B+",
+    "partyScene": "A-",
+    "professors": "A+",
+    "location": "A+",
+    "dorms": "B-",
+    "campusFood": "B",
+    "studentLife": "A+",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/brown-university/"
+}

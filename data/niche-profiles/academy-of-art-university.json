@@ -1,0 +1,31 @@
+{
+  "slug": "academy-of-art-university",
+  "name": "Academy of Art University",
+  "city": "SAN FRANCISCO",
+  "state": "CA",
+  "website": "https://www.academyart.edu/",
+  "acceptanceRate": 1,
+  "enrollment": 2288,
+  "graduationRate": 0.405,
+  "tuitionInState": 31224,
+  "tuitionOutOfState": 31224,
+  "roomAndBoard": 23746,
+  "netPrice": 36591,
+  "medianEarnings6yr": 48625,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "C+",
+    "academics": "B-",
+    "value": "D",
+    "diversity": "A+",
+    "campus": "B+",
+    "partyScene": "A-",
+    "professors": "B-",
+    "location": "A+",
+    "dorms": "B",
+    "campusFood": "B+",
+    "studentLife": "A",
+    "safety": "B+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/academy-of-art-university/"
+}

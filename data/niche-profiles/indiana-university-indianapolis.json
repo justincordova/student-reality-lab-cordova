@@ -1,0 +1,32 @@
+{
+  "slug": "indiana-university-indianapolis",
+  "name": "Indiana University Indianapolis",
+  "city": "INDIANAPOLIS",
+  "state": "IN",
+  "website": "https://indianapolis.iu.edu",
+  "acceptanceRate": 0.814,
+  "enrollment": 14314,
+  "graduationRate": 0.539,
+  "tuitionInState": 10760,
+  "tuitionOutOfState": 35226,
+  "roomAndBoard": null,
+  "netPrice": 11592,
+  "medianEarnings6yr": 59346,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A-",
+    "academics": "B+",
+    "value": "A-",
+    "diversity": "A",
+    "campus": "B-",
+    "athletics": "B",
+    "partyScene": "B-",
+    "professors": "A",
+    "location": "A",
+    "dorms": "C",
+    "campusFood": "B+",
+    "studentLife": "B",
+    "safety": "C"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/indiana-university-indianapolis/"
+}

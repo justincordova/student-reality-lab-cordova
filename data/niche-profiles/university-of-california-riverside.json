@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-california-riverside",
+  "name": "University of California - Riverside",
+  "city": "RIVERSIDE",
+  "state": "CA",
+  "website": "https://www.ucr.edu/",
+  "acceptanceRate": 0.633,
+  "enrollment": 21979,
+  "graduationRate": 0.766,
+  "tuitionInState": 14436,
+  "tuitionOutOfState": 57260,
+  "roomAndBoard": null,
+  "netPrice": 13533,
+  "medianEarnings6yr": 63411,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "B+",
+    "value": "B+",
+    "diversity": "A",
+    "campus": "B-",
+    "athletics": "B",
+    "partyScene": "A-",
+    "professors": "A",
+    "location": "C+",
+    "dorms": "B-",
+    "campusFood": "A-",
+    "studentLife": "B+",
+    "safety": "C"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-california-riverside/"
+}

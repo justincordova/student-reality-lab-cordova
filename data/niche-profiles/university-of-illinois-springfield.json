@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-illinois-springfield",
+  "name": "University of Illinois Springfield",
+  "city": "SPRINGFIELD",
+  "state": "IL",
+  "website": "https://www.uis.edu/",
+  "acceptanceRate": 0.844,
+  "enrollment": 1653,
+  "graduationRate": 0.614,
+  "tuitionInState": 12767,
+  "tuitionOutOfState": 22805,
+  "roomAndBoard": 12088,
+  "netPrice": 9241,
+  "medianEarnings6yr": 62698,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B",
+    "academics": "B",
+    "value": "A-",
+    "diversity": "A",
+    "campus": "C+",
+    "athletics": "B",
+    "partyScene": "B",
+    "professors": "B",
+    "location": "B-",
+    "dorms": "B",
+    "campusFood": "B",
+    "studentLife": "B-",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-illinois-springfield/"
+}

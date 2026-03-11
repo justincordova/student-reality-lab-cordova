@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-illinois-urbana-champaign",
+  "name": "University of Illinois Urbana-Champaign",
+  "city": "CHAMPAIGN",
+  "state": "IL",
+  "website": "https://illinois.edu/",
+  "acceptanceRate": 0.437,
+  "enrollment": 34468,
+  "graduationRate": 0.849,
+  "tuitionInState": 16004,
+  "tuitionOutOfState": 34501,
+  "roomAndBoard": null,
+  "netPrice": 14297,
+  "medianEarnings6yr": 78662,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A+",
+    "value": "A",
+    "diversity": "A+",
+    "campus": "A-",
+    "athletics": "A-",
+    "partyScene": "A+",
+    "professors": "A+",
+    "location": "B+",
+    "dorms": "B",
+    "campusFood": "A",
+    "studentLife": "A+",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-illinois-urbana-champaign/"
+}

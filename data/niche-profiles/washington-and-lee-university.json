@@ -1,0 +1,32 @@
+{
+  "slug": "washington-and-lee-university",
+  "name": "Washington and Lee University",
+  "city": "LEXINGTON",
+  "state": "VA",
+  "website": "https://www.wlu.edu/",
+  "acceptanceRate": 0.174,
+  "enrollment": 1887,
+  "graduationRate": 0.949,
+  "tuitionInState": 68045,
+  "tuitionOutOfState": 68045,
+  "roomAndBoard": 17685,
+  "netPrice": 24667,
+  "medianEarnings6yr": 94782,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A+",
+    "value": "A",
+    "diversity": "A-",
+    "campus": "A-",
+    "athletics": "B",
+    "partyScene": "A",
+    "professors": "A+",
+    "location": "A-",
+    "dorms": "A",
+    "campusFood": "A-",
+    "studentLife": "A+",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/washington-and-lee-university/"
+}

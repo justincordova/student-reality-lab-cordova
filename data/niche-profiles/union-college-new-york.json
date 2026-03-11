@@ -1,0 +1,32 @@
+{
+  "slug": "union-college-new-york",
+  "name": "Union College - New York",
+  "city": "SCHENECTADY",
+  "state": "NY",
+  "website": "https://www.union.edu/",
+  "acceptanceRate": 0.438,
+  "enrollment": 2057,
+  "graduationRate": 0.853,
+  "tuitionInState": 71676,
+  "tuitionOutOfState": 71676,
+  "roomAndBoard": 16389,
+  "netPrice": 42884,
+  "medianEarnings6yr": 80426,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A-",
+    "academics": "A",
+    "value": "B",
+    "diversity": "A-",
+    "campus": "C",
+    "athletics": "B",
+    "partyScene": "A",
+    "professors": "A-",
+    "location": "C+",
+    "dorms": "C",
+    "campusFood": "C",
+    "studentLife": "B",
+    "safety": "C-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/union-college-new-york/"
+}

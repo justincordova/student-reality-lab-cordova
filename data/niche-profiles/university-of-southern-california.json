@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-southern-california",
+  "name": "University of Southern California",
+  "city": "LOS ANGELES",
+  "state": "CA",
+  "website": "https://www.usc.edu/",
+  "acceptanceRate": 0.1,
+  "enrollment": 20502,
+  "graduationRate": 0.92,
+  "tuitionInState": 68237,
+  "tuitionOutOfState": 68237,
+  "roomAndBoard": 19198,
+  "netPrice": 41496,
+  "medianEarnings6yr": 91408,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A+",
+    "value": "B+",
+    "diversity": "A+",
+    "campus": "A+",
+    "athletics": "A+",
+    "partyScene": "A+",
+    "professors": "A+",
+    "location": "B+",
+    "dorms": "A-",
+    "campusFood": "B+",
+    "studentLife": "A+",
+    "safety": "C+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-southern-california/"
+}

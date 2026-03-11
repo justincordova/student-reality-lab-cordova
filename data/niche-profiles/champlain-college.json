@@ -1,0 +1,31 @@
+{
+  "slug": "champlain-college",
+  "name": "Champlain College",
+  "city": "BURLINGTON",
+  "state": "VT",
+  "website": "https://www.champlain.edu/",
+  "acceptanceRate": 0.667,
+  "enrollment": 2197,
+  "graduationRate": 0.63,
+  "tuitionInState": 45550,
+  "tuitionOutOfState": 45550,
+  "roomAndBoard": 16900,
+  "netPrice": 36846,
+  "medianEarnings6yr": 59133,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "C+",
+    "academics": "B-",
+    "value": "C",
+    "diversity": "B+",
+    "campus": "B-",
+    "partyScene": "C",
+    "professors": "B-",
+    "location": "A",
+    "dorms": "B-",
+    "campusFood": "D+",
+    "studentLife": "B-",
+    "safety": "B+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/champlain-college/"
+}

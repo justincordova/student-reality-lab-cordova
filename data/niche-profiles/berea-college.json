@@ -1,0 +1,32 @@
+{
+  "slug": "berea-college",
+  "name": "Berea College",
+  "city": "BEREA",
+  "state": "KY",
+  "website": "https://www.berea.edu/",
+  "acceptanceRate": 0.327,
+  "enrollment": 1471,
+  "graduationRate": 0.62,
+  "tuitionInState": 44300,
+  "tuitionOutOfState": 44300,
+  "roomAndBoard": 7892,
+  "netPrice": 4379,
+  "medianEarnings6yr": 42088,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "A-",
+    "value": "A",
+    "diversity": "A",
+    "campus": "D+",
+    "athletics": "C+",
+    "partyScene": "C-",
+    "professors": "B-",
+    "location": "C-",
+    "dorms": "B-",
+    "campusFood": "C-",
+    "studentLife": "C-",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/berea-college/"
+}

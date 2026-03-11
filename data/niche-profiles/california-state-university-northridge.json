@@ -1,0 +1,32 @@
+{
+  "slug": "california-state-university-northridge",
+  "name": "California State University - Northridge",
+  "city": "NORTHRIDGE",
+  "state": "CA",
+  "website": "https://www.csun.edu/",
+  "acceptanceRate": 0.931,
+  "enrollment": 27448,
+  "graduationRate": 0.562,
+  "tuitionInState": 7850,
+  "tuitionOutOfState": 21144,
+  "roomAndBoard": 12671,
+  "netPrice": 8222,
+  "medianEarnings6yr": 60117,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "B-",
+    "value": "A-",
+    "diversity": "A",
+    "campus": "A-",
+    "athletics": "B+",
+    "partyScene": "B+",
+    "professors": "B",
+    "location": "B+",
+    "dorms": "B+",
+    "campusFood": "A",
+    "studentLife": "A",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/california-state-university-northridge/"
+}

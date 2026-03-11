@@ -1,0 +1,32 @@
+{
+  "slug": "binghamton-university-suny",
+  "name": "Binghamton University, SUNY",
+  "city": "VESTAL",
+  "state": "NY",
+  "website": "https://www.binghamton.edu/",
+  "acceptanceRate": 0.377,
+  "enrollment": 14408,
+  "graduationRate": 0.836,
+  "tuitionInState": 7070,
+  "tuitionOutOfState": 26950,
+  "roomAndBoard": 18758,
+  "netPrice": 18860,
+  "medianEarnings6yr": 80182,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A",
+    "academics": "A",
+    "value": "A-",
+    "diversity": "A",
+    "campus": "B-",
+    "athletics": "B",
+    "partyScene": "A+",
+    "professors": "A",
+    "location": "C",
+    "dorms": "B",
+    "campusFood": "C+",
+    "studentLife": "A-",
+    "safety": "C+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/binghamton-university-suny/"
+}

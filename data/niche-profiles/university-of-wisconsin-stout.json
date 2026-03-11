@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-wisconsin-stout",
+  "name": "University of Wisconsin - Stout",
+  "city": "MENOMONIE",
+  "state": "WI",
+  "website": "https://www.uwstout.edu/",
+  "acceptanceRate": 0.847,
+  "enrollment": 5018,
+  "graduationRate": 0.525,
+  "tuitionInState": 10142,
+  "tuitionOutOfState": 18706,
+  "roomAndBoard": 8368,
+  "netPrice": 15574,
+  "medianEarnings6yr": 60587,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B-",
+    "academics": "B-",
+    "value": "B",
+    "diversity": "B+",
+    "campus": "B-",
+    "athletics": "C",
+    "partyScene": "B+",
+    "professors": "B-",
+    "location": "B+",
+    "dorms": "C+",
+    "campusFood": "B+",
+    "studentLife": "B",
+    "safety": "A"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-wisconsin-stout/"
+}

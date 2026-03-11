@@ -1,0 +1,32 @@
+{
+  "slug": "princeton-university",
+  "name": "Princeton University",
+  "city": "PRINCETON",
+  "state": "NJ",
+  "website": "https://www.princeton.edu/",
+  "acceptanceRate": 0.045,
+  "enrollment": 5598,
+  "graduationRate": 0.971,
+  "tuitionInState": 59710,
+  "tuitionOutOfState": 59710,
+  "roomAndBoard": 19380,
+  "netPrice": 19811,
+  "medianEarnings6yr": 113450,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A+",
+    "value": "A+",
+    "diversity": "A+",
+    "campus": "A-",
+    "athletics": "B+",
+    "partyScene": "B+",
+    "professors": "A+",
+    "location": "B+",
+    "dorms": "A-",
+    "campusFood": "A-",
+    "studentLife": "A+",
+    "safety": "B+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/princeton-university/"
+}

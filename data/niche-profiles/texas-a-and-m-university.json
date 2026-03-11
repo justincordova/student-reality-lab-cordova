@@ -1,0 +1,32 @@
+{
+  "slug": "texas-a-and-m-university",
+  "name": "Texas A&M University",
+  "city": "COLLEGE STATION",
+  "state": "TX",
+  "website": "https://www.tamu.edu/",
+  "acceptanceRate": 0.632,
+  "enrollment": 52906,
+  "graduationRate": 0.838,
+  "tuitionInState": 11550,
+  "tuitionOutOfState": 39796,
+  "roomAndBoard": null,
+  "netPrice": 21610,
+  "medianEarnings6yr": 72578,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A",
+    "value": "A-",
+    "diversity": "A-",
+    "campus": "A-",
+    "athletics": "A",
+    "partyScene": "A",
+    "professors": "A+",
+    "location": "B+",
+    "dorms": "B",
+    "campusFood": "A",
+    "studentLife": "A+",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/texas-a-and-m-university/"
+}

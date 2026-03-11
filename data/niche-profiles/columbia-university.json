@@ -1,0 +1,32 @@
+{
+  "slug": "columbia-university",
+  "name": "Columbia University",
+  "city": "NEW YORK",
+  "state": "NY",
+  "website": "https://undergrad.admissions.columbia.edu/",
+  "acceptanceRate": 0.042,
+  "enrollment": 8428,
+  "graduationRate": 0.95,
+  "tuitionInState": 71170,
+  "tuitionOutOfState": 71170,
+  "roomAndBoard": 16800,
+  "netPrice": 20869,
+  "medianEarnings6yr": 112647,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A+",
+    "value": "A+",
+    "diversity": "A+",
+    "campus": "A",
+    "athletics": "B+",
+    "partyScene": "A",
+    "professors": "A+",
+    "location": "A+",
+    "dorms": "A-",
+    "campusFood": "A",
+    "studentLife": "A+",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/columbia-university/"
+}

@@ -1,0 +1,32 @@
+{
+  "slug": "rochester-institute-of-technology",
+  "name": "Rochester Institute of Technology",
+  "city": "ROCHESTER",
+  "state": "NY",
+  "website": "https://www.rit.edu/",
+  "acceptanceRate": 0.714,
+  "enrollment": 12909,
+  "graduationRate": 0.708,
+  "tuitionInState": 57016,
+  "tuitionOutOfState": 57016,
+  "roomAndBoard": 16432,
+  "netPrice": 39753,
+  "medianEarnings6yr": 79755,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "A-",
+    "value": "B+",
+    "diversity": "A-",
+    "campus": "C-",
+    "athletics": "C+",
+    "partyScene": "B-",
+    "professors": "A-",
+    "location": "B-",
+    "dorms": "C-",
+    "campusFood": "C",
+    "studentLife": "B-",
+    "safety": "B+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/rochester-institute-of-technology/"
+}

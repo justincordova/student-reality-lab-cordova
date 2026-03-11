@@ -1,0 +1,32 @@
+{
+  "slug": "rowan-university",
+  "name": "Rowan University",
+  "city": "GLASSBORO",
+  "state": "NJ",
+  "website": "https://go.rowan.edu/admissionshomeniche",
+  "acceptanceRate": 0.778,
+  "enrollment": 13010,
+  "graduationRate": 0.683,
+  "tuitionInState": 17428,
+  "tuitionOutOfState": 28252,
+  "roomAndBoard": 14390,
+  "netPrice": 22237,
+  "medianEarnings6yr": 61303,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "B+",
+    "value": "B",
+    "diversity": "A-",
+    "campus": "B-",
+    "athletics": "B-",
+    "partyScene": "A",
+    "professors": "B+",
+    "location": "B",
+    "dorms": "B-",
+    "campusFood": "B",
+    "studentLife": "A-",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/rowan-university/"
+}

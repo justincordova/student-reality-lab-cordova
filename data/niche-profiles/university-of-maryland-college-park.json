@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-maryland-college-park",
+  "name": "University of Maryland - College Park",
+  "city": "COLLEGE PARK",
+  "state": "MD",
+  "website": "https://www.umd.edu/",
+  "acceptanceRate": 0.448,
+  "enrollment": 28498,
+  "graduationRate": 0.886,
+  "tuitionInState": 11505,
+  "tuitionOutOfState": 40306,
+  "roomAndBoard": 15736,
+  "netPrice": 15833,
+  "medianEarnings6yr": 80584,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A+",
+    "value": "A-",
+    "diversity": "A+",
+    "campus": "B-",
+    "athletics": "A+",
+    "partyScene": "A+",
+    "professors": "A+",
+    "location": "B-",
+    "dorms": "C-",
+    "campusFood": "B+",
+    "studentLife": "A+",
+    "safety": "C+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-maryland-college-park/"
+}

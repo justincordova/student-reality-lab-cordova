@@ -1,0 +1,32 @@
+{
+  "slug": "california-state-university-san-bernardino",
+  "name": "California State University, San Bernardino",
+  "city": "SAN BERNARDINO",
+  "state": "CA",
+  "website": "https://www.csusb.edu/",
+  "acceptanceRate": 0.982,
+  "enrollment": 12953,
+  "graduationRate": 0.547,
+  "tuitionInState": 7678,
+  "tuitionOutOfState": 19555,
+  "roomAndBoard": 11974,
+  "netPrice": 6645,
+  "medianEarnings6yr": 56795,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B",
+    "academics": "B-",
+    "value": "A-",
+    "diversity": "B+",
+    "campus": "B+",
+    "athletics": "B",
+    "partyScene": "B",
+    "professors": "B",
+    "location": "C+",
+    "dorms": "B",
+    "campusFood": "A",
+    "studentLife": "B+",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/california-state-university-san-bernardino/"
+}

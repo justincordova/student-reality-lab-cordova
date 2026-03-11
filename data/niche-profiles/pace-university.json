@@ -1,0 +1,32 @@
+{
+  "slug": "pace-university",
+  "name": "Pace University",
+  "city": "NEW YORK",
+  "state": "NY",
+  "website": "https://www.pace.edu/",
+  "acceptanceRate": 0.771,
+  "enrollment": 7473,
+  "graduationRate": 0.614,
+  "tuitionInState": 52924,
+  "tuitionOutOfState": 52924,
+  "roomAndBoard": null,
+  "netPrice": 34299,
+  "medianEarnings6yr": 79270,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B-",
+    "academics": "B-",
+    "value": "B",
+    "diversity": "A",
+    "campus": "B-",
+    "athletics": "C+",
+    "partyScene": "B+",
+    "professors": "B-",
+    "location": "A+",
+    "dorms": "B",
+    "campusFood": "C",
+    "studentLife": "B+",
+    "safety": "B+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/pace-university/"
+}

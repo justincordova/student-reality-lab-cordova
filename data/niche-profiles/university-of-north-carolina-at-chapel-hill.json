@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-north-carolina-at-chapel-hill",
+  "name": "University of North Carolina at Chapel Hill",
+  "city": "CHAPEL HILL",
+  "state": "NC",
+  "website": "https://admissions.unc.edu/",
+  "acceptanceRate": 0.187,
+  "enrollment": 19939,
+  "graduationRate": 0.921,
+  "tuitionInState": 7020,
+  "tuitionOutOfState": 37360,
+  "roomAndBoard": 13016,
+  "netPrice": 11140,
+  "medianEarnings6yr": 72161,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A+",
+    "value": "A",
+    "diversity": "A",
+    "campus": "A-",
+    "athletics": "A+",
+    "partyScene": "A+",
+    "professors": "A+",
+    "location": "A-",
+    "dorms": "B",
+    "campusFood": "B+",
+    "studentLife": "A+",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-north-carolina-at-chapel-hill/"
+}

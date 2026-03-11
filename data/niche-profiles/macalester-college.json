@@ -1,0 +1,32 @@
+{
+  "slug": "macalester-college",
+  "name": "Macalester College",
+  "city": "SAINT PAUL",
+  "state": "MN",
+  "website": "https://www.macalester.edu/",
+  "acceptanceRate": 0.282,
+  "enrollment": 2106,
+  "graduationRate": 0.904,
+  "tuitionInState": 70632,
+  "tuitionOutOfState": 70632,
+  "roomAndBoard": 14982,
+  "netPrice": 38571,
+  "medianEarnings6yr": 56285,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A",
+    "academics": "A+",
+    "value": "B",
+    "diversity": "A",
+    "campus": "B-",
+    "athletics": "B-",
+    "partyScene": "B",
+    "professors": "A-",
+    "location": "A",
+    "dorms": "B-",
+    "campusFood": "C",
+    "studentLife": "A-",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/macalester-college/"
+}

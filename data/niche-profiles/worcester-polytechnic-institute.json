@@ -1,0 +1,32 @@
+{
+  "slug": "worcester-polytechnic-institute",
+  "name": "Worcester Polytechnic Institute",
+  "city": "WORCESTER",
+  "state": "MA",
+  "website": "https://www.wpi.edu/",
+  "acceptanceRate": 0.585,
+  "enrollment": 5558,
+  "graduationRate": 0.884,
+  "tuitionInState": 61790,
+  "tuitionOutOfState": 61790,
+  "roomAndBoard": 17258,
+  "netPrice": 47799,
+  "medianEarnings6yr": 104714,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A-",
+    "academics": "A",
+    "value": "A-",
+    "diversity": "A-",
+    "campus": "C",
+    "athletics": "B-",
+    "partyScene": "A-",
+    "professors": "B+",
+    "location": "B",
+    "dorms": "C",
+    "campusFood": "C-",
+    "studentLife": "B+",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/worcester-polytechnic-institute/"
+}

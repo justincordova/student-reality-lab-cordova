@@ -1,0 +1,32 @@
+{
+  "slug": "loyola-marymount-university",
+  "name": "Loyola Marymount University",
+  "city": "LOS ANGELES",
+  "state": "CA",
+  "website": "https://www.lmu.edu/",
+  "acceptanceRate": 0.403,
+  "enrollment": 7153,
+  "graduationRate": 0.798,
+  "tuitionInState": 61862,
+  "tuitionOutOfState": 61862,
+  "roomAndBoard": null,
+  "netPrice": 54471,
+  "medianEarnings6yr": 75375,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A-",
+    "academics": "A",
+    "value": "C",
+    "diversity": "A",
+    "campus": "A-",
+    "athletics": "B",
+    "partyScene": "B+",
+    "professors": "A-",
+    "location": "A",
+    "dorms": "B-",
+    "campusFood": "B-",
+    "studentLife": "A-",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/loyola-marymount-university/"
+}

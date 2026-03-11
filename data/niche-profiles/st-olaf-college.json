@@ -1,0 +1,32 @@
+{
+  "slug": "st-olaf-college",
+  "name": "St. Olaf College",
+  "city": "NORTHFIELD",
+  "state": "MN",
+  "website": "https://wp.stolaf.edu/admissions/",
+  "acceptanceRate": 0.52,
+  "enrollment": 3044,
+  "graduationRate": 0.835,
+  "tuitionInState": 56970,
+  "tuitionOutOfState": 56970,
+  "roomAndBoard": 13080,
+  "netPrice": 27282,
+  "medianEarnings6yr": 59029,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A-",
+    "academics": "A",
+    "value": "B+",
+    "diversity": "A-",
+    "campus": "B+",
+    "athletics": "B-",
+    "partyScene": "C+",
+    "professors": "A-",
+    "location": "B-",
+    "dorms": "B",
+    "campusFood": "B+",
+    "studentLife": "B",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/st-olaf-college/"
+}

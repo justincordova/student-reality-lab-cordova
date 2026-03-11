@@ -1,0 +1,32 @@
+{
+  "slug": "marquette-university",
+  "name": "Marquette University",
+  "city": "MILWAUKEE",
+  "state": "WI",
+  "website": "https://www.marquette.edu/",
+  "acceptanceRate": 0.874,
+  "enrollment": 7599,
+  "graduationRate": 0.801,
+  "tuitionInState": 52070,
+  "tuitionOutOfState": 52070,
+  "roomAndBoard": 15740,
+  "netPrice": 32031,
+  "medianEarnings6yr": 76036,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A-",
+    "academics": "A-",
+    "value": "B+",
+    "diversity": "A-",
+    "campus": "B-",
+    "athletics": "A-",
+    "partyScene": "A-",
+    "professors": "A",
+    "location": "B+",
+    "dorms": "B-",
+    "campusFood": "B",
+    "studentLife": "A-",
+    "safety": "C-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/marquette-university/"
+}

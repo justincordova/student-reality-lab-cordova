@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-texas-dallas",
+  "name": "University of Texas - Dallas",
+  "city": "RICHARDSON",
+  "state": "TX",
+  "website": "https://www.utdallas.edu/",
+  "acceptanceRate": 0.655,
+  "enrollment": 18121,
+  "graduationRate": 0.708,
+  "tuitionInState": 14564,
+  "tuitionOutOfState": 40064,
+  "roomAndBoard": 13832,
+  "netPrice": 13464,
+  "medianEarnings6yr": 71089,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A-",
+    "academics": "A-",
+    "value": "B+",
+    "diversity": "A",
+    "campus": "C+",
+    "athletics": "C+",
+    "partyScene": "C",
+    "professors": "A-",
+    "location": "A-",
+    "dorms": "B",
+    "campusFood": "B-",
+    "studentLife": "B-",
+    "safety": "B+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-texas-dallas/"
+}

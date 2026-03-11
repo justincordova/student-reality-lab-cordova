@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-rochester",
+  "name": "University of Rochester",
+  "city": "ROCHESTER",
+  "state": "NY",
+  "website": "https://www.rochester.edu/",
+  "acceptanceRate": 0.359,
+  "enrollment": 6350,
+  "graduationRate": 0.845,
+  "tuitionInState": 64348,
+  "tuitionOutOfState": 64348,
+  "roomAndBoard": 18924,
+  "netPrice": 40900,
+  "medianEarnings6yr": 84459,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A",
+    "academics": "A+",
+    "value": "B",
+    "diversity": "A+",
+    "campus": "C",
+    "athletics": "C+",
+    "partyScene": "B",
+    "professors": "A",
+    "location": "B-",
+    "dorms": "C",
+    "campusFood": "C",
+    "studentLife": "B-",
+    "safety": "C+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-rochester/"
+}

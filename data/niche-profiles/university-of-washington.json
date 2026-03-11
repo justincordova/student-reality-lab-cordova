@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-washington",
+  "name": "University of Washington",
+  "city": "SEATTLE",
+  "state": "WA",
+  "website": "https://www.washington.edu/",
+  "acceptanceRate": 0.425,
+  "enrollment": 29863,
+  "graduationRate": 0.837,
+  "tuitionInState": 12643,
+  "tuitionOutOfState": 41997,
+  "roomAndBoard": 17982,
+  "netPrice": 11023,
+  "medianEarnings6yr": 78604,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A+",
+    "value": "A",
+    "diversity": "A+",
+    "campus": "B+",
+    "athletics": "A",
+    "partyScene": "A",
+    "professors": "A+",
+    "location": "A",
+    "dorms": "C+",
+    "campusFood": "B-",
+    "studentLife": "A",
+    "safety": "C"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-washington/"
+}

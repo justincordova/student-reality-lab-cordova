@@ -1,0 +1,32 @@
+{
+  "slug": "florida-institute-of-technology",
+  "name": "Florida Institute of Technology",
+  "city": "MELBOURNE",
+  "state": "FL",
+  "website": "https://www.floridatech.edu/",
+  "acceptanceRate": 0.626,
+  "enrollment": 2967,
+  "graduationRate": 0.655,
+  "tuitionInState": 42770,
+  "tuitionOutOfState": 42770,
+  "roomAndBoard": 14340,
+  "netPrice": 36364,
+  "medianEarnings6yr": 80275,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A-",
+    "academics": "A-",
+    "value": "B",
+    "diversity": "A",
+    "campus": "B",
+    "athletics": "B",
+    "partyScene": "B",
+    "professors": "A",
+    "location": "B",
+    "dorms": "B",
+    "campusFood": "A",
+    "studentLife": "A-",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/florida-institute-of-technology/"
+}

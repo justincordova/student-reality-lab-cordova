@@ -1,0 +1,32 @@
+{
+  "slug": "north-carolina-a-and-t-state-university",
+  "name": "North Carolina A&T State University",
+  "city": "GREENSBORO",
+  "state": "NC",
+  "website": "https://www.ncat.edu/",
+  "acceptanceRate": 0.462,
+  "enrollment": 11061,
+  "graduationRate": 0.553,
+  "tuitionInState": 6748,
+  "tuitionOutOfState": 20408,
+  "roomAndBoard": 9714,
+  "netPrice": 10258,
+  "medianEarnings6yr": 49710,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "B",
+    "value": "B+",
+    "diversity": "B",
+    "campus": "B+",
+    "athletics": "A-",
+    "partyScene": "A+",
+    "professors": "B",
+    "location": "B-",
+    "dorms": "C-",
+    "campusFood": "B+",
+    "studentLife": "A",
+    "safety": "C"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/north-carolina-a-and-t-state-university/"
+}

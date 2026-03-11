@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-north-carolina-greensboro",
+  "name": "University of North Carolina - Greensboro",
+  "city": "GREENSBORO",
+  "state": "NC",
+  "website": "https://www.uncg.edu/",
+  "acceptanceRate": 0.898,
+  "enrollment": 11881,
+  "graduationRate": 0.579,
+  "tuitionInState": 7731,
+  "tuitionOutOfState": 24705,
+  "roomAndBoard": 9930,
+  "netPrice": 10592,
+  "medianEarnings6yr": 48436,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "B",
+    "value": "A-",
+    "diversity": "A",
+    "campus": "B+",
+    "athletics": "B+",
+    "partyScene": "B+",
+    "professors": "B+",
+    "location": "B",
+    "dorms": "A-",
+    "campusFood": "A-",
+    "studentLife": "A-",
+    "safety": "C+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-north-carolina-greensboro/"
+}

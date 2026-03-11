@@ -1,0 +1,32 @@
+{
+  "slug": "oklahoma-state-university",
+  "name": "Oklahoma State University",
+  "city": "STILLWATER",
+  "state": "OK",
+  "website": "https://go.okstate.edu/",
+  "acceptanceRate": 0.709,
+  "enrollment": 18930,
+  "graduationRate": 0.659,
+  "tuitionInState": 13920,
+  "tuitionOutOfState": 29440,
+  "roomAndBoard": 10100,
+  "netPrice": 18291,
+  "medianEarnings6yr": 62338,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A",
+    "academics": "A",
+    "value": "B+",
+    "diversity": "A-",
+    "campus": "A",
+    "athletics": "A",
+    "partyScene": "A",
+    "professors": "A+",
+    "location": "B",
+    "dorms": "A-",
+    "campusFood": "A",
+    "studentLife": "A+",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/oklahoma-state-university/"
+}

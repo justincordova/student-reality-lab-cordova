@@ -1,0 +1,32 @@
+{
+  "slug": "harding-university",
+  "name": "Harding University",
+  "city": "SEARCY",
+  "state": "AR",
+  "website": "https://www.harding.edu/",
+  "acceptanceRate": 0.451,
+  "enrollment": 3134,
+  "graduationRate": 0.709,
+  "tuitionInState": 24888,
+  "tuitionOutOfState": 24888,
+  "roomAndBoard": 9716,
+  "netPrice": 21069,
+  "medianEarnings6yr": 54368,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A-",
+    "academics": "A",
+    "value": "B",
+    "diversity": "B+",
+    "campus": "B",
+    "athletics": "A",
+    "partyScene": "C-",
+    "professors": "B",
+    "location": "C",
+    "dorms": "A-",
+    "campusFood": "C+",
+    "studentLife": "B",
+    "safety": "A-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/harding-university/"
+}

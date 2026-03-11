@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-minnesota-twin-cities",
+  "name": "University of Minnesota Twin Cities",
+  "city": "MINNEAPOLIS",
+  "state": "MN",
+  "website": "https://admissions.tc.umn.edu/",
+  "acceptanceRate": 0.771,
+  "enrollment": 29124,
+  "graduationRate": 0.848,
+  "tuitionInState": 18626,
+  "tuitionOutOfState": 41512,
+  "roomAndBoard": 13178,
+  "netPrice": 16730,
+  "medianEarnings6yr": 68455,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A",
+    "academics": "A",
+    "value": "A-",
+    "diversity": "A",
+    "campus": "B+",
+    "athletics": "A",
+    "partyScene": "A+",
+    "professors": "A",
+    "location": "A+",
+    "dorms": "B-",
+    "campusFood": "B",
+    "studentLife": "A+",
+    "safety": "C-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-minnesota-twin-cities/"
+}

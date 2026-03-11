@@ -1,0 +1,32 @@
+{
+  "slug": "rose-hulman-institute-of-technology",
+  "name": "Rose-Hulman Institute of Technology",
+  "city": "TERRE HAUTE",
+  "state": "IN",
+  "website": "https://www.rose-hulman.edu/",
+  "acceptanceRate": 0.728,
+  "enrollment": 2213,
+  "graduationRate": 0.817,
+  "tuitionInState": 56910,
+  "tuitionOutOfState": 56910,
+  "roomAndBoard": 17145,
+  "netPrice": 44016,
+  "medianEarnings6yr": 98978,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A-",
+    "academics": "B+",
+    "value": "A",
+    "diversity": "A-",
+    "campus": "B+",
+    "athletics": "B-",
+    "partyScene": "B+",
+    "professors": "A-",
+    "location": "C+",
+    "dorms": "A-",
+    "campusFood": "B",
+    "studentLife": "A",
+    "safety": "A-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/rose-hulman-institute-of-technology/"
+}

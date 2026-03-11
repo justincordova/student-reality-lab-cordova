@@ -1,0 +1,32 @@
+{
+  "slug": "wichita-state-university",
+  "name": "Wichita State University",
+  "city": "WICHITA",
+  "state": "KS",
+  "website": "https://www.wichita.edu/",
+  "acceptanceRate": 0.949,
+  "enrollment": 8564,
+  "graduationRate": 0.514,
+  "tuitionInState": 9684,
+  "tuitionOutOfState": 19988,
+  "roomAndBoard": 12220,
+  "netPrice": 14184,
+  "medianEarnings6yr": 54872,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B",
+    "academics": "B",
+    "value": "B",
+    "diversity": "A",
+    "campus": "B+",
+    "athletics": "A-",
+    "partyScene": "B",
+    "professors": "B",
+    "location": "B",
+    "dorms": "A-",
+    "campusFood": "B+",
+    "studentLife": "B+",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/wichita-state-university/"
+}

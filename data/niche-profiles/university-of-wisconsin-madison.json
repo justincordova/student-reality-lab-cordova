@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-wisconsin-madison",
+  "name": "University of Wisconsin-Madison",
+  "city": "MADISON",
+  "state": "WI",
+  "website": "https://www.wisc.edu/",
+  "acceptanceRate": 0.433,
+  "enrollment": 34278,
+  "graduationRate": 0.893,
+  "tuitionInState": 11205,
+  "tuitionOutOfState": 40603,
+  "roomAndBoard": 11783,
+  "netPrice": 14216,
+  "medianEarnings6yr": 73645,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A+",
+    "value": "A",
+    "diversity": "A",
+    "campus": "A",
+    "athletics": "A",
+    "partyScene": "A+",
+    "professors": "A",
+    "location": "A",
+    "dorms": "B",
+    "campusFood": "A",
+    "studentLife": "A+",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-wisconsin-madison/"
+}

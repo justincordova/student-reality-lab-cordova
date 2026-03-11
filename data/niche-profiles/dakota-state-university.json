@@ -1,0 +1,32 @@
+{
+  "slug": "dakota-state-university",
+  "name": "Dakota State University",
+  "city": "MADISON",
+  "state": "SD",
+  "website": "https://dsu.edu/",
+  "acceptanceRate": 0.978,
+  "enrollment": 1533,
+  "graduationRate": 0.493,
+  "tuitionInState": 9633,
+  "tuitionOutOfState": 12735,
+  "roomAndBoard": 8628,
+  "netPrice": 19115,
+  "medianEarnings6yr": 55541,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B",
+    "academics": "B",
+    "value": "B",
+    "diversity": "B+",
+    "campus": "C+",
+    "athletics": "B-",
+    "partyScene": "B-",
+    "professors": "B",
+    "location": "C+",
+    "dorms": "B",
+    "campusFood": "C",
+    "studentLife": "B-",
+    "safety": "A-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/dakota-state-university/"
+}

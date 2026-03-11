@@ -1,0 +1,31 @@
+{
+  "slug": "wabash-college",
+  "name": "Wabash College",
+  "city": "CRAWFORDSVILLE",
+  "state": "IN",
+  "website": "https://www.wabash.edu/",
+  "acceptanceRate": 0.628,
+  "enrollment": 900,
+  "graduationRate": 0.771,
+  "tuitionInState": 51300,
+  "tuitionOutOfState": 51300,
+  "roomAndBoard": 13300,
+  "netPrice": 23913,
+  "medianEarnings6yr": 64747,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A",
+    "academics": "A-",
+    "value": "A-",
+    "diversity": "A-",
+    "campus": "B",
+    "partyScene": "B",
+    "professors": "A-",
+    "location": "C",
+    "dorms": "A",
+    "campusFood": "B-",
+    "studentLife": "A",
+    "safety": "A-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/wabash-college/"
+}

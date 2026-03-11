@@ -1,0 +1,32 @@
+{
+  "slug": "appalachian-state-university",
+  "name": "Appalachian State University",
+  "city": "BOONE",
+  "state": "NC",
+  "website": "https://www.appstate.edu/",
+  "acceptanceRate": 0.886,
+  "enrollment": 18120,
+  "graduationRate": 0.731,
+  "tuitionInState": 8135,
+  "tuitionOutOfState": 25768,
+  "roomAndBoard": 12258,
+  "netPrice": 14712,
+  "medianEarnings6yr": 51728,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "B",
+    "value": "B+",
+    "diversity": "B-",
+    "campus": "B+",
+    "athletics": "A",
+    "partyScene": "A-",
+    "professors": "A-",
+    "location": "A",
+    "dorms": "C+",
+    "campusFood": "C+",
+    "studentLife": "A",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/appalachian-state-university/"
+}

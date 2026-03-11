@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-houston",
+  "name": "University of Houston",
+  "city": "HOUSTON",
+  "state": "TX",
+  "website": "https://uh.edu/",
+  "acceptanceRate": 0.695,
+  "enrollment": 27798,
+  "graduationRate": 0.649,
+  "tuitionInState": 11882,
+  "tuitionOutOfState": 27482,
+  "roomAndBoard": 10830,
+  "netPrice": 13738,
+  "medianEarnings6yr": 63161,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A-",
+    "academics": "A-",
+    "value": "A-",
+    "diversity": "A",
+    "campus": "B",
+    "athletics": "A-",
+    "partyScene": "A",
+    "professors": "A+",
+    "location": "B-",
+    "dorms": "B",
+    "campusFood": "A",
+    "studentLife": "A-",
+    "safety": "C-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-houston/"
+}

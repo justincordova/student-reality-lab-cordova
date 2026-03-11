@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-arizona",
+  "name": "University of Arizona",
+  "city": "TUCSON",
+  "state": "AZ",
+  "website": "https://www.arizona.edu/",
+  "acceptanceRate": 0.857,
+  "enrollment": 34237,
+  "graduationRate": 0.659,
+  "tuitionInState": 13900,
+  "tuitionOutOfState": 43100,
+  "roomAndBoard": 14400,
+  "netPrice": 18144,
+  "medianEarnings6yr": 64522,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A-",
+    "academics": "A-",
+    "value": "B",
+    "diversity": "A",
+    "campus": "A-",
+    "athletics": "A",
+    "partyScene": "A+",
+    "professors": "A+",
+    "location": "B",
+    "dorms": "B",
+    "campusFood": "A-",
+    "studentLife": "A+",
+    "safety": "C"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-arizona/"
+}

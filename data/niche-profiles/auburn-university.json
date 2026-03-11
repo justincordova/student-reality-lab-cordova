@@ -1,0 +1,32 @@
+{
+  "slug": "auburn-university",
+  "name": "Auburn University",
+  "city": "AUBURN",
+  "state": "AL",
+  "website": "https://www.auburn.edu/",
+  "acceptanceRate": 0.505,
+  "enrollment": 25204,
+  "graduationRate": 0.792,
+  "tuitionInState": 12890,
+  "tuitionOutOfState": 34922,
+  "roomAndBoard": 15396,
+  "netPrice": 24524,
+  "medianEarnings6yr": 68172,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A",
+    "academics": "A",
+    "value": "B",
+    "diversity": "B+",
+    "campus": "A+",
+    "athletics": "A+",
+    "partyScene": "A+",
+    "professors": "A",
+    "location": "A",
+    "dorms": "B",
+    "campusFood": "A",
+    "studentLife": "A+",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/auburn-university/"
+}

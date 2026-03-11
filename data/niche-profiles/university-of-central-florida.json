@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-central-florida",
+  "name": "University of Central Florida",
+  "city": "ORLANDO",
+  "state": "FL",
+  "website": "https://www.ucf.edu/",
+  "acceptanceRate": 0.395,
+  "enrollment": 41654,
+  "graduationRate": 0.752,
+  "tuitionInState": 6368,
+  "tuitionOutOfState": 22467,
+  "roomAndBoard": 11030,
+  "netPrice": 13110,
+  "medianEarnings6yr": 58196,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A",
+    "academics": "A",
+    "value": "B+",
+    "diversity": "A",
+    "campus": "A",
+    "athletics": "A",
+    "partyScene": "A",
+    "professors": "A-",
+    "location": "B+",
+    "dorms": "A-",
+    "campusFood": "A",
+    "studentLife": "A+",
+    "safety": "B+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-central-florida/"
+}

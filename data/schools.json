@@ -31,7 +31,8 @@
       "studentLife": "A",
       "safety": "A+"
     },
-    "nicheUrl": "https://www.niche.com/colleges/massachusetts-institute-of-technology/"
+    "nicheUrl": "https://www.niche.com/colleges/massachusetts-institute-of-technology/",
+    "nicheRanking": 1
   },
   {
     "name": "Stanford University",
@@ -65,7 +66,8 @@
       "studentLife": "A+",
       "safety": "A"
     },
-    "nicheUrl": "https://www.niche.com/colleges/stanford-university/"
+    "nicheUrl": "https://www.niche.com/colleges/stanford-university/",
+    "nicheRanking": 2
   },
   {
     "name": "Carnegie Mellon University",
@@ -99,7 +101,8 @@
       "studentLife": "B+",
       "safety": "A"
     },
-    "nicheUrl": "https://www.niche.com/colleges/carnegie-mellon-university/"
+    "nicheUrl": "https://www.niche.com/colleges/carnegie-mellon-university/",
+    "nicheRanking": 3
   },
   {
     "name": "University of California Berkeley",
@@ -133,7 +136,8 @@
       "studentLife": "A",
       "safety": "B+"
     },
-    "nicheUrl": "https://www.niche.com/colleges/university-of-california-berkeley/"
+    "nicheUrl": "https://www.niche.com/colleges/university-of-california-berkeley/",
+    "nicheRanking": 28
   },
   {
     "name": "University of Illinois Urbana-Champaign",
@@ -167,7 +171,8 @@
       "studentLife": "A+",
       "safety": "B+"
     },
-    "nicheUrl": "https://www.niche.com/colleges/university-of-illinois-urbana-champaign/"
+    "nicheUrl": "https://www.niche.com/colleges/university-of-illinois-urbana-champaign/",
+    "nicheRanking": 35
   },
   {
     "name": "California Institute of Technology",
@@ -201,7 +206,8 @@
       "studentLife": "B+",
       "safety": "A+"
     },
-    "nicheUrl": "https://www.niche.com/colleges/california-institute-of-technology/"
+    "nicheUrl": "https://www.niche.com/colleges/california-institute-of-technology/",
+    "nicheRanking": 4
   },
   {
     "name": "Georgia Institute of Technology",
@@ -235,7 +241,8 @@
       "studentLife": "A",
       "safety": "B+"
     },
-    "nicheUrl": "https://www.niche.com/colleges/georgia-institute-of-technology/"
+    "nicheUrl": "https://www.niche.com/colleges/georgia-institute-of-technology/",
+    "nicheRanking": 8
   },
   {
     "name": "Cornell University",
@@ -269,7 +276,8 @@
       "studentLife": "A",
       "safety": "A"
     },
-    "nicheUrl": "https://www.niche.com/colleges/cornell-university/"
+    "nicheUrl": "https://www.niche.com/colleges/cornell-university/",
+    "nicheRanking": 10
   },
   {
     "name": "University of Washington",
@@ -303,7 +311,8 @@
       "studentLife": "A",
       "safety": "B+"
     },
-    "nicheUrl": "https://www.niche.com/colleges/university-of-washington/"
+    "nicheUrl": "https://www.niche.com/colleges/university-of-washington/",
+    "nicheRanking": 37
   },
   {
     "name": "Princeton University",
@@ -337,7 +346,8 @@
       "studentLife": "A+",
       "safety": "A+"
     },
-    "nicheUrl": "https://www.niche.com/colleges/princeton-university/"
+    "nicheUrl": "https://www.niche.com/colleges/princeton-university/",
+    "nicheRanking": 12
   },
   {
     "name": "University of Texas at Austin",
@@ -371,7 +381,8 @@
       "studentLife": "A+",
       "safety": "B+"
     },
-    "nicheUrl": "https://www.niche.com/colleges/university-of-texas-at-austin/"
+    "nicheUrl": "https://www.niche.com/colleges/university-of-texas-at-austin/",
+    "nicheRanking": 19
   },
   {
     "name": "University of California Los Angeles",
@@ -405,7 +416,8 @@
       "studentLife": "A+",
       "safety": "B+"
     },
-    "nicheUrl": "https://www.niche.com/colleges/university-of-california-los-angeles/"
+    "nicheUrl": "https://www.niche.com/colleges/university-of-california-los-angeles/",
+    "nicheRanking": 23
   },
   {
     "name": "University of Michigan",
@@ -439,7 +451,8 @@
       "studentLife": "A+",
       "safety": "A"
     },
-    "nicheUrl": "https://www.niche.com/colleges/university-of-michigan/"
+    "nicheUrl": "https://www.niche.com/colleges/university-of-michigan/",
+    "nicheRanking": 14
   },
   {
     "name": "Columbia University",
@@ -473,7 +486,8 @@
       "studentLife": "A",
       "safety": "B+"
     },
-    "nicheUrl": "https://www.niche.com/colleges/columbia-university/"
+    "nicheUrl": "https://www.niche.com/colleges/columbia-university/",
+    "nicheRanking": 5
   },
   {
     "name": "Harvard University",
@@ -507,7 +521,8 @@
       "studentLife": "A",
       "safety": "A+"
     },
-    "nicheUrl": "https://www.niche.com/colleges/harvard-university/"
+    "nicheUrl": "https://www.niche.com/colleges/harvard-university/",
+    "nicheRanking": 7
   },
   {
     "name": "University of California San Diego",
@@ -541,7 +556,8 @@
       "studentLife": "A",
       "safety": "A"
     },
-    "nicheUrl": "https://www.niche.com/colleges/university-of-california-san-diego/"
+    "nicheUrl": "https://www.niche.com/colleges/university-of-california-san-diego/",
+    "nicheRanking": 41
   },
   {
     "name": "University of Wisconsin-Madison",
@@ -575,7 +591,8 @@
       "studentLife": "A+",
       "safety": "B+"
     },
-    "nicheUrl": "https://www.niche.com/colleges/university-of-wisconsin---madison/"
+    "nicheUrl": "https://www.niche.com/colleges/university-of-wisconsin---madison/",
+    "nicheRanking": 33
   },
   {
     "name": "University of Maryland",
@@ -609,7 +626,8 @@
       "studentLife": "A",
       "safety": "B+"
     },
-    "nicheUrl": "https://www.niche.com/colleges/university-of-maryland/"
+    "nicheUrl": "https://www.niche.com/colleges/university-of-maryland/",
+    "nicheRanking": 36
   },
   {
     "name": "Purdue University",
@@ -643,7 +661,8 @@
       "studentLife": "A",
       "safety": "A"
     },
-    "nicheUrl": "https://www.niche.com/colleges/purdue-university/"
+    "nicheUrl": "https://www.niche.com/colleges/purdue-university/",
+    "nicheRanking": 34
   },
   {
     "name": "Duke University",
@@ -677,7 +696,8 @@
       "studentLife": "A+",
       "safety": "A"
     },
-    "nicheUrl": "https://www.niche.com/colleges/duke-university/"
+    "nicheUrl": "https://www.niche.com/colleges/duke-university/",
+    "nicheRanking": 15
   },
   {
     "name": "Rice University",
@@ -711,7 +731,8 @@
       "studentLife": "A+",
       "safety": "A"
     },
-    "nicheUrl": "https://www.niche.com/colleges/rice-university/"
+    "nicheUrl": "https://www.niche.com/colleges/rice-university/",
+    "nicheRanking": 17
   },
   {
     "name": "Northwestern University",
@@ -745,7 +766,8 @@
       "studentLife": "A+",
       "safety": "A"
     },
-    "nicheUrl": "https://www.niche.com/colleges/northwestern-university/"
+    "nicheUrl": "https://www.niche.com/colleges/northwestern-university/",
+    "nicheRanking": 22
   },
   {
     "name": "University of Pennsylvania",
@@ -779,7 +801,8 @@
       "studentLife": "A+",
       "safety": "B+"
     },
-    "nicheUrl": "https://www.niche.com/colleges/university-of-pennsylvania/"
+    "nicheUrl": "https://www.niche.com/colleges/university-of-pennsylvania/",
+    "nicheRanking": 16
   },
   {
     "name": "Yale University",
@@ -813,7 +836,8 @@
       "studentLife": "A+",
       "safety": "A"
     },
-    "nicheUrl": "https://www.niche.com/colleges/yale-university/"
+    "nicheUrl": "https://www.niche.com/colleges/yale-university/",
+    "nicheRanking": 6
   },
   {
     "name": "Brown University",
@@ -847,7 +871,8 @@
       "studentLife": "A+",
       "safety": "A"
     },
-    "nicheUrl": "https://www.niche.com/colleges/brown-university/"
+    "nicheUrl": "https://www.niche.com/colleges/brown-university/",
+    "nicheRanking": 9
   },
   {
     "name": "University of Southern California",
@@ -881,7 +906,8 @@
       "studentLife": "A+",
       "safety": "B"
     },
-    "nicheUrl": "https://www.niche.com/colleges/university-of-southern-california/"
+    "nicheUrl": "https://www.niche.com/colleges/university-of-southern-california/",
+    "nicheRanking": 21
   },
   {
     "name": "New York University",
@@ -915,7 +941,8 @@
       "studentLife": "A+",
       "safety": "B+"
     },
-    "nicheUrl": "https://www.niche.com/colleges/new-york-university/"
+    "nicheUrl": "https://www.niche.com/colleges/new-york-university/",
+    "nicheRanking": 29
   },
   {
     "name": "Virginia Tech",
@@ -949,7 +976,8 @@
       "studentLife": "A+",
       "safety": "A"
     },
-    "nicheUrl": "https://www.niche.com/colleges/virginia-tech/"
+    "nicheUrl": "https://www.niche.com/colleges/virginia-tech/",
+    "nicheRanking": 43
   },
   {
     "name": "NC State University",
@@ -983,7 +1011,8 @@
       "studentLife": "A",
       "safety": "A"
     },
-    "nicheUrl": "https://www.niche.com/colleges/north-carolina-state-university/"
+    "nicheUrl": "https://www.niche.com/colleges/north-carolina-state-university/",
+    "nicheRanking": 79
   },
   {
     "name": "Ohio State University",
@@ -1017,7 +1046,8 @@
       "studentLife": "A+",
       "safety": "B+"
     },
-    "nicheUrl": "https://www.niche.com/colleges/ohio-state-university/"
+    "nicheUrl": "https://www.niche.com/colleges/ohio-state-university/",
+    "nicheRanking": 139
   },
   {
     "name": "Penn State University",
@@ -1051,7 +1081,8 @@
       "studentLife": "A+",
       "safety": "A"
     },
-    "nicheUrl": "https://www.niche.com/colleges/pennsylvania-state-university/"
+    "nicheUrl": "https://www.niche.com/colleges/pennsylvania-state-university/",
+    "nicheRanking": 45
   },
   {
     "name": "University of Massachusetts Amherst",
@@ -1085,7 +1116,8 @@
       "studentLife": "A",
       "safety": "B+"
     },
-    "nicheUrl": "https://www.niche.com/colleges/university-of-massachusetts-amherst/"
+    "nicheUrl": "https://www.niche.com/colleges/university-of-massachusetts-amherst/",
+    "nicheRanking": 98
   },
   {
     "name": "Rutgers University",
@@ -1119,7 +1151,8 @@
       "studentLife": "A-",
       "safety": "B+"
     },
-    "nicheUrl": "https://www.niche.com/colleges/rutgers-university/"
+    "nicheUrl": "https://www.niche.com/colleges/rutgers-university/",
+    "nicheRanking": 83
   },
   {
     "name": "NJIT",
@@ -1153,7 +1186,8 @@
       "studentLife": "B",
       "safety": "B"
     },
-    "nicheUrl": "https://www.niche.com/colleges/new-jersey-institute-of-technology/"
+    "nicheUrl": "https://www.niche.com/colleges/new-jersey-institute-of-technology/",
+    "nicheRanking": 88
   },
   {
     "name": "Rensselaer Polytechnic Institute",
@@ -1187,7 +1221,8 @@
       "studentLife": "B+",
       "safety": "A-"
     },
-    "nicheUrl": "https://www.niche.com/colleges/rensselaer-polytechnic-institute/"
+    "nicheUrl": "https://www.niche.com/colleges/rensselaer-polytechnic-institute/",
+    "nicheRanking": 69
   },
   {
     "name": "Stony Brook University",
@@ -1221,7 +1256,8 @@
       "studentLife": "B",
       "safety": "A"
     },
-    "nicheUrl": "https://www.niche.com/colleges/stony-brook-university/"
+    "nicheUrl": "https://www.niche.com/colleges/stony-brook-university/",
+    "nicheRanking": 101
   },
   {
     "name": "Boston University",
@@ -1255,7 +1291,8 @@
       "studentLife": "A+",
       "safety": "A"
     },
-    "nicheUrl": "https://www.niche.com/colleges/boston-university/"
+    "nicheUrl": "https://www.niche.com/colleges/boston-university/",
+    "nicheRanking": 38
   },
   {
     "name": "Northeastern University",
@@ -1289,7 +1326,8 @@
       "studentLife": "A+",
       "safety": "A"
     },
-    "nicheUrl": "https://www.niche.com/colleges/northeastern-university/"
+    "nicheUrl": "https://www.niche.com/colleges/northeastern-university/",
+    "nicheRanking": 26
   },
   {
     "name": "University of Minnesota",
@@ -1323,7 +1361,8 @@
       "studentLife": "A",
       "safety": "B+"
     },
-    "nicheUrl": "https://www.niche.com/colleges/university-of-minnesota/"
+    "nicheUrl": "https://www.niche.com/colleges/university-of-minnesota/",
+    "nicheRanking": 64
   },
   {
     "name": "Iowa State University",
@@ -1357,7 +1396,8 @@
       "studentLife": "A",
       "safety": "A"
     },
-    "nicheUrl": "https://www.niche.com/colleges/iowa-state-university/"
+    "nicheUrl": "https://www.niche.com/colleges/iowa-state-university/",
+    "nicheRanking": 153
   },
   {
     "name": "Arizona State University",
@@ -1391,7 +1431,8 @@
       "studentLife": "A",
       "safety": "B+"
     },
-    "nicheUrl": "https://www.niche.com/colleges/arizona-state-university/"
+    "nicheUrl": "https://www.niche.com/colleges/arizona-state-university/",
+    "nicheRanking": 86
   },
   {
     "name": "University of Texas at Dallas",
@@ -1425,7 +1466,8 @@
       "studentLife": "B+",
       "safety": "A"
     },
-    "nicheUrl": "https://www.niche.com/colleges/the-university-of-texas-at-dallas/"
+    "nicheUrl": "https://www.niche.com/colleges/the-university-of-texas-at-dallas/",
+    "nicheRanking": null
   },
   {
     "name": "University of Florida",
@@ -1459,7 +1501,8 @@
       "studentLife": "A+",
       "safety": "B+"
     },
-    "nicheUrl": "https://www.niche.com/colleges/university-of-florida/"
+    "nicheUrl": "https://www.niche.com/colleges/university-of-florida/",
+    "nicheRanking": 31
   },
   {
     "name": "University of California Irvine",
@@ -1493,7 +1536,8 @@
       "studentLife": "A",
       "safety": "A+"
     },
-    "nicheUrl": "https://www.niche.com/colleges/university-of-california-irvine/"
+    "nicheUrl": "https://www.niche.com/colleges/university-of-california-irvine/",
+    "nicheRanking": 39
   },
   {
     "name": "University of California Davis",
@@ -1527,7 +1571,8 @@
       "studentLife": "A",
       "safety": "A"
     },
-    "nicheUrl": "https://www.niche.com/colleges/university-of-california-davis/"
+    "nicheUrl": "https://www.niche.com/colleges/university-of-california-davis/",
+    "nicheRanking": 48
   },
   {
     "name": "University of California Santa Barbara",
@@ -1561,7 +1606,8 @@
       "studentLife": "A+",
       "safety": "A"
     },
-    "nicheUrl": "https://www.niche.com/colleges/university-of-california-santa-barbara/"
+    "nicheUrl": "https://www.niche.com/colleges/university-of-california-santa-barbara/",
+    "nicheRanking": 94
   },
   {
     "name": "University of California Santa Cruz",
@@ -1595,7 +1641,8 @@
       "studentLife": "A",
       "safety": "A"
     },
-    "nicheUrl": "https://www.niche.com/colleges/university-of-california-santa-cruz/"
+    "nicheUrl": "https://www.niche.com/colleges/university-of-california-santa-cruz/",
+    "nicheRanking": 152
   },
   {
     "name": "Colorado School of Mines",
@@ -1629,7 +1676,8 @@
       "studentLife": "B+",
       "safety": "A"
     },
-    "nicheUrl": "https://www.niche.com/colleges/colorado-school-of-mines/"
+    "nicheUrl": "https://www.niche.com/colleges/colorado-school-of-mines/",
+    "nicheRanking": 67
   },
   {
     "name": "Clemson University",
@@ -1663,7 +1711,8 @@
       "studentLife": "A+",
       "safety": "A"
     },
-    "nicheUrl": "https://www.niche.com/colleges/clemson-university/"
+    "nicheUrl": "https://www.niche.com/colleges/clemson-university/",
+    "nicheRanking": 97
   },
   {
     "name": "Michigan State University",
@@ -1697,7 +1746,8 @@
       "studentLife": "A+",
       "safety": "B+"
     },
-    "nicheUrl": "https://www.niche.com/colleges/michigan-state-university/"
+    "nicheUrl": "https://www.niche.com/colleges/michigan-state-university/",
+    "nicheRanking": 105
   },
   {
     "name": "Indiana University Bloomington",
@@ -1731,7 +1781,8 @@
       "studentLife": "A+",
       "safety": "B+"
     },
-    "nicheUrl": "https://www.niche.com/colleges/indiana-university-bloomington/"
+    "nicheUrl": "https://www.niche.com/colleges/indiana-university-bloomington/",
+    "nicheRanking": 71
   },
   {
     "name": "University of Pittsburgh",
@@ -1765,7 +1816,8 @@
       "studentLife": "A",
       "safety": "B+"
     },
-    "nicheUrl": "https://www.niche.com/colleges/university-of-pittsburgh/"
+    "nicheUrl": "https://www.niche.com/colleges/university-of-pittsburgh/",
+    "nicheRanking": 95
   },
   {
     "name": "Syracuse University",
@@ -1799,7 +1851,8 @@
       "studentLife": "A+",
       "safety": "B+"
     },
-    "nicheUrl": "https://www.niche.com/colleges/syracuse-university/"
+    "nicheUrl": "https://www.niche.com/colleges/syracuse-university/",
+    "nicheRanking": 118
   },
   {
     "name": "Drexel University",
@@ -1833,7 +1886,8 @@
       "studentLife": "A",
       "safety": "B+"
     },
-    "nicheUrl": "https://www.niche.com/colleges/drexel-university/"
+    "nicheUrl": "https://www.niche.com/colleges/drexel-university/",
+    "nicheRanking": 122
   },
   {
     "name": "Stevens Institute of Technology",
@@ -1867,7 +1921,8 @@
       "studentLife": "A-",
       "safety": "A"
     },
-    "nicheUrl": "https://www.niche.com/colleges/stevens-institute-of-technology/"
+    "nicheUrl": "https://www.niche.com/colleges/stevens-institute-of-technology/",
+    "nicheRanking": 56
   },
   {
     "name": "Worcester Polytechnic Institute",
@@ -1901,7 +1956,8 @@
       "studentLife": "B+",
       "safety": "A"
     },
-    "nicheUrl": "https://www.niche.com/colleges/worcester-polytechnic-institute/"
+    "nicheUrl": "https://www.niche.com/colleges/worcester-polytechnic-institute/",
+    "nicheRanking": 57
   },
   {
     "name": "Rochester Institute of Technology",
@@ -1935,7 +1991,8 @@
       "studentLife": "B+",
       "safety": "A"
     },
-    "nicheUrl": "https://www.niche.com/colleges/rochester-institute-of-technology/"
+    "nicheUrl": "https://www.niche.com/colleges/rochester-institute-of-technology/",
+    "nicheRanking": 62
   },
   {
     "name": "George Mason University",
@@ -1969,7 +2026,8 @@
       "studentLife": "B+",
       "safety": "A"
     },
-    "nicheUrl": "https://www.niche.com/colleges/george-mason-university/"
+    "nicheUrl": "https://www.niche.com/colleges/george-mason-university/",
+    "nicheRanking": 129
   },
   {
     "name": "University of Colorado Boulder",
@@ -2003,7 +2061,8 @@
       "studentLife": "A+",
       "safety": "B+"
     },
-    "nicheUrl": "https://www.niche.com/colleges/university-of-colorado-boulder/"
+    "nicheUrl": "https://www.niche.com/colleges/university-of-colorado-boulder/",
+    "nicheRanking": 92
   },
   {
     "name": "Oregon State University",
@@ -2037,7 +2096,8 @@
       "studentLife": "A",
       "safety": "A"
     },
-    "nicheUrl": "https://www.niche.com/colleges/oregon-state-university/"
+    "nicheUrl": "https://www.niche.com/colleges/oregon-state-university/",
+    "nicheRanking": 116
   },
   {
     "name": "Washington State University",
@@ -2071,7 +2131,8 @@
       "studentLife": "A",
       "safety": "A"
     },
-    "nicheUrl": "https://www.niche.com/colleges/washington-state-university/"
+    "nicheUrl": "https://www.niche.com/colleges/washington-state-university/",
+    "nicheRanking": 132
   },
   {
     "name": "Florida State University",
@@ -2105,7 +2166,8 @@
       "studentLife": "A+",
       "safety": "B+"
     },
-    "nicheUrl": "https://www.niche.com/colleges/florida-state-university/"
+    "nicheUrl": "https://www.niche.com/colleges/florida-state-university/",
+    "nicheRanking": 61
   },
   {
     "name": "University of Arizona",
@@ -2139,7 +2201,8 @@
       "studentLife": "A",
       "safety": "B+"
     },
-    "nicheUrl": "https://www.niche.com/colleges/university-of-arizona/"
+    "nicheUrl": "https://www.niche.com/colleges/university-of-arizona/",
+    "nicheRanking": 121
   },
   {
     "name": "University of Utah",
@@ -2173,7 +2236,8 @@
       "studentLife": "A",
       "safety": "A"
     },
-    "nicheUrl": "https://www.niche.com/colleges/university-of-utah/"
+    "nicheUrl": "https://www.niche.com/colleges/university-of-utah/",
+    "nicheRanking": 144
   },
   {
     "name": "Vanderbilt University",
@@ -2207,7 +2271,8 @@
       "studentLife": "A+",
       "safety": "A+"
     },
-    "nicheUrl": "https://www.niche.com/colleges/vanderbilt-university/"
+    "nicheUrl": "https://www.niche.com/colleges/vanderbilt-university/",
+    "nicheRanking": 11
   },
   {
     "name": "Emory University",
@@ -2241,7 +2306,8 @@
       "studentLife": "A",
       "safety": "A"
     },
-    "nicheUrl": "https://www.niche.com/colleges/emory-university/"
+    "nicheUrl": "https://www.niche.com/colleges/emory-university/",
+    "nicheRanking": 50
   },
   {
     "name": "Johns Hopkins University",
@@ -2275,7 +2341,8 @@
       "studentLife": "A",
       "safety": "B"
     },
-    "nicheUrl": "https://www.niche.com/colleges/johns-hopkins-university/"
+    "nicheUrl": "https://www.niche.com/colleges/johns-hopkins-university/",
+    "nicheRanking": 30
   },
   {
     "name": "University of Virginia",
@@ -2309,7 +2376,8 @@
       "studentLife": "A+",
       "safety": "A+"
     },
-    "nicheUrl": "https://www.niche.com/colleges/university-of-virginia/"
+    "nicheUrl": "https://www.niche.com/colleges/university-of-virginia/",
+    "nicheRanking": 32
   },
   {
     "name": "University of Notre Dame",
@@ -2343,7 +2411,8 @@
       "studentLife": "A+",
       "safety": "A+"
     },
-    "nicheUrl": "https://www.niche.com/colleges/university-of-notre-dame/"
+    "nicheUrl": "https://www.niche.com/colleges/university-of-notre-dame/",
+    "nicheRanking": 40
   },
   {
     "name": "Tufts University",
@@ -2377,7 +2446,8 @@
       "studentLife": "A",
       "safety": "A"
     },
-    "nicheUrl": "https://www.niche.com/colleges/tufts-university/"
+    "nicheUrl": "https://www.niche.com/colleges/tufts-university/",
+    "nicheRanking": 42
   },
   {
     "name": "Lehigh University",
@@ -2411,7 +2481,8 @@
       "studentLife": "A",
       "safety": "A"
     },
-    "nicheUrl": "https://www.niche.com/colleges/lehigh-university/"
+    "nicheUrl": "https://www.niche.com/colleges/lehigh-university/",
+    "nicheRanking": 52
   },
   {
     "name": "University of Rochester",
@@ -2445,7 +2516,8 @@
       "studentLife": "A",
       "safety": "A"
     },
-    "nicheUrl": "https://www.niche.com/colleges/university-of-rochester/"
+    "nicheUrl": "https://www.niche.com/colleges/university-of-rochester/",
+    "nicheRanking": 135
   },
   {
     "name": "Case Western Reserve University",
@@ -2479,7 +2551,8 @@
       "studentLife": "B+",
       "safety": "B+"
     },
-    "nicheUrl": "https://www.niche.com/colleges/case-western-reserve-university/"
+    "nicheUrl": "https://www.niche.com/colleges/case-western-reserve-university/",
+    "nicheRanking": 78
   },
   {
     "name": "George Washington University",
@@ -2513,7 +2586,8 @@
       "studentLife": "A",
       "safety": "B+"
     },
-    "nicheUrl": "https://www.niche.com/colleges/george-washington-university/"
+    "nicheUrl": "https://www.niche.com/colleges/george-washington-university/",
+    "nicheRanking": 119
   },
   {
     "name": "University of Illinois Chicago",
@@ -2547,7 +2621,8 @@
       "studentLife": "B+",
       "safety": "B"
     },
-    "nicheUrl": "https://www.niche.com/colleges/university-of-illinois-chicago/"
+    "nicheUrl": "https://www.niche.com/colleges/university-of-illinois-chicago/",
+    "nicheRanking": 114
   },
   {
     "name": "University of Connecticut",
@@ -2581,7 +2656,8 @@
       "studentLife": "A",
       "safety": "A"
     },
-    "nicheUrl": "https://www.niche.com/colleges/university-of-connecticut/"
+    "nicheUrl": "https://www.niche.com/colleges/university-of-connecticut/",
+    "nicheRanking": 232
   },
   {
     "name": "University of Delaware",
@@ -2615,7 +2691,8 @@
       "studentLife": "A",
       "safety": "A"
     },
-    "nicheUrl": "https://www.niche.com/colleges/university-of-delaware/"
+    "nicheUrl": "https://www.niche.com/colleges/university-of-delaware/",
+    "nicheRanking": 145
   },
   {
     "name": "Dartmouth College",
@@ -2649,7 +2726,8 @@
       "studentLife": "A+",
       "safety": "A+"
     },
-    "nicheUrl": "https://www.niche.com/colleges/dartmouth-college/"
+    "nicheUrl": "https://www.niche.com/colleges/dartmouth-college/",
+    "nicheRanking": 13
   },
   {
     "name": "University of Iowa",
@@ -2683,7 +2761,8 @@
       "studentLife": "A",
       "safety": "A"
     },
-    "nicheUrl": "https://www.niche.com/colleges/university-of-iowa/"
+    "nicheUrl": "https://www.niche.com/colleges/university-of-iowa/",
+    "nicheRanking": 131
   },
   {
     "name": "Tulane University",
@@ -2717,7 +2796,8 @@
       "studentLife": "A+",
       "safety": "B"
     },
-    "nicheUrl": "https://www.niche.com/colleges/tulane-university/"
+    "nicheUrl": "https://www.niche.com/colleges/tulane-university/",
+    "nicheRanking": 126
   },
   {
     "name": "University of Tennessee",
@@ -2751,7 +2831,8 @@
       "studentLife": "A+",
       "safety": "A"
     },
-    "nicheUrl": "https://www.niche.com/colleges/university-of-tennessee-knoxville/"
+    "nicheUrl": "https://www.niche.com/colleges/university-of-tennessee-knoxville/",
+    "nicheRanking": 156
   },
   {
     "name": "University of Nebraska-Lincoln",
@@ -2785,7 +2866,8 @@
       "studentLife": "A",
       "safety": "A"
     },
-    "nicheUrl": "https://www.niche.com/colleges/university-of-nebraska-lincoln/"
+    "nicheUrl": "https://www.niche.com/colleges/university-of-nebraska-lincoln/",
+    "nicheRanking": 229
   },
   {
     "name": "Kansas State University",
@@ -2819,7 +2901,8 @@
       "studentLife": "A",
       "safety": "A"
     },
-    "nicheUrl": "https://www.niche.com/colleges/kansas-state-university/"
+    "nicheUrl": "https://www.niche.com/colleges/kansas-state-university/",
+    "nicheRanking": 170
   },
   {
     "name": "University of Kansas",
@@ -2853,7 +2936,8 @@
       "studentLife": "A",
       "safety": "A"
     },
-    "nicheUrl": "https://www.niche.com/colleges/university-of-kansas/"
+    "nicheUrl": "https://www.niche.com/colleges/university-of-kansas/",
+    "nicheRanking": 147
   },
   {
     "name": "Texas A&M University",
@@ -2887,7 +2971,8 @@
       "studentLife": "A+",
       "safety": "A"
     },
-    "nicheUrl": "https://www.niche.com/colleges/texas-a-and-m-university/"
+    "nicheUrl": "https://www.niche.com/colleges/texas-a-and-m-university/",
+    "nicheRanking": 99
   },
   {
     "name": "University of North Carolina Chapel Hill",
@@ -2921,7 +3006,8 @@
       "studentLife": "A+",
       "safety": "A"
     },
-    "nicheUrl": "https://www.niche.com/colleges/university-of-north-carolina-at-chapel-hill/"
+    "nicheUrl": "https://www.niche.com/colleges/university-of-north-carolina-at-chapel-hill/",
+    "nicheRanking": 27
   },
   {
     "name": "University of California Riverside",
@@ -2955,7 +3041,8 @@
       "studentLife": "A",
       "safety": "A"
     },
-    "nicheUrl": "https://www.niche.com/colleges/university-of-california-riverside/"
+    "nicheUrl": "https://www.niche.com/colleges/university-of-california-riverside/",
+    "nicheRanking": 133
   },
   {
     "name": "Temple University",
@@ -2989,7 +3076,8 @@
       "studentLife": "A",
       "safety": "B"
     },
-    "nicheUrl": "https://www.niche.com/colleges/temple-university/"
+    "nicheUrl": "https://www.niche.com/colleges/temple-university/",
+    "nicheRanking": 162
   },
   {
     "name": "Colorado State University",
@@ -3023,7 +3111,8 @@
       "studentLife": "A",
       "safety": "A"
     },
-    "nicheUrl": "https://www.niche.com/colleges/colorado-state-university/"
+    "nicheUrl": "https://www.niche.com/colleges/colorado-state-university/",
+    "nicheRanking": 204
   },
   {
     "name": "University of South Florida",
@@ -3057,7 +3146,8 @@
       "studentLife": "A",
       "safety": "B+"
     },
-    "nicheUrl": "https://www.niche.com/colleges/university-of-south-florida/"
+    "nicheUrl": "https://www.niche.com/colleges/university-of-south-florida/",
+    "nicheRanking": 70
   },
   {
     "name": "North Carolina A&T State University",
@@ -3091,7 +3181,8 @@
       "studentLife": "B+",
       "safety": "B+"
     },
-    "nicheUrl": "https://www.niche.com/colleges/north-carolina-a-and-t-state-university/"
+    "nicheUrl": "https://www.niche.com/colleges/north-carolina-a-and-t-state-university/",
+    "nicheRanking": 235
   },
   {
     "name": "Illinois Institute of Technology",
@@ -3125,7 +3216,8 @@
       "studentLife": "B",
       "safety": "B"
     },
-    "nicheUrl": "https://www.niche.com/colleges/illinois-institute-of-technology/"
+    "nicheUrl": "https://www.niche.com/colleges/illinois-institute-of-technology/",
+    "nicheRanking": 96
   },
   {
     "name": "Baylor University",
@@ -3159,7 +3251,8 @@
       "studentLife": "A+",
       "safety": "A+"
     },
-    "nicheUrl": "https://www.niche.com/colleges/baylor-university/"
+    "nicheUrl": "https://www.niche.com/colleges/baylor-university/",
+    "nicheRanking": null
   },
   {
     "name": "Auburn University",
@@ -3193,7 +3286,8 @@
       "studentLife": "A+",
       "safety": "A"
     },
-    "nicheUrl": "https://www.niche.com/colleges/auburn-university/"
+    "nicheUrl": "https://www.niche.com/colleges/auburn-university/",
+    "nicheRanking": 74
   },
   {
     "name": "University of Kentucky",
@@ -3227,7 +3321,8 @@
       "studentLife": "A",
       "safety": "A"
     },
-    "nicheUrl": "https://www.niche.com/colleges/university-of-kentucky/"
+    "nicheUrl": "https://www.niche.com/colleges/university-of-kentucky/",
+    "nicheRanking": 158
   },
   {
     "name": "University of Missouri",
@@ -3261,7 +3356,8 @@
       "studentLife": "A",
       "safety": "A"
     },
-    "nicheUrl": "https://www.niche.com/colleges/university-of-missouri/"
+    "nicheUrl": "https://www.niche.com/colleges/university-of-missouri/",
+    "nicheRanking": 197
   },
   {
     "name": "Louisiana State University",
@@ -3295,7 +3391,8 @@
       "studentLife": "A+",
       "safety": "B+"
     },
-    "nicheUrl": "https://www.niche.com/colleges/louisiana-state-university/"
+    "nicheUrl": "https://www.niche.com/colleges/louisiana-state-university/",
+    "nicheRanking": 214
   },
   {
     "name": "Oklahoma State University",
@@ -3329,7 +3426,8 @@
       "studentLife": "A",
       "safety": "A"
     },
-    "nicheUrl": "https://www.niche.com/colleges/oklahoma-state-university/"
+    "nicheUrl": "https://www.niche.com/colleges/oklahoma-state-university/",
+    "nicheRanking": 173
   },
   {
     "name": "University of Oklahoma",
@@ -3363,7 +3461,8 @@
       "studentLife": "A",
       "safety": "A"
     },
-    "nicheUrl": "https://www.niche.com/colleges/university-of-oklahoma/"
+    "nicheUrl": "https://www.niche.com/colleges/university-of-oklahoma/",
+    "nicheRanking": 174
   },
   {
     "name": "University of Alabama",
@@ -3397,6 +3496,7 @@
       "studentLife": "A+",
       "safety": "A"
     },
-    "nicheUrl": "https://www.niche.com/colleges/the-university-of-alabama/"
+    "nicheUrl": "https://www.niche.com/colleges/the-university-of-alabama/",
+    "nicheRanking": 189
   }
 ]

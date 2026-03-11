@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-massachusetts-dartmouth",
+  "name": "University of Massachusetts Dartmouth",
+  "city": "NORTH DARTMOUTH",
+  "state": "MA",
+  "website": "https://www.umassd.edu/",
+  "acceptanceRate": 0.922,
+  "enrollment": 4707,
+  "graduationRate": 0.49,
+  "tuitionInState": 16233,
+  "tuitionOutOfState": 33782,
+  "roomAndBoard": 16860,
+  "netPrice": 20696,
+  "medianEarnings6yr": 68294,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B-",
+    "academics": "B-",
+    "value": "B",
+    "diversity": "A",
+    "campus": "C-",
+    "athletics": "B-",
+    "partyScene": "B",
+    "professors": "B",
+    "location": "B-",
+    "dorms": "C+",
+    "campusFood": "C+",
+    "studentLife": "C+",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-massachusetts-dartmouth/"
+}

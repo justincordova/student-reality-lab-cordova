@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-chicago",
+  "name": "University of Chicago",
+  "city": "CHICAGO",
+  "state": "IL",
+  "website": "https://www.uchicago.edu/",
+  "acceptanceRate": 0.048,
+  "enrollment": 7617,
+  "graduationRate": 0.949,
+  "tuitionInState": 66939,
+  "tuitionOutOfState": 66939,
+  "roomAndBoard": null,
+  "netPrice": 27979,
+  "medianEarnings6yr": 103328,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A+",
+    "value": "A",
+    "diversity": "A+",
+    "campus": "A-",
+    "athletics": "B-",
+    "partyScene": "B",
+    "professors": "A+",
+    "location": "B",
+    "dorms": "A+",
+    "campusFood": "B+",
+    "studentLife": "A-",
+    "safety": "C+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-chicago/"
+}

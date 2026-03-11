@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-nebraska-at-omaha",
+  "name": "University of Nebraska at Omaha",
+  "city": "OMAHA",
+  "state": "NE",
+  "website": "https://www.unomaha.edu/",
+  "acceptanceRate": 0.869,
+  "enrollment": 9910,
+  "graduationRate": 0.475,
+  "tuitionInState": 8370,
+  "tuitionOutOfState": 22358,
+  "roomAndBoard": null,
+  "netPrice": 13284,
+  "medianEarnings6yr": 57182,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "B",
+    "value": "B+",
+    "diversity": "A",
+    "campus": "A-",
+    "athletics": "A-",
+    "partyScene": "B",
+    "professors": "B+",
+    "location": "A",
+    "dorms": "A+",
+    "campusFood": "A",
+    "studentLife": "A-",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-nebraska-at-omaha/"
+}

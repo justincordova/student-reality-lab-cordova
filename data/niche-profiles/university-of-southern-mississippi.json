@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-southern-mississippi",
+  "name": "University of Southern Mississippi",
+  "city": "HATTIESBURG",
+  "state": "MS",
+  "website": "https://www.usm.edu/",
+  "acceptanceRate": 0.994,
+  "enrollment": 8413,
+  "graduationRate": 0.506,
+  "tuitionInState": 9998,
+  "tuitionOutOfState": 11998,
+  "roomAndBoard": 10900,
+  "netPrice": 14050,
+  "medianEarnings6yr": 46681,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "B+",
+    "value": "B",
+    "diversity": "A",
+    "campus": "A-",
+    "athletics": "B+",
+    "partyScene": "A-",
+    "professors": "A",
+    "location": "B+",
+    "dorms": "A-",
+    "campusFood": "B+",
+    "studentLife": "A",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-southern-mississippi/"
+}

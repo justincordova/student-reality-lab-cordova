@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-oregon",
+  "name": "University of Oregon",
+  "city": "EUGENE",
+  "state": "OR",
+  "website": "https://www.uoregon.edu/",
+  "acceptanceRate": 0.851,
+  "enrollment": 18202,
+  "graduationRate": 0.715,
+  "tuitionInState": 15669,
+  "tuitionOutOfState": 43302,
+  "roomAndBoard": null,
+  "netPrice": 23917,
+  "medianEarnings6yr": 60069,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "B+",
+    "value": "B-",
+    "diversity": "A-",
+    "campus": "A-",
+    "athletics": "A",
+    "partyScene": "A",
+    "professors": "A-",
+    "location": "B-",
+    "dorms": "B-",
+    "campusFood": "A+",
+    "studentLife": "A",
+    "safety": "C+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-oregon/"
+}

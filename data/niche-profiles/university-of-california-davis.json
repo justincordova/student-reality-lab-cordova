@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-california-davis",
+  "name": "University of California - Davis",
+  "city": "DAVIS",
+  "state": "CA",
+  "website": "https://ucdavis.edu/",
+  "acceptanceRate": 0.416,
+  "enrollment": 30929,
+  "graduationRate": 0.851,
+  "tuitionInState": 15247,
+  "tuitionOutOfState": 46024,
+  "roomAndBoard": 19302,
+  "netPrice": 17315,
+  "medianEarnings6yr": 75091,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A",
+    "value": "A-",
+    "diversity": "A+",
+    "campus": "A-",
+    "athletics": "A-",
+    "partyScene": "B+",
+    "professors": "A+",
+    "location": "A-",
+    "dorms": "A-",
+    "campusFood": "A-",
+    "studentLife": "A+",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-california-davis/"
+}

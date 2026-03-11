@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-alabama-birmingham",
+  "name": "University of Alabama - Birmingham",
+  "city": "BIRMINGHAM",
+  "state": "AL",
+  "website": "https://www.uab.edu/",
+  "acceptanceRate": 0.884,
+  "enrollment": 9841,
+  "graduationRate": 0.626,
+  "tuitionInState": 8832,
+  "tuitionOutOfState": 21864,
+  "roomAndBoard": 14580,
+  "netPrice": 17413,
+  "medianEarnings6yr": 60738,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A",
+    "academics": "A",
+    "value": "B+",
+    "diversity": "A",
+    "campus": "B+",
+    "athletics": "A-",
+    "partyScene": "A-",
+    "professors": "A+",
+    "location": "A",
+    "dorms": "B+",
+    "campusFood": "B",
+    "studentLife": "A",
+    "safety": "C+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-alabama-birmingham/"
+}

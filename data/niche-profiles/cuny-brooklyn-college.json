@@ -1,0 +1,30 @@
+{
+  "slug": "cuny-brooklyn-college",
+  "name": "CUNY Brooklyn College",
+  "city": "BROOKLYN",
+  "state": "NY",
+  "website": "https://www.brooklyn.edu/",
+  "acceptanceRate": 0.537,
+  "enrollment": 8268,
+  "graduationRate": 0.566,
+  "tuitionInState": 7452,
+  "tuitionOutOfState": 15402,
+  "roomAndBoard": null,
+  "netPrice": 4105,
+  "medianEarnings6yr": 64329,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B",
+    "academics": "B",
+    "value": "A-",
+    "diversity": "A-",
+    "campus": "C+",
+    "athletics": "C+",
+    "partyScene": "B-",
+    "professors": "B",
+    "location": "B",
+    "studentLife": "C+",
+    "safety": "A-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/cuny-brooklyn-college/"
+}

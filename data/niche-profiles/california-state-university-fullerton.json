@@ -1,0 +1,31 @@
+{
+  "slug": "california-state-university-fullerton",
+  "name": "California State University, Fullerton",
+  "city": "FULLERTON",
+  "state": "CA",
+  "website": "https://www.fullerton.edu/",
+  "acceptanceRate": 0.867,
+  "enrollment": 29695,
+  "graduationRate": 0.692,
+  "tuitionInState": 7073,
+  "tuitionOutOfState": 18953,
+  "roomAndBoard": 18354,
+  "netPrice": 6283,
+  "medianEarnings6yr": 62730,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "B-",
+    "value": "A",
+    "diversity": "A-",
+    "campus": "A-",
+    "athletics": "A-",
+    "partyScene": "B+",
+    "professors": "B-",
+    "location": "A",
+    "campusFood": "A-",
+    "studentLife": "A",
+    "safety": "B+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/california-state-university-fullerton/"
+}

@@ -1,0 +1,32 @@
+{
+  "slug": "embry-riddle-aeronautical-university-prescott",
+  "name": "Embry-Riddle Aeronautical University - Prescott",
+  "city": "PRESCOTT",
+  "state": "AZ",
+  "website": "https://prescott.erau.edu/",
+  "acceptanceRate": 0.755,
+  "enrollment": 3086,
+  "graduationRate": 0.698,
+  "tuitionInState": 42408,
+  "tuitionOutOfState": 42408,
+  "roomAndBoard": 14102,
+  "netPrice": 41209,
+  "medianEarnings6yr": 89839,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B",
+    "academics": "B+",
+    "value": "B",
+    "diversity": "A-",
+    "campus": "C",
+    "athletics": "B-",
+    "partyScene": "C",
+    "professors": "B+",
+    "location": "B-",
+    "dorms": "B-",
+    "campusFood": "D+",
+    "studentLife": "B-",
+    "safety": "A"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/embry-riddle-aeronautical-university-prescott/"
+}

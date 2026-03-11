@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-north-florida",
+  "name": "University of North Florida",
+  "city": "JACKSONVILLE",
+  "state": "FL",
+  "website": "https://www.unf.edu/",
+  "acceptanceRate": 0.623,
+  "enrollment": 10918,
+  "graduationRate": 0.682,
+  "tuitionInState": 6389,
+  "tuitionOutOfState": 20793,
+  "roomAndBoard": 10873,
+  "netPrice": 10628,
+  "medianEarnings6yr": 55626,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "B+",
+    "value": "A-",
+    "diversity": "B+",
+    "campus": "B+",
+    "athletics": "B",
+    "partyScene": "B-",
+    "professors": "B+",
+    "location": "A-",
+    "dorms": "B",
+    "campusFood": "A-",
+    "studentLife": "B+",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-north-florida/"
+}

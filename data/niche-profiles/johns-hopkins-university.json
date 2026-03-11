@@ -1,0 +1,32 @@
+{
+  "slug": "johns-hopkins-university",
+  "name": "Johns Hopkins University",
+  "city": "BALTIMORE",
+  "state": "MD",
+  "website": "https://apply.jhu.edu/",
+  "acceptanceRate": 0.075,
+  "enrollment": 5607,
+  "graduationRate": 0.946,
+  "tuitionInState": 66670,
+  "tuitionOutOfState": 66670,
+  "roomAndBoard": 19192,
+  "netPrice": 22844,
+  "medianEarnings6yr": 107088,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A+",
+    "value": "A+",
+    "diversity": "A+",
+    "campus": "B",
+    "athletics": "B",
+    "partyScene": "B",
+    "professors": "A+",
+    "location": "B",
+    "dorms": "B",
+    "campusFood": "B-",
+    "studentLife": "A-",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/johns-hopkins-university/"
+}

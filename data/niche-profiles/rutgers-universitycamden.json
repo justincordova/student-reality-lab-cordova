@@ -1,0 +1,32 @@
+{
+  "slug": "rutgers-universitycamden",
+  "name": "Rutgers University–Camden",
+  "city": "CAMDEN",
+  "state": "NJ",
+  "website": "https://camden.rutgers.edu/",
+  "acceptanceRate": 0.778,
+  "enrollment": 3261,
+  "graduationRate": 0.664,
+  "tuitionInState": 17764,
+  "tuitionOutOfState": 37276,
+  "roomAndBoard": 13389,
+  "netPrice": 18735,
+  "medianEarnings6yr": 75436,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "B+",
+    "value": "A-",
+    "diversity": "A",
+    "campus": "C",
+    "athletics": "B-",
+    "partyScene": "B+",
+    "professors": "A-",
+    "location": "C+",
+    "dorms": "C+",
+    "campusFood": "C+",
+    "studentLife": "B",
+    "safety": "B+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/rutgers-universitycamden/"
+}

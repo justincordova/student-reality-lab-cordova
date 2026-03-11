@@ -1,0 +1,25 @@
+{
+  "slug": "oregon-health-and-science-university",
+  "name": "Oregon Health & Science University",
+  "city": "PORTLAND",
+  "state": "OR",
+  "website": "https://www.ohsu.edu/",
+  "acceptanceRate": null,
+  "enrollment": 494,
+  "graduationRate": null,
+  "tuitionInState": 19349,
+  "tuitionOutOfState": 24915,
+  "roomAndBoard": null,
+  "netPrice": 17821,
+  "medianEarnings6yr": null,
+  "medianDebt": null,
+  "nicheGrades": {
+    "diversity": "A",
+    "campus": "A-",
+    "partyScene": "B",
+    "location": "A-",
+    "studentLife": "B+",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/oregon-health-and-science-university/"
+}

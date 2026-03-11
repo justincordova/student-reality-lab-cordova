@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-memphis",
+  "name": "University of Memphis",
+  "city": "MEMPHIS",
+  "state": "TN",
+  "website": "https://www.memphis.edu/",
+  "acceptanceRate": 0.934,
+  "enrollment": 11311,
+  "graduationRate": 0.494,
+  "tuitionInState": 10344,
+  "tuitionOutOfState": 14784,
+  "roomAndBoard": 10890,
+  "netPrice": 13656,
+  "medianEarnings6yr": 52242,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "B",
+    "value": "B+",
+    "diversity": "A",
+    "campus": "B+",
+    "athletics": "A-",
+    "partyScene": "A",
+    "professors": "A-",
+    "location": "B-",
+    "dorms": "B",
+    "campusFood": "A",
+    "studentLife": "A-",
+    "safety": "C+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-memphis/"
+}

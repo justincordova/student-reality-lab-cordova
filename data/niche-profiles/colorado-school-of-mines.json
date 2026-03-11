@@ -1,0 +1,32 @@
+{
+  "slug": "colorado-school-of-mines",
+  "name": "Colorado School of Mines",
+  "city": "GOLDEN",
+  "state": "CO",
+  "website": "https://www.mines.edu/",
+  "acceptanceRate": 0.596,
+  "enrollment": 5924,
+  "graduationRate": 0.794,
+  "tuitionInState": 22658,
+  "tuitionOutOfState": 47288,
+  "roomAndBoard": 17120,
+  "netPrice": 29785,
+  "medianEarnings6yr": 98029,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A",
+    "academics": "A",
+    "value": "A",
+    "diversity": "B",
+    "campus": "C+",
+    "athletics": "B",
+    "partyScene": "C+",
+    "professors": "A-",
+    "location": "A-",
+    "dorms": "C+",
+    "campusFood": "D+",
+    "studentLife": "B",
+    "safety": "B+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/colorado-school-of-mines/"
+}

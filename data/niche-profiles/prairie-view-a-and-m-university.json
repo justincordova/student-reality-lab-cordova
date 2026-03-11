@@ -1,0 +1,32 @@
+{
+  "slug": "prairie-view-a-and-m-university",
+  "name": "Prairie View A & M University",
+  "city": "PRAIRIE VIEW",
+  "state": "TX",
+  "website": "https://www.pvamu.edu/",
+  "acceptanceRate": 0.753,
+  "enrollment": 7862,
+  "graduationRate": 0.432,
+  "tuitionInState": 11299,
+  "tuitionOutOfState": 26874,
+  "roomAndBoard": 10183,
+  "netPrice": 14065,
+  "medianEarnings6yr": 57526,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B",
+    "academics": "B-",
+    "value": "B+",
+    "diversity": "B",
+    "campus": "B",
+    "athletics": "B+",
+    "partyScene": "A+",
+    "professors": "B",
+    "location": "C-",
+    "dorms": "B-",
+    "campusFood": "B+",
+    "studentLife": "B+",
+    "safety": "C-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/prairie-view-a-and-m-university/"
+}

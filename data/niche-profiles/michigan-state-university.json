@@ -1,0 +1,32 @@
+{
+  "slug": "michigan-state-university",
+  "name": "Michigan State University",
+  "city": "EAST LANSING",
+  "state": "MI",
+  "website": "https://msu.edu/",
+  "acceptanceRate": 0.839,
+  "enrollment": 37492,
+  "graduationRate": 0.822,
+  "tuitionInState": 16522,
+  "tuitionOutOfState": 44726,
+  "roomAndBoard": 11754,
+  "netPrice": 24630,
+  "medianEarnings6yr": 71282,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A",
+    "academics": "A",
+    "value": "B+",
+    "diversity": "A",
+    "campus": "A",
+    "athletics": "A+",
+    "partyScene": "A+",
+    "professors": "A+",
+    "location": "B+",
+    "dorms": "B",
+    "campusFood": "A",
+    "studentLife": "A+",
+    "safety": "C+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/michigan-state-university/"
+}

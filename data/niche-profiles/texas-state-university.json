@@ -1,0 +1,32 @@
+{
+  "slug": "texas-state-university",
+  "name": "Texas State University",
+  "city": "SAN MARCOS",
+  "state": "TX",
+  "website": "https://www.txstate.edu/",
+  "acceptanceRate": 0.895,
+  "enrollment": 29092,
+  "graduationRate": 0.562,
+  "tuitionInState": 11450,
+  "tuitionOutOfState": 23210,
+  "roomAndBoard": 12231,
+  "netPrice": 15307,
+  "medianEarnings6yr": 57874,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "B",
+    "value": "B+",
+    "diversity": "A-",
+    "campus": "A",
+    "athletics": "B+",
+    "partyScene": "A+",
+    "professors": "B+",
+    "location": "A-",
+    "dorms": "B-",
+    "campusFood": "A",
+    "studentLife": "A+",
+    "safety": "C+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/texas-state-university/"
+}

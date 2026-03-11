@@ -1,0 +1,32 @@
+{
+  "slug": "rensselaer-polytechnic-institute",
+  "name": "Rensselaer Polytechnic Institute",
+  "city": "TROY",
+  "state": "NY",
+  "website": "https://www.rpi.edu/",
+  "acceptanceRate": 0.585,
+  "enrollment": 5674,
+  "graduationRate": 0.832,
+  "tuitionInState": 64400,
+  "tuitionOutOfState": 64400,
+  "roomAndBoard": 17530,
+  "netPrice": 35940,
+  "medianEarnings6yr": 102764,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A-",
+    "academics": "A",
+    "value": "A-",
+    "diversity": "A",
+    "campus": "D-",
+    "athletics": "B-",
+    "partyScene": "B-",
+    "professors": "A",
+    "location": "C",
+    "dorms": "C-",
+    "campusFood": "D+",
+    "studentLife": "C-",
+    "safety": "C+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/rensselaer-polytechnic-institute/"
+}

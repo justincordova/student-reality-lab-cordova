@@ -1,0 +1,32 @@
+{
+  "slug": "williams-college",
+  "name": "Williams College",
+  "city": "WILLIAMSTOWN",
+  "state": "MA",
+  "website": "https://www.williams.edu/",
+  "acceptanceRate": 0.1,
+  "enrollment": 2070,
+  "graduationRate": 0.966,
+  "tuitionInState": 72170,
+  "tuitionOutOfState": 72170,
+  "roomAndBoard": 16300,
+  "netPrice": 16988,
+  "medianEarnings6yr": 77321,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A+",
+    "value": "A",
+    "diversity": "A+",
+    "campus": "B-",
+    "athletics": "B",
+    "partyScene": "B",
+    "professors": "A",
+    "location": "C+",
+    "dorms": "B+",
+    "campusFood": "C-",
+    "studentLife": "A-",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/williams-college/"
+}

@@ -1,0 +1,28 @@
+{
+  "slug": "north-american-university",
+  "name": "North American University",
+  "city": "STAFFORD",
+  "state": "TX",
+  "website": "https://www.na.edu/",
+  "acceptanceRate": 1,
+  "enrollment": 526,
+  "graduationRate": 0.27,
+  "tuitionInState": 12836,
+  "tuitionOutOfState": 12836,
+  "roomAndBoard": 8360,
+  "netPrice": 13702,
+  "medianEarnings6yr": 55417,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "C",
+    "academics": "C",
+    "value": "B-",
+    "diversity": "A",
+    "athletics": "C-",
+    "professors": "C",
+    "location": "B-",
+    "studentLife": "C+",
+    "safety": "A-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/north-american-university/"
+}

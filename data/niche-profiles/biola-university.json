@@ -1,0 +1,32 @@
+{
+  "slug": "biola-university",
+  "name": "Biola University",
+  "city": "LA MIRADA",
+  "state": "CA",
+  "website": "https://www.biola.edu/",
+  "acceptanceRate": 0.601,
+  "enrollment": 3126,
+  "graduationRate": 0.688,
+  "tuitionInState": 50904,
+  "tuitionOutOfState": 50904,
+  "roomAndBoard": 11614,
+  "netPrice": 30510,
+  "medianEarnings6yr": 56263,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A-",
+    "academics": "A-",
+    "value": "B-",
+    "diversity": "A",
+    "campus": "A-",
+    "athletics": "B",
+    "partyScene": "D+",
+    "professors": "A-",
+    "location": "B+",
+    "dorms": "A+",
+    "campusFood": "B-",
+    "studentLife": "A-",
+    "safety": "A"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/biola-university/"
+}

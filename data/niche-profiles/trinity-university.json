@@ -1,0 +1,32 @@
+{
+  "slug": "trinity-university",
+  "name": "Trinity University",
+  "city": "SAN ANTONIO",
+  "state": "TX",
+  "website": "https://www.trinity.edu",
+  "acceptanceRate": 0.282,
+  "enrollment": 2481,
+  "graduationRate": 0.819,
+  "tuitionInState": 56496,
+  "tuitionOutOfState": 56496,
+  "roomAndBoard": 14472,
+  "netPrice": 32264,
+  "medianEarnings6yr": 71432,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A+",
+    "value": "A-",
+    "diversity": "A",
+    "campus": "B",
+    "athletics": "B+",
+    "partyScene": "B",
+    "professors": "A+",
+    "location": "A-",
+    "dorms": "B",
+    "campusFood": "C-",
+    "studentLife": "B+",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/trinity-university/"
+}

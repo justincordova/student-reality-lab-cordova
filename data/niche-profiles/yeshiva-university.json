@@ -1,0 +1,32 @@
+{
+  "slug": "yeshiva-university",
+  "name": "Yeshiva University",
+  "city": "NEW YORK",
+  "state": "NY",
+  "website": "https://www.yu.edu/",
+  "acceptanceRate": 0.637,
+  "enrollment": 2922,
+  "graduationRate": 0.837,
+  "tuitionInState": 53150,
+  "tuitionOutOfState": 53150,
+  "roomAndBoard": 15550,
+  "netPrice": 38118,
+  "medianEarnings6yr": 76796,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A",
+    "academics": "A",
+    "value": "C+",
+    "diversity": "A",
+    "campus": "B",
+    "athletics": "B-",
+    "partyScene": "B-",
+    "professors": "A-",
+    "location": "A-",
+    "dorms": "A-",
+    "campusFood": "B",
+    "studentLife": "A-",
+    "safety": "A"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/yeshiva-university/"
+}

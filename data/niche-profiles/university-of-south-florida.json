@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-south-florida",
+  "name": "University of South Florida",
+  "city": "TAMPA",
+  "state": "FL",
+  "website": "https://www.usf.edu/",
+  "acceptanceRate": 0.41,
+  "enrollment": 30184,
+  "graduationRate": 0.746,
+  "tuitionInState": 6410,
+  "tuitionOutOfState": 17324,
+  "roomAndBoard": 13595,
+  "netPrice": 11578,
+  "medianEarnings6yr": 57660,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A",
+    "value": "B+",
+    "diversity": "A+",
+    "campus": "A-",
+    "athletics": "A-",
+    "partyScene": "A-",
+    "professors": "A+",
+    "location": "B+",
+    "dorms": "B+",
+    "campusFood": "A-",
+    "studentLife": "A",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-south-florida/"
+}

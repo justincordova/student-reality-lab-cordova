@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-delaware",
+  "name": "University of Delaware",
+  "city": "NEWARK",
+  "state": "DE",
+  "website": "https://www.udel.edu/",
+  "acceptanceRate": 0.651,
+  "enrollment": 18084,
+  "graduationRate": 0.788,
+  "tuitionInState": 16080,
+  "tuitionOutOfState": 39720,
+  "roomAndBoard": 14838,
+  "netPrice": 17716,
+  "medianEarnings6yr": 75528,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A",
+    "academics": "A-",
+    "value": "B+",
+    "diversity": "A-",
+    "campus": "B+",
+    "athletics": "A",
+    "partyScene": "A+",
+    "professors": "A",
+    "location": "B+",
+    "dorms": "B-",
+    "campusFood": "B+",
+    "studentLife": "A+",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-delaware/"
+}

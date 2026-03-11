@@ -1,0 +1,32 @@
+{
+  "slug": "rhodes-college",
+  "name": "Rhodes College",
+  "city": "MEMPHIS",
+  "state": "TN",
+  "website": "https://www.rhodes.edu/",
+  "acceptanceRate": 0.496,
+  "enrollment": 1891,
+  "graduationRate": 0.816,
+  "tuitionInState": 56300,
+  "tuitionOutOfState": 56300,
+  "roomAndBoard": null,
+  "netPrice": 30590,
+  "medianEarnings6yr": 66608,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A-",
+    "academics": "A-",
+    "value": "B",
+    "diversity": "A",
+    "campus": "B+",
+    "athletics": "B-",
+    "partyScene": "A-",
+    "professors": "A",
+    "location": "B",
+    "dorms": "C+",
+    "campusFood": "B-",
+    "studentLife": "A-",
+    "safety": "C+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/rhodes-college/"
+}

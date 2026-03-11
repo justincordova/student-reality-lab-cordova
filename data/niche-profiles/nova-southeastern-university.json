@@ -1,0 +1,32 @@
+{
+  "slug": "nova-southeastern-university",
+  "name": "Nova Southeastern University",
+  "city": "FORT LAUDERDALE",
+  "state": "FL",
+  "website": "https://www.nova.edu/index.html",
+  "acceptanceRate": 0.727,
+  "enrollment": 6711,
+  "graduationRate": 0.643,
+  "tuitionInState": 39000,
+  "tuitionOutOfState": 39000,
+  "roomAndBoard": 15950,
+  "netPrice": 32756,
+  "medianEarnings6yr": 71403,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "B+",
+    "value": "B-",
+    "diversity": "A+",
+    "campus": "B+",
+    "athletics": "A-",
+    "partyScene": "B",
+    "professors": "A-",
+    "location": "A-",
+    "dorms": "B",
+    "campusFood": "B+",
+    "studentLife": "A-",
+    "safety": "A-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/nova-southeastern-university/"
+}

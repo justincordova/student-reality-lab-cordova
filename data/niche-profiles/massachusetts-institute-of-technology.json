@@ -1,0 +1,32 @@
+{
+  "slug": "massachusetts-institute-of-technology",
+  "name": "Massachusetts Institute of Technology",
+  "city": "CAMBRIDGE",
+  "state": "MA",
+  "website": "https://web.mit.edu/",
+  "acceptanceRate": 0.048,
+  "enrollment": 4543,
+  "graduationRate": 0.961,
+  "tuitionInState": 60156,
+  "tuitionOutOfState": 60156,
+  "roomAndBoard": 19390,
+  "netPrice": 21519,
+  "medianEarnings6yr": 148383,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A+",
+    "value": "A+",
+    "diversity": "A+",
+    "campus": "A-",
+    "athletics": "B-",
+    "partyScene": "A",
+    "professors": "A+",
+    "location": "A+",
+    "dorms": "A-",
+    "campusFood": "B-",
+    "studentLife": "A+",
+    "safety": "A-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/massachusetts-institute-of-technology/"
+}

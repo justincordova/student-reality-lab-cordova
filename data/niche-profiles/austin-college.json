@@ -1,0 +1,32 @@
+{
+  "slug": "austin-college",
+  "name": "Austin College",
+  "city": "SHERMAN",
+  "state": "TX",
+  "website": "https://www.austincollege.edu/",
+  "acceptanceRate": 0.466,
+  "enrollment": 1123,
+  "graduationRate": 0.695,
+  "tuitionInState": 48470,
+  "tuitionOutOfState": 48470,
+  "roomAndBoard": 12915,
+  "netPrice": 24777,
+  "medianEarnings6yr": 56983,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B",
+    "academics": "A-",
+    "value": "B-",
+    "diversity": "A-",
+    "campus": "C",
+    "athletics": "B-",
+    "partyScene": "B",
+    "professors": "B",
+    "location": "C-",
+    "dorms": "C",
+    "campusFood": "C+",
+    "studentLife": "B-",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/austin-college/"
+}

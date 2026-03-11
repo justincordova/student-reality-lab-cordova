@@ -1,0 +1,32 @@
+{
+  "slug": "kean-university",
+  "name": "Kean University",
+  "city": "UNION",
+  "state": "NJ",
+  "website": "https://www.kean.edu/",
+  "acceptanceRate": 0.769,
+  "enrollment": 9396,
+  "graduationRate": 0.434,
+  "tuitionInState": 14299,
+  "tuitionOutOfState": 15299,
+  "roomAndBoard": 14834,
+  "netPrice": 11593,
+  "medianEarnings6yr": 57968,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "B",
+    "value": "A-",
+    "diversity": "A",
+    "campus": "A-",
+    "athletics": "B",
+    "partyScene": "B",
+    "professors": "B",
+    "location": "B+",
+    "dorms": "A-",
+    "campusFood": "A",
+    "studentLife": "B+",
+    "safety": "A-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/kean-university/"
+}

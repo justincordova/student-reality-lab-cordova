@@ -1,0 +1,32 @@
+{
+  "slug": "iowa-state-university",
+  "name": "Iowa State University",
+  "city": "AMES",
+  "state": "IA",
+  "website": "https://www.iastate.edu/",
+  "acceptanceRate": 0.891,
+  "enrollment": 25628,
+  "graduationRate": 0.755,
+  "tuitionInState": 11092,
+  "tuitionOutOfState": 30140,
+  "roomAndBoard": 9726,
+  "netPrice": 17354,
+  "medianEarnings6yr": 65176,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A",
+    "academics": "A-",
+    "value": "A-",
+    "diversity": "A-",
+    "campus": "A",
+    "athletics": "A-",
+    "partyScene": "A",
+    "professors": "A",
+    "location": "B+",
+    "dorms": "B+",
+    "campusFood": "A",
+    "studentLife": "A+",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/iowa-state-university/"
+}

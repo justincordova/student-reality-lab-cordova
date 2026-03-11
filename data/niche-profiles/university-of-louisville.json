@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-louisville",
+  "name": "University of Louisville",
+  "city": "LOUISVILLE",
+  "state": "KY",
+  "website": "https://louisville.edu/",
+  "acceptanceRate": 0.805,
+  "enrollment": 11802,
+  "graduationRate": 0.607,
+  "tuitionInState": 12828,
+  "tuitionOutOfState": 29174,
+  "roomAndBoard": 11690,
+  "netPrice": 18808,
+  "medianEarnings6yr": 58801,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A-",
+    "academics": "A-",
+    "value": "B+",
+    "diversity": "A-",
+    "campus": "B+",
+    "athletics": "A",
+    "partyScene": "A",
+    "professors": "A-",
+    "location": "A-",
+    "dorms": "C+",
+    "campusFood": "A-",
+    "studentLife": "A",
+    "safety": "C"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-louisville/"
+}

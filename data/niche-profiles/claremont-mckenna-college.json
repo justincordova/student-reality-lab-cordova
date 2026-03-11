@@ -1,0 +1,32 @@
+{
+  "slug": "claremont-mckenna-college",
+  "name": "Claremont McKenna College",
+  "city": "CLAREMONT",
+  "state": "CA",
+  "website": "https://www.cmc.edu/",
+  "acceptanceRate": 0.112,
+  "enrollment": 1377,
+  "graduationRate": 0.952,
+  "tuitionInState": 64150,
+  "tuitionOutOfState": 64150,
+  "roomAndBoard": 19650,
+  "netPrice": 29978,
+  "medianEarnings6yr": 108186,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A+",
+    "value": "A+",
+    "diversity": "A+",
+    "campus": "A-",
+    "athletics": "B",
+    "partyScene": "B+",
+    "professors": "A",
+    "location": "A-",
+    "dorms": "A",
+    "campusFood": "A-",
+    "studentLife": "A+",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/claremont-mckenna-college/"
+}

@@ -1,0 +1,32 @@
+{
+  "slug": "texas-christian-university",
+  "name": "Texas Christian University",
+  "city": "FORT WORTH",
+  "state": "TX",
+  "website": "https://www.tcu.edu/",
+  "acceptanceRate": 0.426,
+  "enrollment": 11049,
+  "graduationRate": 0.856,
+  "tuitionInState": 61650,
+  "tuitionOutOfState": 61650,
+  "roomAndBoard": 14800,
+  "netPrice": 39005,
+  "medianEarnings6yr": 69108,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A",
+    "academics": "A",
+    "value": "B",
+    "diversity": "A-",
+    "campus": "A+",
+    "athletics": "A",
+    "partyScene": "A",
+    "professors": "A-",
+    "location": "A-",
+    "dorms": "A+",
+    "campusFood": "B",
+    "studentLife": "A+",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/texas-christian-university/"
+}

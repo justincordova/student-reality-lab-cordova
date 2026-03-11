@@ -1,0 +1,32 @@
+{
+  "slug": "san-jose-state-university",
+  "name": "San José State University",
+  "city": "SAN JOSE",
+  "state": "CA",
+  "website": "https://www.sjsu.edu/",
+  "acceptanceRate": 0.802,
+  "enrollment": 21807,
+  "graduationRate": 0.647,
+  "tuitionInState": 7992,
+  "tuitionOutOfState": 19872,
+  "roomAndBoard": 16686,
+  "netPrice": 13833,
+  "medianEarnings6yr": 80832,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B",
+    "academics": "B-",
+    "value": "A-",
+    "diversity": "A",
+    "campus": "C+",
+    "athletics": "B+",
+    "partyScene": "A-",
+    "professors": "B-",
+    "location": "A-",
+    "dorms": "C",
+    "campusFood": "B-",
+    "studentLife": "B+",
+    "safety": "C"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/san-jose-state-university/"
+}

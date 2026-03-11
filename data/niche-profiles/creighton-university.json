@@ -1,0 +1,32 @@
+{
+  "slug": "creighton-university",
+  "name": "Creighton University",
+  "city": "OMAHA",
+  "state": "NE",
+  "website": "https://www.creighton.edu/",
+  "acceptanceRate": 0.728,
+  "enrollment": 4160,
+  "graduationRate": 0.805,
+  "tuitionInState": 46800,
+  "tuitionOutOfState": 46800,
+  "roomAndBoard": 12050,
+  "netPrice": 33364,
+  "medianEarnings6yr": 73708,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A-",
+    "academics": "A",
+    "value": "B+",
+    "diversity": "B+",
+    "campus": "C+",
+    "athletics": "A-",
+    "partyScene": "B+",
+    "professors": "A",
+    "location": "B+",
+    "dorms": "C+",
+    "campusFood": "C",
+    "studentLife": "A-",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/creighton-university/"
+}

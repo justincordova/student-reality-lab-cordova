@@ -1,0 +1,32 @@
+{
+  "slug": "tufts-university",
+  "name": "Tufts University",
+  "city": "MEDFORD",
+  "state": "MA",
+  "website": "https://www.tufts.edu/",
+  "acceptanceRate": 0.102,
+  "enrollment": 6685,
+  "graduationRate": 0.933,
+  "tuitionInState": 71982,
+  "tuitionOutOfState": 71982,
+  "roomAndBoard": 17660,
+  "netPrice": 33333,
+  "medianEarnings6yr": 86650,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A+",
+    "value": "A-",
+    "diversity": "A+",
+    "campus": "B-",
+    "athletics": "B",
+    "partyScene": "B",
+    "professors": "A+",
+    "location": "A",
+    "dorms": "B-",
+    "campusFood": "B+",
+    "studentLife": "A-",
+    "safety": "B+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/tufts-university/"
+}

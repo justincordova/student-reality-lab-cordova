@@ -1,0 +1,32 @@
+{
+  "slug": "augustana-college-illinois",
+  "name": "Augustana College - Illinois",
+  "city": "ROCK ISLAND",
+  "state": "IL",
+  "website": "https://www.augustana.edu/",
+  "acceptanceRate": 0.676,
+  "enrollment": 2501,
+  "graduationRate": 0.792,
+  "tuitionInState": 53186,
+  "tuitionOutOfState": 53186,
+  "roomAndBoard": 12718,
+  "netPrice": 24695,
+  "medianEarnings6yr": 58348,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "B+",
+    "value": "B",
+    "diversity": "A",
+    "campus": "B",
+    "athletics": "B",
+    "partyScene": "A",
+    "professors": "B",
+    "location": "C+",
+    "dorms": "B-",
+    "campusFood": "A-",
+    "studentLife": "A-",
+    "safety": "C"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/augustana-college-illinois/"
+}

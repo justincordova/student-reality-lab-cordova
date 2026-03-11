@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-arkansas-at-little-rock",
+  "name": "University of Arkansas at Little Rock",
+  "city": "LITTLE ROCK",
+  "state": "AR",
+  "website": "https://ualr.edu/",
+  "acceptanceRate": 0.577,
+  "enrollment": 2917,
+  "graduationRate": 0.414,
+  "tuitionInState": 9889,
+  "tuitionOutOfState": 22204,
+  "roomAndBoard": 9797,
+  "netPrice": 11225,
+  "medianEarnings6yr": 56583,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B",
+    "academics": "B+",
+    "value": "B",
+    "diversity": "A-",
+    "campus": "C",
+    "athletics": "B+",
+    "partyScene": "B-",
+    "professors": "A-",
+    "location": "C+",
+    "dorms": "B+",
+    "campusFood": "A-",
+    "studentLife": "C+",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-arkansas-at-little-rock/"
+}

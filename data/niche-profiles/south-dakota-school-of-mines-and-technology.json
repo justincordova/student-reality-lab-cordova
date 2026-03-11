@@ -1,0 +1,32 @@
+{
+  "slug": "south-dakota-school-of-mines-and-technology",
+  "name": "South Dakota School of Mines and Technology",
+  "city": "RAPID CITY",
+  "state": "SD",
+  "website": "https://www.sdsmt.edu/",
+  "acceptanceRate": 0.853,
+  "enrollment": 1737,
+  "graduationRate": 0.582,
+  "tuitionInState": 10400,
+  "tuitionOutOfState": 14800,
+  "roomAndBoard": 8266,
+  "netPrice": 20243,
+  "medianEarnings6yr": 86809,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A-",
+    "academics": "A-",
+    "value": "A-",
+    "diversity": "B-",
+    "campus": "C+",
+    "athletics": "B-",
+    "partyScene": "B",
+    "professors": "A+",
+    "location": "B",
+    "dorms": "B+",
+    "campusFood": "C-",
+    "studentLife": "B",
+    "safety": "B+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/south-dakota-school-of-mines-and-technology/"
+}

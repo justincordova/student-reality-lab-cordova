@@ -1,0 +1,32 @@
+{
+  "slug": "augustana-university",
+  "name": "Augustana University",
+  "city": "SIOUX FALLS",
+  "state": "SD",
+  "website": "https://www.augie.edu/",
+  "acceptanceRate": 0.594,
+  "enrollment": 1787,
+  "graduationRate": 0.756,
+  "tuitionInState": 39190,
+  "tuitionOutOfState": 39190,
+  "roomAndBoard": 9470,
+  "netPrice": 25280,
+  "medianEarnings6yr": 55473,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A-",
+    "academics": "A-",
+    "value": "B",
+    "diversity": "A-",
+    "campus": "B-",
+    "athletics": "A",
+    "partyScene": "B",
+    "professors": "B+",
+    "location": "B",
+    "dorms": "B",
+    "campusFood": "C+",
+    "studentLife": "A-",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/augustana-university/"
+}

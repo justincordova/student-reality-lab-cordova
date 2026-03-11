@@ -1,0 +1,32 @@
+{
+  "slug": "new-mexico-state-university",
+  "name": "New Mexico State University",
+  "city": "LAS CRUCES",
+  "state": "NM",
+  "website": "https://www.nmsu.edu/",
+  "acceptanceRate": 0.757,
+  "enrollment": 9865,
+  "graduationRate": 0.522,
+  "tuitionInState": 8147,
+  "tuitionOutOfState": 25271,
+  "roomAndBoard": 12026,
+  "netPrice": 8353,
+  "medianEarnings6yr": 47377,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A-",
+    "academics": "B+",
+    "value": "B",
+    "diversity": "A",
+    "campus": "A-",
+    "athletics": "B+",
+    "partyScene": "A-",
+    "professors": "A",
+    "location": "B",
+    "dorms": "B+",
+    "campusFood": "A-",
+    "studentLife": "A",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/new-mexico-state-university/"
+}

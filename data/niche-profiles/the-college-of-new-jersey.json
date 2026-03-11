@@ -1,0 +1,32 @@
+{
+  "slug": "the-college-of-new-jersey",
+  "name": "The College of New Jersey",
+  "city": "EWING",
+  "state": "NJ",
+  "website": "https://www.tcnj.edu/",
+  "acceptanceRate": 0.621,
+  "enrollment": 6400,
+  "graduationRate": 0.852,
+  "tuitionInState": 19640,
+  "tuitionOutOfState": 25760,
+  "roomAndBoard": 15569,
+  "netPrice": 22379,
+  "medianEarnings6yr": 70958,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "A-",
+    "value": "A-",
+    "diversity": "B+",
+    "campus": "C-",
+    "athletics": "B-",
+    "partyScene": "B-",
+    "professors": "B+",
+    "location": "C",
+    "dorms": "C+",
+    "campusFood": "C-",
+    "studentLife": "B-",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/the-college-of-new-jersey/"
+}

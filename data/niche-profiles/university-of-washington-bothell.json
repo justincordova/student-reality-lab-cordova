@@ -1,0 +1,30 @@
+{
+  "slug": "university-of-washington-bothell",
+  "name": "University of Washington - Bothell",
+  "city": "BOTHELL",
+  "state": "WA",
+  "website": "https://www.uwb.edu",
+  "acceptanceRate": 0.918,
+  "enrollment": 4512,
+  "graduationRate": 0.682,
+  "tuitionInState": 12919,
+  "tuitionOutOfState": 43155,
+  "roomAndBoard": 17115,
+  "netPrice": 10013,
+  "medianEarnings6yr": 78604,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B",
+    "academics": "B-",
+    "value": "A-",
+    "diversity": "A",
+    "campus": "C",
+    "partyScene": "C-",
+    "professors": "B",
+    "location": "B-",
+    "campusFood": "C+",
+    "studentLife": "C+",
+    "safety": "A"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-washington-bothell/"
+}

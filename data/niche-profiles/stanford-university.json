@@ -1,0 +1,32 @@
+{
+  "slug": "stanford-university",
+  "name": "Stanford University",
+  "city": "STANFORD",
+  "state": "CA",
+  "website": "https://www.stanford.edu/",
+  "acceptanceRate": 0.04,
+  "enrollment": 7841,
+  "graduationRate": 0.93,
+  "tuitionInState": 62484,
+  "tuitionOutOfState": 62484,
+  "roomAndBoard": 19922,
+  "netPrice": 17998,
+  "medianEarnings6yr": 132900,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A+",
+    "value": "A+",
+    "diversity": "A+",
+    "campus": "A",
+    "athletics": "A+",
+    "partyScene": "A-",
+    "professors": "A+",
+    "location": "B+",
+    "dorms": "A-",
+    "campusFood": "A-",
+    "studentLife": "A+",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/stanford-university/"
+}

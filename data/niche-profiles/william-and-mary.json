@@ -1,0 +1,32 @@
+{
+  "slug": "william-and-mary",
+  "name": "William & Mary",
+  "city": "WILLIAMSBURG",
+  "state": "VA",
+  "website": "https://www.wm.edu/",
+  "acceptanceRate": 0.327,
+  "enrollment": 6975,
+  "graduationRate": 0.91,
+  "tuitionInState": 19178,
+  "tuitionOutOfState": 44876,
+  "roomAndBoard": 14555,
+  "netPrice": 20422,
+  "medianEarnings6yr": 71273,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A+",
+    "value": "A-",
+    "diversity": "A-",
+    "campus": "C+",
+    "athletics": "B",
+    "partyScene": "B",
+    "professors": "A",
+    "location": "B+",
+    "dorms": "D+",
+    "campusFood": "D+",
+    "studentLife": "A-",
+    "safety": "B+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/william-and-mary/"
+}

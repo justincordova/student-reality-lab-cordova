@@ -1,0 +1,32 @@
+{
+  "slug": "colgate-university",
+  "name": "Colgate University",
+  "city": "HAMILTON",
+  "state": "NY",
+  "website": "https://www.colgate.edu/",
+  "acceptanceRate": 0.12,
+  "enrollment": 3112,
+  "graduationRate": 0.905,
+  "tuitionInState": 73206,
+  "tuitionOutOfState": 73206,
+  "roomAndBoard": 16790,
+  "netPrice": 26954,
+  "medianEarnings6yr": 78336,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A",
+    "academics": "A+",
+    "value": "A-",
+    "diversity": "A",
+    "campus": "C+",
+    "athletics": "B+",
+    "partyScene": "A",
+    "professors": "A",
+    "location": "B-",
+    "dorms": "C+",
+    "campusFood": "C-",
+    "studentLife": "A-",
+    "safety": "B+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/colgate-university/"
+}

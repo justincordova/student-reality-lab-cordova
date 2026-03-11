@@ -1,0 +1,31 @@
+{
+  "slug": "new-mexico-tech",
+  "name": "New Mexico Tech",
+  "city": "SOCORRO",
+  "state": "NM",
+  "website": "https://nmt.edu/",
+  "acceptanceRate": 0.541,
+  "enrollment": 1065,
+  "graduationRate": 0.564,
+  "tuitionInState": 9058,
+  "tuitionOutOfState": 26312,
+  "roomAndBoard": 8332,
+  "netPrice": 9133,
+  "medianEarnings6yr": 83712,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A",
+    "academics": "A",
+    "value": "A+",
+    "diversity": "B+",
+    "campus": "B-",
+    "partyScene": "B-",
+    "professors": "A+",
+    "location": "C+",
+    "dorms": "B",
+    "campusFood": "C+",
+    "studentLife": "B-",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/new-mexico-tech/"
+}

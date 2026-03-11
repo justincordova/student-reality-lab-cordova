@@ -1,0 +1,32 @@
+{
+  "slug": "augusta-university",
+  "name": "Augusta University",
+  "city": "AUGUSTA",
+  "state": "GA",
+  "website": "https://www.augusta.edu/",
+  "acceptanceRate": 0.893,
+  "enrollment": 5234,
+  "graduationRate": 0.486,
+  "tuitionInState": 8414,
+  "tuitionOutOfState": 25202,
+  "roomAndBoard": 10780,
+  "netPrice": 13486,
+  "medianEarnings6yr": 57868,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "B+",
+    "value": "A-",
+    "diversity": "A-",
+    "campus": "B-",
+    "athletics": "B",
+    "partyScene": "C+",
+    "professors": "A",
+    "location": "C+",
+    "dorms": "B-",
+    "campusFood": "B",
+    "studentLife": "C+",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/augusta-university/"
+}

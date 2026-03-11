@@ -1,0 +1,32 @@
+{
+  "slug": "western-michigan-university",
+  "name": "Western Michigan University",
+  "city": "KALAMAZOO",
+  "state": "MI",
+  "website": "https://wmich.edu/",
+  "acceptanceRate": 0.847,
+  "enrollment": 11016,
+  "graduationRate": 0.578,
+  "tuitionInState": 15252,
+  "tuitionOutOfState": 19034,
+  "roomAndBoard": null,
+  "netPrice": 20183,
+  "medianEarnings6yr": 59173,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B",
+    "academics": "B",
+    "value": "B",
+    "diversity": "A",
+    "campus": "B",
+    "athletics": "B+",
+    "partyScene": "A",
+    "professors": "B+",
+    "location": "B-",
+    "dorms": "B-",
+    "campusFood": "A-",
+    "studentLife": "A-",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/western-michigan-university/"
+}

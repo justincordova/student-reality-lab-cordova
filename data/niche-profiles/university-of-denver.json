@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-denver",
+  "name": "University of Denver",
+  "city": "DENVER",
+  "state": "CO",
+  "website": "https://www.du.edu/",
+  "acceptanceRate": 0.712,
+  "enrollment": 5755,
+  "graduationRate": 0.78,
+  "tuitionInState": 59340,
+  "tuitionOutOfState": 59340,
+  "roomAndBoard": 16335,
+  "netPrice": 43324,
+  "medianEarnings6yr": 74242,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "A-",
+    "value": "C+",
+    "diversity": "A-",
+    "campus": "B-",
+    "athletics": "A",
+    "partyScene": "A-",
+    "professors": "A-",
+    "location": "A",
+    "dorms": "C+",
+    "campusFood": "C-",
+    "studentLife": "B+",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-denver/"
+}

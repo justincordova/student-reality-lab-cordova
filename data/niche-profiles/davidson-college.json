@@ -1,0 +1,32 @@
+{
+  "slug": "davidson-college",
+  "name": "Davidson College",
+  "city": "DAVIDSON",
+  "state": "NC",
+  "website": "https://davidson.edu/",
+  "acceptanceRate": 0.145,
+  "enrollment": 1904,
+  "graduationRate": 0.919,
+  "tuitionInState": 60300,
+  "tuitionOutOfState": 60300,
+  "roomAndBoard": 16400,
+  "netPrice": 26510,
+  "medianEarnings6yr": 64801,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A+",
+    "value": "A",
+    "diversity": "A",
+    "campus": "B+",
+    "athletics": "B+",
+    "partyScene": "B",
+    "professors": "A",
+    "location": "B+",
+    "dorms": "A-",
+    "campusFood": "C+",
+    "studentLife": "A",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/davidson-college/"
+}

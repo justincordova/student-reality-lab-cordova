@@ -1,0 +1,32 @@
+{
+  "slug": "rollins-college",
+  "name": "Rollins College",
+  "city": "WINTER PARK",
+  "state": "FL",
+  "website": "https://www.rollins.edu/",
+  "acceptanceRate": 0.406,
+  "enrollment": 2371,
+  "graduationRate": 0.769,
+  "tuitionInState": 62950,
+  "tuitionOutOfState": 62950,
+  "roomAndBoard": 16190,
+  "netPrice": 37134,
+  "medianEarnings6yr": 58887,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "B+",
+    "value": "C+",
+    "diversity": "A",
+    "campus": "A",
+    "athletics": "B",
+    "partyScene": "A",
+    "professors": "B-",
+    "location": "A+",
+    "dorms": "B-",
+    "campusFood": "A",
+    "studentLife": "A+",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/rollins-college/"
+}

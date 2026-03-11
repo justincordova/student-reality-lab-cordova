@@ -1,0 +1,31 @@
+{
+  "slug": "university-of-colorado-denver",
+  "name": "University of Colorado Denver",
+  "city": "DENVER",
+  "state": "CO",
+  "website": "https://www.ucdenver.edu/",
+  "acceptanceRate": 0.778,
+  "enrollment": 8335,
+  "graduationRate": 0.474,
+  "tuitionInState": 10017,
+  "tuitionOutOfState": 28209,
+  "roomAndBoard": 14920,
+  "netPrice": 15303,
+  "medianEarnings6yr": 68618,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A-",
+    "academics": "B+",
+    "value": "B+",
+    "diversity": "A",
+    "campus": "B-",
+    "partyScene": "B-",
+    "professors": "A",
+    "location": "A+",
+    "dorms": "C-",
+    "campusFood": "B",
+    "studentLife": "B-",
+    "safety": "C+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-colorado-denver/"
+}

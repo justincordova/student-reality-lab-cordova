@@ -1,0 +1,31 @@
+{
+  "slug": "reed-college",
+  "name": "Reed College",
+  "city": "PORTLAND",
+  "state": "OR",
+  "website": "https://www.reed.edu/",
+  "acceptanceRate": 0.259,
+  "enrollment": 1404,
+  "graduationRate": 0.759,
+  "tuitionInState": 69350,
+  "tuitionOutOfState": 69350,
+  "roomAndBoard": 16820,
+  "netPrice": 36993,
+  "medianEarnings6yr": 56263,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A-",
+    "academics": "A+",
+    "value": "B-",
+    "diversity": "A",
+    "campus": "B-",
+    "partyScene": "B",
+    "professors": "A",
+    "location": "A",
+    "dorms": "B+",
+    "campusFood": "B-",
+    "studentLife": "B-",
+    "safety": "C+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/reed-college/"
+}

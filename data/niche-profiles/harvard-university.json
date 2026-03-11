@@ -1,0 +1,32 @@
+{
+  "slug": "harvard-university",
+  "name": "Harvard University",
+  "city": "CAMBRIDGE",
+  "state": "MA",
+  "website": "https://college.harvard.edu/",
+  "acceptanceRate": 0.035,
+  "enrollment": 7316,
+  "graduationRate": 0.973,
+  "tuitionInState": 59076,
+  "tuitionOutOfState": 59076,
+  "roomAndBoard": 20374,
+  "netPrice": 17900,
+  "medianEarnings6yr": 124581,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A+",
+    "value": "A+",
+    "diversity": "A+",
+    "campus": "A-",
+    "athletics": "B+",
+    "partyScene": "B+",
+    "professors": "A+",
+    "location": "A+",
+    "dorms": "A-",
+    "campusFood": "B",
+    "studentLife": "A+",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/harvard-university/"
+}

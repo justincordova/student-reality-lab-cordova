@@ -1,0 +1,32 @@
+{
+  "slug": "clarkson-university",
+  "name": "Clarkson University",
+  "city": "POTSDAM",
+  "state": "NY",
+  "website": "https://www.clarkson.edu/",
+  "acceptanceRate": 0.775,
+  "enrollment": 2478,
+  "graduationRate": 0.736,
+  "tuitionInState": 61594,
+  "tuitionOutOfState": 61594,
+  "roomAndBoard": 17016,
+  "netPrice": 33192,
+  "medianEarnings6yr": 89882,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "B+",
+    "value": "A-",
+    "diversity": "B+",
+    "campus": "C-",
+    "athletics": "B",
+    "partyScene": "B+",
+    "professors": "A-",
+    "location": "B-",
+    "dorms": "B-",
+    "campusFood": "C-",
+    "studentLife": "B",
+    "safety": "A-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/clarkson-university/"
+}

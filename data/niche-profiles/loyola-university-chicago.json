@@ -1,0 +1,32 @@
+{
+  "slug": "loyola-university-chicago",
+  "name": "Loyola University Chicago",
+  "city": "CHICAGO",
+  "state": "IL",
+  "website": "https://www.luc.edu/",
+  "acceptanceRate": 0.814,
+  "enrollment": 11166,
+  "graduationRate": 0.769,
+  "tuitionInState": 51766,
+  "tuitionOutOfState": 51766,
+  "roomAndBoard": 16894,
+  "netPrice": 37592,
+  "medianEarnings6yr": 70419,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "B+",
+    "value": "B-",
+    "diversity": "A",
+    "campus": "B+",
+    "athletics": "B+",
+    "partyScene": "B-",
+    "professors": "A-",
+    "location": "A-",
+    "dorms": "B",
+    "campusFood": "B-",
+    "studentLife": "B",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/loyola-university-chicago/"
+}

@@ -1,0 +1,32 @@
+{
+  "slug": "montana-state-university",
+  "name": "Montana State University",
+  "city": "BOZEMAN",
+  "state": "MT",
+  "website": "https://www.montana.edu/",
+  "acceptanceRate": 0.868,
+  "enrollment": 12829,
+  "graduationRate": 0.573,
+  "tuitionInState": 8083,
+  "tuitionOutOfState": 31337,
+  "roomAndBoard": null,
+  "netPrice": 18511,
+  "medianEarnings6yr": 60146,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B+",
+    "academics": "B+",
+    "value": "B-",
+    "diversity": "B",
+    "campus": "B+",
+    "athletics": "B+",
+    "partyScene": "A-",
+    "professors": "A-",
+    "location": "A-",
+    "dorms": "C+",
+    "campusFood": "A",
+    "studentLife": "A-",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/montana-state-university/"
+}

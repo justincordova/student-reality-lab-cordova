@@ -1,0 +1,32 @@
+{
+  "slug": "brandeis-university",
+  "name": "Brandeis University",
+  "city": "WALTHAM",
+  "state": "MA",
+  "website": "https://www.brandeis.edu/",
+  "acceptanceRate": 0.353,
+  "enrollment": 3615,
+  "graduationRate": 0.861,
+  "tuitionInState": 69934,
+  "tuitionOutOfState": 69934,
+  "roomAndBoard": 17818,
+  "netPrice": 44668,
+  "medianEarnings6yr": 76579,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A",
+    "academics": "A+",
+    "value": "B-",
+    "diversity": "A+",
+    "campus": "D-",
+    "athletics": "C+",
+    "partyScene": "C+",
+    "professors": "A+",
+    "location": "B",
+    "dorms": "D",
+    "campusFood": "D+",
+    "studentLife": "C",
+    "safety": "B+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/brandeis-university/"
+}

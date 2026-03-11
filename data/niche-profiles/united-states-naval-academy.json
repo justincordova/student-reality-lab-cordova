@@ -1,0 +1,29 @@
+{
+  "slug": "united-states-naval-academy",
+  "name": "United States Naval Academy",
+  "city": "ANNAPOLIS",
+  "state": "MD",
+  "website": "https://www.usna.edu/homepage.php",
+  "acceptanceRate": 0.094,
+  "enrollment": 4465,
+  "graduationRate": 0.918,
+  "tuitionInState": 19336,
+  "tuitionOutOfState": 23549,
+  "roomAndBoard": null,
+  "netPrice": 17821,
+  "medianEarnings6yr": 45519,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A+",
+    "diversity": "A-",
+    "campus": "B",
+    "partyScene": "C-",
+    "professors": "B+",
+    "location": "B",
+    "dorms": "C",
+    "campusFood": "B+",
+    "studentLife": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/united-states-naval-academy/"
+}

@@ -1,0 +1,29 @@
+{
+  "slug": "brigham-young-university-idaho",
+  "name": "Brigham Young University-Idaho",
+  "city": "REXBURG",
+  "state": "ID",
+  "website": "https://www.byui.edu/",
+  "acceptanceRate": 0.97,
+  "enrollment": 12978,
+  "graduationRate": 0.551,
+  "tuitionInState": 2400,
+  "tuitionOutOfState": 2400,
+  "roomAndBoard": null,
+  "netPrice": 7295,
+  "medianEarnings6yr": 54925,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B",
+    "academics": "B-",
+    "value": "B-",
+    "diversity": "B+",
+    "campus": "A",
+    "partyScene": "C",
+    "professors": "B-",
+    "location": "B-",
+    "studentLife": "A-",
+    "safety": "A"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/brigham-young-university-idaho/"
+}

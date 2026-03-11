@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-san-diego",
+  "name": "University of San Diego",
+  "city": "SAN DIEGO",
+  "state": "CA",
+  "website": "https://www.sandiego.edu/",
+  "acceptanceRate": 0.467,
+  "enrollment": 5851,
+  "graduationRate": 0.816,
+  "tuitionInState": 61340,
+  "tuitionOutOfState": 61340,
+  "roomAndBoard": null,
+  "netPrice": 37675,
+  "medianEarnings6yr": 82964,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A-",
+    "academics": "A-",
+    "value": "B",
+    "diversity": "A",
+    "campus": "A",
+    "athletics": "B+",
+    "partyScene": "B",
+    "professors": "B+",
+    "location": "A+",
+    "dorms": "B+",
+    "campusFood": "A+",
+    "studentLife": "A",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-san-diego/"
+}

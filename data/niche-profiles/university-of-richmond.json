@@ -1,0 +1,32 @@
+{
+  "slug": "university-of-richmond",
+  "name": "University of Richmond",
+  "city": "RICHMOND",
+  "state": "VA",
+  "website": "https://www.richmond.edu/",
+  "acceptanceRate": 0.233,
+  "enrollment": 2942,
+  "graduationRate": 0.878,
+  "tuitionInState": 65230,
+  "tuitionOutOfState": 65230,
+  "roomAndBoard": 16210,
+  "netPrice": 35263,
+  "medianEarnings6yr": 79784,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A+",
+    "value": "B",
+    "diversity": "A",
+    "campus": "A",
+    "athletics": "A",
+    "partyScene": "A-",
+    "professors": "A",
+    "location": "A-",
+    "dorms": "A-",
+    "campusFood": "A",
+    "studentLife": "A",
+    "safety": "C+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/university-of-richmond/"
+}

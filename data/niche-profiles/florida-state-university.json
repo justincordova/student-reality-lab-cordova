@@ -1,0 +1,32 @@
+{
+  "slug": "florida-state-university",
+  "name": "Florida State University",
+  "city": "TALLAHASSEE",
+  "state": "FL",
+  "website": "https://www.fsu.edu/",
+  "acceptanceRate": 0.254,
+  "enrollment": 29011,
+  "graduationRate": 0.83,
+  "tuitionInState": 5604,
+  "tuitionOutOfState": 18749,
+  "roomAndBoard": 13240,
+  "netPrice": 14903,
+  "medianEarnings6yr": 61121,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "A+",
+    "academics": "A+",
+    "value": "A-",
+    "diversity": "A-",
+    "campus": "A",
+    "athletics": "A+",
+    "partyScene": "A+",
+    "professors": "A+",
+    "location": "B-",
+    "dorms": "A-",
+    "campusFood": "A-",
+    "studentLife": "A+",
+    "safety": "B-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/florida-state-university/"
+}

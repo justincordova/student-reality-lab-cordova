@@ -1,0 +1,31 @@
+{
+  "slug": "new-york-institute-of-technology",
+  "name": "New York Institute of Technology",
+  "city": "OLD WESTBURY",
+  "state": "NY",
+  "website": "https://www.nyit.edu",
+  "acceptanceRate": 0.781,
+  "enrollment": 3160,
+  "graduationRate": 0.56,
+  "tuitionInState": 46000,
+  "tuitionOutOfState": 46000,
+  "roomAndBoard": 22360,
+  "netPrice": 23074,
+  "medianEarnings6yr": 76175,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B",
+    "academics": "B",
+    "value": "A-",
+    "diversity": "A",
+    "campus": "C-",
+    "athletics": "B-",
+    "partyScene": "C",
+    "professors": "B-",
+    "location": "B",
+    "campusFood": "B",
+    "studentLife": "C",
+    "safety": "A+"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/new-york-institute-of-technology/"
+}

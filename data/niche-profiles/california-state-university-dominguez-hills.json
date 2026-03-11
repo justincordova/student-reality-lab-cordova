@@ -1,0 +1,31 @@
+{
+  "slug": "california-state-university-dominguez-hills",
+  "name": "California State University - Dominguez Hills",
+  "city": "CARSON",
+  "state": "CA",
+  "website": "https://www.csudh.edu/",
+  "acceptanceRate": 0.913,
+  "enrollment": 9541,
+  "graduationRate": 0.469,
+  "tuitionInState": 7064,
+  "tuitionOutOfState": 18944,
+  "roomAndBoard": null,
+  "netPrice": 4438,
+  "medianEarnings6yr": 56700,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B-",
+    "academics": "C+",
+    "value": "A",
+    "diversity": "B",
+    "campus": "B",
+    "athletics": "B+",
+    "partyScene": "C+",
+    "professors": "B-",
+    "location": "B",
+    "dorms": "B-",
+    "studentLife": "B",
+    "safety": "B"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/california-state-university-dominguez-hills/"
+}

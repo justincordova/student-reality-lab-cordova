@@ -1,0 +1,32 @@
+{
+  "slug": "morgan-state-university",
+  "name": "Morgan State University",
+  "city": "BALTIMORE",
+  "state": "MD",
+  "website": "https://www.morgan.edu/",
+  "acceptanceRate": 0.83,
+  "enrollment": 7675,
+  "graduationRate": 0.416,
+  "tuitionInState": 8118,
+  "tuitionOutOfState": 18800,
+  "roomAndBoard": 12755,
+  "netPrice": 15350,
+  "medianEarnings6yr": 59150,
+  "medianDebt": null,
+  "nicheGrades": {
+    "overall": "B-",
+    "academics": "B-",
+    "value": "B",
+    "diversity": "A-",
+    "campus": "B-",
+    "athletics": "B+",
+    "partyScene": "A+",
+    "professors": "B-",
+    "location": "C+",
+    "dorms": "C-",
+    "campusFood": "B",
+    "studentLife": "B+",
+    "safety": "C-"
+  },
+  "nicheUrl": "https://www.niche.com/colleges/morgan-state-university/"
+}
