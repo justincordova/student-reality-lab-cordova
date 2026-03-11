@@ -87,7 +87,7 @@ export default function SchoolList({ csrankingsSchools, nicheSchools }: SchoolLi
   const currentFiltersRef = useRef({ search, stateFilter, regionFilter, sortBy, sortDir, page });
   useEffect(() => {
     currentFiltersRef.current = { search, stateFilter, regionFilter, sortBy, sortDir, page };
-  });
+  }, [search, stateFilter, regionFilter, sortBy, sortDir, page]);
 
   useEffect(() => {
     if (!pendingFilters) return;
@@ -184,10 +184,13 @@ export default function SchoolList({ csrankingsSchools, nicheSchools }: SchoolLi
   }, [debouncedSearch, search]);
 
   // Reset to page 1 when filters change
-  const updateFilter = <T,>(setter: React.Dispatch<React.SetStateAction<T>>, value: T) => {
-    setter(value);
-    setPage(1);
-  };
+  const updateFilter = useCallback(
+    <T,>(setter: React.Dispatch<React.SetStateAction<T>>, value: T) => {
+      setter(value);
+      setPage(1);
+    },
+    []
+  );
 
   const handleRankSourceChange = useCallback(
     (source: RankSource) => {
@@ -232,7 +235,8 @@ export default function SchoolList({ csrankingsSchools, nicheSchools }: SchoolLi
           type="text"
           placeholder="Search schools..."
           value={search}
-          onChange={(e) => updateFilter(setSearch, e.target.value)}
+          onChange={(e) => updateFilter(setSearch, e.target.value.slice(0, 100))}
+          maxLength={100}
           className="flex-1 min-w-[200px] px-4 py-2 bg-mantle border border-surface0 rounded-lg text-text placeholder:text-overlay0 focus:outline-none focus:ring-2 focus:ring-blue"
           aria-label="Search schools"
         />

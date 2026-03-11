@@ -122,12 +122,10 @@ describe("POST /api/chat", () => {
   it("returns 503 when HF_TOKEN is missing", async () => {
     const { env } = await import("@/lib/env");
     const originalToken = env.HF_TOKEN;
-    // @ts-expect-error mocking
-    env.HF_TOKEN = undefined;
+    (env as { HF_TOKEN?: string }).HF_TOKEN = undefined;
     const req = makeRequest({ messages: [{ role: "user", content: "hi" }] });
     const res = await POST(req);
     expect(res.status).toBe(503);
-    // @ts-expect-error restoring
-    env.HF_TOKEN = originalToken;
+    (env as { HF_TOKEN?: string }).HF_TOKEN = originalToken;
   });
 });

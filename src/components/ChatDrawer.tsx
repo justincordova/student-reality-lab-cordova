@@ -24,6 +24,8 @@ interface Message {
 }
 
 function parseFilterBlock(text: string): { cleanText: string; filters: ChatFilters | null } {
+  if (typeof text !== "string") return { cleanText: "", filters: null };
+
   const match = text.match(FILTER_REGEX);
   if (!match) return { cleanText: text, filters: null };
 
@@ -59,6 +61,10 @@ export default function ChatDrawer() {
     }
     return () => {
       document.body.style.overflow = "";
+      if (abortControllerRef.current) {
+        abortControllerRef.current.abort();
+        abortControllerRef.current = null;
+      }
     };
   }, [isOpen]);
 
@@ -110,7 +116,9 @@ export default function ChatDrawer() {
   const newMsgId = () => String(nextIdRef.current++);
 
   useEffect(() => {
-    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+    if (messagesEndRef.current) {
+      messagesEndRef.current.scrollIntoView({ behavior: "smooth" });
+    }
   }, [messages]);
 
   useEffect(() => {
@@ -126,7 +134,10 @@ export default function ChatDrawer() {
     const text = (overrideText ?? input).trim();
     if (!text || loading) return;
 
-    if (abortControllerRef.current) abortControllerRef.current.abort();
+    if (abortControllerRef.current) {
+      abortControllerRef.current.abort();
+      abortControllerRef.current = null;
+    }
 
     const userMsg: Message = { id: newMsgId(), role: "user", content: text };
     const newMessages = [...messagesRef.current, userMsg];
@@ -135,17 +146,20 @@ export default function ChatDrawer() {
     setLoading(true);
 
     const abortController = new AbortController();
+    const timeoutId = setTimeout(() => abortController.abort(), 30000);
     abortControllerRef.current = abortController;
 
     try {
+      const messagesToSend = newMessages.slice(-20);
       const res = await fetch("/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          messages: newMessages.slice(-20).map((m) => ({ role: m.role, content: m.content })),
+          messages: messagesToSend.map((m) => ({ role: m.role, content: m.content })),
         }),
         signal: abortController.signal,
       });
+      clearTimeout(timeoutId);
 
       let data: { reply?: string; error?: string };
       try {
@@ -165,7 +179,11 @@ export default function ChatDrawer() {
           { id: newMsgId(), role: "assistant", content: `Error: ${errMsg}` },
         ]);
       } else {
-        const { cleanText, filters } = parseFilterBlock(data.reply ?? "");
+        const replyText = data.reply ?? "";
+        if (typeof replyText !== "string") {
+          throw new Error("Invalid response format");
+        }
+        const { cleanText, filters } = parseFilterBlock(replyText);
         const assistantMsg: Message = {
           id: newMsgId(),
           role: "assistant",
@@ -188,12 +206,28 @@ export default function ChatDrawer() {
         }
       }
     } catch (err) {
-      if (err instanceof Error && err.name === "AbortError") return;
+      if (err instanceof Error) {
+        if (err.name === "AbortError") {
+          setMessages([
+            ...newMessages,
+            { id: newMsgId(), role: "assistant", content: "Request timed out. Please try again." },
+          ]);
+          return;
+        }
+        if (err.name === "TypeError" && err.message.includes("fetch")) {
+          setMessages([
+            ...newMessages,
+            { id: newMsgId(), role: "assistant", content: "Failed to connect. Please try again." },
+          ]);
+          return;
+        }
+      }
       setMessages([
         ...newMessages,
-        { id: newMsgId(), role: "assistant", content: "Failed to connect. Please try again." },
+        { id: newMsgId(), role: "assistant", content: "An error occurred. Please try again." },
       ]);
     } finally {
+      clearTimeout(timeoutId);
       setLoading(false);
       abortControllerRef.current = null;
     }
@@ -298,22 +332,38 @@ export default function ChatDrawer() {
                             <ol className="list-decimal pl-4 mb-1 space-y-0.5">{children}</ol>
                           ),
                           li: ({ children }) => <li>{children}</li>,
-                          a: ({ href, children }) => (
-                            <a
-                              href={href}
-                              className="underline opacity-80"
-                              target="_blank"
-                              rel="noopener noreferrer"
-                            >
-                              {children}
-                            </a>
-                          ),
+                          a: ({ href, children }) => {
+                            if (!href || typeof href !== "string") {
+                              return <span>{children}</span>;
+                            }
+                            if (!href.startsWith("http://") && !href.startsWith("https://")) {
+                              return <span>{children}</span>;
+                            }
+                            try {
+                              const url = new URL(href);
+                              if (url.protocol !== "http:" && url.protocol !== "https:") {
+                                return <span>{children}</span>;
+                              }
+                            } catch {
+                              return <span>{children}</span>;
+                            }
+                            return (
+                              <a
+                                href={href}
+                                className="underline opacity-80"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
+                                {children}
+                              </a>
+                            );
+                          },
                         }}
                       >
                         {msg.content}
                       </ReactMarkdown>
                     ) : (
-                      <p className="whitespace-pre-wrap">{msg.content}</p>
+                      <p className="whitespace-pre-wrap break-words">{msg.content}</p>
                     )}
                     {msg.filters && (
                       <div
@@ -342,10 +392,11 @@ export default function ChatDrawer() {
                 <input
                   type="text"
                   value={input}
-                  onChange={(e) => setInput(e.target.value)}
+                  onChange={(e) => setInput(e.target.value.slice(0, 2000))}
                   onKeyDown={(e) => e.key === "Enter" && !e.shiftKey && sendMessage()}
                   placeholder="Ask about CS programs..."
                   aria-label="Chat message input"
+                  maxLength={2000}
                   className="flex-1 px-3 py-2 bg-base border border-surface0 rounded-lg text-sm text-text placeholder:text-overlay0 focus:outline-none focus:ring-2 focus:ring-blue"
                   disabled={loading}
                 />

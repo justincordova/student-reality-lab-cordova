@@ -11,8 +11,12 @@ export class ApiError extends Error {
   }
 }
 
+const isProduction = process.env.NODE_ENV === "production";
+
 export function createErrorResponse(status: number, message: string) {
-  return NextResponse.json({ error: message }, { status });
+  const errorMessage =
+    isProduction && status >= 500 ? "An error occurred. Please try again." : message;
+  return NextResponse.json({ error: errorMessage }, { status });
 }
 
 export function handleApiError(error: unknown): NextResponse {

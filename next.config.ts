@@ -10,9 +10,38 @@ const nextConfig = {
   },
   turbopack: {
     resolveAlias: {
-      // Ensure tailwindcss resolves from the project root, not a parent dir
+      // Ensure tailwindcss resolves from project root, not a parent dir
       tailwindcss: path.resolve("./node_modules/tailwindcss"),
     },
+  },
+  async headers() {
+    return [
+      {
+        source: "/(.*)",
+        headers: [
+          {
+            key: "X-DNS-Prefetch-Control",
+            value: "on",
+          },
+          {
+            key: "X-Frame-Options",
+            value: "DENY",
+          },
+          {
+            key: "X-Content-Type-Options",
+            value: "nosniff",
+          },
+          {
+            key: "Referrer-Policy",
+            value: "origin-when-cross-origin",
+          },
+          {
+            key: "Permissions-Policy",
+            value: "camera=(), microphone=(), geolocation=()",
+          },
+        ],
+      },
+    ];
   },
 };
 

@@ -31,7 +31,45 @@ winston.addColors({
 
 // ─── Formats ─────────────────────────────────────────────────────────────────
 
-const SENSITIVE_KEYS = new Set(["password", "token", "authorization", "secret", "apikey"]);
+const SENSITIVE_KEYS = new Set([
+  "password",
+  "token",
+  "authorization",
+  "secret",
+  "apikey",
+  "api_key",
+  "apikey",
+  "api-key",
+  "session",
+  "cookie",
+  "csrf",
+  "xsrf",
+  "jwt",
+  "bearer",
+  "auth",
+  "credit",
+  "card",
+  "ssn",
+  "social",
+  "pin",
+  "otp",
+  "2fa",
+  "mfa",
+  "private",
+  "key",
+  "secretkey",
+  "secret_key",
+  "accesstoken",
+  "access_token",
+  "refreshtoken",
+  "refresh_token",
+  "hf_token",
+  "hf-token",
+  "hftoken",
+  "logo_dev_token",
+  "logo-dev-token",
+  "logodevtokens",
+]);
 
 // Mutates in-place to preserve Winston's internal Symbol properties (e.g. Symbol(level)).
 // Handles nested objects and arrays of objects.
@@ -79,8 +117,14 @@ let logsDirCreated = false;
 
 const ensureLogsDir = () => {
   if (logsDirCreated) return;
-  if (!fs.existsSync(LOG_DIR)) fs.mkdirSync(LOG_DIR, { recursive: true });
-  logsDirCreated = true;
+  try {
+    if (!fs.existsSync(LOG_DIR)) {
+      fs.mkdirSync(LOG_DIR, { recursive: true });
+    }
+    logsDirCreated = true;
+  } catch (err) {
+    console.error(`Failed to create logs directory at ${LOG_DIR}:`, err);
+  }
 };
 
 const buildTransports = (): winston.transport[] => {
@@ -153,7 +197,15 @@ const logger = winston.createLogger({
 // ─── Child logger factory ─────────────────────────────────────────────────────
 // Usage: const log = childLogger("auth"); log.info("user signed in");
 
-export const childLogger = (service: string) => logger.child({ service });
+export const childLogger = (service: string) => {
+  if (!service || typeof service !== "string") {
+    return logger.child({ service: "unknown" });
+  }
+  if (service.length > 50) {
+    return logger.child({ service: service.slice(0, 50) });
+  }
+  return logger.child({ service });
+};
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
 

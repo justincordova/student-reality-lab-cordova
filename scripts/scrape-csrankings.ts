@@ -168,50 +168,59 @@ interface CsrInstitution {
 
 async function scrape(): Promise<CsrInstitution[]> {
   console.log("Launching browser...");
-  const browser = await chromium.launch({ headless: true });
-  const page = await browser.newPage();
+  let browser;
+  try {
+    browser = await chromium.launch({ headless: true });
+    const page = await browser.newPage();
 
-  console.log("Navigating to https://csrankings.org/#/index?all&us ...");
-  await page.goto("https://csrankings.org/#/index?all&us", {
-    waitUntil: "networkidle",
-    timeout: 60000,
-  });
+    console.log("Navigating to https://csrankings.org/#/index?all&us ...");
+    await page.goto("https://csrankings.org/#/index?all&us", {
+      waitUntil: "networkidle",
+      timeout: 60000,
+    });
 
-  console.log("Waiting for ranking table...");
-  await page.waitForFunction(
-    () => {
-      const table = document.querySelector("#ranking");
-      return table && table.querySelectorAll("tbody tr td.rank-cell").length > 5;
-    },
-    { timeout: 30000 }
-  );
+    console.log("Waiting for ranking table...");
+    await page.waitForFunction(
+      () => {
+        const table = document.querySelector("#ranking");
+        return table && table.querySelectorAll("tbody tr td.rank-cell").length > 5;
+      },
+      { timeout: 30000 }
+    );
 
-  const institutions = await page.$$eval("#ranking tbody tr td.rank-cell", (cells) => {
-    return cells.map((cell) => {
-      const row = cell.parentElement!;
-      const nameTd = row.querySelectorAll("td")[1];
-      let name = "";
-      const spans = nameTd?.querySelectorAll("span");
-      if (spans) {
-        for (const span of Array.from(spans)) {
-          const style = span.getAttribute("style") ?? "";
-          if (style.includes("cursor:pointer")) {
-            name = span.textContent?.trim() ?? "";
-            break;
+    const institutions = await page.$$eval("#ranking tbody tr td.rank-cell", (cells) => {
+      return cells.map((cell) => {
+        const row = cell.parentElement!;
+        const nameTd = row.querySelectorAll("td")[1];
+        let name = "";
+        const spans = nameTd?.querySelectorAll("span");
+        if (spans) {
+          for (const span of Array.from(spans)) {
+            const style = span.getAttribute("style") ?? "";
+            if (style.includes("cursor:pointer")) {
+              name = span.textContent?.trim() ?? "";
+              break;
+            }
           }
         }
-      }
-      if (!name) {
-        name = (nameTd?.textContent?.trim() ?? "").replace(/^►\s*/, "").trim();
-      }
-      const rank = parseInt(cell.textContent?.trim() ?? "0", 10);
-      return { rank, name };
+        if (!name) {
+          name = (nameTd?.textContent?.trim() ?? "").replace(/^►\s*/, "").trim();
+        }
+        const rank = parseInt(cell.textContent?.trim() ?? "0", 10);
+        return { rank, name };
+      });
     });
-  });
 
-  await browser.close();
-  console.log(`Scraped ${institutions.length} institutions.`);
-  return institutions;
+    console.log(`Scraped ${institutions.length} institutions.`);
+    return institutions;
+  } catch (error) {
+    console.error("Error during scraping:", error);
+    throw error;
+  } finally {
+    if (browser) {
+      await browser.close().catch((err) => console.error("Error closing browser:", err));
+    }
+  }
 }
 
 // ---------------------------------------------------------------------------

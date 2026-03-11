@@ -1,5 +1,6 @@
 import { cn } from "@/utils/cn";
 import type { NicheGradeType } from "@/lib/data/schema";
+import { memo } from "react";
 
 interface GradeBadgeProps {
   grade: NicheGradeType;
@@ -8,10 +9,12 @@ interface GradeBadgeProps {
 }
 
 function gradeColor(grade: NicheGradeType): string {
-  if (grade.startsWith("A")) return "bg-green/20 text-green";
-  if (grade.startsWith("B")) return "bg-blue/20 text-blue";
-  if (grade.startsWith("C")) return "bg-peach/20 text-peach";
-  if (grade.startsWith("D")) return "bg-peach/20 text-peach";
+  if (!grade) return "bg-surface0 text-subtext0";
+  const g = grade.toUpperCase();
+  if (g.startsWith("A")) return "bg-green/20 text-green";
+  if (g.startsWith("B")) return "bg-blue/20 text-blue";
+  if (g.startsWith("C")) return "bg-peach/20 text-peach";
+  if (g.startsWith("D")) return "bg-peach/20 text-peach";
   return "bg-red/20 text-red";
 }
 
@@ -23,7 +26,7 @@ function getGradeDescription(grade: NicheGradeType): string {
   return "Failing";
 }
 
-export default function GradeBadge({ grade, label, size = "sm" }: GradeBadgeProps) {
+export default memo(function GradeBadge({ grade, label, size = "sm" }: GradeBadgeProps) {
   const description = getGradeDescription(grade);
   return (
     <div className="flex flex-col items-center gap-0.5">
@@ -41,4 +44,4 @@ export default function GradeBadge({ grade, label, size = "sm" }: GradeBadgeProp
       {label && <span className="text-[10px] text-subtext0 whitespace-nowrap">{label}</span>}
     </div>
   );
-}
+});

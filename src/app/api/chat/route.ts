@@ -30,7 +30,20 @@ const MODEL = "Qwen/Qwen2.5-72B-Instruct";
 
 const MessageSchema = z.object({
   role: z.enum(["user", "assistant"]),
-  content: z.string().max(2000),
+  content: z
+    .string()
+    .max(2000)
+    .min(1)
+    .trim()
+    .refine((val) => {
+      const dangerousPatterns = [
+        /<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi,
+        /javascript:/gi,
+        /on\w+\s*=/gi,
+        /data:text\/html/gi,
+      ];
+      return !dangerousPatterns.some((pattern) => pattern.test(val));
+    }, "Message contains potentially dangerous content"),
 });
 
 const ChatRequestSchema = z.object({
@@ -45,14 +58,23 @@ function buildSystemPrompt(): string {
   if (cachedSystemPrompt && Date.now() - cachedSystemPromptAt < SYSTEM_PROMPT_TTL_MS) {
     return cachedSystemPrompt;
   }
-  const schools = loadSchools();
+  let schools: ReturnType<typeof loadSchools>;
+  try {
+    schools = loadSchools();
+  } catch (err) {
+    logError("Failed to load schools for system prompt", err);
+    schools = [];
+  }
   const totalCount = schools.length;
   const schoolsForPrompt = schools.slice(0, 30);
   const dataStr = schoolsForPrompt
-    .map(
-      (s) =>
-        `${s.name} | ${s.city}, ${s.state} | ${s.region} | CSRank: #${s.csRanking ?? "N/A"} | Niche: #${s.nicheRanking ?? "N/A"} | In-state: $${s.tuitionInState} | Out-of-state: $${s.tuitionOutOfState} | R&B: $${s.roomAndBoard} | Earnings: ${s.medianEarnings6yr ? "$" + s.medianEarnings6yr : "N/A"} | Debt: ${s.medianDebt ? "$" + s.medianDebt : "N/A"} | Accept: ${(s.acceptanceRate * 100).toFixed(1)}% | Grad: ${(s.graduationRate * 100).toFixed(1)}% | Niche: Overall=${s.nicheGrades.overall} Academics=${s.nicheGrades.academics} Food=${s.nicheGrades.campusFood} Party=${s.nicheGrades.partyScene} Social=${s.nicheGrades.studentLife} Dorms=${s.nicheGrades.dorms} Safety=${s.nicheGrades.safety} Profs=${s.nicheGrades.professors} Athletics=${s.nicheGrades.athletics} Diversity=${s.nicheGrades.diversity} Value=${s.nicheGrades.value} Location=${s.nicheGrades.location}`
-    )
+    .map((s) => {
+      const formatCurrency = (val: number | null | undefined) =>
+        val !== null && val !== undefined ? `$${val.toLocaleString()}` : "N/A";
+      const formatPercent = (val: number) => `${Math.min(100, Math.max(0, val * 100)).toFixed(1)}%`;
+
+      return `${s.name} | ${s.city}, ${s.state} | ${s.region} | CSRank: #${s.csRanking ?? "N/A"} | Niche: #${s.nicheRanking ?? "N/A"} | In-state: ${formatCurrency(s.tuitionInState)} | Out-of-state: ${formatCurrency(s.tuitionOutOfState)} | R&B: ${formatCurrency(s.roomAndBoard)} | Earnings: ${formatCurrency(s.medianEarnings6yr)} | Debt: ${formatCurrency(s.medianDebt)} | Accept: ${formatPercent(s.acceptanceRate)} | Grad: ${formatPercent(s.graduationRate)} | Niche: Overall=${s.nicheGrades.overall} Academics=${s.nicheGrades.academics} Food=${s.nicheGrades.campusFood} Party=${s.nicheGrades.partyScene} Social=${s.nicheGrades.studentLife} Dorms=${s.nicheGrades.dorms} Safety=${s.nicheGrades.safety} Profs=${s.nicheGrades.professors} Athletics=${s.nicheGrades.athletics} Diversity=${s.nicheGrades.diversity} Value=${s.nicheGrades.value} Location=${s.nicheGrades.location}`;
+    })
     .join("\n");
 
   const prompt = `You are CSPathFinder AI. Help students find CS programs. Data on ${totalCount} schools.
@@ -93,8 +115,10 @@ export async function POST(req: NextRequest) {
     const host = req.headers.get("host");
     if (origin && host) {
       try {
-        const originHost = new URL(origin).host;
-        if (originHost !== host) {
+        const originUrl = new URL(origin);
+        const originHost = originUrl.host.toLowerCase();
+        const normalizedHost = host.toLowerCase();
+        if (!originUrl.protocol.startsWith("http") || originHost !== normalizedHost) {
           throw new ApiError(403, "Forbidden");
         }
       } catch (err) {
@@ -103,13 +127,16 @@ export async function POST(req: NextRequest) {
       }
     }
 
-    const contentLength = Number(req.headers.get("content-length") ?? 0);
-    if (contentLength > 10000) {
-      throw new ApiError(413, "Request body too large");
+    const contentLengthHeader = req.headers.get("content-length");
+    if (contentLengthHeader !== null) {
+      const contentLength = Number(contentLengthHeader);
+      if (isNaN(contentLength) || contentLength > 10000) {
+        throw new ApiError(413, "Request body too large");
+      }
     }
 
     const contentType = req.headers.get("content-type");
-    if (!contentType?.includes("application/json")) {
+    if (contentType !== "application/json") {
       throw new ApiError(415, "Content-Type must be application/json");
     }
 
@@ -122,13 +149,18 @@ export async function POST(req: NextRequest) {
 
     let body: unknown;
     try {
-      body = await req.json();
+      const rawBody = await req.text();
+      if (rawBody.length === 0) {
+        throw new ApiError(400, "Request body cannot be empty");
+      }
+      body = JSON.parse(rawBody);
     } catch {
       throw new ApiError(400, "Invalid JSON body");
     }
 
     const parsed = ChatRequestSchema.safeParse(body);
     if (!parsed.success) {
+      logError("Invalid request format", parsed.error, { endpoint: "/api/chat" });
       throw new ApiError(400, "Invalid request format");
     }
 
@@ -137,17 +169,38 @@ export async function POST(req: NextRequest) {
     log.debug("Sending chat request", { messageCount: messages.length, model: MODEL });
 
     const MAX_RETRIES = 3;
+    const MAX_RETRY_DELAY_MS = 5000;
+    const REQUEST_TIMEOUT_MS = 25000;
     let lastErr: unknown;
+
     for (let attempt = 0; attempt < MAX_RETRIES; attempt++) {
       try {
-        const completion = await getClient().chat.completions.create({
-          model: MODEL,
-          messages: [{ role: "system", content: systemPrompt }, ...messages],
-          max_tokens: 1024,
-        });
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), REQUEST_TIMEOUT_MS);
 
-        const reply =
-          completion.choices[0]?.message?.content ?? "Sorry, I couldn't generate a response.";
+        const completion = await Promise.race([
+          getClient().chat.completions.create({
+            model: MODEL,
+            messages: [{ role: "system", content: systemPrompt }, ...messages],
+            max_tokens: 1024,
+          }),
+          new Promise<never>((_, reject) =>
+            controller.signal.addEventListener("abort", () => reject(new Error("Request timeout")))
+          ),
+        ]);
+
+        clearTimeout(timeoutId);
+
+        const choice = completion.choices[0];
+        if (!choice?.message?.content) {
+          throw new Error("No content returned from AI");
+        }
+
+        const reply = choice.message.content;
+        if (typeof reply !== "string" || reply.length === 0) {
+          throw new Error("Invalid response from AI");
+        }
+
         log.info("Chat response generated", {
           model: MODEL,
           tokens: completion.usage?.total_tokens,
@@ -155,11 +208,25 @@ export async function POST(req: NextRequest) {
         return NextResponse.json({ reply });
       } catch (err) {
         lastErr = err;
-        const status = (err as { status?: number })?.status;
-        if (status && status !== 429 && status < 500) break;
-        if (attempt < MAX_RETRIES - 1) {
-          await new Promise((resolve) => setTimeout(resolve, 500 * 2 ** attempt));
+        let shouldRetry = true;
+        let isRetryable = true;
+
+        if (err && typeof err === "object" && "status" in err) {
+          const status = (err as { status?: number }).status;
+          if (typeof status === "number") {
+            isRetryable = status === 429 || (status >= 500 && status < 600);
+            shouldRetry = isRetryable && attempt < MAX_RETRIES - 1;
+          }
         }
+
+        if (err instanceof Error && err.message === "Request timeout") {
+          shouldRetry = attempt < MAX_RETRIES - 1;
+        }
+
+        if (!shouldRetry) break;
+
+        const delay = Math.min(500 * 2 ** attempt, MAX_RETRY_DELAY_MS);
+        await new Promise((resolve) => setTimeout(resolve, delay));
       }
     }
     logError("HF API error", lastErr, { model: MODEL });

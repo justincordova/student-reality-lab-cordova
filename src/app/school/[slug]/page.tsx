@@ -23,7 +23,7 @@ export async function generateMetadata({
 }
 
 function formatCurrency(n: number | null): string {
-  if (n === null || n === 0) return "—";
+  if (n === null || typeof n !== "number" || !isFinite(n) || n === 0) return "—";
   return new Intl.NumberFormat("en-US", {
     style: "currency",
     currency: "USD",
@@ -31,8 +31,10 @@ function formatCurrency(n: number | null): string {
   }).format(n);
 }
 
-function formatPercent(n: number) {
-  return `${(n * 100).toFixed(1)}%`;
+function formatPercent(n: number): string {
+  if (typeof n !== "number" || !isFinite(n) || n < 0 || n > 1) return "—";
+  const percent = n * 100;
+  return `${Math.round(percent * 10) / 10}%`;
 }
 
 const GRADE_LABELS: Record<keyof NicheGrades, string> = {
@@ -53,20 +55,36 @@ const GRADE_LABELS: Record<keyof NicheGrades, string> = {
 
 export default async function SchoolPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
+
+  if (!slug || typeof slug !== "string" || slug.length > 200) {
+    notFound();
+  }
+
   const school = getSchoolBySlug(slug);
   if (!school) notFound();
 
+  const MAX_COST = 1000000;
   const totalCostInState =
-    school.tuitionInState && school.roomAndBoard
-      ? (school.tuitionInState + school.roomAndBoard) * 4
+    typeof school.tuitionInState === "number" &&
+    typeof school.roomAndBoard === "number" &&
+    school.tuitionInState >= 0 &&
+    school.roomAndBoard >= 0
+      ? Math.min((school.tuitionInState + school.roomAndBoard) * 4, MAX_COST)
       : null;
   const totalCostOutOfState =
-    school.tuitionOutOfState && school.roomAndBoard
-      ? (school.tuitionOutOfState + school.roomAndBoard) * 4
+    typeof school.tuitionOutOfState === "number" &&
+    typeof school.roomAndBoard === "number" &&
+    school.tuitionOutOfState >= 0 &&
+    school.roomAndBoard >= 0
+      ? Math.min((school.tuitionOutOfState + school.roomAndBoard) * 4, MAX_COST)
       : null;
   const paybackYears =
-    school.medianEarnings6yr && totalCostInState && totalCostInState > 0
-      ? (totalCostInState / school.medianEarnings6yr).toFixed(1)
+    typeof school.medianEarnings6yr === "number" &&
+    school.medianEarnings6yr > 0 &&
+    totalCostInState !== null &&
+    totalCostInState > 0 &&
+    totalCostInState < MAX_COST
+      ? Math.min(totalCostInState / school.medianEarnings6yr, 100).toFixed(1)
       : null;
 
   const stats: { label: string; value: string }[] = [
@@ -82,7 +100,7 @@ export default async function SchoolPage({ params }: { params: Promise<{ slug: s
     { label: "Median Debt", value: school.medianDebt ? formatCurrency(school.medianDebt) : "—" },
     { label: "Acceptance Rate", value: formatPercent(school.acceptanceRate) },
     { label: "Graduation Rate", value: formatPercent(school.graduationRate) },
-    { label: "Enrollment", value: school.enrollment.toLocaleString() },
+    { label: "Enrollment", value: school.enrollment.toLocaleString("en-US") },
   ];
 
   if (totalCostInState) {
@@ -115,16 +133,13 @@ export default async function SchoolPage({ params }: { params: Promise<{ slug: s
       <section>
         <h2 className="text-xl font-bold mb-4">Niche Grades</h2>
         <div className="grid grid-cols-4 sm:grid-cols-5 md:grid-cols-7 gap-4">
-          {(Object.entries(school.nicheGrades) as [keyof NicheGrades, string][]).map(
-            ([key, grade]) => (
-              <GradeBadge
-                key={key}
-                grade={grade as NicheGradeType}
-                label={GRADE_LABELS[key]}
-                size="md"
-              />
-            )
-          )}
+          {Object.entries(school.nicheGrades).map(([key, grade]) => {
+            const gradeKey = key as keyof NicheGrades;
+            const gradeValue = grade as NicheGradeType;
+            return (
+              <GradeBadge key={key} grade={gradeValue} label={GRADE_LABELS[gradeKey]} size="md" />
+            );
+          })}
         </div>
       </section>
 
