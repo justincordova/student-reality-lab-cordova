@@ -12,7 +12,7 @@ export default function Navbar() {
       <div className="h-16 flex items-center justify-between">
         <Link
           href="/"
-          className="text-xl font-bold bg-gradient-to-r from-primary via-pink to-primary bg-[length:200%_auto] bg-clip-text text-transparent transition-[background-position] duration-500 hover:bg-[position:100%_center]"
+          className="text-xl font-bold text-primary transition-all duration-200 hover:scale-105 hover:drop-shadow-[0_0_14px_var(--ctp-primary)] hover:text-pink inline-block"
         >
           CSPathFinder
         </Link>
