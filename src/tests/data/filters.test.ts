@@ -169,25 +169,29 @@ it("should match schools by alias", () => {
   const schools: School[] = [
     {
       ...mockSchools[0],
-      slug: "njit",
-      name: "NJIT",
+      slug: "new-jersey-institute-of-technology",
+      name: "New Jersey Institute of Technology",
       city: "Newark",
       state: "NJ",
     },
     {
       ...mockSchools[1],
-      slug: "mit",
+      slug: "massachusetts-institute-of-technology",
       name: "Massachusetts Institute of Technology",
       city: "Cambridge",
       state: "MA",
     },
   ];
-  // "new jersey institute of technology" is an alias for njit
-  expect(filterSchools(schools, { search: "new jersey institute" })[0].slug).toBe("njit");
-  // "cmu" is an alias for carnegie-mellon; these schools don't have it so should return 0
+  // "njit" alias matches new-jersey-institute-of-technology
+  expect(filterSchools(schools, { search: "njit" })[0].slug).toBe(
+    "new-jersey-institute-of-technology"
+  );
+  // "mit" alias matches massachusetts-institute-of-technology
+  expect(filterSchools(schools, { search: "mit" })[0].slug).toBe(
+    "massachusetts-institute-of-technology"
+  );
+  // "cmu" not in this set → no results
   expect(filterSchools(schools, { search: "cmu" })).toHaveLength(0);
-  // MIT slug contains "mit" so it matches directly; also "massachusetts" matches name
-  expect(filterSchools(schools, { search: "mit" })[0].slug).toBe("mit");
 });
 
 describe("calculatePaybackYears", () => {
