@@ -13,7 +13,8 @@
     "test:ui": "vitest --ui",
     "test:coverage": "vitest run --coverage",
     "prepare": "husky",
-    "scrape:niche": "bunx playwright install chromium && bun run scripts/scrape-niche-rankings.ts"
+    "scrape:niche": "bunx playwright install chromium && bun run scripts/scrape-niche-rankings.ts",
+    "scrape:csrankings": "bunx playwright install chromium && bun run scripts/scrape-csrankings.ts"
   },
   "lint-staged": {
     "*.{ts,tsx}": [

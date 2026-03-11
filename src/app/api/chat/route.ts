@@ -47,7 +47,7 @@ function buildSystemPrompt(): string {
   const dataStr = schoolsForPrompt
     .map(
       (s) =>
-        `${s.name} | ${s.city}, ${s.state} | ${s.region} | Rank #${s.nicheRanking ?? "N/A"} | In-state: $${s.tuitionInState} | Out-of-state: $${s.tuitionOutOfState} | R&B: $${s.roomAndBoard} | Earnings: ${s.medianEarnings6yr ? "$" + s.medianEarnings6yr : "N/A"} | Debt: ${s.medianDebt ? "$" + s.medianDebt : "N/A"} | Accept: ${(s.acceptanceRate * 100).toFixed(1)}% | Grad: ${(s.graduationRate * 100).toFixed(1)}% | Niche: Overall=${s.nicheGrades.overall} Academics=${s.nicheGrades.academics} Food=${s.nicheGrades.campusFood} Party=${s.nicheGrades.partyScene} Social=${s.nicheGrades.studentLife} Dorms=${s.nicheGrades.dorms} Safety=${s.nicheGrades.safety} Profs=${s.nicheGrades.professors} Athletics=${s.nicheGrades.athletics} Diversity=${s.nicheGrades.diversity} Value=${s.nicheGrades.value} Location=${s.nicheGrades.location}`
+        `${s.name} | ${s.city}, ${s.state} | ${s.region} | Rank #${s.csRanking ?? "N/A"} | In-state: $${s.tuitionInState} | Out-of-state: $${s.tuitionOutOfState} | R&B: $${s.roomAndBoard} | Earnings: ${s.medianEarnings6yr ? "$" + s.medianEarnings6yr : "N/A"} | Debt: ${s.medianDebt ? "$" + s.medianDebt : "N/A"} | Accept: ${(s.acceptanceRate * 100).toFixed(1)}% | Grad: ${(s.graduationRate * 100).toFixed(1)}% | Niche: Overall=${s.nicheGrades.overall} Academics=${s.nicheGrades.academics} Food=${s.nicheGrades.campusFood} Party=${s.nicheGrades.partyScene} Social=${s.nicheGrades.studentLife} Dorms=${s.nicheGrades.dorms} Safety=${s.nicheGrades.safety} Profs=${s.nicheGrades.professors} Athletics=${s.nicheGrades.athletics} Diversity=${s.nicheGrades.diversity} Value=${s.nicheGrades.value} Location=${s.nicheGrades.location}`
     )
     .join("\n");
 
@@ -60,7 +60,7 @@ RULES:
 \`\`\`filter
 {"sortBy": "...", "sortDir": "..."}
 \`\`\`
-- sortBy options: nicheRanking, roi, earnings, tuitionInState, acceptanceRate
+- sortBy options: csRanking, roi, earnings, tuitionInState, acceptanceRate
 - filter fields: state ("CA", "NJ"), region ("Northeast"), search (name match)
 - Do NOT list out stats — the user can see them in the app. Just answer the question conversationally.
 - If you don't have the data, say so briefly and point to Niche.com or College Scorecard.

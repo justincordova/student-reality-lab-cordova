@@ -9,7 +9,7 @@ describe("School Schema", () => {
       state: "MA",
       city: "Cambridge",
       region: "Northeast",
-      nicheRanking: 1,
+      csRanking: 1,
       tuitionInState: 57986,
       tuitionOutOfState: 57986,
       roomAndBoard: 18590,

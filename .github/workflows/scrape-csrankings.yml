@@ -1,8 +1,8 @@
-name: Scrape Niche Rankings
+name: Scrape CS Rankings
 
 on:
   schedule:
-    - cron: "0 6 * * *" # Daily at 6 AM UTC
+    - cron: "0 6 * * 1" # Mondays at 6 AM UTC
   workflow_dispatch: {} # Manual trigger
 
 permissions:
@@ -24,8 +24,8 @@ jobs:
       - name: Install Playwright browsers
         run: bunx playwright install --with-deps chromium
 
-      - name: Run Niche scraper
-        run: bun run scripts/scrape-niche-rankings.ts
+      - name: Run CS rankings scraper
+        run: bun run scripts/scrape-csrankings.ts
 
       - name: Commit and push if changed
         run: |
@@ -33,5 +33,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/schools.json
-          git commit -m "data: update niche rankings $(date -u +%Y-%m-%d)"
+          git commit -m "data: update CS rankings $(date -u +%Y-%m-%d)"
           git push

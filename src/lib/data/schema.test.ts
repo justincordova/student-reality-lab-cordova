@@ -40,7 +40,7 @@ describe("SchoolSchema", () => {
     state: "MA",
     city: "Cambridge",
     region: "Northeast",
-    nicheRanking: 1,
+    csRanking: 1,
     tuitionInState: 57000,
     tuitionOutOfState: 57000,
     roomAndBoard: 17000,
@@ -74,7 +74,7 @@ describe("SchoolSchema", () => {
     expect(result.success).toBe(true);
     if (result.success) {
       expect(result.data.name).toBe("MIT");
-      expect(result.data.nicheRanking).toBe(1);
+      expect(result.data.csRanking).toBe(1);
     }
   });
 

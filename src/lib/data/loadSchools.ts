@@ -10,9 +10,9 @@ export function loadSchools(): School[] {
   const data = JSON.parse(fs.readFileSync(jsonPath, "utf-8"));
   cached = data.map((item: unknown) => {
     const record = item as Record<string, unknown>;
-    // Migrate: if nicheRanking is absent, default to null
-    if (!("nicheRanking" in record)) {
-      record.nicheRanking = null;
+    // Migrate: if csRanking is absent, default to null
+    if (!("csRanking" in record)) {
+      record.csRanking = null;
     }
     return SchoolSchema.parse(record);
   });

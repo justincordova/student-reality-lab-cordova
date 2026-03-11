@@ -48,7 +48,7 @@ export const SchoolSchema = z.object({
     "Mid-Atlantic",
     "Pacific",
   ]),
-  nicheRanking: z.number().int().min(1).nullable(),
+  csRanking: z.number().int().min(1).nullable(),
   tuitionInState: z.number().nonnegative(),
   tuitionOutOfState: z.number().nonnegative(),
   roomAndBoard: z.number().nonnegative(),

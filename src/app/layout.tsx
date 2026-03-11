@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     default: "CSPathFinder",
     template: "%s | CSPathFinder",
   },
-  description: "Find and compare the top 100 Computer Science programs across US colleges.",
+  description: "Find and compare top Computer Science programs across US colleges.",
 };
 
 export default function RootLayout({

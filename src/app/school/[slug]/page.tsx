@@ -60,7 +60,7 @@ export default async function SchoolPage({ params }: { params: Promise<{ slug: s
       : null;
 
   const stats = [
-    { label: "CS Ranking", value: school.nicheRanking ? `#${school.nicheRanking}` : "—" },
+    { label: "CS Ranking", value: school.csRanking ? `#${school.csRanking}` : "—" },
     { label: "In-State Tuition", value: formatCurrency(school.tuitionInState) },
     { label: "Out-of-State Tuition", value: formatCurrency(school.tuitionOutOfState) },
     { label: "Room & Board", value: formatCurrency(school.roomAndBoard) },

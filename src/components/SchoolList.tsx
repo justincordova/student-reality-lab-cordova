@@ -27,7 +27,7 @@ interface SortOption {
 }
 
 const SORT_OPTIONS: SortOption[] = [
-  { value: "nicheRanking", label: "Overall", defaultDir: "asc" },
+  { value: "csRanking", label: "Overall", defaultDir: "asc" },
   { value: "roi", label: "ROI", defaultDir: "asc" },
   { value: "earnings", label: "Earnings", defaultDir: "desc" },
   { value: "tuitionInState", label: "Tuition", defaultDir: "asc" },
@@ -45,12 +45,12 @@ export default function SchoolList({ schools }: SchoolListProps) {
   const [regionFilter, setRegionFilter] = useState(searchParams.get("region") ?? "");
   const [sortBy, setSortBy] = useState<SortField>(() => {
     const param = searchParams.get("sort");
-    if (!param || param === "ranking") return "nicheRanking";
+    if (!param || param === "ranking") return "csRanking";
     return param as SortField;
   });
   const [sortDir, setSortDir] = useState<"asc" | "desc">(() => {
     if (searchParams.get("dir")) return searchParams.get("dir") as "asc" | "desc";
-    const defaultSort = (searchParams.get("sort") as SortField) ?? "nicheRanking";
+    const defaultSort = (searchParams.get("sort") as SortField) ?? "csRanking";
     return SORT_OPTIONS.find((o) => o.value === defaultSort)?.defaultDir ?? "asc";
   });
   const [page, setPage] = useState(Number(searchParams.get("page")) || 1);
@@ -110,7 +110,7 @@ export default function SchoolList({ schools }: SchoolListProps) {
     if (debouncedSearch) params.set("q", debouncedSearch);
     if (stateFilter) params.set("state", stateFilter);
     if (regionFilter) params.set("region", regionFilter);
-    if (sortBy !== "nicheRanking") params.set("sort", sortBy);
+    if (sortBy !== "csRanking") params.set("sort", sortBy);
     if (sortDir !== "asc") params.set("dir", sortDir);
     if (page > 1) params.set("page", String(page));
 
@@ -153,7 +153,7 @@ export default function SchoolList({ schools }: SchoolListProps) {
     setSearch("");
     setStateFilter("");
     setRegionFilter("");
-    setSortBy("nicheRanking");
+    setSortBy("csRanking");
     setSortDir("asc");
     setPage(1);
   }, []);
@@ -307,7 +307,7 @@ export default function SchoolList({ schools }: SchoolListProps) {
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-2 mb-1">
                     <span className="text-blue font-mono text-sm font-bold">
-                      {school.nicheRanking ? `#${school.nicheRanking}` : "—"}
+                      {school.csRanking ? `#${school.csRanking}` : "—"}
                     </span>
                     <span className="font-semibold text-lg truncate">{school.name}</span>
                   </div>

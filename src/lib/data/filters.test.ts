@@ -9,7 +9,7 @@ function makeSchool(overrides: Partial<School> = {}): School {
     state: "CA",
     city: "San Francisco",
     region: "West",
-    nicheRanking: 1,
+    csRanking: 1,
     tuitionInState: 10000,
     tuitionOutOfState: 30000,
     roomAndBoard: 12000,
@@ -44,7 +44,7 @@ const schoolA = makeSchool({
   name: "Alpha U",
   slug: "alpha-u",
   state: "CA",
-  nicheRanking: 1,
+  csRanking: 1,
   tuitionInState: 5000,
   region: "West",
 });
@@ -52,7 +52,7 @@ const schoolB = makeSchool({
   name: "Beta U",
   slug: "beta-u",
   state: "NY",
-  nicheRanking: 2,
+  csRanking: 2,
   tuitionInState: 15000,
   region: "Northeast",
 });
@@ -60,7 +60,7 @@ const schoolC = makeSchool({
   name: "Gamma U",
   slug: "gamma-u",
   state: "CA",
-  nicheRanking: 3,
+  csRanking: 3,
   tuitionInState: 10000,
   region: "West",
 });
@@ -110,10 +110,10 @@ describe("filterSchools", () => {
     expect(result[0].tuitionInState).toBe(15000);
   });
 
-  it("sorts by nicheRanking ascending", () => {
-    const result = filterSchools(schools, { sortBy: "nicheRanking", sortDir: "asc" }) as School[];
-    expect(result[0].nicheRanking).toBe(1);
-    expect(result[2].nicheRanking).toBe(3);
+  it("sorts by csRanking ascending", () => {
+    const result = filterSchools(schools, { sortBy: "csRanking", sortDir: "asc" }) as School[];
+    expect(result[0].csRanking).toBe(1);
+    expect(result[2].csRanking).toBe(3);
   });
 
   it("paginates when paginate: true", () => {
