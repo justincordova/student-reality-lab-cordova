@@ -2,7 +2,7 @@
 
 ## Overview
 
-Replace US News ranking with Niche.com's numeric CS program rankings as the primary ranking system. Automate daily scraping via GitHub Actions + Playwright. Remove letter-grade sort filters (not granular enough to rank), keep only sorts backed by real numbers.
+Replace US News ranking with Niche.com's numeric CS program rankings. Automate daily scraping via GitHub Actions + Playwright. Remove letter-grade sort filters (not granular enough to rank), keep only sorts backed by real numbers.
 
 ## Architecture
 
@@ -66,8 +66,7 @@ Daily at 6 AM UTC (GitHub Actions cron)
 ### `src/lib/data/schema.ts`
 
 - Add `nicheRanking: z.number().int().min(1).nullable()` to SchoolSchema
-- Remove `ranking` field (US News) from SchoolSchema
-- Remove any references to the old `ranking` field across the codebase
+- Remove `ranking` field (US News) entirely from SchoolSchema
 
 ### `data/schools.json`
 
@@ -81,17 +80,17 @@ Daily at 6 AM UTC (GitHub Actions cron)
 - Remove all Niche grade fields from `SortField`: `overall`, `academics`, `value`, `diversity`, `campus`, `athletics`, `partyScene`, `professors`, `location`, `dorms`, `campusFood`, `studentLife`, `safety`
 - Remove `NICHE_GRADE_FIELDS` set and grade-sorting branch in `getSortValue`
 - Keep `gradeToNumeric` in schema.ts (still used by `GradeBadge` for display)
+- Update tiebreaker in sort comparator: use `nicheRanking` (fallback to alphabetical name if both null)
 
 ### `src/components/SchoolList.tsx`
 
 Replace `SORT_OPTIONS` with only real-number sorts:
 
 ```
-Overall (asc, default) | ROI (asc) | Earnings (asc) | Tuition (asc) | Acceptance (asc)
+Overall (asc, default) | ROI (asc) | Earnings (desc) | Tuition (asc) | Acceptance (asc)
 ```
 
 - Default sort = `nicheRanking` ascending (#1 = best)
-- All sorts default to ascending for consistency (#1 = best in every category)
 - **Remove `rankMap` useMemo entirely** — use `school.nicheRanking` directly
 - Card rank badge: `#{school.nicheRanking}` (or `—` if null)
 - Update `clearAllFilters` to reset to `nicheRanking`
@@ -99,21 +98,15 @@ Overall (asc, default) | ROI (asc) | Earnings (asc) | Tuition (asc) | Acceptance
 
 ### Sort direction for each field:
 
-| Sort       | Ascending (#1 = best) means           | Descending means             |
-| ---------- | ------------------------------------- | ---------------------------- |
-| Overall    | #1 first (best overall)               | #100 first (worst overall)   |
-| ROI        | Fastest payback first                 | Slowest payback first        |
-| Earnings   | Highest earnings first                | Lowest earnings first        |
-| Tuition    | Cheapest first                        | Most expensive first         |
-| Acceptance | Lowest rate first (hardest to get in) | Highest rate first (easiest) |
+| Sort       | Default dir | Ascending means                 | Descending means       |
+| ---------- | ----------- | ------------------------------- | ---------------------- |
+| Overall    | asc         | #1 first (best)                 | #100 first (worst)     |
+| ROI        | asc         | Fastest payback first           | Slowest payback first  |
+| Earnings   | desc        | Lowest earnings first           | Highest earnings first |
+| Tuition    | asc         | Cheapest first                  | Most expensive first   |
+| Acceptance | asc         | Lowest rate (hardest to get in) | Highest rate (easiest) |
 
-Note: all default to ascending. For Earnings this means highest first because `getSortValue` returns the raw dollar amount and we sort descending internally for "higher is better" fields — wait, no. To keep it consistent, we need `getSortValue` to return values where **lower = better for ascending sort**:
-
-- `nicheRanking`: already lower = better ✓
-- `roi`: currently negated payback (more negative = better). Needs adjustment: return `totalCost / earnings` directly (lower payback years = better) ✓
-- `medianEarnings6yr`: higher = better, so negate it: return `-school.medianEarnings6yr` so asc sort puts highest first ✓
-- `tuitionInState`: lower = cheaper = better ✓
-- `acceptanceRate`: lower = more selective. This is subjective — some students want easy admission. Default asc = most selective first (lower rate = better). Toggle to desc for easiest first.
+Keep `getSortValue` returning natural values (raw numbers). Use `defaultDir` per sort option to control which direction is "best first". No value negation hacks.
 
 ## Phase 3: GitHub Actions Workflow
 
@@ -163,7 +156,7 @@ jobs:
 
 **Failure behavior:** Scraper exits code 1 → workflow stops before commit → last good data preserved
 
-**Timeout:** 15 minutes (increased from 10 to allow for 15 pages + delays)
+**Timeout:** 15 minutes (allows for 15 pages + random delays)
 
 ## Phase 4: Frontend Cleanup
 
@@ -171,50 +164,57 @@ jobs:
 
 - Show Niche ranking: `#{school.nicheRanking}` or `—` if unranked
 - Keep GradeBadges on cards (visual info, just not sortable)
-- Users can still see "A+ Professors" at a glance, they just can't sort by it
 
 ### School detail page (`src/app/school/[slug]/page.tsx`)
 
-- Show "Niche CS Ranking" → `#3` in stats grid
-- Remove "CS Ranking" (old US News reference)
+- Show "CS Ranking" → `#3` in stats grid (Niche is the only source now, no need to label it)
+- Remove old US News `ranking` references
 - Keep all other stats (tuition, earnings, acceptance, graduation, etc.)
 - Keep Niche grades grid display
 
 ### Chat system prompt (`src/app/api/chat/route.ts`)
 
 - Update `buildSystemPrompt()` to reference `nicheRanking` instead of `ranking`
-- Update available sortBy values in the prompt
+- Update available sortBy values in the prompt (remove grade-based sorts)
 
 ## Implementation Order
 
 1. Write scraper script `scripts/scrape-niche-rankings.ts`
 2. Test scraper locally — confirm it works and matches our schools
-3. If scraper works: update schema, data, filters, frontend
-4. If scraper is blocked: troubleshoot PerimeterX before changing anything else
-5. Add GitHub Actions workflow
-6. Update tests, run lint, commit all changes
+3. If scraper is blocked: troubleshoot PerimeterX before changing anything else
+4. If scraper works: update schema, data, filters, frontend
+5. Update all test files to use `nicheRanking` instead of `ranking` and remove grade sort tests
+6. Add GitHub Actions workflow
+7. Run lint + tests, commit all changes
 
 ## Risks & Mitigations
 
-| Risk                                     | Likelihood              | Mitigation                                                                         |
-| ---------------------------------------- | ----------------------- | ---------------------------------------------------------------------------------- |
-| PerimeterX blocks scraper                | Medium                  | Stealth plugin → headed mode with xvfb → manual fallback                           |
-| Niche DOM structure changes              | Low                     | Assert min 20 results/page, fail loudly, log selectors that break                  |
-| Schools not in Niche top 356             | Unlikely (356 is large) | `nicheRanking: null`, sort last                                                    |
-| GitHub Actions minutes exceeded          | Very low (150/2000)     | N/A                                                                                |
-| Niche ToS prohibits scraping             | Unknown                 | Use respectful delays, don't scrape more than once/day, cache results              |
-| Rankings shift dramatically between runs | Low                     | Log warning if >30% shift 50+ positions, still save (rankings do genuinely change) |
+| Risk                                     | Likelihood              | Mitigation                                                        |
+| ---------------------------------------- | ----------------------- | ----------------------------------------------------------------- |
+| PerimeterX blocks scraper                | Medium                  | Stealth plugin → headed mode with xvfb → manual fallback          |
+| Niche DOM structure changes              | Low                     | Assert min 20 results/page, fail loudly, log selectors that break |
+| Schools not in Niche top 356             | Unlikely (356 is large) | `nicheRanking: null`, sort last                                   |
+| GitHub Actions minutes exceeded          | Very low (150/2000)     | N/A                                                               |
+| Niche ToS prohibits scraping             | Unknown                 | Respectful delays, once/day only, cache results                   |
+| Rankings shift dramatically between runs | Low                     | Log warning if >30% shift 50+ positions, still save               |
 
 ## Files Changed
 
-| File                                 | Action                                                    |
-| ------------------------------------ | --------------------------------------------------------- |
-| `scripts/scrape-niche-rankings.ts`   | **New** — scraper script                                  |
-| `.github/workflows/scrape-niche.yml` | **New** — daily cron workflow                             |
-| `data/schools.json`                  | Remove `ranking`, add `nicheRanking`                      |
-| `src/lib/data/schema.ts`             | Remove `ranking`, add `nicheRanking`                      |
-| `src/lib/data/filters.ts`            | Replace sort fields, remove grade sorts                   |
-| `src/components/SchoolList.tsx`      | New sort options, remove rankMap, update card display     |
-| `src/app/school/[slug]/page.tsx`     | Show Niche ranking instead of US News                     |
-| `src/app/api/chat/route.ts`          | Update system prompt references                           |
-| `package.json`                       | Add `playwright` devDependency, add `scrape:niche` script |
+| File                                 | Action                                                     |
+| ------------------------------------ | ---------------------------------------------------------- |
+| `scripts/scrape-niche-rankings.ts`   | **New** — scraper script                                   |
+| `.github/workflows/scrape-niche.yml` | **New** — daily cron workflow                              |
+| `data/schools.json`                  | Remove `ranking`, add `nicheRanking`                       |
+| `src/lib/data/schema.ts`             | Remove `ranking`, add `nicheRanking`                       |
+| `src/lib/data/filters.ts`            | Replace sort fields, remove grade sorts, update tiebreaker |
+| `src/components/SchoolList.tsx`      | New sort options, remove rankMap, update card display      |
+| `src/app/school/[slug]/page.tsx`     | Use `nicheRanking`, remove US News references              |
+| `src/app/api/chat/route.ts`          | Update system prompt references                            |
+| `src/app/page.tsx`                   | Update any `ranking` references                            |
+| `package.json`                       | Add `playwright` devDependency, add `scrape:niche` script  |
+| `src/lib/data/filters.test.ts`       | Update sort field tests, remove grade sort tests           |
+| `src/lib/data/schema.test.ts`        | Update SchoolSchema tests for `nicheRanking`               |
+| `src/tests/data/filters.test.ts`     | Update sort field tests                                    |
+| `src/tests/data/loadSchools.test.ts` | Update ranking references                                  |
+| `src/tests/data/schema.test.ts`      | Update schema validation tests                             |
+| `src/components/ChatDrawer.test.tsx` | Update any sort references                                 |
