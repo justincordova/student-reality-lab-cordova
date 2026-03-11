@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 interface ResourceCardProps {
   name: string;
   url: string;
@@ -12,6 +10,7 @@ export default function ResourceCard({ name, url, description }: ResourceCardPro
       href={url}
       target="_blank"
       rel="noopener noreferrer"
+      aria-label={`Visit ${name} (opens in new tab)`}
       className="bg-mantle border border-surface0 hover:border-blue transition-all rounded-lg p-4 flex flex-col h-full"
     >
       <h3 className="font-semibold text-blue mb-2">{name}</h3>

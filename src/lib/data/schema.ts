@@ -59,6 +59,13 @@ export const SchoolSchema = z.object({
 });
 export type School = z.infer<typeof SchoolSchema>;
 
+export const ResourceSchema = z.object({
+  name: z.string(),
+  url: z.string().url(),
+  description: z.string(),
+});
+export type Resource = z.infer<typeof ResourceSchema>;
+
 export const ChatFiltersSchema = z.object({
   sortBy: z.string().optional(),
   rankSource: z.enum(["csrankings", "niche"]).optional(),
