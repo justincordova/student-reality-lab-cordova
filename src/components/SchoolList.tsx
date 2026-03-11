@@ -236,32 +236,52 @@ export default function SchoolList({ csrankingsSchools, nicheSchools }: SchoolLi
           className="flex-1 min-w-[200px] px-4 py-2 bg-mantle border border-surface0 rounded-lg text-text placeholder:text-overlay0 focus:outline-none focus:ring-2 focus:ring-blue"
           aria-label="Search schools"
         />
-        <select
-          value={stateFilter}
-          onChange={(e) => updateFilter(setStateFilter, e.target.value)}
-          className="px-4 py-2 pr-10 bg-mantle border border-surface0 rounded-lg text-text focus:outline-none focus:ring-2 focus:ring-blue"
-          aria-label="Filter by state"
-        >
-          <option value="">All States</option>
-          {states.map((s) => (
-            <option key={s} value={s}>
-              {s}
-            </option>
-          ))}
-        </select>
-        <select
-          value={regionFilter}
-          onChange={(e) => updateFilter(setRegionFilter, e.target.value)}
-          className="px-4 py-2 pr-10 bg-mantle border border-surface0 rounded-lg text-text focus:outline-none focus:ring-2 focus:ring-blue"
-          aria-label="Filter by region"
-        >
-          <option value="">All Regions</option>
-          {regions.map((r) => (
-            <option key={r} value={r}>
-              {r}
-            </option>
-          ))}
-        </select>
+        <div className="relative">
+          <select
+            value={stateFilter}
+            onChange={(e) => updateFilter(setStateFilter, e.target.value)}
+            className="appearance-none px-4 py-2 pr-8 bg-mantle border border-surface0 rounded-lg text-text focus:outline-none focus:ring-2 focus:ring-blue"
+            aria-label="Filter by state"
+          >
+            <option value="">All States</option>
+            {states.map((s) => (
+              <option key={s} value={s}>
+                {s}
+              </option>
+            ))}
+          </select>
+          <svg
+            className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none w-4 h-4 text-subtext0"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+          >
+            <path d="M6 9l6 6 6-6" />
+          </svg>
+        </div>
+        <div className="relative">
+          <select
+            value={regionFilter}
+            onChange={(e) => updateFilter(setRegionFilter, e.target.value)}
+            className="appearance-none px-4 py-2 pr-8 bg-mantle border border-surface0 rounded-lg text-text focus:outline-none focus:ring-2 focus:ring-blue"
+            aria-label="Filter by region"
+          >
+            <option value="">All Regions</option>
+            {regions.map((r) => (
+              <option key={r} value={r}>
+                {r}
+              </option>
+            ))}
+          </select>
+          <svg
+            className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none w-4 h-4 text-subtext0"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+          >
+            <path d="M6 9l6 6 6-6" />
+          </svg>
+        </div>
       </div>
 
       {/* Ranking source toggle */}
