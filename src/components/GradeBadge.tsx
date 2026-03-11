@@ -14,7 +14,7 @@ function gradeColor(grade: NicheGradeType): string {
   if (g.startsWith("A")) return "bg-green/20 text-green";
   if (g.startsWith("B")) return "bg-blue/20 text-blue";
   if (g.startsWith("C")) return "bg-peach/20 text-peach";
-  if (g.startsWith("D")) return "bg-peach/20 text-peach";
+  if (g.startsWith("D")) return "bg-red/20 text-red";
   return "bg-red/20 text-red";
 }
 

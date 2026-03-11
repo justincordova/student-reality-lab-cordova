@@ -1,6 +1,10 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { loadSchoolsBySource, getSchoolBySlug } from "@/lib/data/loadSchools";
+import {
+  loadSchoolsBySource,
+  getSchoolBySlug,
+  calculatePaybackYears,
+} from "@/lib/data/loadSchools";
 import GradeBadge from "@/components/GradeBadge";
 import SchoolLogo from "@/components/SchoolLogo";
 import type { Metadata } from "next";
@@ -19,7 +23,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const school = getSchoolBySlug(slug);
-  return { title: school?.name ?? "School" };
+  return { title: school?.name ?? "Not Found" };
 }
 
 function formatCurrency(n: number | null): string {
@@ -63,29 +67,10 @@ export default async function SchoolPage({ params }: { params: Promise<{ slug: s
   const school = getSchoolBySlug(slug);
   if (!school) notFound();
 
-  const MAX_COST = 1000000;
-  const totalCostInState =
-    typeof school.tuitionInState === "number" &&
-    typeof school.roomAndBoard === "number" &&
-    school.tuitionInState >= 0 &&
-    school.roomAndBoard >= 0
-      ? Math.min((school.tuitionInState + school.roomAndBoard) * 4, MAX_COST)
-      : null;
-  const totalCostOutOfState =
-    typeof school.tuitionOutOfState === "number" &&
-    typeof school.roomAndBoard === "number" &&
-    school.tuitionOutOfState >= 0 &&
-    school.roomAndBoard >= 0
-      ? Math.min((school.tuitionOutOfState + school.roomAndBoard) * 4, MAX_COST)
-      : null;
-  const paybackYears =
-    typeof school.medianEarnings6yr === "number" &&
-    school.medianEarnings6yr > 0 &&
-    totalCostInState !== null &&
-    totalCostInState > 0 &&
-    totalCostInState < MAX_COST
-      ? Math.min(totalCostInState / school.medianEarnings6yr, 100).toFixed(1)
-      : null;
+  const totalCostInState = (school.tuitionInState + school.roomAndBoard) * 4;
+  const totalCostOutOfState = (school.tuitionOutOfState + school.roomAndBoard) * 4;
+  const rawPayback = calculatePaybackYears(school);
+  const paybackYears = rawPayback !== null ? rawPayback.toFixed(1) : null;
 
   const stats: { label: string; value: string }[] = [
     { label: "CSRankings", value: school.csRanking ? `#${school.csRanking}` : "N/A" },
@@ -94,7 +79,7 @@ export default async function SchoolPage({ params }: { params: Promise<{ slug: s
     { label: "Out-of-State Tuition", value: formatCurrency(school.tuitionOutOfState) },
     { label: "Room & Board", value: formatCurrency(school.roomAndBoard) },
     {
-      label: "Median Earnings (6yr)",
+      label: "Median Earnings (6yr after enrollment)",
       value: school.medianEarnings6yr ? formatCurrency(school.medianEarnings6yr) : "—",
     },
     { label: "Median Debt", value: school.medianDebt ? formatCurrency(school.medianDebt) : "—" },
@@ -103,10 +88,10 @@ export default async function SchoolPage({ params }: { params: Promise<{ slug: s
     { label: "Enrollment", value: school.enrollment.toLocaleString("en-US") },
   ];
 
-  if (totalCostInState) {
+  if (totalCostInState > 0) {
     stats.push({ label: "Total 4-Year Cost (In-State)", value: formatCurrency(totalCostInState) });
   }
-  if (totalCostOutOfState) {
+  if (totalCostOutOfState > 0) {
     stats.push({
       label: "Total 4-Year Cost (Out-of-State)",
       value: formatCurrency(totalCostOutOfState),
@@ -158,7 +143,7 @@ export default async function SchoolPage({ params }: { params: Promise<{ slug: s
       {paybackYears && (
         <section className="p-6 bg-mantle rounded-lg border border-surface0">
           <div className="text-sm text-subtext0 mb-1">
-            Payback Period (4-Year Cost of Attendance ÷ Median First-Year Earnings)
+            Payback Period (4-Year Cost of Attendance ÷ Median Earnings 6 Years After Enrollment)
           </div>
           <div className="text-3xl font-bold text-text">
             {paybackYears} <span className="text-lg font-normal text-subtext0">years</span>
