@@ -17,6 +17,7 @@ const ChatFiltersSchema = z.object({
 const FILTER_REGEX = /```filter\n([\s\S]*?)\n```/;
 
 interface Message {
+  id: string;
   role: "user" | "assistant";
   content: string;
   filters?: ChatFilters;
@@ -102,6 +103,8 @@ export default function ChatDrawer() {
   const abortControllerRef = useRef<AbortController | null>(null);
   const messagesRef = useRef(messages);
   messagesRef.current = messages;
+  const nextIdRef = useRef(0);
+  const newMsgId = () => String(nextIdRef.current++);
 
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -122,7 +125,7 @@ export default function ChatDrawer() {
 
     if (abortControllerRef.current) abortControllerRef.current.abort();
 
-    const userMsg: Message = { role: "user", content: text };
+    const userMsg: Message = { id: newMsgId(), role: "user", content: text };
     const newMessages = [...messagesRef.current, userMsg];
     setMessages(newMessages);
     setInput("");
@@ -141,13 +144,27 @@ export default function ChatDrawer() {
         signal: abortController.signal,
       });
 
-      const data = await res.json();
+      let data: { reply?: string; error?: string };
+      try {
+        data = await res.json();
+      } catch {
+        setMessages([
+          ...newMessages,
+          { id: newMsgId(), role: "assistant", content: "Server error. Please try again." },
+        ]);
+        return;
+      }
 
-      if (data.error) {
-        setMessages([...newMessages, { role: "assistant", content: `Error: ${data.error}` }]);
+      if (!res.ok || data.error) {
+        const errMsg = data.error ?? `Request failed (${res.status})`;
+        setMessages([
+          ...newMessages,
+          { id: newMsgId(), role: "assistant", content: `Error: ${errMsg}` },
+        ]);
       } else {
-        const { cleanText, filters } = parseFilterBlock(data.reply);
+        const { cleanText, filters } = parseFilterBlock(data.reply ?? "");
         const assistantMsg: Message = {
+          id: newMsgId(),
           role: "assistant",
           content: cleanText,
           filters: filters ?? undefined,
@@ -171,7 +188,7 @@ export default function ChatDrawer() {
       if (err instanceof Error && err.name === "AbortError") return;
       setMessages([
         ...newMessages,
-        { role: "assistant", content: "Failed to connect. Please try again." },
+        { id: newMsgId(), role: "assistant", content: "Failed to connect. Please try again." },
       ]);
     } finally {
       setLoading(false);
@@ -253,9 +270,9 @@ export default function ChatDrawer() {
                 </div>
               )}
 
-              {messages.map((msg, i) => (
+              {messages.map((msg) => (
                 <div
-                  key={i}
+                  key={msg.id}
                   className={`flex ${msg.role === "user" ? "justify-end" : "justify-start"}`}
                 >
                   <div

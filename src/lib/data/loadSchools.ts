@@ -10,11 +10,17 @@ function loadFromFile(filename: string): School[] {
   if (cache.has(filename)) return cache.get(filename)!;
   const jsonPath = path.join(process.cwd(), "data", filename);
   const data = JSON.parse(fs.readFileSync(jsonPath, "utf-8"));
-  const schools = data.map((item: unknown) => {
+  const schools = data.map((item: unknown, index: number) => {
     const record = item as Record<string, unknown>;
     if (!("csRanking" in record)) record.csRanking = null;
     if (!("nicheRanking" in record)) record.nicheRanking = null;
-    return SchoolSchema.parse(record);
+    const result = SchoolSchema.safeParse(record);
+    if (!result.success) {
+      throw new Error(
+        `Invalid school record at index ${index} in ${filename}: ${result.error.message}`
+      );
+    }
+    return result.data;
   });
   cache.set(filename, schools);
   return schools;
