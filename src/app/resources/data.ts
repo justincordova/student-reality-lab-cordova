@@ -96,6 +96,51 @@ export const resourceCategories = [
       },
     ],
   },
+  {
+    title: "AI Tools",
+    resources: [
+      {
+        name: "Claude",
+        url: "https://claude.ai",
+        description: "Anthropic's AI assistant for coding and reasoning",
+      },
+      {
+        name: "ChatGPT",
+        url: "https://chat.openai.com",
+        description: "OpenAI's conversational AI for various tasks",
+      },
+      {
+        name: "Gemini",
+        url: "https://gemini.google.com",
+        description: "Google's AI assistant for creative and technical tasks",
+      },
+      {
+        name: "GLM",
+        url: "https://open.bigmodel.cn",
+        description: "Zhipu AI's large language model",
+      },
+      {
+        name: "Grok",
+        url: "https://grok.x.ai",
+        description: "xAI's AI assistant with real-time knowledge",
+      },
+      {
+        name: "Perplexity",
+        url: "https://perplexity.ai",
+        description: "AI-powered search engine with citations",
+      },
+      {
+        name: "Lovable",
+        url: "https://lovable.dev",
+        description: "AI-powered full-stack development tool",
+      },
+      {
+        name: "Bolt",
+        url: "https://bolt.new",
+        description: "AI web app builder for rapid prototyping",
+      },
+    ],
+  },
 ];
 
 ResourceCategorySchema.array().parse(resourceCategories);

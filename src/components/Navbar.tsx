@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import ThemeToggle from "./ThemeToggle";
 import { usePathname } from "next/navigation";
