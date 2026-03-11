@@ -255,15 +255,36 @@ export default function SchoolList({ csrankingsSchools, nicheSchools }: SchoolLi
     <div className="space-y-6">
       {/* Search + dropdowns */}
       <div className="flex flex-wrap gap-3">
-        <input
-          type="text"
-          placeholder="Search schools..."
-          value={search}
-          onChange={(e) => updateFilter(setSearch, e.target.value.slice(0, 100))}
-          maxLength={100}
-          className="flex-1 min-w-[200px] px-4 py-2 bg-mantle border border-surface0 rounded-lg text-text placeholder:text-overlay0 focus:outline-none focus:ring-2 focus:ring-primary"
-          aria-label="Search schools"
-        />
+        <div className="relative flex-1 min-w-[200px]">
+          <input
+            type="text"
+            placeholder="Search schools..."
+            value={search}
+            onChange={(e) => updateFilter(setSearch, e.target.value.slice(0, 100))}
+            maxLength={100}
+            className="w-full px-4 py-2 bg-mantle border border-surface0 rounded-lg text-text placeholder:text-overlay0 focus:outline-none focus:ring-2 focus:ring-primary pr-8"
+            aria-label="Search schools"
+          />
+          {search && (
+            <button
+              onClick={() => updateFilter(setSearch, "")}
+              className="absolute right-2.5 top-1/2 -translate-y-1/2 text-overlay0 hover:text-text transition-colors"
+              aria-label="Clear search"
+            >
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2.5"
+              >
+                <line x1="18" y1="6" x2="6" y2="18" />
+                <line x1="6" y1="6" x2="18" y2="18" />
+              </svg>
+            </button>
+          )}
+        </div>
         <div className="relative">
           <select
             value={stateFilter}
@@ -355,14 +376,6 @@ export default function SchoolList({ csrankingsSchools, nicheSchools }: SchoolLi
             </button>
           ))}
         </div>
-        {hasActiveFilters && (
-          <button
-            onClick={clearAllFilters}
-            className="ml-auto text-sm text-subtext0 hover:text-red transition-colors"
-          >
-            Clear filters
-          </button>
-        )}
       </div>
 
       {/* Results count */}
