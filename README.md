@@ -1,40 +1,34 @@
 # CSPathFinder
 
-Find and compare the top 100 Computer Science programs across US colleges.
+Find and compare the top Computer Science programs across US colleges.
 
-## Features
+## What You Can Do
 
-- **Top 100 CS Schools:** Paginated list (10 per page) with rankings, tuition, earnings, and Niche grades
-- **Rich Filters:** Sort by ranking, ROI, tuition, earnings, campus food, party scene, social life, athletics, dorms, safety, professors, diversity, value, location
-- **School Details:** Full stats page with Niche letter grades across 12 categories
-- **AI Chat Assistant:** Slide-out chatbot that answers questions AND auto-applies filters to the list
-- **Theming:** Catppuccin Mocha (dark) / Latte (light) with toggle
-- **Charts:** Visual ROI comparison across schools
+**Browse and Filter**
 
-## Quick Start
+- Explore top CS programs with rankings from CSRankings.org
+- Sort by CS ranking, ROI, tuition, earnings, or acceptance rate
+- Filter by state, region, or search by school name
+- See detailed stats: tuition, earnings, debt, graduation rates, and acceptance rates
 
-```bash
-bun install
-cp .env.example .env.local  # Add your tokens
-bun run dev                  # http://localhost:3000
-```
+**School Details**
 
-## Environment Variables
+- View Niche letter grades across 12 categories: academics, campus food, party scene, social life, dorms, safety, professors, athletics, diversity, value, and location
+- Compare ROI and earnings data
+- See school logos and quick stats at a glance
 
-| Variable                     | Description                                                     |
-| ---------------------------- | --------------------------------------------------------------- |
-| `HF_TOKEN`                   | Hugging Face API token (free at huggingface.co/settings/tokens) |
-| `NEXT_PUBLIC_LOGO_DEV_TOKEN` | Logo.dev API token (free at logo.dev) for school logos          |
+**AI Assistant**
 
-## Data Sources
+- Ask questions like "Best CS school for food?" or "Cheapest top 20 programs?"
+- Get instant answers with automatic filter suggestions
+- The chat applies filters to your list so you can see results immediately
 
-- [College Scorecard API](https://collegescorecard.ed.gov/data/api/) — tuition, earnings, debt, graduation rates
-- [Niche.com](https://www.niche.com/colleges/) — 12-category letter grades (food, party, social, safety, etc.)
-- [US News](https://www.usnews.com/best-graduate-schools/top-science-schools/computer-science-rankings) — CS program rankings
+**Visual Data**
 
-## Tech Stack
+- ROI charts comparing multiple schools
+- Clean, readable tables with pagination
+- Dark and light theme modes
 
-- Next.js 16 (App Router), React 19, Bun, TypeScript
-- Tailwind CSS v4, Catppuccin theme
-- Recharts, Zod v4, Vitest
-- Hugging Face Inference API (Mistral Small)
+## Live Site
+
+Visit the app at [cspathfinder.vercel.app](https://cspathfinder.vercel.app)
