@@ -453,7 +453,7 @@ export default function SchoolList({ csrankingsSchools, nicheSchools }: SchoolLi
           style={{ animation: "fadeInUp 0.3s ease-out" }}
         >
           <h2 className="text-sm font-bold text-subtext0 mb-4">
-            Tuition vs Median Earnings (top 15 matching schools)
+            Tuition vs Median Earnings — top 15 matching schools
           </h2>
           <ROIChart schools={allFiltered} />
         </div>

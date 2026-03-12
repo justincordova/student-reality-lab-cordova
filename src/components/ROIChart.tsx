@@ -27,7 +27,8 @@ export default function ROIChart({ schools }: ROIChartProps) {
             ? s.name.slice(0, 20) + "..."
             : s.name
           : "Unknown",
-      tuition: typeof s.tuitionInState === "number" ? s.tuitionInState : 0,
+      inStateTuition: typeof s.tuitionInState === "number" ? s.tuitionInState : 0,
+      outOfStateTuition: typeof s.tuitionOutOfState === "number" ? s.tuitionOutOfState : 0,
       earnings: typeof s.medianEarnings6yr === "number" ? s.medianEarnings6yr : 0,
     }));
 
@@ -68,7 +69,8 @@ export default function ROIChart({ schools }: ROIChartProps) {
             formatter={(value: number) => [`$${value.toLocaleString()}`, ""]}
           />
           <Legend verticalAlign="top" height={36} />
-          <Bar dataKey="tuition" name="In-State Tuition" fill="var(--ctp-peach)" />
+          <Bar dataKey="inStateTuition" name="In-State Tuition" fill="var(--ctp-peach)" />
+          <Bar dataKey="outOfStateTuition" name="Out-of-State Tuition" fill="var(--ctp-red)" />
           <Bar dataKey="earnings" name="Median Earnings (6yr)" fill="var(--ctp-green)" />
         </BarChart>
       </ResponsiveContainer>
