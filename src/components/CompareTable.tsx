@@ -1,5 +1,6 @@
 "use client";
 
+import { Fragment } from "react";
 import Link from "next/link";
 import type { School, NicheGrades } from "@/lib/data/schema";
 import { gradeToNumeric } from "@/lib/data/schema";
@@ -217,9 +218,9 @@ export default function CompareTable({ schools }: CompareTableProps) {
                 : new Set<number>();
 
             return (
-              <>
+              <Fragment key={row.label}>
                 {row.section && (
-                  <tr key={`section-${row.section}`}>
+                  <tr>
                     <td
                       colSpan={schools.length + 1}
                       className="bg-surface0 text-subtext0 text-xs font-bold uppercase tracking-wide px-4 py-2"
@@ -228,7 +229,7 @@ export default function CompareTable({ schools }: CompareTableProps) {
                     </td>
                   </tr>
                 )}
-                <tr key={row.label} className={rowIdx % 2 === 0 ? "bg-base" : "bg-mantle"}>
+                <tr className={rowIdx % 2 === 0 ? "bg-base" : "bg-mantle"}>
                   <td className="px-4 py-3 font-medium text-subtext0 text-sm">{row.label}</td>
                   {schools.map((school, colIdx) => {
                     const isBest = bestIndices.has(colIdx);
@@ -245,7 +246,7 @@ export default function CompareTable({ schools }: CompareTableProps) {
                     );
                   })}
                 </tr>
-              </>
+              </Fragment>
             );
           })}
         </tbody>
