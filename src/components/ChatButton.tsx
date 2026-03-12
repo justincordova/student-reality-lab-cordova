@@ -1,14 +1,17 @@
 "use client";
 
 import { useChatContext } from "./ChatProvider";
+import { useCompareContext } from "./CompareProvider";
 
 export default function ChatButton() {
   const { toggle, isOpen } = useChatContext();
+  const { slugs } = useCompareContext();
+  const compareBarVisible = slugs.length > 0;
 
   return (
     <button
       onClick={toggle}
-      className="fixed bottom-6 right-6 w-14 h-14 rounded-full bg-gradient-to-br from-primary to-pink text-on-primary shadow-lg shadow-primary/30 hover:scale-105 hover:shadow-primary/50 transition-all duration-200 flex items-center justify-center z-40"
+      className={`fixed right-6 w-14 h-14 rounded-full bg-gradient-to-br from-primary to-pink text-on-primary shadow-lg shadow-primary/30 hover:scale-105 hover:shadow-primary/50 transition-all duration-200 flex items-center justify-center z-40 ${compareBarVisible ? "bottom-20" : "bottom-6"}`}
       aria-label={isOpen ? "Close chat" : "Open chat assistant"}
     >
       {isOpen ? (
