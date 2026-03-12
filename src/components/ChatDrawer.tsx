@@ -5,34 +5,62 @@ import { useRouter, usePathname } from "next/navigation";
 import ReactMarkdown from "react-markdown";
 import { ChatFiltersSchema } from "@/lib/data/schema";
 import { useChatContext, type ChatFilters } from "./ChatProvider";
+import { useCompareContext } from "./CompareProvider";
 
 const FILTER_REGEX = /```filter\n([\s\S]*?)\n```/;
+const SUGGESTIONS_REGEX = /```suggestions\n([\s\S]*?)\n```/;
 
 interface Message {
   id: string;
   role: "user" | "assistant";
   content: string;
   filters?: ChatFilters;
+  suggestions?: string[];
 }
 
-function parseFilterBlock(text: string): { cleanText: string; filters: ChatFilters | null } {
-  if (typeof text !== "string") return { cleanText: "", filters: null };
+function parseBlocks(text: string): {
+  cleanText: string;
+  filters: ChatFilters | null;
+  suggestions: string[];
+} {
+  if (typeof text !== "string") return { cleanText: "", filters: null, suggestions: [] };
 
-  const match = text.match(FILTER_REGEX);
-  if (!match) return { cleanText: text, filters: null };
+  let cleanText = text;
+  let filters: ChatFilters | null = null;
+  let suggestions: string[] = [];
 
-  try {
-    const parsed = ChatFiltersSchema.safeParse(JSON.parse(match[1]));
-    if (!parsed.success) return { cleanText: text, filters: null };
-    const cleanText = text.replace(FILTER_REGEX, "").trim();
-    return { cleanText, filters: parsed.data };
-  } catch {
-    return { cleanText: text, filters: null };
+  const filterMatch = cleanText.match(FILTER_REGEX);
+  if (filterMatch) {
+    try {
+      const parsed = ChatFiltersSchema.safeParse(JSON.parse(filterMatch[1]));
+      if (parsed.success) {
+        filters = parsed.data;
+      }
+    } catch {
+      // ignore parse errors
+    }
+    cleanText = cleanText.replace(FILTER_REGEX, "").trim();
   }
+
+  const suggestionsMatch = cleanText.match(SUGGESTIONS_REGEX);
+  if (suggestionsMatch) {
+    try {
+      const parsed = JSON.parse(suggestionsMatch[1]);
+      if (Array.isArray(parsed) && parsed.every((s) => typeof s === "string")) {
+        suggestions = parsed.slice(0, 3);
+      }
+    } catch {
+      // ignore parse errors
+    }
+    cleanText = cleanText.replace(SUGGESTIONS_REGEX, "").trim();
+  }
+
+  return { cleanText, filters, suggestions };
 }
 
 export default function ChatDrawer() {
   const { isOpen, close, applyFilters, schoolContext } = useChatContext();
+  const { add: addToCompare } = useCompareContext();
   const router = useRouter();
   const pathname = usePathname();
   const [hasBeenOpened, setHasBeenOpened] = useState(false);
@@ -199,17 +227,23 @@ export default function ChatDrawer() {
         if (typeof replyText !== "string") {
           throw new Error("Invalid response format");
         }
-        const { cleanText, filters } = parseFilterBlock(replyText);
+        const { cleanText, filters, suggestions } = parseBlocks(replyText);
         const assistantMsg: Message = {
           id: newMsgId(),
           role: "assistant",
           content: cleanText,
           filters: filters ?? undefined,
+          suggestions: suggestions.length > 0 ? suggestions : undefined,
         };
         setMessages([...newMessages, assistantMsg]);
 
         if (filters) {
           applyFilters(filters);
+          if (filters.compare && filters.compare.length > 0) {
+            for (const slug of filters.compare) {
+              addToCompare(slug, slug);
+            }
+          }
           if (pathname !== "/") {
             const params = new URLSearchParams();
             if (filters.sortBy) params.set("sort", filters.sortBy);
@@ -335,74 +369,95 @@ export default function ChatDrawer() {
                 </div>
               )}
 
-              {messages.map((msg) => (
-                <div
-                  key={msg.id}
-                  className={`flex ${msg.role === "user" ? "justify-end" : "justify-start"}`}
-                >
+              {(() => {
+                const lastAssistantId = [...messages]
+                  .reverse()
+                  .find((m) => m.role === "assistant")?.id;
+                return messages.map((msg) => (
                   <div
-                    className={`max-w-[85%] px-3 py-2 rounded-lg text-sm ${
-                      msg.role === "user" ? "bg-primary text-on-primary" : "bg-surface0 text-text"
-                    }`}
+                    key={msg.id}
+                    className={`flex flex-col ${msg.role === "user" ? "items-end" : "items-start"}`}
                   >
-                    {msg.role === "assistant" ? (
-                      <ReactMarkdown
-                        components={{
-                          p: ({ children }) => <p className="mb-1 last:mb-0">{children}</p>,
-                          strong: ({ children }) => (
-                            <strong className="font-semibold">{children}</strong>
-                          ),
-                          ul: ({ children }) => (
-                            <ul className="list-disc pl-4 mb-1 space-y-0.5">{children}</ul>
-                          ),
-                          ol: ({ children }) => (
-                            <ol className="list-decimal pl-4 mb-1 space-y-0.5">{children}</ol>
-                          ),
-                          li: ({ children, ...props }) => <li {...props}>{children}</li>,
-                          a: ({ href, children }) => {
-                            if (!href || typeof href !== "string") {
-                              return <span>{children}</span>;
-                            }
-                            if (!href.startsWith("http://") && !href.startsWith("https://")) {
-                              return <span>{children}</span>;
-                            }
-                            try {
-                              const url = new URL(href);
-                              if (url.protocol !== "http:" && url.protocol !== "https:") {
+                    <div
+                      className={`max-w-[85%] px-3 py-2 rounded-lg text-sm ${
+                        msg.role === "user" ? "bg-primary text-on-primary" : "bg-surface0 text-text"
+                      }`}
+                    >
+                      {msg.role === "assistant" ? (
+                        <ReactMarkdown
+                          components={{
+                            p: ({ children }) => <p className="mb-1 last:mb-0">{children}</p>,
+                            strong: ({ children }) => (
+                              <strong className="font-semibold">{children}</strong>
+                            ),
+                            ul: ({ children }) => (
+                              <ul className="list-disc pl-4 mb-1 space-y-0.5">{children}</ul>
+                            ),
+                            ol: ({ children }) => (
+                              <ol className="list-decimal pl-4 mb-1 space-y-0.5">{children}</ol>
+                            ),
+                            li: ({ children, ...props }) => <li {...props}>{children}</li>,
+                            a: ({ href, children }) => {
+                              if (!href || typeof href !== "string") {
                                 return <span>{children}</span>;
                               }
-                            } catch {
-                              return <span>{children}</span>;
-                            }
-                            return (
-                              <a
-                                href={href}
-                                className="underline opacity-80"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                              >
-                                {children}
-                              </a>
-                            );
-                          },
-                        }}
-                      >
-                        {msg.content}
-                      </ReactMarkdown>
-                    ) : (
-                      <p className="whitespace-pre-wrap break-words">{msg.content}</p>
-                    )}
-                    {msg.filters && (
-                      <div
-                        className="mt-2 text-xs bg-crust/50 rounded px-2 py-1 text-subtext0"
-                        aria-live="polite"
-                      >
-                        Filters applied to list ✓
-                      </div>
-                    )}
+                              if (!href.startsWith("http://") && !href.startsWith("https://")) {
+                                return <span>{children}</span>;
+                              }
+                              try {
+                                const url = new URL(href);
+                                if (url.protocol !== "http:" && url.protocol !== "https:") {
+                                  return <span>{children}</span>;
+                                }
+                              } catch {
+                                return <span>{children}</span>;
+                              }
+                              return (
+                                <a
+                                  href={href}
+                                  className="underline opacity-80"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                >
+                                  {children}
+                                </a>
+                              );
+                            },
+                          }}
+                        >
+                          {msg.content}
+                        </ReactMarkdown>
+                      ) : (
+                        <p className="whitespace-pre-wrap break-words">{msg.content}</p>
+                      )}
+                      {msg.filters && (
+                        <div
+                          className="mt-2 text-xs bg-crust/50 rounded px-2 py-1 text-subtext0"
+                          aria-live="polite"
+                        >
+                          Filters applied to list ✓
+                        </div>
+                      )}
+                    </div>
+                    {msg.role === "assistant" &&
+                      msg.id === lastAssistantId &&
+                      msg.suggestions &&
+                      msg.suggestions.length > 0 && (
+                        <div className="mt-2 flex flex-wrap gap-1.5 max-w-[85%]">
+                          {msg.suggestions.map((s) => (
+                            <button
+                              key={s}
+                              onClick={() => sendMessage(s)}
+                              className="text-xs px-2.5 py-1 rounded-full bg-surface0 hover:bg-surface1 text-subtext0 hover:text-text transition-colors"
+                            >
+                              {s}
+                            </button>
+                          ))}
+                        </div>
+                      )}
                   </div>
-                </div>
-              ))}
+                ));
+              })()}
 
               {loading && (
                 <div className="flex justify-start">
