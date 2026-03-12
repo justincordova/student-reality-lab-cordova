@@ -4,10 +4,14 @@ import Link from "next/link";
 import ThemeToggle from "./ThemeToggle";
 import { usePathname } from "next/navigation";
 import { useFavorites } from "@/hooks/useFavorites";
+import { useState, useEffect } from "react";
 
 export default function Navbar() {
   const pathname = usePathname();
   const { count } = useFavorites();
+  const [mounted, setMounted] = useState(false);
+  // eslint-disable-next-line react-hooks/set-state-in-effect
+  useEffect(() => setMounted(true), []);
 
   return (
     <nav className="mx-auto max-w-[800px] mt-4 rounded-lg border border-surface0 bg-mantle px-8 shadow-sm">
@@ -30,7 +34,7 @@ export default function Navbar() {
           <Link
             href="/favorites"
             className="relative text-subtext0 hover:text-red transition-colors"
-            aria-label={`Favorites${count > 0 ? ` (${count})` : ""}`}
+            aria-label={`Favorites${mounted && count > 0 ? ` (${count})` : ""}`}
           >
             <svg
               width="20"
@@ -46,7 +50,7 @@ export default function Navbar() {
             >
               <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
             </svg>
-            {count > 0 && (
+            {mounted && count > 0 && (
               <span className="absolute -top-1.5 -right-1.5 bg-red text-white text-[10px] font-bold rounded-full w-4 h-4 flex items-center justify-center leading-none">
                 {count > 9 ? "9+" : count}
               </span>
