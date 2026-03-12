@@ -92,12 +92,29 @@ export default function SchoolList({ csrankingsSchools, nicheSchools }: SchoolLi
     sortBy: SortField;
     sortDir: "asc" | "desc";
     page: number;
+    rankSource: RankSource;
   } | null>(null);
 
-  const currentFiltersRef = useRef({ search, stateFilter, regionFilter, sortBy, sortDir, page });
+  const currentFiltersRef = useRef({
+    search,
+    stateFilter,
+    regionFilter,
+    sortBy,
+    sortDir,
+    page,
+    rankSource,
+  });
   useEffect(() => {
-    currentFiltersRef.current = { search, stateFilter, regionFilter, sortBy, sortDir, page };
-  }, [search, stateFilter, regionFilter, sortBy, sortDir, page]);
+    currentFiltersRef.current = {
+      search,
+      stateFilter,
+      regionFilter,
+      sortBy,
+      sortDir,
+      page,
+      rankSource,
+    };
+  }, [search, stateFilter, regionFilter, sortBy, sortDir, page, rankSource]);
 
   const handleRankSourceChange = useCallback(
     (source: RankSource) => {
@@ -131,6 +148,7 @@ export default function SchoolList({ csrankingsSchools, nicheSchools }: SchoolLi
     setSortBy(previousFilters.sortBy);
     setSortDir(previousFilters.sortDir);
     setPage(previousFilters.page);
+    setRankSource(previousFilters.rankSource);
     setPreviousFilters(null);
   }, [previousFilters]);
 
