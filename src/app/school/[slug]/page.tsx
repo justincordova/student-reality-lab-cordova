@@ -12,6 +12,7 @@ import CopyLinkButton from "@/components/CopyLinkButton";
 import type { Metadata } from "next";
 import type { NicheGrades, NicheGradeType } from "@/lib/data/schema";
 import HeartButton from "@/components/HeartButton";
+import PageTransition from "@/components/PageTransition";
 
 export async function generateStaticParams() {
   const all = [...loadSchoolsBySource("csrankings"), ...loadSchoolsBySource("niche")];
@@ -102,84 +103,87 @@ export default async function SchoolPage({ params }: { params: Promise<{ slug: s
   }
 
   return (
-    <div id="main-content" className="py-12 space-y-10">
-      <SchoolChatContext schoolName={school.name} />
-      <div>
-        <Link href="/" className="text-primary hover:underline text-sm mb-4 inline-block">
-          ← Back to Rankings
-        </Link>
-        <div className="flex items-center gap-4">
-          <SchoolLogo website={school.website} name={school.name} size={64} />
-          <div>
-            <div className="flex items-center gap-3">
-              <h1 className="text-3xl font-bold">{school.name}</h1>
-              <HeartButton slug={school.slug} size="md" />
+    <PageTransition>
+      <div id="main-content" className="py-12 space-y-10">
+        <SchoolChatContext schoolName={school.name} />
+        <div>
+          <Link href="/" className="text-primary hover:underline text-sm mb-4 inline-block">
+            ← Back to Rankings
+          </Link>
+          <div className="flex items-center gap-4">
+            <SchoolLogo website={school.website} name={school.name} size={64} />
+            <div>
+              <div className="flex items-center gap-3">
+                <h1 className="text-3xl font-bold">{school.name}</h1>
+                <HeartButton slug={school.slug} size="md" />
+              </div>
+              <p className="text-subtext0 text-lg">
+                {school.city}, {school.state} · {school.region}
+              </p>
             </div>
-            <p className="text-subtext0 text-lg">
-              {school.city}, {school.state} · {school.region}
-            </p>
           </div>
         </div>
-      </div>
 
-      <section>
-        <h2 className="text-xl font-bold mb-4">Niche Grades</h2>
-        <div className="grid grid-cols-4 sm:grid-cols-5 md:grid-cols-7 gap-4">
-          {Object.entries(school.nicheGrades).map(([key, grade]) => {
-            const gradeKey = key as keyof NicheGrades;
-            const gradeValue = grade as NicheGradeType;
-            return (
-              <GradeBadge key={key} grade={gradeValue} label={GRADE_LABELS[gradeKey]} size="md" />
-            );
-          })}
-        </div>
-      </section>
-
-      <section>
-        <h2 className="text-xl font-bold mb-4">Key Statistics</h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-          {stats.map((stat) => (
-            <div key={stat.label} className="p-4 bg-mantle rounded-lg border border-surface0">
-              <div className="text-sm text-subtext0 mb-1">{stat.label}</div>
-              <div className="text-xl font-bold">{stat.value}</div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {paybackYears && (
-        <section className="p-6 bg-mantle rounded-lg border border-primary/30 bg-gradient-to-br from-primary/5 to-transparent">
-          <div className="text-sm text-subtext0 mb-2">
-            Payback Period · 4-Year Cost of Attendance ÷ Median Earnings (6 years after enrollment)
-          </div>
-          <div className="text-4xl font-bold text-primary">
-            {paybackYears}{" "}
-            <span className="text-xl font-normal text-subtext0">years to break even</span>
+        <section>
+          <h2 className="text-xl font-bold mb-4">Niche Grades</h2>
+          <div className="grid grid-cols-4 sm:grid-cols-5 md:grid-cols-7 gap-4">
+            {Object.entries(school.nicheGrades).map(([key, grade]) => {
+              const gradeKey = key as keyof NicheGrades;
+              const gradeValue = grade as NicheGradeType;
+              return (
+                <GradeBadge key={key} grade={gradeValue} label={GRADE_LABELS[gradeKey]} size="md" />
+              );
+            })}
           </div>
         </section>
-      )}
 
-      <div className="flex flex-wrap gap-4">
-        <a
-          href={school.website}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="px-4 py-2 bg-primary text-on-primary rounded-lg hover:opacity-90 transition-opacity text-sm font-medium"
-        >
-          School Website
-        </a>
-        {school.nicheUrl && (
+        <section>
+          <h2 className="text-xl font-bold mb-4">Key Statistics</h2>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            {stats.map((stat) => (
+              <div key={stat.label} className="p-4 bg-mantle rounded-lg border border-surface0">
+                <div className="text-sm text-subtext0 mb-1">{stat.label}</div>
+                <div className="text-xl font-bold">{stat.value}</div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {paybackYears && (
+          <section className="p-6 bg-mantle rounded-lg border border-primary/30 bg-gradient-to-br from-primary/5 to-transparent">
+            <div className="text-sm text-subtext0 mb-2">
+              Payback Period · 4-Year Cost of Attendance ÷ Median Earnings (6 years after
+              enrollment)
+            </div>
+            <div className="text-4xl font-bold text-primary">
+              {paybackYears}{" "}
+              <span className="text-xl font-normal text-subtext0">years to break even</span>
+            </div>
+          </section>
+        )}
+
+        <div className="flex flex-wrap gap-4">
           <a
-            href={school.nicheUrl}
+            href={school.website}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-4 py-2 bg-surface0 text-text rounded-lg hover:bg-surface1 transition-colors text-sm font-medium"
+            className="px-4 py-2 bg-primary text-on-primary rounded-lg hover:opacity-90 transition-opacity text-sm font-medium"
           >
-            Niche Profile
+            School Website
           </a>
-        )}
-        <CopyLinkButton />
+          {school.nicheUrl && (
+            <a
+              href={school.nicheUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4 py-2 bg-surface0 text-text rounded-lg hover:bg-surface1 transition-colors text-sm font-medium"
+            >
+              Niche Profile
+            </a>
+          )}
+          <CopyLinkButton />
+        </div>
       </div>
-    </div>
+    </PageTransition>
   );
 }

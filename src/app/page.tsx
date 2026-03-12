@@ -2,6 +2,7 @@ import { Suspense } from "react";
 import { loadSchoolsBySource } from "@/lib/data/loadSchools";
 import SchoolList from "@/components/SchoolList";
 import { SchoolCardSkeleton } from "@/components/LoadingSkeleton";
+import PageTransition from "@/components/PageTransition";
 
 function SchoolListFallback() {
   return (
@@ -18,10 +19,12 @@ export default function HomePage() {
   const nicheSchools = loadSchoolsBySource("niche");
 
   return (
-    <div id="main-content" className="pt-6 pb-12">
-      <Suspense fallback={<SchoolListFallback />}>
-        <SchoolList csrankingsSchools={csrankingsSchools} nicheSchools={nicheSchools} />
-      </Suspense>
-    </div>
+    <PageTransition>
+      <div id="main-content" className="pt-6 pb-12">
+        <Suspense fallback={<SchoolListFallback />}>
+          <SchoolList csrankingsSchools={csrankingsSchools} nicheSchools={nicheSchools} />
+        </Suspense>
+      </div>
+    </PageTransition>
   );
 }

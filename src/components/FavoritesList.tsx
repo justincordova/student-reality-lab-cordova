@@ -45,11 +45,21 @@ export default function FavoritesList({ allSchools }: FavoritesListProps) {
 
   return (
     <div className="space-y-3">
-      {favorited.map((school) => (
+      {favorited.map((school, index) => (
         <Link
           key={school.slug}
           href={`/school/${school.slug}`}
-          className="block p-5 bg-mantle rounded-lg border border-surface0 hover:border-primary hover:shadow-[0_0_0_1px_var(--ctp-primary)] transition-all duration-150"
+          className="
+            block p-5 bg-mantle rounded-lg border border-surface0
+            hover:border-primary hover:shadow-[0_0_0_1px_var(--ctp-primary)]
+            hover:-translate-y-0.5 active:translate-y-0
+            transition-all duration-200 ease-out
+            transform hover:scale-[1.005] active:scale-[0.995]
+          "
+          style={{
+            transitionTimingFunction: "cubic-bezier(0.4, 0, 0.2, 1)",
+            animation: `fadeInUp 0.3s ease-out ${index * 30}ms both`,
+          }}
         >
           <div className="flex items-start gap-4">
             <SchoolLogo website={school.website} name={school.name} size={48} />

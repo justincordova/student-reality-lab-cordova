@@ -2,6 +2,7 @@
 
 import { useFavorites } from "@/hooks/useFavorites";
 import { cn } from "@/utils/cn";
+import { useState } from "react";
 
 interface HeartButtonProps {
   slug: string;
@@ -11,19 +12,29 @@ interface HeartButtonProps {
 export default function HeartButton({ slug, size = "sm" }: HeartButtonProps) {
   const { toggle, isFavorited } = useFavorites();
   const favorited = isFavorited(slug);
+  const [isAnimating, setIsAnimating] = useState(false);
   const dim = size === "md" ? 22 : 18;
+
+  const handleClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    setIsAnimating(true);
+    toggle(slug);
+    setTimeout(() => setIsAnimating(false), 150);
+  };
 
   return (
     <button
       type="button"
-      onClick={(e) => {
-        e.preventDefault();
-        e.stopPropagation();
-        toggle(slug);
-      }}
+      onClick={handleClick}
       aria-label={favorited ? "Remove from favorites" : "Add to favorites"}
       aria-pressed={favorited}
-      className={cn("transition-colors", favorited ? "text-red" : "text-subtext0 hover:text-red")}
+      className={cn(
+        "transform transition-all duration-100 ease-in-out",
+        "hover:scale-110 active:scale-95",
+        isAnimating && "scale-125",
+        favorited ? "text-red" : "text-subtext0 hover:text-red"
+      )}
     >
       <svg
         width={dim}
@@ -35,9 +46,24 @@ export default function HeartButton({ slug, size = "sm" }: HeartButtonProps) {
         strokeLinecap="round"
         strokeLinejoin="round"
         aria-hidden="true"
+        className="transition-all duration-200 ease-out"
+        style={favorited ? { animation: "heartPop 0.3s ease-out" } : undefined}
       >
         <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
       </svg>
+      <style jsx>{`
+        @keyframes heartPop {
+          0% {
+            transform: scale(1);
+          }
+          50% {
+            transform: scale(1.2);
+          }
+          100% {
+            transform: scale(1);
+          }
+        }
+      `}</style>
     </button>
   );
 }

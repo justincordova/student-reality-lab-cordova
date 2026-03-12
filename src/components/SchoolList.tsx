@@ -76,6 +76,8 @@ export default function SchoolList({ csrankingsSchools, nicheSchools }: SchoolLi
   const [page, setPage] = useState(Number(searchParams.get("page")) || 1);
   const [isFiltering, setIsFiltering] = useState(false);
   const [showChart, setShowChart] = useState(false);
+  const [listKey, setListKey] = useState(0);
+  const prevDebouncedSearchRef = useRef("");
 
   const activeRankField: "csRanking" | "nicheRanking" =
     rankSource === "niche" ? "nicheRanking" : "csRanking";
@@ -222,6 +224,15 @@ export default function SchoolList({ csrankingsSchools, nicheSchools }: SchoolLi
     setIsFiltering(debouncedSearch !== search);
   }, [debouncedSearch, search]);
 
+  // Trigger list re-render animation when filters settle
+  useEffect(() => {
+    const prevSearch = prevDebouncedSearchRef.current;
+    if (prevSearch !== debouncedSearch && !isFiltering) {
+      setListKey((prev) => prev + 1);
+    }
+    prevDebouncedSearchRef.current = debouncedSearch;
+  }, [debouncedSearch, isFiltering]);
+
   // Reset to page 1 when filters change
   const updateFilter = useCallback(
     <T,>(setter: React.Dispatch<React.SetStateAction<T>>, value: T) => {
@@ -266,13 +277,13 @@ export default function SchoolList({ csrankingsSchools, nicheSchools }: SchoolLi
             value={search}
             onChange={(e) => updateFilter(setSearch, e.target.value.slice(0, 100))}
             maxLength={100}
-            className="w-full px-4 py-2 bg-mantle border border-surface0 rounded-lg text-text placeholder:text-overlay0 focus:outline-none focus:ring-2 focus:ring-primary pr-8"
+            className="w-full px-4 py-2 bg-mantle border border-surface0 rounded-lg text-text placeholder:text-overlay0 focus:outline-none focus:ring-2 focus:ring-primary transition-all duration-150 ease-out pr-8"
             aria-label="Search schools"
           />
           {search && (
             <button
               onClick={() => updateFilter(setSearch, "" as string)}
-              className="absolute right-2.5 top-1/2 -translate-y-1/2 text-overlay0 hover:text-text transition-colors"
+              className="absolute right-2.5 top-1/2 -translate-y-1/2 text-overlay0 hover:text-text transition-colors duration-150 hover:scale-110 active:scale-95 transform"
               aria-label="Clear search"
             >
               <svg
@@ -293,7 +304,7 @@ export default function SchoolList({ csrankingsSchools, nicheSchools }: SchoolLi
           <select
             value={stateFilter}
             onChange={(e) => updateFilter(setStateFilter, e.target.value as string)}
-            className="appearance-none px-4 py-2 pr-8 bg-mantle border border-surface0 rounded-lg text-text focus:outline-none focus:ring-2 focus:ring-primary"
+            className="appearance-none px-4 py-2 pr-8 bg-mantle border border-surface0 rounded-lg text-text focus:outline-none focus:ring-2 focus:ring-primary transition-all duration-150 ease-out cursor-pointer hover:border-subtext0"
             aria-label="Filter by state"
           >
             <option value="">All States</option>
@@ -317,7 +328,7 @@ export default function SchoolList({ csrankingsSchools, nicheSchools }: SchoolLi
           <select
             value={regionFilter}
             onChange={(e) => updateFilter(setRegionFilter, e.target.value as string)}
-            className="appearance-none px-4 py-2 pr-8 bg-mantle border border-surface0 rounded-lg text-text focus:outline-none focus:ring-2 focus:ring-primary"
+            className="appearance-none px-4 py-2 pr-8 bg-mantle border border-surface0 rounded-lg text-text focus:outline-none focus:ring-2 focus:ring-primary transition-all duration-150 ease-out cursor-pointer hover:border-subtext0"
             aria-label="Filter by region"
           >
             <option value="">All Regions</option>
@@ -357,7 +368,7 @@ export default function SchoolList({ csrankingsSchools, nicheSchools }: SchoolLi
             key="niche"
             onClick={() => handleRankSourceChange("niche")}
             title="Niche: student reviews covering academics, campus life, food, safety, and more"
-            className={`px-3 py-1 text-xs font-medium transition-colors ${
+            className={`px-3 py-1 text-xs font-medium transition-all duration-150 ease-out transform active:scale-95 ${
               rankSource === "niche"
                 ? "bg-primary text-on-primary"
                 : "bg-mantle text-subtext0 hover:bg-surface0"
@@ -370,7 +381,7 @@ export default function SchoolList({ csrankingsSchools, nicheSchools }: SchoolLi
             key="csrankings"
             onClick={() => handleRankSourceChange("csrankings")}
             title="CSRankings: based on faculty research publications — best for evaluating CS research strength"
-            className={`px-3 py-1 text-xs font-medium transition-colors ${
+            className={`px-3 py-1 text-xs font-medium transition-all duration-150 ease-out transform active:scale-95 ${
               rankSource === "csrankings"
                 ? "bg-primary text-on-primary"
                 : "bg-mantle text-subtext0 hover:bg-surface0"
@@ -390,11 +401,12 @@ export default function SchoolList({ csrankingsSchools, nicheSchools }: SchoolLi
             <button
               key={key}
               onClick={() => toggleSort(key)}
-              className={`px-2.5 py-0.5 rounded-full transition-colors text-xs ${
+              className={`px-2.5 py-0.5 rounded-full transition-all duration-150 ease-out text-xs transform hover:scale-105 active:scale-95 ${
                 sortBy === key
                   ? "bg-primary text-on-primary font-bold"
                   : "bg-surface0 text-text hover:bg-surface1"
               }`}
+              style={{ transitionTimingFunction: "cubic-bezier(0.4, 0, 0.2, 1)" }}
               aria-label={`Sort by ${label}${sortBy === key ? `, currently ${sortDir === "asc" ? "ascending" : "descending"}, click to reverse` : ""}`}
             >
               {label}
@@ -411,9 +423,15 @@ export default function SchoolList({ csrankingsSchools, nicheSchools }: SchoolLi
 
       {/* AI filter undo banner */}
       {previousFilters && (
-        <div className="flex items-center gap-3 px-4 py-2 bg-primary/10 border border-primary/20 rounded-lg text-sm">
+        <div
+          className="flex items-center gap-3 px-4 py-2 bg-primary/10 border border-primary/20 rounded-lg text-sm transition-all duration-300 ease-out"
+          style={{ animation: "fadeInUp 0.3s ease-out" }}
+        >
           <span className="text-text">AI updated your filters.</span>
-          <button onClick={undoChatFilters} className="text-primary font-medium hover:underline">
+          <button
+            onClick={undoChatFilters}
+            className="text-primary font-medium hover:underline transition-all duration-150 transform hover:scale-105 active:scale-95"
+          >
             Undo
           </button>
         </div>
@@ -423,13 +441,17 @@ export default function SchoolList({ csrankingsSchools, nicheSchools }: SchoolLi
       <div className="flex items-center justify-between">
         <button
           onClick={() => setShowChart((v) => !v)}
-          className="text-sm px-3 py-1.5 rounded-lg bg-surface0 text-text hover:bg-surface1 transition-colors"
+          className="text-sm px-3 py-1.5 rounded-lg bg-surface0 text-text hover:bg-surface1 transition-all duration-150 ease-out transform hover:scale-105 active:scale-95"
+          style={{ transitionTimingFunction: "cubic-bezier(0.4, 0, 0.2, 1)" }}
         >
           {showChart ? "Hide Chart" : "Show ROI Chart"}
         </button>
       </div>
       {showChart && (
-        <div className="bg-mantle rounded-lg border border-surface0 p-4">
+        <div
+          className="bg-mantle rounded-lg border border-surface0 p-4 transition-all duration-300 ease-out"
+          style={{ animation: "fadeInUp 0.3s ease-out" }}
+        >
           <h2 className="text-sm font-bold text-subtext0 mb-4">
             Tuition vs Median Earnings (top 15 matching schools)
           </h2>
@@ -449,7 +471,8 @@ export default function SchoolList({ csrankingsSchools, nicheSchools }: SchoolLi
           {hasActiveFilters && (
             <button
               onClick={clearAllFilters}
-              className="px-4 py-2 bg-primary text-on-primary rounded-lg hover:opacity-90 transition-opacity text-sm font-medium"
+              className="px-4 py-2 bg-primary text-on-primary rounded-lg hover:opacity-90 transition-all duration-150 ease-out transform hover:scale-105 active:scale-95 text-sm font-medium"
+              style={{ transitionTimingFunction: "cubic-bezier(0.4, 0, 0.2, 1)" }}
             >
               Clear all filters
             </button>
@@ -457,12 +480,23 @@ export default function SchoolList({ csrankingsSchools, nicheSchools }: SchoolLi
         </div>
       ) : (
         /* School cards */
-        <div className="space-y-3">
-          {paginated.map((school) => (
+        <div key={listKey} className="space-y-3">
+          {paginated.map((school, index) => (
             <Link
               key={school.slug}
               href={`/school/${school.slug}`}
-              className="block p-5 bg-mantle rounded-lg border border-surface0 hover:border-primary hover:shadow-[0_0_0_1px_var(--ctp-primary)] transition-all duration-150"
+              className="
+                block p-5 bg-mantle rounded-lg border border-surface0
+                hover:border-primary hover:shadow-[0_0_0_1px_var(--ctp-primary)]
+                hover:-translate-y-0.5 active:translate-y-0
+                transition-all duration-200 ease-out
+                transform hover:scale-[1.005] active:scale-[0.995]
+              "
+              style={{
+                transitionTimingFunction: "cubic-bezier(0.4, 0, 0.2, 1)",
+                animationDelay: `${index * 30}ms`,
+                animation: `fadeInUp 0.3s ease-out ${index * 30}ms both`,
+              }}
             >
               <div className="flex items-start gap-4">
                 <SchoolLogo website={school.website} name={school.name} size={48} />

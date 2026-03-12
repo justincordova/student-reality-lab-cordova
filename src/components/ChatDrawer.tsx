@@ -368,7 +368,7 @@ export default function ChatDrawer() {
                           ol: ({ children }) => (
                             <ol className="list-decimal pl-4 mb-1 space-y-0.5">{children}</ol>
                           ),
-                          li: ({ children }) => <li>{children}</li>,
+                          li: ({ children, ...props }) => <li {...props}>{children}</li>,
                           a: ({ href, children }) => {
                             if (!href || typeof href !== "string") {
                               return <span>{children}</span>;
