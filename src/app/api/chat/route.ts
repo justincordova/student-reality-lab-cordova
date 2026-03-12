@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { OpenAI } from "openai";
+import type { ChatCompletion } from "openai/resources";
 import { z } from "zod/v4";
 import {
   childLogger,
@@ -181,15 +182,16 @@ export async function POST(req: NextRequest) {
           controller.signal.addEventListener("abort", onAbort);
         });
 
-        const completion = await Promise.race([
+        const completion = (await Promise.race([
           getClient().chat.completions.create({
             model: MODEL,
             messages: [{ role: "system", content: systemPrompt }, ...messages],
             max_tokens: 1024,
+            // @ts-expect-error: signal parameter might not be recognized by older OpenAI types
             signal: controller.signal,
           }),
           abortPromise,
-        ]);
+        ])) as ChatCompletion;
 
         clearTimeout(timeoutId);
 

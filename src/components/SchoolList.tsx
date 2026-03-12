@@ -271,7 +271,7 @@ export default function SchoolList({ csrankingsSchools, nicheSchools }: SchoolLi
           />
           {search && (
             <button
-              onClick={() => updateFilter(setSearch, "")}
+              onClick={() => updateFilter(setSearch, "" as string)}
               className="absolute right-2.5 top-1/2 -translate-y-1/2 text-overlay0 hover:text-text transition-colors"
               aria-label="Clear search"
             >
@@ -292,7 +292,7 @@ export default function SchoolList({ csrankingsSchools, nicheSchools }: SchoolLi
         <div className="relative">
           <select
             value={stateFilter}
-            onChange={(e) => updateFilter(setStateFilter, e.target.value)}
+            onChange={(e) => updateFilter(setStateFilter, e.target.value as string)}
             className="appearance-none px-4 py-2 pr-8 bg-mantle border border-surface0 rounded-lg text-text focus:outline-none focus:ring-2 focus:ring-primary"
             aria-label="Filter by state"
           >
@@ -316,7 +316,7 @@ export default function SchoolList({ csrankingsSchools, nicheSchools }: SchoolLi
         <div className="relative">
           <select
             value={regionFilter}
-            onChange={(e) => updateFilter(setRegionFilter, e.target.value)}
+            onChange={(e) => updateFilter(setRegionFilter, e.target.value as string)}
             className="appearance-none px-4 py-2 pr-8 bg-mantle border border-surface0 rounded-lg text-text focus:outline-none focus:ring-2 focus:ring-primary"
             aria-label="Filter by region"
           >
