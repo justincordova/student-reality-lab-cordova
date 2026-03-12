@@ -139,6 +139,22 @@ export default function ChatDrawer() {
     return () => document.removeEventListener("keydown", handleTab);
   }, [isOpen]);
 
+  // ── AI availability (checked once on mount via GET /api/chat, zero HF cost) ──
+  const [aiAvailable, setAiAvailable] = useState<boolean | null>(null);
+  const [aiStatus, setAiStatus] = useState<string>("unknown");
+
+  useEffect(() => {
+    fetch("/api/chat")
+      .then((r) => r.json())
+      .then((data: { available?: boolean; status?: string }) => {
+        setAiAvailable(data.available ?? true);
+        setAiStatus(data.status ?? "unknown");
+      })
+      .catch(() => {
+        setAiAvailable(true); // assume available if check fails
+      });
+  }, []);
+
   const [messages, setMessages] = useState<Message[]>([]);
   const lastAssistantId = messages.findLast((m) => m.role === "assistant")?.id;
 
@@ -467,6 +483,25 @@ export default function ChatDrawer() {
               <div ref={messagesEndRef} />
             </div>
 
+            {aiAvailable === false && (
+              <div className="px-4 py-2.5 bg-peach/10 border-t border-peach/30 text-peach text-xs flex items-center gap-2">
+                <svg
+                  className="shrink-0 w-4 h-4"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                >
+                  <path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z" />
+                  <line x1="12" y1="9" x2="12" y2="13" />
+                  <line x1="12" y1="17" x2="12.01" y2="17" />
+                </svg>
+                {aiStatus === "rate_limited"
+                  ? "AI is temporarily rate-limited. Please try again in a moment."
+                  : "AI is currently unavailable. Please try again later."}
+              </div>
+            )}
+
             <div className="p-4 border-t border-surface0">
               <div className="flex gap-2">
                 <input
@@ -474,15 +509,17 @@ export default function ChatDrawer() {
                   value={input}
                   onChange={(e) => setInput(e.target.value.slice(0, 2000))}
                   onKeyDown={(e) => e.key === "Enter" && !e.shiftKey && sendMessage()}
-                  placeholder="Ask about CS programs..."
+                  placeholder={
+                    aiAvailable === false ? "AI unavailable…" : "Ask about CS programs..."
+                  }
                   aria-label="Chat message input"
                   maxLength={2000}
-                  className="flex-1 px-3 py-2 bg-base border border-surface0 rounded-lg text-sm text-text placeholder:text-overlay0 focus:outline-none focus:ring-2 focus:ring-primary"
-                  disabled={loading}
+                  className="flex-1 px-3 py-2 bg-base border border-surface0 rounded-lg text-sm text-text placeholder:text-overlay0 focus:outline-none focus:ring-2 focus:ring-primary disabled:opacity-50 disabled:cursor-not-allowed"
+                  disabled={loading || aiAvailable === false}
                 />
                 <button
                   onClick={() => sendMessage()}
-                  disabled={loading || !input.trim()}
+                  disabled={loading || !input.trim() || aiAvailable === false}
                   className="px-4 py-2 bg-primary text-on-primary rounded-lg hover:opacity-90 transition-opacity text-sm font-medium disabled:opacity-50"
                 >
                   Send

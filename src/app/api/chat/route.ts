@@ -258,6 +258,53 @@ ${dataStr}`;
   return prompt;
 }
 
+// ── HF availability state ────────────────────────────────────────────────────
+// Tracked across requests in this server process so we can report status without
+// making a probe request to HuggingFace (which would waste credits).
+type HfStatus = "available" | "rate_limited" | "quota_exceeded" | "unknown";
+
+interface HfState {
+  status: HfStatus;
+  since: number; // epoch ms
+}
+
+let hfState: HfState = { status: "unknown", since: 0 };
+
+// Rate-limit state clears automatically after 60 s (HF free-tier window).
+const RATE_LIMIT_TTL_MS = 60_000;
+
+function getHfAvailability(): { available: boolean; status: HfStatus; retryAfterMs?: number } {
+  if (hfState.status === "rate_limited") {
+    const age = Date.now() - hfState.since;
+    if (age < RATE_LIMIT_TTL_MS) {
+      return { available: false, status: "rate_limited", retryAfterMs: RATE_LIMIT_TTL_MS - age };
+    }
+    // TTL expired — optimistically assume available again
+    hfState = { status: "available", since: Date.now() };
+  }
+  if (hfState.status === "quota_exceeded") {
+    return { available: false, status: "quota_exceeded" };
+  }
+  return { available: true, status: hfState.status === "unknown" ? "unknown" : "available" };
+}
+
+function markHfError(statusCode: number) {
+  if (statusCode === 429) {
+    hfState = { status: "rate_limited", since: Date.now() };
+  } else if (statusCode === 402 || statusCode === 403) {
+    hfState = { status: "quota_exceeded", since: Date.now() };
+  }
+}
+
+function markHfSuccess() {
+  hfState = { status: "available", since: Date.now() };
+}
+
+export async function GET() {
+  const { available, status, retryAfterMs } = getHfAvailability();
+  return NextResponse.json({ available, status, ...(retryAfterMs ? { retryAfterMs } : {}) });
+}
+
 export async function POST(req: NextRequest) {
   return withHttpLogging(req, async () => {
     if (!env.HF_TOKEN) {
@@ -367,6 +414,7 @@ export async function POST(req: NextRequest) {
           throw new Error("Invalid response from AI");
         }
 
+        markHfSuccess();
         log.info("Chat response generated", {
           model: MODEL,
           tokens: completion.usage?.total_tokens,
@@ -379,6 +427,7 @@ export async function POST(req: NextRequest) {
         if (err && typeof err === "object" && "status" in err) {
           const status = (err as { status?: number }).status;
           if (typeof status === "number") {
+            markHfError(status);
             const isRetryable = status === 429 || (status >= 500 && status < 600);
             shouldRetry = isRetryable && attempt < MAX_RETRIES - 1;
           }
