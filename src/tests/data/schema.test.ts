@@ -116,6 +116,50 @@ describe("gradeToNumeric", () => {
     expect(gradeToNumeric("A+")).toBeGreaterThan(gradeToNumeric("A"));
     expect(gradeToNumeric("A")).toBeGreaterThan(gradeToNumeric("B+"));
   });
+
+  it("maps every grade to a unique positive integer", () => {
+    const grades = [
+      "A+",
+      "A",
+      "A-",
+      "B+",
+      "B",
+      "B-",
+      "C+",
+      "C",
+      "C-",
+      "D+",
+      "D",
+      "D-",
+      "F",
+    ] as const;
+    const values = grades.map((g) => gradeToNumeric(g));
+    const unique = new Set(values);
+    expect(unique.size).toBe(grades.length);
+    values.forEach((v) => expect(v).toBeGreaterThan(0));
+  });
+
+  it("produces a strictly descending sequence A+ > A > A- > ... > F", () => {
+    const grades = [
+      "A+",
+      "A",
+      "A-",
+      "B+",
+      "B",
+      "B-",
+      "C+",
+      "C",
+      "C-",
+      "D+",
+      "D",
+      "D-",
+      "F",
+    ] as const;
+    const values = grades.map((g) => gradeToNumeric(g));
+    for (let i = 1; i < values.length; i++) {
+      expect(values[i]).toBeLessThan(values[i - 1]);
+    }
+  });
 });
 
 describe("ChatFiltersSchema", () => {
@@ -131,6 +175,60 @@ describe("ChatFiltersSchema", () => {
 
   it("rejects invalid sortDir", () => {
     const result = ChatFiltersSchema.safeParse({ sortDir: "sideways" });
+    expect(result.success).toBe(false);
+  });
+
+  it("accepts compare array up to 3 entries", () => {
+    const result = ChatFiltersSchema.safeParse({
+      compare: [
+        { slug: "mit", name: "MIT" },
+        { slug: "stanford-university", name: "Stanford University" },
+        { slug: "cmu", name: "Carnegie Mellon University" },
+      ],
+    });
+    expect(result.success).toBe(true);
+  });
+
+  it("rejects compare array with more than 3 entries", () => {
+    const result = ChatFiltersSchema.safeParse({
+      compare: [
+        { slug: "mit", name: "MIT" },
+        { slug: "stanford-university", name: "Stanford" },
+        { slug: "cmu", name: "CMU" },
+        { slug: "caltech", name: "Caltech" },
+      ],
+    });
+    expect(result.success).toBe(false);
+  });
+
+  it("accepts all valid sortBy values", () => {
+    const sortByValues = [
+      "csRanking",
+      "nicheRanking",
+      "roi",
+      "earnings",
+      "tuitionInState",
+      "acceptanceRate",
+      "campusFood",
+      "dorms",
+      "safety",
+      "partyScene",
+      "diversity",
+      "studentLife",
+      "professors",
+      "athletics",
+      "value",
+      "location",
+      "academics",
+    ];
+    for (const sortBy of sortByValues) {
+      const result = ChatFiltersSchema.safeParse({ sortBy });
+      expect(result.success).toBe(true);
+    }
+  });
+
+  it("rejects search string longer than 100 characters", () => {
+    const result = ChatFiltersSchema.safeParse({ search: "x".repeat(101) });
     expect(result.success).toBe(false);
   });
 });

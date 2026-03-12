@@ -210,4 +210,63 @@ describe("calculatePaybackYears", () => {
     const school = { ...mockSchools[0], medianEarnings6yr: 0 };
     expect(calculatePaybackYears(school)).toBeNull();
   });
+
+  it("should return null when earnings are negative", () => {
+    const school = { ...mockSchools[0], medianEarnings6yr: -1 };
+    expect(calculatePaybackYears(school)).toBeNull();
+  });
+
+  it("should return a finite number for valid data", () => {
+    const result = calculatePaybackYears(mockSchools[0]);
+    expect(result).not.toBeNull();
+    expect(isFinite(result!)).toBe(true);
+  });
+});
+
+describe("filterSchools edge cases", () => {
+  it("should throw when schools argument is not an array", () => {
+    expect(() => filterSchools(null as unknown as School[], {})).toThrow(
+      "schools must be an array"
+    );
+  });
+
+  it("should filter by region case-insensitively", () => {
+    const result = filterSchools(mockSchools, { region: "west" });
+    expect(result).toHaveLength(1);
+    expect(result[0].slug).toBe("test-u");
+  });
+
+  it("should filter by multiple states (comma-separated)", () => {
+    const result = filterSchools(mockSchools, { state: "CA,NY" });
+    expect(result).toHaveLength(2);
+  });
+
+  it("should return empty array when no schools match search", () => {
+    const result = filterSchools(mockSchools, { search: "xyznonexistent" });
+    expect(result).toHaveLength(0);
+  });
+
+  it("should sort by niche grade field (safety) descending by default", () => {
+    // test-u has safety A+ (13), other has safety A (12)
+    const result = filterSchools(mockSchools, { sortBy: "safety", sortDir: "desc" });
+    expect(result[0].slug).toBe("test-u");
+    expect(result[1].slug).toBe("other");
+  });
+
+  it("should sort by tuition ascending correctly", () => {
+    const result = filterSchools(mockSchools, { sortBy: "tuitionInState", sortDir: "asc" });
+    // other (30000) < test-u (50000)
+    expect(result[0].slug).toBe("other");
+    expect(result[1].slug).toBe("test-u");
+  });
+
+  it("page clamping: page beyond totalPages returns last page", () => {
+    const result = filterSchools(mockSchools, {
+      paginate: true,
+      page: 999,
+      perPage: 1,
+    }) as FilterResult;
+    expect(result.currentPage).toBe(result.totalPages);
+    expect(result.schools).toHaveLength(1);
+  });
 });
