@@ -35,11 +35,22 @@ type RankSource = "csrankings" | "niche";
 function getSortOptions(rankSource: RankSource): SortOption[] {
   const rankField: SortField = rankSource === "niche" ? "nicheRanking" : "csRanking";
   return [
-    { value: rankField, label: "Overall", defaultDir: "asc" },
+    { value: rankField, label: "Ranking", defaultDir: "asc" },
     { value: "roi", label: "ROI", defaultDir: "asc" },
     { value: "earnings", label: "Earnings", defaultDir: "desc" },
     { value: "tuitionInState", label: "Tuition", defaultDir: "asc" },
     { value: "acceptanceRate", label: "Acceptance", defaultDir: "asc" },
+    { value: "academics", label: "Academics", defaultDir: "desc" },
+    { value: "value", label: "Value", defaultDir: "desc" },
+    { value: "campusFood", label: "Food", defaultDir: "desc" },
+    { value: "dorms", label: "Dorms", defaultDir: "desc" },
+    { value: "safety", label: "Safety", defaultDir: "desc" },
+    { value: "diversity", label: "Diversity", defaultDir: "desc" },
+    { value: "professors", label: "Professors", defaultDir: "desc" },
+    { value: "studentLife", label: "Social", defaultDir: "desc" },
+    { value: "partyScene", label: "Party", defaultDir: "desc" },
+    { value: "athletics", label: "Athletics", defaultDir: "desc" },
+    { value: "location", label: "Location", defaultDir: "desc" },
   ];
 }
 
