@@ -17,14 +17,11 @@ vi.mock("@/lib", () => ({
     const e = err as { status?: number; message?: string };
     return Response.json({ error: e.message }, { status: e.status ?? 500 });
   }),
+  env: { HF_TOKEN: "test-token" },
 }));
 
 vi.mock("@/lib/data/loadSchools", () => ({
   loadSchools: vi.fn().mockReturnValue([]),
-}));
-
-vi.mock("@/lib/env", () => ({
-  env: { HF_TOKEN: "test-token" },
 }));
 
 vi.mock("openai", () => ({

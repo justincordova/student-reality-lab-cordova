@@ -9,9 +9,9 @@ import {
   withHttpLogging,
   ApiError,
   handleApiError,
+  env,
 } from "@/lib";
 import { loadSchools } from "@/lib/data/loadSchools";
-import { env } from "@/lib/env";
 
 const log = childLogger("chat");
 

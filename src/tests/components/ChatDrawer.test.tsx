@@ -5,7 +5,7 @@ vi.mock("next/navigation", () => ({
   usePathname: () => "/",
 }));
 
-vi.mock("./ChatProvider", () => ({
+vi.mock("@/components/ChatProvider", () => ({
   useChatContext: () => ({
     isOpen: false,
     close: vi.fn(),
