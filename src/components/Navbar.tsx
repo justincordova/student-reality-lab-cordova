@@ -14,7 +14,7 @@ export default function Navbar() {
   useEffect(() => setMounted(true), []);
 
   return (
-    <nav className="mx-auto max-w-[800px] mt-4 rounded-lg border border-surface0 bg-mantle px-8 shadow-sm">
+    <nav className="mx-auto max-w-[800px] mt-4 mb-2 rounded-lg border border-surface0 bg-mantle px-8 shadow-sm">
       <div className="h-16 flex items-center justify-between">
         <Link
           href="/"

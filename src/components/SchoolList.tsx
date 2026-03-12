@@ -256,7 +256,7 @@ export default function SchoolList({ csrankingsSchools, nicheSchools }: SchoolLi
   );
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-4">
       {/* Search + dropdowns */}
       <div className="flex flex-wrap gap-3">
         <div className="relative flex-1 min-w-[200px]">
