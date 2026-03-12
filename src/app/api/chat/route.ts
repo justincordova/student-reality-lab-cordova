@@ -93,7 +93,7 @@ RULES:
 - rankSource: "csrankings" (default) or "niche" — sets which ranking source the UI uses
 - filter fields: state ("CA", "NJ"), region ("Northeast"), search (name match)
 - For niche grade sorts, sortDir "desc" = best first (higher grade = better).
-- When asked to compare 2-4 schools, include "compare": ["slug1", "slug2", ...] in the filter block. Use the slug shown in brackets after each school name in the data. Example: MIT = "mit", Stanford University = "stanford-university".
+- When asked to compare 2-4 schools, include "compare": [{"slug": "slug1", "name": "Full School Name"}, ...] in the filter block. Use the slug shown in brackets after each school name in the data. Example: MIT slug = "mit", Stanford University slug = "stanford-university".
 - Do NOT list out stats — the user can see them in the app. Just answer the question conversationally.
 - After your response, you MAY append a suggestions block (only when genuinely helpful):
 \`\`\`suggestions
@@ -105,7 +105,7 @@ Examples:
 - "Best food?" → name 5 schools with best food grades + \`\`\`filter\\n{"sortBy": "campusFood", "sortDir": "desc"}\\n\`\`\`
 - "Cheapest in CA?" → name 5 cheapest CA schools + \`\`\`filter\\n{"sortBy": "tuitionInState", "sortDir": "asc", "state": "CA"}\\n\`\`\`
 - "Best dorms?" → name 5 schools with best dorm grades + \`\`\`filter\\n{"sortBy": "dorms", "sortDir": "desc"}\\n\`\`\`
-- "Compare MIT and Stanford" → bullet list comparison + \`\`\`filter\\n{"compare": ["mit", "stanford-university"]}\\n\`\`\`
+- "Compare MIT and Stanford" → bullet list comparison + \`\`\`filter\\n{"compare": [{"slug": "mit", "name": "MIT"}, {"slug": "stanford-university", "name": "Stanford University"}]}\\n\`\`\`
 - "Best NJ school?" → name 5 NJ schools + \`\`\`filter\\n{"sortBy": "csRanking", "sortDir": "asc", "state": "NJ"}\\n\`\`\`
 
 School data (${totalCount} schools):
@@ -197,7 +197,7 @@ export async function POST(req: NextRequest) {
           getClient().chat.completions.create({
             model: MODEL,
             messages: [{ role: "system", content: systemPrompt }, ...messages],
-            max_tokens: 1024,
+            max_tokens: 2048,
             // @ts-expect-error: signal parameter might not be recognized by older OpenAI types
             signal: controller.signal,
           }),

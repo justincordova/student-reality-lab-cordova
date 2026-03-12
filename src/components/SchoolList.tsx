@@ -43,6 +43,32 @@ function getSortOptions(rankSource: RankSource): SortOption[] {
   ];
 }
 
+// All valid sort fields and their default sort direction — used to validate URL params
+// including niche grade fields set by the AI (not shown in the UI sort pills)
+const ALL_SORT_FIELDS: Record<SortField, "asc" | "desc"> = {
+  csRanking: "asc",
+  nicheRanking: "asc",
+  roi: "asc",
+  earnings: "desc",
+  tuitionInState: "asc",
+  tuitionOutOfState: "asc",
+  acceptanceRate: "asc",
+  graduationRate: "desc",
+  medianDebt: "asc",
+  enrollment: "desc",
+  campusFood: "desc",
+  dorms: "desc",
+  safety: "desc",
+  partyScene: "desc",
+  diversity: "desc",
+  studentLife: "desc",
+  professors: "desc",
+  athletics: "desc",
+  value: "desc",
+  location: "desc",
+  academics: "desc",
+};
+
 const PER_PAGE = 10;
 
 export default function SchoolList({ csrankingsSchools, nicheSchools }: SchoolListProps) {
@@ -61,18 +87,14 @@ export default function SchoolList({ csrankingsSchools, nicheSchools }: SchoolLi
     const src = searchParams.get("rank") === "csrankings" ? "csrankings" : "niche";
     const defaultField: SortField = src === "niche" ? "nicheRanking" : "csRanking";
     if (!param || param === "ranking") return defaultField;
-    const allOptions = getSortOptions(src);
-    const match = allOptions.find((o) => o.value === param);
-    return match ? match.value : defaultField;
+    return param in ALL_SORT_FIELDS ? (param as SortField) : defaultField;
   });
   const [sortDir, setSortDir] = useState<"asc" | "desc">(() => {
     const dir = searchParams.get("dir");
     if (dir === "asc" || dir === "desc") return dir;
-    const src = searchParams.get("rank") === "csrankings" ? "csrankings" : "niche";
     const paramSort = searchParams.get("sort");
-    const allOptions = getSortOptions(src);
-    const matchedOption = allOptions.find((o) => o.value === paramSort);
-    return matchedOption?.defaultDir ?? "asc";
+    if (paramSort && paramSort in ALL_SORT_FIELDS) return ALL_SORT_FIELDS[paramSort as SortField];
+    return "asc";
   });
   const [page, setPage] = useState(Number(searchParams.get("page")) || 1);
   const [isFiltering, setIsFiltering] = useState(false);

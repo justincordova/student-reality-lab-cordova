@@ -99,7 +99,10 @@ export const ChatFiltersSchema = z.object({
   state: z.string().length(2).optional(),
   region: z.string().max(30).optional(),
   search: z.string().max(100).optional(),
-  compare: z.array(z.string()).max(4).optional(),
+  compare: z
+    .array(z.object({ slug: z.string(), name: z.string() }))
+    .max(4)
+    .optional(),
 });
 export type ChatFilters = z.infer<typeof ChatFiltersSchema>;
 

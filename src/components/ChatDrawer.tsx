@@ -240,8 +240,8 @@ export default function ChatDrawer() {
         if (filters) {
           applyFilters(filters);
           if (filters.compare && filters.compare.length > 0) {
-            for (const slug of filters.compare) {
-              addToCompare(slug, slug);
+            for (const { slug, name } of filters.compare) {
+              addToCompare(slug, name);
             }
           }
           if (pathname !== "/") {
@@ -448,7 +448,8 @@ export default function ChatDrawer() {
                             <button
                               key={s}
                               onClick={() => sendMessage(s)}
-                              className="text-xs px-2.5 py-1 rounded-full bg-surface0 hover:bg-surface1 text-subtext0 hover:text-text transition-colors"
+                              disabled={loading}
+                              className="text-xs px-2.5 py-1 rounded-full bg-surface0 hover:bg-surface1 text-subtext0 hover:text-text transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
                             >
                               {s}
                             </button>

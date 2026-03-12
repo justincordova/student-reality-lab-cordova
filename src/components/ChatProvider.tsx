@@ -9,7 +9,7 @@ export interface ChatFilters {
   region?: string;
   search?: string;
   rankSource?: "csrankings" | "niche";
-  compare?: string[];
+  compare?: { slug: string; name: string }[];
 }
 
 export interface ChatContextType {
