@@ -17,6 +17,7 @@ const ROIChart = dynamic(() => import("./ROIChart"), { ssr: false });
 
 // Import filtering logic from client-safe filters.ts (NOT loadSchools.ts which uses Node.js fs)
 import { filterSchools, type SortField, type FilterResult } from "@/lib/data/filters";
+import { formatCurrency, formatPercent } from "@/utils/format";
 
 interface SchoolListProps {
   csrankingsSchools: School[];
@@ -519,18 +520,9 @@ export default function SchoolList({ csrankingsSchools, nicheSchools }: SchoolLi
                   </div>
                   {/* Mobile: compact stats inline */}
                   <div className="sm:hidden flex gap-3 text-xs text-subtext0 mt-1">
-                    <span>
-                      Tuition:{" "}
-                      {school.tuitionInState > 0
-                        ? `$${school.tuitionInState.toLocaleString()}`
-                        : "—"}
-                    </span>
-                    <span className="text-green">
-                      {school.medianEarnings6yr
-                        ? `$${school.medianEarnings6yr.toLocaleString()}`
-                        : "—"}
-                    </span>
-                    <span>{(school.acceptanceRate * 100).toFixed(0)}% accept</span>
+                    <span>Tuition: {formatCurrency(school.tuitionInState)}</span>
+                    <span className="text-green">{formatCurrency(school.medianEarnings6yr)}</span>
+                    <span>{formatPercent(school.acceptanceRate)} accept</span>
                   </div>
                   <div className="flex flex-wrap gap-3 mt-3">
                     <GradeBadge grade={school.nicheGrades.overall} label="Overall" />
@@ -549,31 +541,21 @@ export default function SchoolList({ csrankingsSchools, nicheSchools }: SchoolLi
                   </div>
                   <div>
                     <span className="text-subtext0">In-state: </span>
-                    <span className="font-medium">
-                      {school.tuitionInState > 0
-                        ? `$${school.tuitionInState.toLocaleString()}`
-                        : "—"}
-                    </span>
+                    <span className="font-medium">{formatCurrency(school.tuitionInState)}</span>
                   </div>
                   <div>
                     <span className="text-subtext0">Out-of-state: </span>
-                    <span className="font-medium">
-                      {school.tuitionOutOfState > 0
-                        ? `$${school.tuitionOutOfState.toLocaleString()}`
-                        : "—"}
-                    </span>
+                    <span className="font-medium">{formatCurrency(school.tuitionOutOfState)}</span>
                   </div>
                   <div>
                     <span className="text-subtext0">Earnings: </span>
                     <span className="font-medium text-green">
-                      {school.medianEarnings6yr
-                        ? `$${school.medianEarnings6yr.toLocaleString()}`
-                        : "—"}
+                      {formatCurrency(school.medianEarnings6yr)}
                     </span>
                   </div>
                   <div>
                     <span className="text-subtext0">Accept: </span>
-                    <span className="font-medium">{(school.acceptanceRate * 100).toFixed(0)}%</span>
+                    <span className="font-medium">{formatPercent(school.acceptanceRate)}</span>
                   </div>
                 </div>
               </div>

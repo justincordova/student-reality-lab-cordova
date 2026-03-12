@@ -159,7 +159,7 @@ export default function ChatDrawer() {
 
     try {
       let messagesToSend = newMessages.slice(-20);
-      if (schoolContext && messagesRef.current.length === 0) {
+      if (schoolContext && newMessages.length === 1) {
         const contextMsg = {
           id: String(nextIdRef.current++),
           role: "user" as const,

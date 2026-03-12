@@ -28,7 +28,7 @@ export default function Pagination({ currentPage, totalPages, onPageChange }: Pa
   }
 
   return (
-    <div className="flex items-center justify-center gap-2 pt-8">
+    <nav aria-label="Pagination" className="flex items-center justify-center gap-2 pt-8">
       <button
         onClick={() => onPageChange(safeCurrentPage - 1)}
         disabled={safeCurrentPage <= 1}
@@ -66,6 +66,6 @@ export default function Pagination({ currentPage, totalPages, onPageChange }: Pa
       >
         Next
       </button>
-    </div>
+    </nav>
   );
 }

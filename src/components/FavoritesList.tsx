@@ -6,6 +6,7 @@ import { useFavorites } from "@/hooks/useFavorites";
 import GradeBadge from "./GradeBadge";
 import SchoolLogo from "./SchoolLogo";
 import HeartButton from "./HeartButton";
+import { formatCurrency, formatPercent } from "@/utils/format";
 
 interface FavoritesListProps {
   allSchools: School[];
@@ -89,19 +90,17 @@ export default function FavoritesList({ allSchools }: FavoritesListProps) {
               </div>
               <div>
                 <span className="text-subtext0">In-state: </span>
-                <span className="font-medium">
-                  {school.tuitionInState > 0 ? `$${school.tuitionInState.toLocaleString()}` : "—"}
-                </span>
+                <span className="font-medium">{formatCurrency(school.tuitionInState)}</span>
               </div>
               <div>
                 <span className="text-subtext0">Earnings: </span>
                 <span className="font-medium text-green">
-                  {school.medianEarnings6yr ? `$${school.medianEarnings6yr.toLocaleString()}` : "—"}
+                  {formatCurrency(school.medianEarnings6yr)}
                 </span>
               </div>
               <div>
                 <span className="text-subtext0">Accept: </span>
-                <span className="font-medium">{(school.acceptanceRate * 100).toFixed(0)}%</span>
+                <span className="font-medium">{formatPercent(school.acceptanceRate)}</span>
               </div>
             </div>
           </div>
