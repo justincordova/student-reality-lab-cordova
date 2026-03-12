@@ -67,37 +67,48 @@ function buildSystemPrompt(): string {
     schools = [];
   }
   const totalCount = schools.length;
-  const schoolsForPrompt = schools.slice(0, 60);
-  const dataStr = schoolsForPrompt
+  const dataStr = schools
     .map((s) => {
       const formatCurrency = (val: number | null | undefined) =>
         val !== null && val !== undefined ? `$${val.toLocaleString()}` : "N/A";
       const formatPercent = (val: number) => `${Math.min(100, Math.max(0, val * 100)).toFixed(1)}%`;
 
-      return `${s.name} | ${s.city}, ${s.state} | ${s.region} | CSRank: #${s.csRanking ?? "N/A"} | Niche: #${s.nicheRanking ?? "N/A"} | In-state: ${formatCurrency(s.tuitionInState)} | Out-of-state: ${formatCurrency(s.tuitionOutOfState)} | R&B: ${formatCurrency(s.roomAndBoard)} | Earnings: ${formatCurrency(s.medianEarnings6yr)} | Debt: ${formatCurrency(s.medianDebt)} | Accept: ${formatPercent(s.acceptanceRate)} | Grad: ${formatPercent(s.graduationRate)} | Niche: Overall=${s.nicheGrades.overall} Academics=${s.nicheGrades.academics} Food=${s.nicheGrades.campusFood} Party=${s.nicheGrades.partyScene} Social=${s.nicheGrades.studentLife} Dorms=${s.nicheGrades.dorms} Safety=${s.nicheGrades.safety} Profs=${s.nicheGrades.professors} Athletics=${s.nicheGrades.athletics} Diversity=${s.nicheGrades.diversity} Value=${s.nicheGrades.value} Location=${s.nicheGrades.location}`;
+      return `${s.name} [${s.slug}] | ${s.city}, ${s.state} | ${s.region} | CSRank: #${s.csRanking ?? "N/A"} | Niche: #${s.nicheRanking ?? "N/A"} | In-state: ${formatCurrency(s.tuitionInState)} | Out-of-state: ${formatCurrency(s.tuitionOutOfState)} | R&B: ${formatCurrency(s.roomAndBoard)} | Earnings: ${formatCurrency(s.medianEarnings6yr)} | Debt: ${formatCurrency(s.medianDebt)} | Accept: ${formatPercent(s.acceptanceRate)} | Grad: ${formatPercent(s.graduationRate)} | Niche: Overall=${s.nicheGrades.overall} Academics=${s.nicheGrades.academics} Food=${s.nicheGrades.campusFood} Party=${s.nicheGrades.partyScene} Social=${s.nicheGrades.studentLife} Dorms=${s.nicheGrades.dorms} Safety=${s.nicheGrades.safety} Profs=${s.nicheGrades.professors} Athletics=${s.nicheGrades.athletics} Diversity=${s.nicheGrades.diversity} Value=${s.nicheGrades.value} Location=${s.nicheGrades.location}`;
     })
     .join("\n");
 
-  const prompt = `You are CSPathFinder AI. Help students find CS programs. You have detailed data on ${schoolsForPrompt.length} schools below (out of ${totalCount} total). For schools not in this list, say you don't have detailed data and point to Niche.com or College Scorecard.
+  const prompt = `You are CSPathFinder AI. Help students find CS programs. You have detailed data on ${totalCount} schools below.
 
 RULES:
-- Be brief. 2-4 sentences max. No bullet lists of stats — the app already shows those.
+- For single-school or simple questions: 2-3 sentences max.
+- For comparisons of 2+ schools: up to 6-8 sentences. Use a short bullet list with **School Name**: key differentiator format for easy scanning.
+- Never dump raw stats — the app shows those. Focus on qualitative insight.
 - Use **bold** for school names only.
+- When a superlative ranking question is asked ("best", "worst", "top", "cheapest", "most expensive", "easiest to get into", etc.), always name exactly 5 schools.
 - When filtering/sorting helps, append a filter block (no explanation needed):
 \`\`\`filter
 {"sortBy": "...", "sortDir": "..."}
 \`\`\`
-- sortBy options: csRanking, nicheRanking, roi, earnings, tuitionInState, acceptanceRate
+- sortBy options: csRanking, nicheRanking, roi, earnings, tuitionInState, acceptanceRate, campusFood, dorms, safety, partyScene, diversity, studentLife, professors, athletics, value, location, academics
 - rankSource: "csrankings" (default) or "niche" — sets which ranking source the UI uses
 - filter fields: state ("CA", "NJ"), region ("Northeast"), search (name match)
+- For niche grade sorts, sortDir "desc" = best first (higher grade = better).
+- When asked to compare 2-4 schools, include "compare": ["slug1", "slug2", ...] in the filter block. Use the slug shown in brackets after each school name in the data. Example: MIT = "mit", Stanford University = "stanford-university".
 - Do NOT list out stats — the user can see them in the app. Just answer the question conversationally.
+- After your response, you MAY append a suggestions block (only when genuinely helpful):
+\`\`\`suggestions
+["Follow-up question 1?", "Follow-up question 2?", "Follow-up question 3?"]
+\`\`\`
+  Max 3 suggestions. Only include when there are natural follow-ups. Do not include for simple factual answers.
 
 Examples:
-- "Best food?" → "**UCLA** and **UVA** top the food rankings." + filter block
-- "Cheapest in CA?" → "**UC Berkeley** and **UCLA** are the most affordable in-state." + filter block
-- "Best NJ school?" → "**Princeton** is the top-ranked CS program in New Jersey at #10." + filter block
+- "Best food?" → name 5 schools with best food grades + \`\`\`filter\\n{"sortBy": "campusFood", "sortDir": "desc"}\\n\`\`\`
+- "Cheapest in CA?" → name 5 cheapest CA schools + \`\`\`filter\\n{"sortBy": "tuitionInState", "sortDir": "asc", "state": "CA"}\\n\`\`\`
+- "Best dorms?" → name 5 schools with best dorm grades + \`\`\`filter\\n{"sortBy": "dorms", "sortDir": "desc"}\\n\`\`\`
+- "Compare MIT and Stanford" → bullet list comparison + \`\`\`filter\\n{"compare": ["mit", "stanford-university"]}\\n\`\`\`
+- "Best NJ school?" → name 5 NJ schools + \`\`\`filter\\n{"sortBy": "csRanking", "sortDir": "asc", "state": "NJ"}\\n\`\`\`
 
-School data (top ${schoolsForPrompt.length}):
+School data (${totalCount} schools):
 ${dataStr}`;
 
   cachedSystemPrompt = prompt;
