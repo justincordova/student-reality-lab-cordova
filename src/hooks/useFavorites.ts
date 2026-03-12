@@ -9,7 +9,10 @@ function readFromStorage(): Set<string> {
     const raw = localStorage.getItem(STORAGE_KEY);
     if (!raw) return new Set();
     const parsed = JSON.parse(raw);
-    if (Array.isArray(parsed)) return new Set(parsed as string[]);
+    if (Array.isArray(parsed)) {
+      const strings = parsed.filter((item): item is string => typeof item === "string");
+      return new Set(strings);
+    }
   } catch {
     // ignore
   }

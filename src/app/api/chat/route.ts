@@ -236,7 +236,7 @@ RULES:
 - rankSource: "csrankings" (default) or "niche" — sets which ranking source the UI uses
 - filter fields: state ("CA", "NJ"), region ("Northeast"), search (name match)
 - For niche grade sorts: sortDir "desc" = best first, sortDir "asc" = worst first.
-- When asked to compare 2-4 schools, include "compare": [{"slug": "slug1", "name": "Full School Name"}, ...] in the filter block. Slugs are shown in [brackets] in the school data below.
+- When asked to compare 2-3 schools, include "compare": [{"slug": "slug1", "name": "Full School Name"}, ...] in the filter block. Slugs are shown in [brackets] in the school data below.
 - Do NOT list out stats — the user can see them in the app. Just answer conversationally.
 - After your response, you MAY append a suggestions block (only when genuinely helpful, max 3):
 \`\`\`suggestions

@@ -140,6 +140,7 @@ export default function ChatDrawer() {
   }, [isOpen]);
 
   const [messages, setMessages] = useState<Message[]>([]);
+  const lastAssistantId = messages.findLast((m) => m.role === "assistant")?.id;
 
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
@@ -369,96 +370,91 @@ export default function ChatDrawer() {
                 </div>
               )}
 
-              {(() => {
-                const lastAssistantId = [...messages]
-                  .reverse()
-                  .find((m) => m.role === "assistant")?.id;
-                return messages.map((msg) => (
+              {messages.map((msg) => (
+                <div
+                  key={msg.id}
+                  className={`flex flex-col ${msg.role === "user" ? "items-end" : "items-start"}`}
+                >
                   <div
-                    key={msg.id}
-                    className={`flex flex-col ${msg.role === "user" ? "items-end" : "items-start"}`}
+                    className={`max-w-[85%] px-3 py-2 rounded-lg text-sm ${
+                      msg.role === "user" ? "bg-primary text-on-primary" : "bg-surface0 text-text"
+                    }`}
                   >
-                    <div
-                      className={`max-w-[85%] px-3 py-2 rounded-lg text-sm ${
-                        msg.role === "user" ? "bg-primary text-on-primary" : "bg-surface0 text-text"
-                      }`}
-                    >
-                      {msg.role === "assistant" ? (
-                        <ReactMarkdown
-                          components={{
-                            p: ({ children }) => <p className="mb-1 last:mb-0">{children}</p>,
-                            strong: ({ children }) => (
-                              <strong className="font-semibold">{children}</strong>
-                            ),
-                            ul: ({ children }) => (
-                              <ul className="list-disc pl-4 mb-1 space-y-0.5">{children}</ul>
-                            ),
-                            ol: ({ children }) => (
-                              <ol className="list-decimal pl-4 mb-1 space-y-0.5">{children}</ol>
-                            ),
-                            li: ({ children, ...props }) => <li {...props}>{children}</li>,
-                            a: ({ href, children }) => {
-                              if (!href || typeof href !== "string") {
+                    {msg.role === "assistant" ? (
+                      <ReactMarkdown
+                        components={{
+                          p: ({ children }) => <p className="mb-1 last:mb-0">{children}</p>,
+                          strong: ({ children }) => (
+                            <strong className="font-semibold">{children}</strong>
+                          ),
+                          ul: ({ children }) => (
+                            <ul className="list-disc pl-4 mb-1 space-y-0.5">{children}</ul>
+                          ),
+                          ol: ({ children }) => (
+                            <ol className="list-decimal pl-4 mb-1 space-y-0.5">{children}</ol>
+                          ),
+                          li: ({ children, ...props }) => <li {...props}>{children}</li>,
+                          a: ({ href, children }) => {
+                            if (!href || typeof href !== "string") {
+                              return <span>{children}</span>;
+                            }
+                            if (!href.startsWith("http://") && !href.startsWith("https://")) {
+                              return <span>{children}</span>;
+                            }
+                            try {
+                              const url = new URL(href);
+                              if (url.protocol !== "http:" && url.protocol !== "https:") {
                                 return <span>{children}</span>;
                               }
-                              if (!href.startsWith("http://") && !href.startsWith("https://")) {
-                                return <span>{children}</span>;
-                              }
-                              try {
-                                const url = new URL(href);
-                                if (url.protocol !== "http:" && url.protocol !== "https:") {
-                                  return <span>{children}</span>;
-                                }
-                              } catch {
-                                return <span>{children}</span>;
-                              }
-                              return (
-                                <a
-                                  href={href}
-                                  className="underline opacity-80"
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                >
-                                  {children}
-                                </a>
-                              );
-                            },
-                          }}
-                        >
-                          {msg.content}
-                        </ReactMarkdown>
-                      ) : (
-                        <p className="whitespace-pre-wrap break-words">{msg.content}</p>
-                      )}
-                      {msg.filters && (
-                        <div
-                          className="mt-2 text-xs bg-crust/50 rounded px-2 py-1 text-subtext0"
-                          aria-live="polite"
-                        >
-                          Filters applied to list ✓
-                        </div>
-                      )}
-                    </div>
-                    {msg.role === "assistant" &&
-                      msg.id === lastAssistantId &&
-                      msg.suggestions &&
-                      msg.suggestions.length > 0 && (
-                        <div className="mt-2 flex flex-wrap gap-1.5 max-w-[85%]">
-                          {msg.suggestions.map((s) => (
-                            <button
-                              key={s}
-                              onClick={() => sendMessage(s)}
-                              disabled={loading}
-                              className="text-xs px-2.5 py-1 rounded-full bg-surface0 hover:bg-surface1 text-subtext0 hover:text-text transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
-                            >
-                              {s}
-                            </button>
-                          ))}
-                        </div>
-                      )}
+                            } catch {
+                              return <span>{children}</span>;
+                            }
+                            return (
+                              <a
+                                href={href}
+                                className="underline opacity-80"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
+                                {children}
+                              </a>
+                            );
+                          },
+                        }}
+                      >
+                        {msg.content}
+                      </ReactMarkdown>
+                    ) : (
+                      <p className="whitespace-pre-wrap break-words">{msg.content}</p>
+                    )}
+                    {msg.filters && (
+                      <div
+                        className="mt-2 text-xs bg-crust/50 rounded px-2 py-1 text-subtext0"
+                        aria-live="polite"
+                      >
+                        Filters applied to list ✓
+                      </div>
+                    )}
                   </div>
-                ));
-              })()}
+                  {msg.role === "assistant" &&
+                    msg.id === lastAssistantId &&
+                    msg.suggestions &&
+                    msg.suggestions.length > 0 && (
+                      <div className="mt-2 flex flex-wrap gap-1.5 max-w-[85%]">
+                        {msg.suggestions.map((s) => (
+                          <button
+                            key={s}
+                            onClick={() => sendMessage(s)}
+                            disabled={loading}
+                            className="text-xs px-2.5 py-1 rounded-full bg-surface0 hover:bg-surface1 text-subtext0 hover:text-text transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
+                          >
+                            {s}
+                          </button>
+                        ))}
+                      </div>
+                    )}
+                </div>
+              ))}
 
               {loading && (
                 <div className="flex justify-start">

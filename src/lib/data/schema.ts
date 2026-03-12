@@ -101,7 +101,7 @@ export const ChatFiltersSchema = z.object({
   search: z.string().max(100).optional(),
   compare: z
     .array(z.object({ slug: z.string(), name: z.string() }))
-    .max(4)
+    .max(3)
     .optional(),
 });
 export type ChatFilters = z.infer<typeof ChatFiltersSchema>;
