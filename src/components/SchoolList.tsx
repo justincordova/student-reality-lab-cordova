@@ -10,6 +10,8 @@ import GradeBadge from "./GradeBadge";
 import Pagination from "./Pagination";
 import SchoolLogo from "./SchoolLogo";
 import { useChatContext } from "./ChatProvider";
+import HeartButton from "./HeartButton";
+import CompareButton from "./CompareButton";
 
 const ROIChart = dynamic(() => import("./ROIChart"), { ssr: false });
 
@@ -471,6 +473,11 @@ export default function SchoolList({ csrankingsSchools, nicheSchools }: SchoolLi
                   <p className="text-subtext0 text-sm">
                     {school.city}, {school.state} · {school.region}
                   </p>
+                  {/* Mobile: heart + compare */}
+                  <div className="sm:hidden flex items-center gap-2 mt-1">
+                    <HeartButton slug={school.slug} size="sm" />
+                    <CompareButton slug={school.slug} name={school.name} />
+                  </div>
                   {/* Mobile: compact stats inline */}
                   <div className="sm:hidden flex gap-3 text-xs text-subtext0 mt-1">
                     <span>
@@ -497,6 +504,10 @@ export default function SchoolList({ csrankingsSchools, nicheSchools }: SchoolLi
                 </div>
                 {/* Desktop: stacked right-aligned stats */}
                 <div className="hidden sm:block text-right text-sm space-y-1 shrink-0">
+                  <div className="flex justify-end gap-2 mb-1">
+                    <CompareButton slug={school.slug} name={school.name} />
+                    <HeartButton slug={school.slug} size="sm" />
+                  </div>
                   <div>
                     <span className="text-subtext0">In-state: </span>
                     <span className="font-medium">

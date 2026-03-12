@@ -8,6 +8,7 @@ import ChatDrawer from "@/components/ChatDrawer";
 import ErrorBoundary from "@/components/ErrorBoundary";
 import SkipLink from "@/components/SkipLink";
 import LayoutContent from "@/components/LayoutContent";
+import CompareBar from "@/components/CompareBar";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
@@ -56,6 +57,7 @@ export default function RootLayout({
             </LayoutContent>
             <ChatButton />
             <ChatDrawer />
+            <CompareBar />
           </ChatProvider>
         </ErrorBoundary>
       </body>

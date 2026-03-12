@@ -11,6 +11,7 @@ import SchoolChatContext from "@/components/SchoolChatContext";
 import CopyLinkButton from "@/components/CopyLinkButton";
 import type { Metadata } from "next";
 import type { NicheGrades, NicheGradeType } from "@/lib/data/schema";
+import HeartButton from "@/components/HeartButton";
 
 export async function generateStaticParams() {
   const all = [...loadSchoolsBySource("csrankings"), ...loadSchoolsBySource("niche")];
@@ -110,7 +111,10 @@ export default async function SchoolPage({ params }: { params: Promise<{ slug: s
         <div className="flex items-center gap-4">
           <SchoolLogo website={school.website} name={school.name} size={64} />
           <div>
-            <h1 className="text-3xl font-bold">{school.name}</h1>
+            <div className="flex items-center gap-3">
+              <h1 className="text-3xl font-bold">{school.name}</h1>
+              <HeartButton slug={school.slug} size="md" />
+            </div>
             <p className="text-subtext0 text-lg">
               {school.city}, {school.state} · {school.region}
             </p>
