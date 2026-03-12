@@ -2,7 +2,7 @@
 
 import { useFavorites } from "@/hooks/useFavorites";
 import { cn } from "@/utils/cn";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 
 interface HeartButtonProps {
   slug: string;
@@ -13,14 +13,22 @@ export default function HeartButton({ slug, size = "sm" }: HeartButtonProps) {
   const { toggle, isFavorited } = useFavorites();
   const favorited = isFavorited(slug);
   const [isAnimating, setIsAnimating] = useState(false);
+  const animationTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const dim = size === "md" ? 22 : 18;
+
+  useEffect(() => {
+    return () => {
+      if (animationTimerRef.current !== null) clearTimeout(animationTimerRef.current);
+    };
+  }, []);
 
   const handleClick = (e: React.MouseEvent) => {
     e.preventDefault();
     e.stopPropagation();
+    if (animationTimerRef.current !== null) clearTimeout(animationTimerRef.current);
     setIsAnimating(true);
     toggle(slug);
-    setTimeout(() => setIsAnimating(false), 150);
+    animationTimerRef.current = setTimeout(() => setIsAnimating(false), 150);
   };
 
   return (
